@@ -112,13 +112,28 @@ var Aufgabe2;
         crc2.stroke();
         crc2.fillStyle = "#80400C";
         crc2.fill();
+        //feste B�ume
+        drawTree(150, 400, "#165118");
+        drawTree(250, 400, "#165118");
+        drawTree(350, 400, "#165118");
+        function drawTree(_x, _y, _color) {
+            //B�ume
+            crc2.beginPath();
+            crc2.moveTo(_x, _y);
+            crc2.lineTo(_x + 30, _y + 100);
+            crc2.lineTo(_x - 30, _y + 100);
+            crc2.closePath();
+            crc2.stroke();
+            crc2.fillStyle = _color;
+            crc2.fill();
+        }
         for (let i = 0; i < 12; i++) {
             let x = 50 + Math.random() * 700;
             let y = 300 + Math.random() * 200;
             drawTriangle(x, y, "#165118");
         }
         function drawTriangle(_x, _y, _color) {
-            //Baum
+            //B�ume random
             crc2.beginPath();
             crc2.moveTo(_x, _y);
             crc2.lineTo(_x + 30, _y + 100);
