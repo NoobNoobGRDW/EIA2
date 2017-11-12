@@ -17,7 +17,9 @@ namespace Aufgabe3 {
     let wolkeY: number[] = [];
     let skiFahrerX: number[] = [];
     let skiFahrerY: number[] = [];
-
+    let skiFahrer1X: number[] = [];
+    let skiFahrer1Y: number[] = [];
+    
     var canImg: any; //initialisiert das Canvas Image
 
     function init() {
@@ -187,6 +189,12 @@ namespace Aufgabe3 {
             skiFahrerY[i] = 350;
         }
 
+        //Startpunkt Skifahrer1
+        for (let i = 0; i < 1; i++) { //Startet bei x:160 y:300
+            skiFahrer1X[i] = 160;
+            skiFahrer1Y[i] = 300;
+        }
+
         function animiere() {
             console.log("Timeout");
             crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
@@ -199,84 +207,115 @@ namespace Aufgabe3 {
 
                 schneeY[i] += Math.random();
                 genSchnee(schneeX[i], schneeY[i]);
-            }
-            //for-Schleife Wolken
-            for (let i = 0; i < wolkeX.length; i++) {
-                if (wolkeX[i] > 800) { //Wolken kommen wieder ins Bild
-                    wolkeX[i] = 0;
+}
+                //for-Schleife Wolken
+                for (let i = 0; i < wolkeX.length; i++) {
+                    if (wolkeX[i] > 800) { //Wolken kommen wieder ins Bild
+                        wolkeX[i] = 0;
+                    }
+                    wolkeX[i] += Math.random();
+                    genWolke(wolkeX[i], wolkeY[i]);
                 }
-                wolkeX[i] += Math.random();
-                genWolke(wolkeX[i], wolkeY[i]);
-            }
-            //for-Schleife Skifahrer
-            for (let i = 0; i < skiFahrerX.length; i++) {
-                if (skiFahrerX[i] > 700) {
-                    skiFahrerX[i] = 260;
-                    skiFahrerY[i] = 350;
+                //for-Schleife Skifahrer
+                for (let i = 0; i < skiFahrerX.length; i++) {
+                    if (skiFahrerX[i] > 700) {
+                        skiFahrerX[i] = 260;
+                        skiFahrerY[i] = 350;
+                    }
+                    skiFahrerX[i] += 5;
+                    skiFahrerY[i] += 6;
+                    genSki(skiFahrerX[i], skiFahrerY[i]);
                 }
-                skiFahrerX[i] += 5;
-                skiFahrerY[i] += 6;
-                genSki(skiFahrerX[i], skiFahrerY[i]);
+                //for-Schleife Skifahrer1
+                for (let i = 0; i < skiFahrerX.length; i++) {
+                    if (skiFahrer1X[i] > 800) {
+                        skiFahrer1X[i] = 160;
+                        skiFahrer1Y[i] = 300;
+                    }
+                    skiFahrer1X[i] += 5;
+                    skiFahrer1Y[i] += 6;
+                    genSki1(skiFahrer1X[i], skiFahrer1Y[i]);
+                }
+                window.setTimeout(animiere, 20);
             }
-            window.setTimeout(animiere, 20);
-        }
-        //Schnee generieren
-        function genSchnee(_x: number, _y: number) {
-            crc2.beginPath();
-            crc2.arc(_x, _y, 3, 0, 2 * Math.PI);
-            crc2.strokeStyle = "#ABABAB";
-            crc2.stroke();
-            crc2.fillStyle = "#F1F7FA";
-            crc2.fill();
-        }
-        //Wolken generieren
-        function genWolke(_x: number, _y: number) {
-            crc2.beginPath();
-            crc2.arc(_x + 40, _y, 50, 0, 2 * Math.PI);
-            crc2.fillStyle = "#BDBDBD";
-            crc2.fill();
-            crc2.beginPath();
-            crc2.arc(_x, _y - 20, 50, 0, 2 * Math.PI);
-            crc2.fillStyle = "#BDBDBD";
-            crc2.fill();
-            crc2.beginPath();
-            crc2.arc(_x - 20, _y, 50, 0, 2 * Math.PI);
-            crc2.fillStyle = "#BDBDBD";
-            crc2.fill();
-            crc2.beginPath();
-            crc2.arc(_x, _y + 30, 40, 0, 2 * Math.PI);
-            crc2.fillStyle = "#BDBDBD";
-            crc2.fill();
-            crc2.beginPath();
-            crc2.arc(_x + 70, _y + 10, 30, 0, 2 * Math.PI);
-            crc2.fillStyle = "#BDBDBD";
-            crc2.fill();
-            crc2.beginPath();
-            crc2.arc(_x - 70, _y, 30, 0, 2 * Math.PI);
-            crc2.fillStyle = "#BDBDBD";
-            crc2.fill();
-        }
-        //Skifahrer generieren
-        function genSki(_x: number, _y: number) {
-            crc2.fillStyle = "#2561C1";
-            crc2.fillRect(_x, _y, 7, -25);//Torso
-            crc2.fillRect(_x - 4, _y - 9, 4, -16);//linker Arm
-            crc2.fillRect(_x + 6, _y - 9, 4, -16);//rechter Arm  
-            crc2.beginPath();
-            crc2.arc(_x + 3, _y - 29, 5, 0, 2 * Math.PI);//Kopf
-            crc2.fillStyle = "#C9B284";
-            crc2.fill();
-            crc2.beginPath();
-            crc2.moveTo(_x - 25, _y - 13);//rechter Ski
-            crc2.lineTo(_x + 25, _y + 13);
-            crc2.strokeStyle = "#B33131";
-            crc2.stroke();
-            crc2.beginPath();
-            crc2.moveTo(_x - 20, _y - 13);//linker Ski
-            crc2.lineTo(_x + 30, _y + 13);
-            crc2.strokeStyle = "#B33131";
-            crc2.stroke();
-        }
+            //Schnee generieren
+            function genSchnee(_x: number, _y: number) {
+                crc2.beginPath();
+                crc2.arc(_x, _y, 3, 0, 2 * Math.PI);
+                crc2.strokeStyle = "#ABABAB";
+                crc2.stroke();
+                crc2.fillStyle = "#F1F7FA";
+                crc2.fill();
+            }
+            //Wolken generieren
+            function genWolke(_x: number, _y: number) {
+                crc2.beginPath();
+                crc2.arc(_x + 40, _y, 50, 0, 2 * Math.PI);
+                crc2.fillStyle = "#BDBDBD";
+                crc2.fill();
+                crc2.beginPath();
+                crc2.arc(_x, _y - 20, 50, 0, 2 * Math.PI);
+                crc2.fillStyle = "#BDBDBD";
+                crc2.fill();
+                crc2.beginPath();
+                crc2.arc(_x - 20, _y, 50, 0, 2 * Math.PI);
+                crc2.fillStyle = "#BDBDBD";
+                crc2.fill();
+                crc2.beginPath();
+                crc2.arc(_x, _y + 30, 40, 0, 2 * Math.PI);
+                crc2.fillStyle = "#BDBDBD";
+                crc2.fill();
+                crc2.beginPath();
+                crc2.arc(_x + 70, _y + 10, 30, 0, 2 * Math.PI);
+                crc2.fillStyle = "#BDBDBD";
+                crc2.fill();
+                crc2.beginPath();
+                crc2.arc(_x - 70, _y, 30, 0, 2 * Math.PI);
+                crc2.fillStyle = "#BDBDBD";
+                crc2.fill();
+            }
+            //Skifahrer generieren
+            function genSki(_x: number, _y: number) {
+                crc2.fillStyle = "#2561C1";
+                crc2.fillRect(_x, _y, 7, -25);//Torso
+                crc2.fillRect(_x - 4, _y - 9, 4, -16);//linker Arm
+                crc2.fillRect(_x + 6, _y - 9, 4, -16);//rechter Arm  
+                crc2.beginPath();
+                crc2.arc(_x + 3, _y - 29, 5, 0, 2 * Math.PI);//Kopf
+                crc2.fillStyle = "#C9B284";
+                crc2.fill();
+                crc2.beginPath();
+                crc2.moveTo(_x - 25, _y - 13);//rechter Ski
+                crc2.lineTo(_x + 25, _y + 13);
+                crc2.strokeStyle = "#B33131";
+                crc2.stroke();
+                crc2.beginPath();
+                crc2.moveTo(_x - 20, _y - 13);//linker Ski
+                crc2.lineTo(_x + 30, _y + 13);
+                crc2.strokeStyle = "#B33131";
+                crc2.stroke();
+            }
 
-    }
-} 
+            //Skifahrer1 generieren
+            function genSki1(_x: number, _y: number) {
+                crc2.fillStyle = "#EC7D1C";
+                crc2.fillRect(_x, _y, 7, -25);//Torso
+                crc2.fillRect(_x - 4, _y - 9, 4, -16);//linker Arm
+                crc2.fillRect(_x + 6, _y - 9, 4, -16);//rechter Arm  
+                crc2.beginPath();
+                crc2.arc(_x + 3, _y - 29, 5, 0, 2 * Math.PI);//Kopf
+                crc2.fillStyle = "#C9B284";
+                crc2.fill();
+                crc2.beginPath();
+                crc2.moveTo(_x - 25, _y - 13);//rechter Ski
+                crc2.lineTo(_x + 25, _y + 13);
+                crc2.strokeStyle = "#5C5A58";
+                crc2.stroke();
+                crc2.beginPath();
+                crc2.moveTo(_x - 20, _y - 13);//linker Ski
+                crc2.lineTo(_x + 30, _y + 13);
+                crc2.strokeStyle = "#5C5A58";
+                crc2.stroke();
+            }
+        }
+    }             
