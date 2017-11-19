@@ -7,10 +7,10 @@ Datum: 16.11.17
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
 namespace Aufgabe5 {
-    
-    export let crc2: CanvasRenderingContext2D;  
+
+    export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", skiPiste);
-    
+
     let skiFahrer: skiaaa[] = [];
     let snow: Snow;
     let cloud: Cloud;
@@ -25,11 +25,11 @@ namespace Aufgabe5 {
     let gondelX: number[] = [];
     let gondelY: number[] = [];
 
-    
+
     var canImg: any; //initialisiert das Canvas Image
 
     function skiPiste() {
-       
+
         let canvas: HTMLCanvasElement = document.getElementsByTagName("canvas")[0];
         crc2 = canvas.getContext("2d");
         console.log(canvas);
@@ -177,7 +177,7 @@ namespace Aufgabe5 {
         }
 
         canImg = crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
-        
+
 
         //Startpunkte für Schnee
         for (let i = 0; i < 160; i++) {
@@ -199,179 +199,122 @@ namespace Aufgabe5 {
 
         for (let i: number = 0; i < 2; i++) {
             let s: skiaaa = new skiaaa(265,
-                                       350,
-                                       Math.random() * 1,
-                                       Math.random() * 2,
-                                       "hsl(" + Math.random() * 360 + ", 90%, 60%)");
+                350,
+                Math.random() * 2,
+                Math.random() * 5,
+                "hsl(" + Math.random() * 360 + ", 90%, 60%)");
+           
             skiFahrer[i] = s;
-            s.setRandomStyle();
-            
         }
+
         animiere(); //führt Funktion aus
-}
-
-        /* //random Skifahrer
-         for (let i: number = 0; i < 6; i++) {
-             skiFahrer[i] = {
-                 x: 260,
-                 y: 350,
-                 dx: Math.random() * 2,
-                 dy: Math.random() * 5,
-                 color: "hsl(" + Math.random() * 360 + ", 90%, 50%)"
-             }
-         }*/
-        function animiere() {
-            console.log("Timeout");
-            crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
-            crc2.putImageData(canImg, 0, 0); //fügt Bild ein
-            //for-Schleife Schnee
-            for (let i = 0; i < schneeX.length; i++) {
-                if (schneeY[i] > 600) { //Schneefall wiederholt sich
-                    schneeY[i] = 0;
-                }
-
-                schneeY[i] += Math.random();
-                genSchnee(schneeX[i], schneeY[i]);
-            }
-            //for-Schleife Wolken
-            for (let i = 0; i < wolkeX.length; i++) {
-                if (wolkeX[i] > 800) { //Wolken kommen wieder ins Bild
-                    wolkeX[i] = 0;
-                }
-                wolkeX[i] += Math.random();
-                genWolke(wolkeX[i], wolkeY[i]);
-            }
-
-            //for-Schleife Gondel
-            for (let i = 0; i < gondelX.length; i++) {
-                if (gondelY[i] < 330) { //Gondeln kommen wieder ins Bild
-                    gondelX[i] = 470;
-                    gondelY[i] = 640;
-                }
-                gondelX[i] += -2, 99;
-                gondelY[i] += -3;
-                gondelX[i] += Math.random();
-                genGondel(gondelX[i], gondelY[i]);
-            }
-
-            /* //random SKifahrer
-             for (let i: number = 0; i < skiFahrer.length; i++) {
-                 if (skiFahrer[i].y > 800) { //Fahrer springen zurück
-                     skiFahrer[i].x = 260;
-                     skiFahrer[i].y = 350;
-                 }
-                 
-                 genSki(skiFahrer[i]);
-             }*/
-            for (let i: number = 0; i < skiFahrer.length; i++) {
-                
-                let s: skiaaa = skiFahrer[i];
-                s.update();
-             }   
-
-                window.setTimeout(animiere, 20);
-            }
-            //Schnee generieren
-            function genSchnee(_x: number, _y: number) {
-                crc2.beginPath();
-                crc2.arc(_x, _y, 3, 0, 2 * Math.PI);
-                crc2.strokeStyle = "#ABABAB";
-                crc2.stroke();
-                crc2.fillStyle = "#F1F7FA";
-                crc2.fill();
-            }
-            //Wolken generieren
-            function genWolke(_x: number, _y: number) {
-                crc2.beginPath();
-                crc2.arc(_x + 40, _y, 50, 0, 2 * Math.PI);
-                crc2.fillStyle = "#BDBDBD";
-                crc2.fill();
-                crc2.beginPath();
-                crc2.arc(_x, _y - 20, 50, 0, 2 * Math.PI);
-                crc2.fillStyle = "#BDBDBD";
-                crc2.fill();
-                crc2.beginPath();
-                crc2.arc(_x - 20, _y, 50, 0, 2 * Math.PI);
-                crc2.fillStyle = "#BDBDBD";
-                crc2.fill();
-                crc2.beginPath();
-                crc2.arc(_x, _y + 30, 40, 0, 2 * Math.PI);
-                crc2.fillStyle = "#BDBDBD";
-                crc2.fill();
-                crc2.beginPath();
-                crc2.arc(_x + 70, _y + 10, 30, 0, 2 * Math.PI);
-                crc2.fillStyle = "#BDBDBD";
-                crc2.fill();
-                crc2.beginPath();
-                crc2.arc(_x - 70, _y, 30, 0, 2 * Math.PI);
-                crc2.fillStyle = "#BDBDBD";
-                crc2.fill();
-            }
-
-            //Gondel generieren
-            function genGondel(_x: number, _y: number) {
-                crc2.beginPath();
-                crc2.fillStyle = "#818080";
-                crc2.fillRect(_x, _y, 50, -40);
-                crc2.strokeStyle = "#818080";
-                crc2.stroke();
-
-                crc2.beginPath();
-                crc2.fillStyle = "#1B1B1B";
-                crc2.fillRect(_x + 26, _y - 17, 20, -20);
-                crc2.strokeStyle = "#1B1B1B";
-                crc2.stroke();
-
-                crc2.beginPath();
-                crc2.fillStyle = "#1B1B1B";
-                crc2.fillRect(_x + 3, _y - 17, 20, -20);
-                crc2.strokeStyle = "#1B1B1B";
-                crc2.stroke();
-
-                crc2.beginPath();
-                crc2.fillStyle = "#818080";
-                crc2.fillRect(_x + 22, _y - 40, 5, -5);
-                crc2.strokeStyle = "#818080";
-                crc2.stroke();
-
-            }
-            /*
-                    //Skifahrer generieren
-                    function genSki(_skiFahrer: Skiaaa): void {
-                        _skiFahrer.x += _skiFahrer.dx;
-                        _skiFahrer.y += _skiFahrer.dy; // Richtung ändern
-            
-                        crc2.fillStyle = "#885E2E";
-                        crc2.fillRect(_skiFahrer.x, _skiFahrer.y, 7, -30);//Beine
-            
-                        crc2.fillStyle = _skiFahrer.color;
-                        crc2.fillRect(_skiFahrer.x, _skiFahrer.y - 7, 7, -25);//Torso
-                        crc2.fillRect(_skiFahrer.x - 4, _skiFahrer.y - 9, 4, -16);//linker Arm
-                        crc2.fillRect(_skiFahrer.x + 6, _skiFahrer.y - 9, 4, -16);//rechter Arm 
-            
-                        crc2.beginPath();
-                        crc2.arc(_skiFahrer.x + 2, _skiFahrer.y - 30, 6, 0, 2 * Math.PI);//Helm
-                        crc2.fillStyle = _skiFahrer.color;
-                        crc2.fill();
-            
-                        crc2.beginPath();
-                        crc2.arc(_skiFahrer.x + 3, _skiFahrer.y - 29, 5, 0, 2 * Math.PI);//Kopf
-                        crc2.fillStyle = "#C9B284";
-                        crc2.fill();
-            
-                        crc2.beginPath();
-                        crc2.moveTo(_skiFahrer.x - 25, _skiFahrer.y - 13);//rechter Ski
-                        crc2.lineTo(_skiFahrer.x + 25, _skiFahrer.y + 13);
-                        crc2.strokeStyle = "#5C5A58";
-                        crc2.stroke();
-            
-                        crc2.beginPath();
-                        crc2.moveTo(_skiFahrer.x - 20, _skiFahrer.y - 13);//linker Ski
-                        crc2.lineTo(_skiFahrer.x + 30, _skiFahrer.y + 13);
-                        crc2.strokeStyle = "#5C5A58";
-                        crc2.stroke();
-                    }
-            */
-
-        
     }
+
+    function animiere() {
+        console.log("Timeout");
+        crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
+        crc2.putImageData(canImg, 0, 0); //fügt Bild ein
+        //for-Schleife Schnee
+        for (let i = 0; i < schneeX.length; i++) {
+            if (schneeY[i] > 600) { //Schneefall wiederholt sich
+                schneeY[i] = 0;
+            }
+
+            schneeY[i] += Math.random();
+            genSchnee(schneeX[i], schneeY[i]);
+        }
+        //for-Schleife Wolken
+        for (let i = 0; i < wolkeX.length; i++) {
+            if (wolkeX[i] > 800) { //Wolken kommen wieder ins Bild
+                wolkeX[i] = 0;
+            }
+            wolkeX[i] += Math.random();
+            genWolke(wolkeX[i], wolkeY[i]);
+        }
+
+        //for-Schleife Gondel
+        for (let i = 0; i < gondelX.length; i++) {
+            if (gondelY[i] < 330) { //Gondeln kommen wieder ins Bild
+                gondelX[i] = 470;
+                gondelY[i] = 640;
+            }
+            gondelX[i] += -2, 99;
+            gondelY[i] += -3;
+            gondelX[i] += Math.random();
+            genGondel(gondelX[i], gondelY[i]);
+        }
+
+        for (let i: number = 0; i < skiFahrer.length; i++) {
+            
+            let s: skiaaa = skiFahrer[i];
+            s.update();
+        }
+
+        window.setTimeout(animiere, 10);
+    }
+    //Schnee generieren
+    function genSchnee(_x: number, _y: number) {
+        crc2.beginPath();
+        crc2.arc(_x, _y, 3, 0, 2 * Math.PI);
+        crc2.strokeStyle = "#ABABAB";
+        crc2.stroke();
+        crc2.fillStyle = "#F1F7FA";
+        crc2.fill();
+    }
+    //Wolken generieren
+    function genWolke(_x: number, _y: number) {
+        crc2.beginPath();
+        crc2.arc(_x + 40, _y, 50, 0, 2 * Math.PI);
+        crc2.fillStyle = "#BDBDBD";
+        crc2.fill();
+        crc2.beginPath();
+        crc2.arc(_x, _y - 20, 50, 0, 2 * Math.PI);
+        crc2.fillStyle = "#BDBDBD";
+        crc2.fill();
+        crc2.beginPath();
+        crc2.arc(_x - 20, _y, 50, 0, 2 * Math.PI);
+        crc2.fillStyle = "#BDBDBD";
+        crc2.fill();
+        crc2.beginPath();
+        crc2.arc(_x, _y + 30, 40, 0, 2 * Math.PI);
+        crc2.fillStyle = "#BDBDBD";
+        crc2.fill();
+        crc2.beginPath();
+        crc2.arc(_x + 70, _y + 10, 30, 0, 2 * Math.PI);
+        crc2.fillStyle = "#BDBDBD";
+        crc2.fill();
+        crc2.beginPath();
+        crc2.arc(_x - 70, _y, 30, 0, 2 * Math.PI);
+        crc2.fillStyle = "#BDBDBD";
+        crc2.fill();
+    }
+
+    //Gondel generieren
+    function genGondel(_x: number, _y: number) {
+        crc2.beginPath();
+        crc2.fillStyle = "#818080";
+        crc2.fillRect(_x, _y, 50, -40);
+        crc2.strokeStyle = "#818080";
+        crc2.stroke();
+
+        crc2.beginPath();
+        crc2.fillStyle = "#1B1B1B";
+        crc2.fillRect(_x + 26, _y - 17, 20, -20);
+        crc2.strokeStyle = "#1B1B1B";
+        crc2.stroke();
+
+        crc2.beginPath();
+        crc2.fillStyle = "#1B1B1B";
+        crc2.fillRect(_x + 3, _y - 17, 20, -20);
+        crc2.strokeStyle = "#1B1B1B";
+        crc2.stroke();
+
+        crc2.beginPath();
+        crc2.fillStyle = "#818080";
+        crc2.fillRect(_x + 22, _y - 40, 5, -5);
+        crc2.strokeStyle = "#818080";
+        crc2.stroke();
+
+    }
+
+}

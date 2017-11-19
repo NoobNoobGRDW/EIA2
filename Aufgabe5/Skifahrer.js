@@ -17,16 +17,16 @@ var Aufgabe5;
             this.color = _color;
         }
         move() {
-            this.x = 265; //Startpunkt
-            this.y = 350; //Startpunkt
-            this.dx = Math.random() * 5;
-            this.dy = Math.random() * 5;
+            this.x = Math.random() + 265; //Startpunkt
+            this.y = Math.random() + 350; //Startpunkt 
+            this.dx += Math.random() * 2;
+            this.dy += Math.random() * 5;
             this.x += this.dx;
             this.y += this.dy;
-            /* if (this.y > 800) { //Fahrer springen zur�ck
-                 this.x = 265;
-                 this.y = 350;
-             }*/
+            if (this.y > 800) {
+                this.x = 265;
+                this.y = 350;
+            }
         }
         draw() {
             Aufgabe5.crc2.fillStyle = "#885E2E";
@@ -57,8 +57,6 @@ var Aufgabe5;
         update() {
             this.move();
             this.draw();
-        }
-        setRandomStyle() {
         }
     }
     Aufgabe5.skiaaa = skiaaa;

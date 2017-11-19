@@ -175,22 +175,11 @@ var Aufgabe5;
             wolkeY[i] = 0 + Math.random() * 150 + 40;
         }
         for (let i = 0; i < 2; i++) {
-            let s = new Aufgabe5.skiaaa(265, 350, Math.random() * 1, Math.random() * 2, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
+            let s = new Aufgabe5.skiaaa(265, 350, Math.random() * 2, Math.random() * 5, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
             skiFahrer[i] = s;
-            s.setRandomStyle();
         }
         animiere(); //f�hrt Funktion aus
     }
-    /* //random Skifahrer
-     for (let i: number = 0; i < 6; i++) {
-         skiFahrer[i] = {
-             x: 260,
-             y: 350,
-             dx: Math.random() * 2,
-             dy: Math.random() * 5,
-             color: "hsl(" + Math.random() * 360 + ", 90%, 50%)"
-         }
-     }*/
     function animiere() {
         console.log("Timeout");
         Aufgabe5.crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
@@ -222,20 +211,11 @@ var Aufgabe5;
             gondelX[i] += Math.random();
             genGondel(gondelX[i], gondelY[i]);
         }
-        /* //random SKifahrer
-         for (let i: number = 0; i < skiFahrer.length; i++) {
-             if (skiFahrer[i].y > 800) { //Fahrer springen zur�ck
-                 skiFahrer[i].x = 260;
-                 skiFahrer[i].y = 350;
-             }
-             
-             genSki(skiFahrer[i]);
-         }*/
         for (let i = 0; i < skiFahrer.length; i++) {
             let s = skiFahrer[i];
             s.update();
         }
-        window.setTimeout(animiere, 20);
+        window.setTimeout(animiere, 10);
     }
     //Schnee generieren
     function genSchnee(_x, _y) {

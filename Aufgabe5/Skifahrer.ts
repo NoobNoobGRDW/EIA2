@@ -30,23 +30,24 @@ namespace Aufgabe5 {
 
         move(): void {
 
-            this.x = 265;   //Startpunkt
-            this.y = 350;   //Startpunkt
-            this.dx = Math.random() *5;
-            this.dy = Math.random() *5;
+            this.x = Math.random() + 265;   //Startpunkt
+            this.y = Math.random() + 350;   //Startpunkt 
+            this.dx += Math.random() *2;
+            this.dy += Math.random() *5;
             this.x += this.dx;
             this.y += this.dy;
-           /* if (this.y > 800) { //Fahrer springen zurück
+            if (this.y > 800) { //Fahrer springen zurück
                 this.x = 265;
                 this.y = 350;
-            }*/
+            }
+        
         }
 
         draw(): void {
-           
+
             crc2.fillStyle = "#885E2E";
             crc2.fillRect(this.x, this.y, 7, -30);//Beine
-            
+
 
             crc2.beginPath();
             crc2.moveTo(this.x - 25, this.y - 13);//rechter Ski
@@ -60,7 +61,7 @@ namespace Aufgabe5 {
             crc2.strokeStyle = "#5C5A58";
             crc2.stroke();
             crc2.fillStyle = this.color;
-            
+
             crc2.fillRect(this.x, this.y - 7, 7, -25);//Torso
             crc2.fillRect(this.x - 4, this.y - 9, 4, -16);//linker Arm
             crc2.fillRect(this.x + 6, this.y - 9, 4, -16);//rechter Arm 
@@ -69,7 +70,7 @@ namespace Aufgabe5 {
             crc2.arc(this.x + 2, this.y - 30, 6, 0, 2 * Math.PI);//Helm
             crc2.fillStyle = this.color;
             crc2.fill();
-            
+
             crc2.beginPath();
             crc2.arc(this.x + 3, this.y - 29, 5, 0, 2 * Math.PI);//Kopf
             crc2.fillStyle = "#C9B284";
@@ -80,13 +81,6 @@ namespace Aufgabe5 {
 
             this.move();
             this.draw();
-        }
-
-        setRandomStyle(): void {
-
-            
-
-
         }
 
     }
