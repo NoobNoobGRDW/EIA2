@@ -34,10 +34,10 @@ namespace Aufgabe5 {
             this.y = Math.random() + 350;   //Startpunkt
             this.x += this.dx;
             this.y += this.dy;
-            if (this.y > 800) { //Fahrer springen zurück
+           /* if (this.y > 800) { //Fahrer springen zurück
                 this.x = 265;
                 this.y = 350;
-            }
+            }*/
         }
 
         draw(): void {

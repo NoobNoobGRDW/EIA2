@@ -21,10 +21,10 @@ var Aufgabe5;
             this.y = Math.random() + 350; //Startpunkt
             this.x += this.dx;
             this.y += this.dy;
-            if (this.y > 800) {
-                this.x = 265;
-                this.y = 350;
-            }
+            /* if (this.y > 800) { //Fahrer springen zur�ck
+                 this.x = 265;
+                 this.y = 350;
+             }*/
         }
         draw() {
             Aufgabe5.crc2.fillStyle = "#885E2E";
