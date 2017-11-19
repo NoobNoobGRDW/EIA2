@@ -11,7 +11,7 @@ namespace Aufgabe5 {
     export let crc2: CanvasRenderingContext2D;  
     window.addEventListener("load", skiPiste);
     
-    let skiFahrer: skiClass[] = [];
+    let skiFahrer: skiaaa[] = [];
     let snow: Snow;
     let cloud: Cloud;
     let lift: Lift;
@@ -197,9 +197,12 @@ namespace Aufgabe5 {
             wolkeY[i] = 0 + Math.random() * 150 + 40;
         }
 
-        for (let i: number = 0; i < 6; i++) {
-
-            let s: skiClass = new skiClass ();
+        for (let i: number = 0; i < 2; i++) {
+            let s: skiaaa = new skiaaa(265,
+                                       350,
+                                       Math.random() * 1,
+                                       Math.random() * 2,
+                                       "hsl(" + Math.random() * 360 + ", 90%, 60%)");
             skiFahrer[i] = s;
             s.setRandomStyle();
             
@@ -262,7 +265,7 @@ namespace Aufgabe5 {
              }*/
             for (let i: number = 0; i < skiFahrer.length; i++) {
                 
-                let s: skiClass = skiFahrer[i];
+                let s: skiaaa = skiFahrer[i];
                 s.update();
              }   
 

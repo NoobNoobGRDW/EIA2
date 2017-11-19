@@ -174,8 +174,8 @@ var Aufgabe5;
             wolkeX[i] = 0 + Math.random() * 800;
             wolkeY[i] = 0 + Math.random() * 150 + 40;
         }
-        for (let i = 0; i < 6; i++) {
-            let s = new Aufgabe5.skiaaa(300, 300);
+        for (let i = 0; i < 2; i++) {
+            let s = new Aufgabe5.skiaaa(265, 350, Math.random() * 1, Math.random() * 2, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
             skiFahrer[i] = s;
             s.setRandomStyle();
         }
