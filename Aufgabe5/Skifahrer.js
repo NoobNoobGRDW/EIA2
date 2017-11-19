@@ -17,8 +17,10 @@ var Aufgabe5;
             this.color = _color;
         }
         move() {
-            this.x = Math.random() + 265; //Startpunkt
-            this.y = Math.random() + 350; //Startpunkt
+            this.x = 265; //Startpunkt
+            this.y = 350; //Startpunkt
+            this.dx = Math.random() * 5;
+            this.dy = Math.random() * 5;
             this.x += this.dx;
             this.y += this.dy;
             /* if (this.y > 800) { //Fahrer springen zur�ck
