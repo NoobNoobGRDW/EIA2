@@ -16,13 +16,6 @@ namespace Aufgabe5 {
     let cloud: Cloud[] = [];
     let lift: Lift[] = [];
 
-
-    let wolkeX: number[] = [];
-    let wolkeY: number[] = [];
-    let gondelX: number[] = [];
-    let gondelY: number[] = [];
-
-
     var canImg: any; //initialisiert das Canvas Image
 
     function skiPiste() {
