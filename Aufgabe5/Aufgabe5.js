@@ -10,15 +10,11 @@ var Aufgabe5;
 (function (Aufgabe5) {
     window.addEventListener("load", skiPiste);
     let skiFahrer = [];
-    let snow;
-    let cloud;
-    let lift;
-    let schneeX = [];
-    let schneeY = [];
+    let snow = [];
+    let cloud = [];
+    let lift = [];
     let wolkeX = [];
     let wolkeY = [];
-    let skiFahrerX = [];
-    let skiFahrerY = [];
     let gondelX = [];
     let gondelY = [];
     var canImg; //initialisiert das Canvas Image
@@ -131,8 +127,8 @@ var Aufgabe5;
         drawTree(250, 500, "#165118");
         drawTree(110, 300, "#165118");
         drawTree(80, 460, "#165118");
+        //B�ume
         function drawTree(_x, _y, _color) {
-            //B�ume
             Aufgabe5.crc2.beginPath();
             Aufgabe5.crc2.moveTo(_x, _y);
             Aufgabe5.crc2.lineTo(_x + 30, _y + 100);
@@ -161,19 +157,20 @@ var Aufgabe5;
         canImg = Aufgabe5.crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
         //Startpunkte f�r Schnee
         for (let i = 0; i < 160; i++) {
-            schneeX[i] = 0 + Math.random() * 800;
-            schneeY[i] = 0 + Math.random() * 600;
+            let s = new Aufgabe5.Snow(Math.random() * 800, Math.random() * 600, Math.random() * 800, Math.random() * 600, "#ABABAB");
+            snow[i] = s;
         }
         //Startpunkte f�r Gondeln
         for (let i = 0; i < 1; i++) {
-            gondelX[i] = 470;
-            gondelY[i] = 640;
+            let s = new Aufgabe5.Lift(0, 0, 470, 640, "#818080");
+            lift[i] = s;
         }
         //Startpunkte f�r Wolken
         for (let i = 0; i < 2; i++) {
-            wolkeX[i] = 0 + Math.random() * 800;
-            wolkeY[i] = 0 + Math.random() * 150 + 40;
+            let s = new Aufgabe5.Cloud(0, 0, Math.random() * 5, Math.random() * 1 + 40, "#BDBDBD");
+            cloud[i] = s;
         }
+        //Class aufruf Skifahrer
         for (let i = 0; i < 2; i++) {
             let s = new Aufgabe5.skiaaa(265, 350, Math.random() * 2, Math.random() * 5, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
             skiFahrer[i] = s;
@@ -185,95 +182,25 @@ var Aufgabe5;
         Aufgabe5.crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
         Aufgabe5.crc2.putImageData(canImg, 0, 0); //f�gt Bild ein
         //for-Schleife Schnee
-        for (let i = 0; i < schneeX.length; i++) {
-            if (schneeY[i] > 600) {
-                schneeY[i] = 0;
-            }
-            schneeY[i] += Math.random();
-            genSchnee(schneeX[i], schneeY[i]);
+        for (let i = 0; i < snow.length; i++) {
+            let s = snow[i];
+            s.update();
         }
         //for-Schleife Wolken
         for (let i = 0; i < wolkeX.length; i++) {
-            if (wolkeX[i] > 800) {
-                wolkeX[i] = 0;
-            }
-            wolkeX[i] += Math.random();
-            genWolke(wolkeX[i], wolkeY[i]);
+            let s = cloud[i];
+            s.update();
         }
         //for-Schleife Gondel
-        for (let i = 0; i < gondelX.length; i++) {
-            if (gondelY[i] < 330) {
-                gondelX[i] = 470;
-                gondelY[i] = 640;
-            }
-            gondelX[i] += -2, 99;
-            gondelY[i] += -3;
-            gondelX[i] += Math.random();
-            genGondel(gondelX[i], gondelY[i]);
+        for (let i = 0; i < lift.length; i++) {
+            let s = lift[i];
+            s.update();
         }
+        //for Schleife Skifahrer
         for (let i = 0; i < skiFahrer.length; i++) {
             let s = skiFahrer[i];
             s.update();
         }
         window.setTimeout(animiere, 10);
-    }
-    //Schnee generieren
-    function genSchnee(_x, _y) {
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.arc(_x, _y, 3, 0, 2 * Math.PI);
-        Aufgabe5.crc2.strokeStyle = "#ABABAB";
-        Aufgabe5.crc2.stroke();
-        Aufgabe5.crc2.fillStyle = "#F1F7FA";
-        Aufgabe5.crc2.fill();
-    }
-    //Wolken generieren
-    function genWolke(_x, _y) {
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.arc(_x + 40, _y, 50, 0, 2 * Math.PI);
-        Aufgabe5.crc2.fillStyle = "#BDBDBD";
-        Aufgabe5.crc2.fill();
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.arc(_x, _y - 20, 50, 0, 2 * Math.PI);
-        Aufgabe5.crc2.fillStyle = "#BDBDBD";
-        Aufgabe5.crc2.fill();
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.arc(_x - 20, _y, 50, 0, 2 * Math.PI);
-        Aufgabe5.crc2.fillStyle = "#BDBDBD";
-        Aufgabe5.crc2.fill();
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.arc(_x, _y + 30, 40, 0, 2 * Math.PI);
-        Aufgabe5.crc2.fillStyle = "#BDBDBD";
-        Aufgabe5.crc2.fill();
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.arc(_x + 70, _y + 10, 30, 0, 2 * Math.PI);
-        Aufgabe5.crc2.fillStyle = "#BDBDBD";
-        Aufgabe5.crc2.fill();
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.arc(_x - 70, _y, 30, 0, 2 * Math.PI);
-        Aufgabe5.crc2.fillStyle = "#BDBDBD";
-        Aufgabe5.crc2.fill();
-    }
-    //Gondel generieren
-    function genGondel(_x, _y) {
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.fillStyle = "#818080";
-        Aufgabe5.crc2.fillRect(_x, _y, 50, -40);
-        Aufgabe5.crc2.strokeStyle = "#818080";
-        Aufgabe5.crc2.stroke();
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.fillStyle = "#1B1B1B";
-        Aufgabe5.crc2.fillRect(_x + 26, _y - 17, 20, -20);
-        Aufgabe5.crc2.strokeStyle = "#1B1B1B";
-        Aufgabe5.crc2.stroke();
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.fillStyle = "#1B1B1B";
-        Aufgabe5.crc2.fillRect(_x + 3, _y - 17, 20, -20);
-        Aufgabe5.crc2.strokeStyle = "#1B1B1B";
-        Aufgabe5.crc2.stroke();
-        Aufgabe5.crc2.beginPath();
-        Aufgabe5.crc2.fillStyle = "#818080";
-        Aufgabe5.crc2.fillRect(_x + 22, _y - 40, 5, -5);
-        Aufgabe5.crc2.strokeStyle = "#818080";
-        Aufgabe5.crc2.stroke();
     }
 })(Aufgabe5 || (Aufgabe5 = {}));

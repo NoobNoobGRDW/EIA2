@@ -17,12 +17,8 @@ var Aufgabe5;
             this.color = _color;
         }
         move() {
-            this.x = Math.random() + 265; //Startpunkt
-            this.y = Math.random() + 350; //Startpunkt 
-            this.dx += Math.random() * 2;
-            this.dy += Math.random() * 5;
-            this.x += this.dx;
-            this.y += this.dy;
+            this.x += Math.random() + 2; //Bewegung X
+            this.y += Math.random() + 3; //Bewegung Y
             if (this.y > 800) {
                 this.x = 265;
                 this.y = 350;
