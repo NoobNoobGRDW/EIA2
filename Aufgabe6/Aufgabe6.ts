@@ -1,12 +1,13 @@
 /* 
-Aufgabe: 5
+Aufgabe: 6
 Name: Kuenz,Linus
 Matrikel: 256331
-Datum: 16.11.17
+Datum: 21.11.17
     
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
-namespace Aufgabe5 {
+
+namespace Aufgabe6 {
 
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", skiPiste);
@@ -197,7 +198,7 @@ namespace Aufgabe5 {
 
         //Startpunkte für Wolken
         for (let i = 0; i < 2; i++) {
-            let s: Cloud = new Cloud(Math.random() * 20,
+            let s: Cloud = new Cloud(0,
                 0,
                 Math.random() * 5,
                 Math.random() * 1 + 40,
@@ -205,7 +206,7 @@ namespace Aufgabe5 {
             cloud[i] = s;
         }
 
-        //Class Aufruf Skifahrer
+        //Class aufruf Skifahrer
         for (let i: number = 0; i < 2; i++) {
             let s: skiaaa = new skiaaa(265,
                 350,

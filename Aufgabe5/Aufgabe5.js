@@ -13,10 +13,6 @@ var Aufgabe5;
     let snow = [];
     let cloud = [];
     let lift = [];
-    let wolkeX = [];
-    let wolkeY = [];
-    let gondelX = [];
-    let gondelY = [];
     var canImg; //initialisiert das Canvas Image
     function skiPiste() {
         let canvas = document.getElementsByTagName("canvas")[0];
@@ -167,10 +163,10 @@ var Aufgabe5;
         }
         //Startpunkte f�r Wolken
         for (let i = 0; i < 2; i++) {
-            let s = new Aufgabe5.Cloud(0, 0, Math.random() * 5, Math.random() * 1 + 40, "#BDBDBD");
+            let s = new Aufgabe5.Cloud(Math.random() * 20, 0, Math.random() * 5, Math.random() * 1 + 40, "#BDBDBD");
             cloud[i] = s;
         }
-        //Class aufruf Skifahrer
+        //Class Aufruf Skifahrer
         for (let i = 0; i < 2; i++) {
             let s = new Aufgabe5.skiaaa(265, 350, Math.random() * 2, Math.random() * 5, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
             skiFahrer[i] = s;
@@ -187,7 +183,7 @@ var Aufgabe5;
             s.update();
         }
         //for-Schleife Wolken
-        for (let i = 0; i < wolkeX.length; i++) {
+        for (let i = 0; i < cloud.length; i++) {
             let s = cloud[i];
             s.update();
         }

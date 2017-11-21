@@ -1,0 +1,22 @@
+/* 
+Aufgabe: 6
+Name: Kuenz,Linus
+Matrikel: 256331
+Datum: 21.11.17
+    
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
+*/
+html {
+  font-family: arial, sans-serif;
+}
+
+h1 {
+text-align: center;
+}
+
+canvas {
+  max-width: 90%;
+  padding: 0;
+  margin: auto;
+  display: block;
+}

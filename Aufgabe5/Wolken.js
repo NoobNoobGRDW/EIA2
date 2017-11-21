@@ -17,8 +17,9 @@ var Aufgabe5;
             this.color = _color;
         }
         move() {
-            this.x += Math.random() + 10;
-            this.y += Math.random() + 2;
+            this.y = 80;
+            this.x += Math.random() + 2;
+            this.y += 0;
             if (this.x > 800) {
                 this.x = 0;
             }

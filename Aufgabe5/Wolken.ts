@@ -27,8 +27,9 @@ namespace Aufgabe5 {
         }
 
         move(): void {
-            this.x += Math.random() + 10;
-            this.y += Math.random() + 2;
+            this.y = 80;
+            this.x += Math.random() + 2;
+            this.y += 0 ;
            
             if (this.x > 800) { //Wolken kommen wieder ins Bild
                 this.x = 0;
