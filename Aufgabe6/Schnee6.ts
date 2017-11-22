@@ -20,12 +20,23 @@ namespace Aufgabe6 {
         constructor(_x: number, _y: number, _dx: number, _dy: number, _color: string) {
             super(_x, _y, _dx, _dy, _color);
         }
-        
+
         move(): void {
+            this.x += Math.random() * 0;
+            this.y += Math.random() * 4;
+            if (this.y > 600) { //Schneefall wiederholt sich
+                this.y = 0;
             }
-        
+        }
+
         draw(): void {
-            }
-        
+            crc2.beginPath();
+            crc2.arc(this.x, this.y, 3, 0, 2 * Math.PI);
+            crc2.strokeStyle = "#ABABAB";
+            crc2.stroke();
+            crc2.fillStyle = "#F1F7FA";
+            crc2.fill();
+        }
+
     }
 }

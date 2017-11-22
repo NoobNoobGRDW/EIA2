@@ -13,8 +13,35 @@ var Aufgabe6;
             super(_x, _y, _dx, _dy, _color);
         }
         move() {
+            this.x += -2, 99;
+            this.y += -3;
+            this.x += Math.random();
+            if (this.y < 330) {
+                this.x = 470;
+                this.y = 640;
+            }
         }
         draw() {
+            Aufgabe6.crc2.beginPath();
+            Aufgabe6.crc2.fillStyle = "#818080";
+            Aufgabe6.crc2.fillRect(this.x, this.y, 50, -40);
+            Aufgabe6.crc2.strokeStyle = "#818080";
+            Aufgabe6.crc2.stroke();
+            Aufgabe6.crc2.beginPath();
+            Aufgabe6.crc2.fillStyle = "#1B1B1B";
+            Aufgabe6.crc2.fillRect(this.x + 26, this.y - 17, 20, -20);
+            Aufgabe6.crc2.strokeStyle = "#1B1B1B";
+            Aufgabe6.crc2.stroke();
+            Aufgabe6.crc2.beginPath();
+            Aufgabe6.crc2.fillStyle = "#1B1B1B";
+            Aufgabe6.crc2.fillRect(this.x + 3, this.y - 17, 20, -20);
+            Aufgabe6.crc2.strokeStyle = "#1B1B1B";
+            Aufgabe6.crc2.stroke();
+            Aufgabe6.crc2.beginPath();
+            Aufgabe6.crc2.fillStyle = "#818080";
+            Aufgabe6.crc2.fillRect(this.x + 22, this.y - 40, 5, -5);
+            Aufgabe6.crc2.strokeStyle = "#818080";
+            Aufgabe6.crc2.stroke();
         }
     }
     Aufgabe6.Lift = Lift;

@@ -13,8 +13,19 @@ var Aufgabe6;
             super(_x, _y, _dx, _dy, _color);
         }
         move() {
+            this.x += Math.random() * 0;
+            this.y += Math.random() * 4;
+            if (this.y > 600) {
+                this.y = 0;
+            }
         }
         draw() {
+            Aufgabe6.crc2.beginPath();
+            Aufgabe6.crc2.arc(this.x, this.y, 3, 0, 2 * Math.PI);
+            Aufgabe6.crc2.strokeStyle = "#ABABAB";
+            Aufgabe6.crc2.stroke();
+            Aufgabe6.crc2.fillStyle = "#F1F7FA";
+            Aufgabe6.crc2.fill();
         }
     }
     Aufgabe6.Snow = Snow;
