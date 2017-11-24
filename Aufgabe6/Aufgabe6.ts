@@ -12,6 +12,7 @@ namespace Aufgabe6 {
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", skiPiste);
 
+    let objects: MovingObjects[] = [];
     let skiFahrer: skiaaa[] = [];
     let snow: Snow[] = [];
     let cloud: Cloud[] = [];
@@ -29,7 +30,7 @@ namespace Aufgabe6 {
         //Hintergrund
         crc2.fillStyle = "#ADE0F3";
         crc2.fillRect(0, 0, 800, 600);
-        
+
         //Berg1
         crc2.beginPath();
         crc2.moveTo(0, 600);
@@ -40,7 +41,7 @@ namespace Aufgabe6 {
         crc2.stroke();
         crc2.fillStyle = "#F1F7FA";
         crc2.fill();
-        
+
         //Berg2
         crc2.beginPath();
         crc2.moveTo(400, 600);
@@ -51,7 +52,7 @@ namespace Aufgabe6 {
         crc2.stroke();
         crc2.fillStyle = "#F1F7FA";
         crc2.fill();
-        
+
         //Sonne
         crc2.beginPath();
         crc2.arc(100, 90, 60, 0, 2 * Math.PI);
@@ -183,39 +184,47 @@ namespace Aufgabe6 {
                 Math.random() * 800,
                 Math.random() * 600,
                 "#ABABAB");
-            snow[i] = s;
+            objects.push(s);
         }
 
         //Startpunkte für Gondeln
         for (let i = 0; i < 1; i++) {
-            let s: Lift = new Lift(0,
+            let l: Lift = new Lift(0,
                 0,
                 470,
                 640,
                 "#818080")
-            lift[i] = s;
+            objects.push(l);
         }
 
         //Startpunkte für Wolken
         for (let i = 0; i < 2; i++) {
-            let s: Cloud = new Cloud(0,
+            let c: Cloud = new Cloud(0,
                 0,
                 Math.random() * 5,
                 Math.random() * 1 + 40,
                 "#BDBDBD")
-            cloud[i] = s;
+            objects.push(c);
         }
 
         //Class aufruf Skifahrer
         for (let i: number = 0; i < 2; i++) {
-            let s: skiaaa = new skiaaa(265,
+            let a: skiaaa = new skiaaa(265,
                 350,
                 Math.random() * 2,
                 Math.random() * 5,
                 "hsl(" + Math.random() * 360 + ", 90%, 60%)");
-
-            skiFahrer[i] = s;
+            objects.push(a);
         }
+        //Class MovingObjects Aufruf
+        /*for (let i = 0; i < objects.length; i++) {
+            let o: MovingObjects = new MovingObjects(265,
+                350,
+                Math.random() * 2,
+                Math.random() * 5,
+                "red")
+            objects[i] = o;
+        } */
 
         animiere(); //führt Funktion aus
     }
@@ -224,8 +233,9 @@ namespace Aufgabe6 {
         console.log("Timeout");
         crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
         crc2.putImageData(canImg, 0, 0); //fügt Bild ein
+        
         //for-Schleife Schnee
-        for (let i = 0; i < snow.length; i++) {
+        /*for (let i = 0; i < snow.length; i++) {
 
             let s: Snow = snow[i];
             s.update();
@@ -248,6 +258,12 @@ namespace Aufgabe6 {
 
             let s: skiaaa = skiFahrer[i];
             s.update();
+        }*/
+        
+        //for-Schleife Objects
+        for (let i: number = 0; objects.length; i++) {
+            let o: MovingObjects = objects[i];
+            o.update();
         }
 
         window.setTimeout(animiere, 10);

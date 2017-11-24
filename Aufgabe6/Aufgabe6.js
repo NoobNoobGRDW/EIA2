@@ -9,6 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 var Aufgabe6;
 (function (Aufgabe6) {
     window.addEventListener("load", skiPiste);
+    let objects = [];
     let skiFahrer = [];
     let snow = [];
     let cloud = [];
@@ -154,23 +155,32 @@ var Aufgabe6;
         //Startpunkte f�r Schnee
         for (let i = 0; i < 160; i++) {
             let s = new Aufgabe6.Snow(Math.random() * 800, Math.random() * 600, Math.random() * 800, Math.random() * 600, "#ABABAB");
-            snow[i] = s;
+            objects.push(s);
         }
         //Startpunkte f�r Gondeln
         for (let i = 0; i < 1; i++) {
-            let s = new Aufgabe6.Lift(0, 0, 470, 640, "#818080");
-            lift[i] = s;
+            let l = new Aufgabe6.Lift(0, 0, 470, 640, "#818080");
+            objects.push(l);
         }
         //Startpunkte f�r Wolken
         for (let i = 0; i < 2; i++) {
-            let s = new Aufgabe6.Cloud(0, 0, Math.random() * 5, Math.random() * 1 + 40, "#BDBDBD");
-            cloud[i] = s;
+            let c = new Aufgabe6.Cloud(0, 0, Math.random() * 5, Math.random() * 1 + 40, "#BDBDBD");
+            objects.push(c);
         }
         //Class aufruf Skifahrer
         for (let i = 0; i < 2; i++) {
-            let s = new Aufgabe6.skiaaa(265, 350, Math.random() * 2, Math.random() * 5, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
-            skiFahrer[i] = s;
+            let a = new Aufgabe6.skiaaa(265, 350, Math.random() * 2, Math.random() * 5, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
+            objects.push(a);
         }
+        //Class MovingObjects Aufruf
+        /*for (let i = 0; i < objects.length; i++) {
+            let o: MovingObjects = new MovingObjects(265,
+                350,
+                Math.random() * 2,
+                Math.random() * 5,
+                "red")
+            objects[i] = o;
+        } */
         animiere(); //f�hrt Funktion aus
     }
     function animiere() {
@@ -178,24 +188,34 @@ var Aufgabe6;
         Aufgabe6.crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
         Aufgabe6.crc2.putImageData(canImg, 0, 0); //f�gt Bild ein
         //for-Schleife Schnee
-        for (let i = 0; i < snow.length; i++) {
-            let s = snow[i];
+        /*for (let i = 0; i < snow.length; i++) {
+
+            let s: Snow = snow[i];
             s.update();
         }
         //for-Schleife Wolken
         for (let i = 0; i < cloud.length; i++) {
-            let s = cloud[i];
+
+            let s: Cloud = cloud[i];
             s.update();
         }
+
         //for-Schleife Gondel
         for (let i = 0; i < lift.length; i++) {
-            let s = lift[i];
+
+            let s: Lift = lift[i];
             s.update();
         }
         //for Schleife Skifahrer
-        for (let i = 0; i < skiFahrer.length; i++) {
-            let s = skiFahrer[i];
+        for (let i: number = 0; i < skiFahrer.length; i++) {
+
+            let s: skiaaa = skiFahrer[i];
             s.update();
+        }*/
+        //for-Schleife Objects
+        for (let i = 0; objects.length; i++) {
+            let o = objects[i];
+            o.update();
         }
         window.setTimeout(animiere, 10);
     }
