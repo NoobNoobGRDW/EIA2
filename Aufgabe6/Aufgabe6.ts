@@ -29,8 +29,8 @@ namespace Aufgabe6 {
         //Hintergrund
         crc2.fillStyle = "#ADE0F3";
         crc2.fillRect(0, 0, 800, 600);
+        
         //Berg1
-
         crc2.beginPath();
         crc2.moveTo(0, 600);
         crc2.lineTo(600, 600);
@@ -40,8 +40,8 @@ namespace Aufgabe6 {
         crc2.stroke();
         crc2.fillStyle = "#F1F7FA";
         crc2.fill();
+        
         //Berg2
-
         crc2.beginPath();
         crc2.moveTo(400, 600);
         crc2.lineTo(800, 600);
@@ -51,8 +51,8 @@ namespace Aufgabe6 {
         crc2.stroke();
         crc2.fillStyle = "#F1F7FA";
         crc2.fill();
+        
         //Sonne
-
         crc2.beginPath();
         crc2.arc(100, 90, 60, 0, 2 * Math.PI);
         crc2.fillStyle = "#ffff02";
