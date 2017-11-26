@@ -22,8 +22,8 @@ namespace Aufgabe6 {
         }
 
         move(): void {
-            this.x += Math.random() + 3;   //Bewegung X
-            this.y += Math.random() + 6;   //Bewegung Y
+            this.x += Math.random() + 2;   //Bewegung X
+            this.y += Math.random() + 4;   //Bewegung Y
             if (this.y > 800) { //Fahrer springen zurück
                 this.x = 265;
                 this.y = 350;
