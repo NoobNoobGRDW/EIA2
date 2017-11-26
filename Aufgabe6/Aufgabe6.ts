@@ -261,9 +261,9 @@ namespace Aufgabe6 {
         }*/
         
         //for-Schleife Objects
-        for (let i: number = 0; objects.length; i++) {
-            let o: MovingObjects = objects[i];
-            o.update();
+        for (let i: number = 0; i < objects.length; i ++) {
+            let s: MovingObjects = objects[i];
+            s.update();
         }
 
         window.setTimeout(animiere, 10);

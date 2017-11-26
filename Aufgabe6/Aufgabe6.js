@@ -213,9 +213,9 @@ var Aufgabe6;
             s.update();
         }*/
         //for-Schleife Objects
-        for (let i = 0; objects.length; i++) {
-            let o = objects[i];
-            o.update();
+        for (let i = 0; i < objects.length; i++) {
+            let s = objects[i];
+            s.update();
         }
         window.setTimeout(animiere, 10);
     }
