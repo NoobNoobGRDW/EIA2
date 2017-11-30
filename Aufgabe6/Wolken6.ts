@@ -20,7 +20,7 @@ namespace Aufgabe6 {
         }
 
         move(): void {
-            this.y = 85;
+
             this.x += 2;
 
             if (this.x > 800) { //Wolken kommen wieder ins Bild

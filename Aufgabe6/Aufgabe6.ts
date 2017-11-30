@@ -187,16 +187,17 @@ namespace Aufgabe6 {
 
         //Startpunkte für Gondeln
         for (let i = 0; i < 1; i++) {
-            let l: Lift = new Lift(0,
-                0,
+            let l: Lift = new Lift(470,
+                640,
                 "#818080")
             objects.push(l);
         }
 
         //Startpunkte für Wolken
-        for (let i = 0; i < 1; i++) {
-            let c: Cloud = new Cloud(0,
-                0,
+        for (let i = 0; i < 2; i++) {
+            let c: Cloud = new Cloud(
+                Math.random() * 600,
+                Math.random() * 150 + 40,
                 "#BDBDBD")
             objects.push(c);
         }
@@ -217,11 +218,11 @@ namespace Aufgabe6 {
         console.log("Timeout");
         crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
         crc2.putImageData(canImg, 0, 0); //fügt Bild ein
-        
 
-        
+
+
         //for-Schleife Objects
-        for (let i: number = 0; i < objects.length; i ++) {
+        for (let i: number = 0; i < objects.length; i++) {
             let s: MovingObjects = objects[i];
             s.update();
         }

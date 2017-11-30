@@ -159,12 +159,12 @@ var Aufgabe6;
         }
         //Startpunkte f�r Gondeln
         for (let i = 0; i < 1; i++) {
-            let l = new Aufgabe6.Lift(0, 0, "#818080");
+            let l = new Aufgabe6.Lift(470, 640, "#818080");
             objects.push(l);
         }
         //Startpunkte f�r Wolken
-        for (let i = 0; i < 1; i++) {
-            let c = new Aufgabe6.Cloud(0, 0, "#BDBDBD");
+        for (let i = 0; i < 2; i++) {
+            let c = new Aufgabe6.Cloud(Math.random() * 600, Math.random() * 150 + 40, "#BDBDBD");
             objects.push(c);
         }
         //Class aufruf Skifahrer
