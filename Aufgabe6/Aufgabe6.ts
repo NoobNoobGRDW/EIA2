@@ -181,8 +181,6 @@ namespace Aufgabe6 {
         for (let i = 0; i < 160; i++) {
             let s: Snow = new Snow(Math.random() * 800,
                 Math.random() * 600,
-                Math.random() * 800,
-                Math.random() * 600,
                 "#ABABAB");
             objects.push(s);
         }
@@ -191,8 +189,6 @@ namespace Aufgabe6 {
         for (let i = 0; i < 1; i++) {
             let l: Lift = new Lift(0,
                 0,
-                470,
-                640,
                 "#818080")
             objects.push(l);
         }
@@ -201,8 +197,6 @@ namespace Aufgabe6 {
         for (let i = 0; i < 1; i++) {
             let c: Cloud = new Cloud(0,
                 0,
-                Math.random() * 5,
-                Math.random() * 1 + 40,
                 "#BDBDBD")
             objects.push(c);
         }
@@ -211,8 +205,6 @@ namespace Aufgabe6 {
         for (let i: number = 0; i < 2; i++) {
             let a: skiaaa = new skiaaa(265,
                 350,
-                Math.random() * 2,
-                Math.random() * 5,
                 "hsl(" + Math.random() * 360 + ", 90%, 60%)");
             objects.push(a);
         }

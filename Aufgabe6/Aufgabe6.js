@@ -154,22 +154,22 @@ var Aufgabe6;
         canImg = Aufgabe6.crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
         //Startpunkte f�r Schnee
         for (let i = 0; i < 160; i++) {
-            let s = new Aufgabe6.Snow(Math.random() * 800, Math.random() * 600, Math.random() * 800, Math.random() * 600, "#ABABAB");
+            let s = new Aufgabe6.Snow(Math.random() * 800, Math.random() * 600, "#ABABAB");
             objects.push(s);
         }
         //Startpunkte f�r Gondeln
         for (let i = 0; i < 1; i++) {
-            let l = new Aufgabe6.Lift(0, 0, 470, 640, "#818080");
+            let l = new Aufgabe6.Lift(0, 0, "#818080");
             objects.push(l);
         }
         //Startpunkte f�r Wolken
         for (let i = 0; i < 1; i++) {
-            let c = new Aufgabe6.Cloud(0, 0, Math.random() * 5, Math.random() * 1 + 40, "#BDBDBD");
+            let c = new Aufgabe6.Cloud(0, 0, "#BDBDBD");
             objects.push(c);
         }
         //Class aufruf Skifahrer
         for (let i = 0; i < 2; i++) {
-            let a = new Aufgabe6.skiaaa(265, 350, Math.random() * 2, Math.random() * 5, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
+            let a = new Aufgabe6.skiaaa(265, 350, "hsl(" + Math.random() * 360 + ", 90%, 60%)");
             objects.push(a);
         }
         animiere(); //f�hrt Funktion aus

@@ -12,16 +12,12 @@ namespace Aufgabe6 {
 
         x: number;
         y: number;
-        dx: number;
-        dy: number;
         color: string;
 
-        constructor(_x: number, _y: number, _dx: number, _dy: number, _color: string) {
+        constructor(_x: number, _y: number, _color: string) {
 
             this.x = _x;
             this.y = _y;
-            this.dx = _dx;
-            this.dy = _dy;
             this.color = _color;
         }
 

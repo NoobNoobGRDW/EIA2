@@ -9,11 +9,9 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 var Aufgabe6;
 (function (Aufgabe6) {
     class MovingObjects {
-        constructor(_x, _y, _dx, _dy, _color) {
+        constructor(_x, _y, _color) {
             this.x = _x;
             this.y = _y;
-            this.dx = _dx;
-            this.dy = _dy;
             this.color = _color;
         }
         move() {

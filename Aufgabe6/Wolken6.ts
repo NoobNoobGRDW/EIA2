@@ -13,12 +13,10 @@ namespace Aufgabe6 {
 
         x: number;
         y: number;
-        dx: number;
-        dy: number;
         color: string;
 
-        constructor(_x: number, _y: number, _dx: number, _dy: number, _color: string) {
-            super(_x, _y, _dx, _dy, _color);
+        constructor(_x: number, _y: number, _color: string) {
+            super(_x, _y, _color);
         }
 
         move(): void {

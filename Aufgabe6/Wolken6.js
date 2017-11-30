@@ -9,8 +9,8 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 var Aufgabe6;
 (function (Aufgabe6) {
     class Cloud extends Aufgabe6.MovingObjects {
-        constructor(_x, _y, _dx, _dy, _color) {
-            super(_x, _y, _dx, _dy, _color);
+        constructor(_x, _y, _color) {
+            super(_x, _y, _color);
         }
         move() {
             this.y = 80;
