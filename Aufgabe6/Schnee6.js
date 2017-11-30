@@ -13,7 +13,6 @@ var Aufgabe6;
             super(_x, _y, _color);
         }
         move() {
-            this.x += Math.random() * 0;
             this.y += Math.random() * 4;
             if (this.y > 600) {
                 this.y = 0;
