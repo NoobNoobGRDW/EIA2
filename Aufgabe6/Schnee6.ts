@@ -20,7 +20,7 @@ namespace Aufgabe6 {
         }
 
         move(): void {
-            this.y += Math.random() * 4;
+            this.y += 3;
             if (this.y > 600) { //Schneefall wiederholt sich
                 this.y = 0;
             }

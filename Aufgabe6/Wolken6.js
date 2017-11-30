@@ -13,9 +13,8 @@ var Aufgabe6;
             super(_x, _y, _color);
         }
         move() {
-            this.y = 80;
-            this.x += Math.random() + 2;
-            this.y += 0;
+            this.y = 85;
+            this.x += 2;
             if (this.x > 800) {
                 this.x = 0;
             }
