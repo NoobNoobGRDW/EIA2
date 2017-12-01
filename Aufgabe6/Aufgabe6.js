@@ -10,10 +10,6 @@ var Aufgabe6;
 (function (Aufgabe6) {
     window.addEventListener("load", skiPiste);
     let objects = [];
-    let skiFahrer = [];
-    let snow = [];
-    let cloud = [];
-    let lift = [];
     var canImg; //initialisiert das Canvas Image
     function skiPiste() {
         let canvas = document.getElementsByTagName("canvas")[0];

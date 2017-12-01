@@ -13,10 +13,7 @@ namespace Aufgabe6 {
     window.addEventListener("load", skiPiste);
 
     let objects: MovingObjects[] = [];
-    let skiFahrer: skiaaa[] = [];
-    let snow: Snow[] = [];
-    let cloud: Cloud[] = [];
-    let lift: Lift[] = [];
+
 
     var canImg: any; //initialisiert das Canvas Image
 
