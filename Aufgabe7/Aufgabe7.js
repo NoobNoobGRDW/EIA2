@@ -15,7 +15,7 @@ var StudiVZ;
         switch (action) {
             case "n":
             case "N":
-                var input = prompt("Eingabe (jeweils mit Komma getrennt) von\nMatrikelnummer, Name, Vorname, Alter, Geschlecht (0 oder 1) und Kommentar");
+                var input = prompt("Eingabe (jeweils mit Komma getrennt) von\nMatrikelnummer, Name, Vorname, Alter, \nGeschlecht (m oder w) und Kommentar");
                 alert(saveData(input));
                 break;
             case "a":
@@ -29,7 +29,7 @@ var StudiVZ;
         }
     }
     function saveData(_input) {
-        return "Hier fehlt noch der richtige Code...";
+        return "Adri riecht komisch unterm Arm...";
     }
     function queryData(_matrikel) {
         return "Hier fehlt noch der richtige Code...";
