@@ -29,7 +29,7 @@ namespace StudiVZ {
         switch (action) {
             case "n":
             case "N":
-                var input: string = prompt("Eingabe (jeweils mit Komma getrennt) von\nMatrikelnummer, Name, Vorname, Alter, \nGeschlecht (m oder w) und Kommentar");
+                var input: string = prompt("Eingabe (jeweils mit Komma getrennt) von\nMatrikelnummer, Name, Vorname, Alter, \nGeschlecht (m oder w) und individueller Kommentar");
                 alert(saveData(input));
                 break;
             case "a":
@@ -44,22 +44,22 @@ namespace StudiVZ {
     }
 
         function saveData(_input: string): string {
-        let splitted: string[] = _input.split(",");
+        let divide: string[] = _input.split(",");
 
-        if (parseInt(splitted[0]) == NaN) {
+        if (parseInt(divide[0]) == NaN) {
             return "Matrikelnummer keine Nummer";
         }
         
         
-        var geschlecht: boolean = parseInt(splitted[4]) == 1;   //(splitted[4] === "true");
+        var geschlecht: boolean = parseInt(divide[4]) == 1;   //(splitted[4] === "true");
 
         let student: StudentData = {
-            Matrikelnummer: parseInt(splitted[0]),
-            Name: splitted[1],
-            Vorname: splitted[2],
-            Alter: parseInt(splitted[3]),
+            Matrikelnummer: parseInt(divide[0]),
+            Name: divide[1],
+            Vorname: divide[2],
+            Alter: parseInt(divide[3]),
             Geschlecht: geschlecht,
-            Kommentar: splitted[5]
+            Kommentar: divide[5]
         };
 
         students.push(student);
@@ -78,7 +78,7 @@ namespace StudiVZ {
             }
             
                 else {
-                return "Matrikelnummer nicht gespeichert";
+                return "Matrikelnummer nicht vorhanden";
                 }
         }
 

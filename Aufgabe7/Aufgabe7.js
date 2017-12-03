@@ -15,7 +15,7 @@ var StudiVZ;
         switch (action) {
             case "n":
             case "N":
-                var input = prompt("Eingabe (jeweils mit Komma getrennt) von\nMatrikelnummer, Name, Vorname, Alter, \nGeschlecht (m oder w) und Kommentar");
+                var input = prompt("Eingabe (jeweils mit Komma getrennt) von\nMatrikelnummer, Name, Vorname, Alter, \nGeschlecht (m oder w) und individueller Kommentar");
                 alert(saveData(input));
                 break;
             case "a":
@@ -29,18 +29,18 @@ var StudiVZ;
         }
     }
     function saveData(_input) {
-        let splitted = _input.split(",");
-        if (parseInt(splitted[0]) == NaN) {
+        let divide = _input.split(",");
+        if (parseInt(divide[0]) == NaN) {
             return "Matrikelnummer keine Nummer";
         }
-        var geschlecht = parseInt(splitted[4]) == 1; //(splitted[4] === "true");
+        var geschlecht = parseInt(divide[4]) == 1; //(splitted[4] === "true");
         let student = {
-            Matrikelnummer: parseInt(splitted[0]),
-            Name: splitted[1],
-            Vorname: splitted[2],
-            Alter: parseInt(splitted[3]),
+            Matrikelnummer: parseInt(divide[0]),
+            Name: divide[1],
+            Vorname: divide[2],
+            Alter: parseInt(divide[3]),
             Geschlecht: geschlecht,
-            Kommentar: splitted[5]
+            Kommentar: divide[5]
         };
         students.push(student);
         return "Eingegebene Daten: " + "\nMatrikelnummer: " + student.Matrikelnummer + "\nName: " + student.Name + "\nVorname: " + student.Vorname + "\nAlter: " + student.Alter + "\nGeschlecht: " + student.Geschlecht + "\nKommentar: " + student.Kommentar;
@@ -51,7 +51,7 @@ var StudiVZ;
                 return "Student: " + "\nMatrikelnummer: " + students[i].Matrikelnummer + "\nName: " + students[i].Name + "\nVorname: " + students[i].Vorname + "\nAlter: " + students[i].Alter + "\nGeschlecht: " + students[i].Geschlecht + "\nKommentar: " + students[i].Kommentar;
             }
             else {
-                return "Matrikelnummer nicht gespeichert";
+                return "Matrikelnummer nicht vorhanden";
             }
         }
         return;
