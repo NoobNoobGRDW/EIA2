@@ -29,9 +29,31 @@ var StudiVZ;
         }
     }
     function saveData(_input) {
-        return "Adri riecht komisch unterm Arm...";
+        let splitted = _input.split(",");
+        if (parseInt(splitted[0]) == NaN) {
+            return "Matrikelnummer keine Nummer";
+        }
+        var geschlecht = parseInt(splitted[4]) == 1; //(splitted[4] === "true");
+        let student = {
+            Matrikelnummer: parseInt(splitted[0]),
+            Name: splitted[1],
+            Vorname: splitted[2],
+            Alter: parseInt(splitted[3]),
+            Geschlecht: geschlecht,
+            Kommentar: splitted[5]
+        };
+        students.push(student);
+        return "Eingegebene Daten: " + "\nMatrikelnummer: " + student.Matrikelnummer + "\nName: " + student.Name + "\nVorname: " + student.Vorname + "\nAlter: " + student.Alter + "\nGeschlecht: " + student.Geschlecht + "\nKommentar: " + student.Kommentar;
     }
     function queryData(_matrikel) {
-        return "Hier fehlt noch der richtige Code...";
+        for (let i = 0; i < students.length; i++) {
+            if (students[i].Matrikelnummer == _matrikel) {
+                return "Student: " + "\nMatrikelnummer: " + students[i].Matrikelnummer + "\nName: " + students[i].Name + "\nVorname: " + students[i].Vorname + "\nAlter: " + students[i].Alter + "\nGeschlecht: " + students[i].Geschlecht + "\nKommentar: " + students[i].Kommentar;
+            }
+            else {
+                return "Matrikelnummer nicht gespeichert";
+            }
+        }
+        return;
     }
 })(StudiVZ || (StudiVZ = {}));

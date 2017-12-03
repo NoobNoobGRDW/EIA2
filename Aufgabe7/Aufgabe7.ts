@@ -9,7 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 
 
 namespace StudiVZ {
-    
+
     interface StudentData {
         Matrikelnummer: number;
         Name: string;
@@ -18,7 +18,7 @@ namespace StudiVZ {
         Geschlecht: boolean;
         Kommentar: string;
     }
-    
+
     var students: StudentData[] = [];
     var stop: boolean = false;
 
@@ -43,11 +43,45 @@ namespace StudiVZ {
         }
     }
 
-    function saveData(_input: string): string {
-        var student: any = _input.split(',', 6);
+        function saveData(_input: string): string {
+        let splitted: string[] = _input.split(",");
+
+        if (parseInt(splitted[0]) == NaN) {
+            return "Matrikelnummer keine Nummer";
+        }
         
+        
+        var geschlecht: boolean = parseInt(splitted[4]) == 1;   //(splitted[4] === "true");
+
+        let student: StudentData = {
+            Matrikelnummer: parseInt(splitted[0]),
+            Name: splitted[1],
+            Vorname: splitted[2],
+            Alter: parseInt(splitted[3]),
+            Geschlecht: geschlecht,
+            Kommentar: splitted[5]
+        };
+
+        students.push(student);
+
+
+        return "Eingegebene Daten: " + "\nMatrikelnummer: " + student.Matrikelnummer + "\nName: " + student.Name + "\nVorname: " + student.Vorname + "\nAlter: " + student.Alter + "\nGeschlecht: " + student.Geschlecht + "\nKommentar: " + student.Kommentar;
     }
+    
+    
     function queryData(_matrikel: number): string {
-        return "Hier fehlt noch der richtige Code...";
+        
+        for (let i: number = 0; i < students.length; i++) {
+            
+            if (students[i].Matrikelnummer == _matrikel) {
+                return "Student: " + "\nMatrikelnummer: " + students[i].Matrikelnummer + "\nName: " + students[i].Name + "\nVorname: " + students[i].Vorname + "\nAlter: " + students[i].Alter + "\nGeschlecht: " + students[i].Geschlecht + "\nKommentar: " + students[i].Kommentar;
+            }
+            
+                else {
+                return "Matrikelnummer nicht gespeichert";
+                }
+        }
+
+        return;
     }
 }
