@@ -28,10 +28,10 @@ var Aufgabe_8;
     }
     function drawRandom(_x, _y, _color, _width, _height) {
         let div = document.createElement("div"); //erstellt Div
-        div.style.width = _width.toString(); //Returns a String of an object
-        div.style.height = _height.toString();
-        div.style.marginLeft = _x.toString(); //_x in einen String umwandeln, da h.style nur strings entgegen nehmen kann
-        div.style.marginTop = _y.toString();
+        div.style.width = _width + "px"; //Returns a String of an object
+        div.style.height = _height + "px";
+        div.style.marginLeft = _x + "px"; //_x in einen String umwandeln, da h.style nur strings entgegen nehmen kann
+        div.style.marginTop = _y + "px";
         div.style.backgroundColor = _color; //zuf�llige Farbe
         document.body.appendChild(div); //html ELement in den Code einf�gen lassen
     }
