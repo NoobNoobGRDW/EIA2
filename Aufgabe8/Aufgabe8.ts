@@ -20,7 +20,7 @@ namespace Aufgabe_8 {
 
         if (numberNum >= 10 && numberNum <= 100) {              //Prüft ob die Zahl zwischen 10 und 100 liegt
             for (var i: number = 0; i < numberNum; i++) {
-                drawRandom(Math.random() * 800, Math.random() * 600, "hsl(" + Math.random() * 360 + ", 100%, 50%)"); //Übergibt x, y und Farbe
+                drawRandom(Math.random() * 800, Math.random() * 600, "hsl(" + Math.random() * 360 + ", 100%, 50%)", 40 , 40); //Übergibt x, y und Farbe
             }
         }
         else {
@@ -33,8 +33,8 @@ namespace Aufgabe_8 {
     function drawRandom(_x: number, _y: number, _color: string, _width: number, _height: number): void {
 
         let div: HTMLDivElement = document.createElement("div");        //erstellt Div
-        div.style.width = 40 + "px";                                //Returns a String of an object
-        div.style.height = 40 + "px";
+        div.style.width = _height + "px";                                //Returns a String of an object
+        div.style.height = _width + "px";
         div.style.marginLeft = _x + "px";                               //_x in einen String umwandeln, da h.style nur strings entgegen nehmen kann
         div.style.marginTop = _y + "px";
         div.style.backgroundColor = _color;                             //zufällige Farbe
