@@ -20,7 +20,7 @@ namespace Aufgabe_8 {
 
         if (numberNum >= 10 && numberNum <= 100) {              //Prüft ob die Zahl zwischen 10 und 100 liegt
             for (var i: number = 0; i < numberNum; i++) {
-                drawRandom(Math.random() * 1200, Math.random() * 1000, "hsl(" + Math.random() * 360 + ", 100%, 50%)", 40 , 40); //Übergibt x, y und Farbe
+                drawRandom(Math.random() * 1000, Math.random() * 800, "hsl(" + Math.random() * 360 + ", 100%, 50%)", 40 , 40); //Übergibt x, y und Farbe
             }
         }
         else {

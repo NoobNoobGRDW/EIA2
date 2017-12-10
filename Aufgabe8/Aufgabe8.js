@@ -14,7 +14,7 @@ var Aufgabe_8;
         var numberNum = parseInt(Number); //ParseInt wandelt einen String in eine Zahl um
         if (numberNum >= 10 && numberNum <= 100) {
             for (var i = 0; i < numberNum; i++) {
-                drawRandom(Math.random() * 1200, Math.random() * 1000, "hsl(" + Math.random() * 360 + ", 100%, 50%)", 40, 40); //�bergibt x, y und Farbe
+                drawRandom(Math.random() * 1000, Math.random() * 800, "hsl(" + Math.random() * 360 + ", 100%, 50%)", 40, 40); //�bergibt x, y und Farbe
             }
         }
         else {
