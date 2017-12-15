@@ -19,7 +19,7 @@ namespace Aufgabe_9 {
             buchstabe.style.backgroundColor = "#BDBDBD";
             buchstabe.innerText = i ;
             buchstabe.addEventListener("click", handleMouseClick);
-            document.body.appendChild(l);
+            document.body.appendChild(buchstabe);
         }
     }
 }
