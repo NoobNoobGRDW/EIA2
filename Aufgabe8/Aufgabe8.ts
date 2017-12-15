@@ -33,9 +33,9 @@ namespace Aufgabe_8 {
     function drawRandom(_x: number, _y: number, _color: string, _width: number, _height: number): void {
 
         let div: HTMLDivElement = document.createElement("div");        //erstellt Div
-        div.style.width = _height + "px";                                //Returns a String of an object
+        div.style.width = _height + "px";                                
         div.style.height = _width + "px";
-        div.style.marginLeft = _x + "px";                               //_x in einen String umwandeln, da h.style nur strings entgegen nehmen kann
+        div.style.marginLeft = _x + "px";                               
         div.style.marginTop = _y + "px";
         div.style.backgroundColor = _color;                             //zufällige Farbe
         document.body.appendChild(div);                                 //html ELement in den Code einfügen lassen
