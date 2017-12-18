@@ -81,8 +81,8 @@ namespace Aufgabe_9 {
         box.style.color = "black";
         box.style.fontSize = "40px";
         box.style.border = "1px solid black";
-        box.style.borderRadius = "10px";
-        box.style.padding = "2px";
+        box.style.borderRadius = "20px";
+        box.style.padding = "3px";
         box.style.textAlign = "center";
         box.style.position = "absolute";
         box.style.left = _event.pageX + "px";
