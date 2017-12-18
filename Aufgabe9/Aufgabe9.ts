@@ -28,7 +28,7 @@ namespace Aufgabe_9 {
 
         div.innerText = buchStaben;
         div.style.backgroundColor = "cccccc";
-        div.style.width = "30px";
+        div.style.width = "25px";
         div.style.height = "30px";
         div.style.margin = "9.5px";
         div.style.fontSize = "20px";
@@ -47,7 +47,7 @@ namespace Aufgabe_9 {
         let letter: HTMLDivElement = document.createElement("div");
 
         letter.style.backgroundColor = "lightgrey";
-        letter.style.width = "800px";
+        letter.style.width = "90%";
         letter.style.height = "1000px";
         letter.style.margin = "20px";
 

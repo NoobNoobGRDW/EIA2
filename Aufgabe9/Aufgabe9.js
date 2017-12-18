@@ -22,7 +22,7 @@ var Aufgabe_9;
         let div = document.createElement("div");
         div.innerText = buchStaben;
         div.style.backgroundColor = "cccccc";
-        div.style.width = "30px";
+        div.style.width = "25px";
         div.style.height = "30px";
         div.style.margin = "9.5px";
         div.style.fontSize = "20px";
@@ -36,7 +36,7 @@ var Aufgabe_9;
     function schreibeBrief() {
         let letter = document.createElement("div");
         letter.style.backgroundColor = "lightgrey";
-        letter.style.width = "800px";
+        letter.style.width = "90%";
         letter.style.height = "1000px";
         letter.style.margin = "20px";
         letter.addEventListener("click", setLetters);
