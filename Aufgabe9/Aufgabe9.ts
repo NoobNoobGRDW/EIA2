@@ -52,7 +52,7 @@ namespace Aufgabe_9 {
         letter.style.margin = "20px";
 
 
-        letter.addEventListener("click", setLetters);
+        letter.addEventListener("click", platzieren);
         document.body.appendChild(letter);
     }
 
@@ -73,12 +73,12 @@ namespace Aufgabe_9 {
         }
     }
 
-    function setLetters(_event: MouseEvent): void {
+    function platzieren(_event: MouseEvent): void {
 
         let box: HTMLDivElement = document.createElement("div");
 
         box.innerText = zielLetter;
-        box.style.color = "white";
+        box.style.color = "black";
         box.style.fontSize = "40px";
         box.style.border = "2px solid white";
         box.style.padding = "2px";
@@ -87,7 +87,7 @@ namespace Aufgabe_9 {
         box.style.left = _event.pageX + "px";
         box.style.top = _event.pageY + "px";
 
-        box.addEventListener("click", setLetters);
+        box.addEventListener("click", platzieren);
         document.body.appendChild(box);
 
         let clicking: HTMLDivElement = <HTMLDivElement>_event.target;

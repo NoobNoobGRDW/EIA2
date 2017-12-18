@@ -39,7 +39,7 @@ var Aufgabe_9;
         letter.style.width = "90%";
         letter.style.height = "1000px";
         letter.style.margin = "20px";
-        letter.addEventListener("click", setLetters);
+        letter.addEventListener("click", platzieren);
         document.body.appendChild(letter);
     }
     function handleMousedown(_event) {
@@ -53,10 +53,10 @@ var Aufgabe_9;
             }
         }
     }
-    function setLetters(_event) {
+    function platzieren(_event) {
         let box = document.createElement("div");
         box.innerText = zielLetter;
-        box.style.color = "white";
+        box.style.color = "black";
         box.style.fontSize = "40px";
         box.style.border = "2px solid white";
         box.style.padding = "2px";
@@ -64,7 +64,7 @@ var Aufgabe_9;
         box.style.position = "absolute";
         box.style.left = _event.pageX + "px";
         box.style.top = _event.pageY + "px";
-        box.addEventListener("click", setLetters);
+        box.addEventListener("click", platzieren);
         document.body.appendChild(box);
         let clicking = _event.target;
     }
