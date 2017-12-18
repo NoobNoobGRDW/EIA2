@@ -80,7 +80,8 @@ namespace Aufgabe_9 {
         box.innerText = zielLetter;
         box.style.color = "black";
         box.style.fontSize = "40px";
-        box.style.border = "2px solid white";
+        box.style.border = "1px solid black";
+        box.style.borderRadius = "10px";
         box.style.padding = "2px";
         box.style.textAlign = "center";
         box.style.position = "absolute";
