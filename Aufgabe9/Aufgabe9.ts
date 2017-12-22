@@ -100,7 +100,7 @@ namespace Aufgabe_9 {
 
     function handleKeyDown(_event: KeyboardEvent): void {
 
-        if (_event.keyCode > 64 && _event.keyCode < 91 || _event.keyCode == 16 || _event.keyCode == 20) {
+        if (_event.keyCode > 64 && _event.keyCode < 91) {
             zielBuchstabe = String.fromCharCode(_event.keyCode);
         }
     }
