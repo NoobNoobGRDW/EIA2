@@ -37,9 +37,9 @@ var Aufgabe_9;
     }
     function createPaper() {
         let papier = document.createElement("div");
-        papier.style.backgroundColor = "#d9d9d9";
         papier.style.width = "96%";
         papier.style.height = "800px";
+        papier.style.backgroundColor = "#d9d9d9";
         papier.style.margin = "2%";
         papier.addEventListener("click", platzieren);
         document.body.appendChild(papier);
@@ -55,28 +55,27 @@ var Aufgabe_9;
             }
         }
     }
+    function platzieren(_event) {
+        let box = document.createElement("div");
+        box.innerText = zielBuchstabe;
+        box.style.left = _event.pageX + "px";
+        box.style.top = _event.pageY + "px";
+        box.style.color = "hsl(" + Math.random() * 360 + ", 60%, 50%)";
+        box.style.fontSize = "40px";
+        box.style.position = "absolute";
+        box.addEventListener("click", loeschen);
+        document.body.appendChild(box);
+        let clicking = _event.target;
+    }
     function handleKeyDown(_event) {
         if (_event.keyCode > 64 && _event.keyCode < 91 || _event.keyCode == 16 || _event.keyCode == 20) {
             zielBuchstabe = String.fromCharCode(_event.keyCode);
         }
     }
-    function platzieren(_event) {
-        let box = document.createElement("div");
-        box.innerText = zielBuchstabe;
-        box.style.color = "hsl(" + Math.random() * 360 + ", 60%, 50%)";
-        box.style.fontSize = "40px";
-        box.style.position = "absolute";
-        box.style.left = _event.pageX + "px";
-        box.style.top = _event.pageY + "px";
-        box.addEventListener("click", platzieren);
-        box.addEventListener("click", (event) => { loeschen(event, event.altKey); });
-        document.body.appendChild(box);
-        let clicking = _event.target;
-    }
-    function loeschen(mouse, alt) {
-        if (alt == true) {
-            let char = mouse.target;
-            document.body.removeChild(char);
+    function loeschen(_event) {
+        if (_event.altKey) {
+            let div = _event.target;
+            document.body.removeChild(div);
         }
     }
 })(Aufgabe_9 || (Aufgabe_9 = {}));

@@ -50,9 +50,9 @@ namespace Aufgabe_9 {
 
         let papier: HTMLDivElement = document.createElement("div");
 
-        papier.style.backgroundColor = "#d9d9d9";
         papier.style.width = "96%";
         papier.style.height = "800px";
+        papier.style.backgroundColor = "#d9d9d9";
         papier.style.margin = "2%";
 
 
@@ -79,6 +79,25 @@ namespace Aufgabe_9 {
     }
 
 
+
+    function platzieren(_event: MouseEvent): void {
+
+        let box: HTMLDivElement = document.createElement("div");
+
+        box.innerText = zielBuchstabe;
+        box.style.left = _event.pageX + "px";
+        box.style.top = _event.pageY + "px";
+        box.style.color = "hsl(" + Math.random() * 360 + ", 60%, 50%)";
+        box.style.fontSize = "40px";
+        box.style.position = "absolute";
+
+        box.addEventListener("click", loeschen);
+        document.body.appendChild(box);
+
+        let clicking: HTMLDivElement = <HTMLDivElement>_event.target;
+    }
+
+
     function handleKeyDown(_event: KeyboardEvent): void {
 
         if (_event.keyCode > 64 && _event.keyCode < 91 || _event.keyCode == 16 || _event.keyCode == 20) {
@@ -87,32 +106,11 @@ namespace Aufgabe_9 {
     }
 
 
-    function platzieren(_event: MouseEvent): void {
-
-        let box: HTMLDivElement = document.createElement("div");
-
-        box.innerText = zielBuchstabe;
-        box.style.color = "hsl(" + Math.random() * 360 + ", 60%, 50%)";
-        box.style.fontSize = "40px";
-        box.style.position = "absolute";
-        box.style.left = _event.pageX + "px";
-        box.style.top = _event.pageY + "px";
-
-        box.addEventListener("click", platzieren);
-        box.addEventListener("click", (event) => { loeschen(event, event.altKey) });
-        document.body.appendChild(box);
-
-        let clicking: HTMLDivElement = <HTMLDivElement>_event.target;
-    }
-
-    function loeschen(mouse: MouseEvent, alt: boolean): void {
-
-        if (alt == true) {
-
-            let char: HTMLDivElement = <HTMLDivElement>mouse.target;
-            document.body.removeChild(char);
+    function loeschen(_event: MouseEvent): void {
+        if (_event.altKey) {
+            let div: HTMLDivElement = <HTMLDivElement>_event.target;
+            document.body.removeChild(div);
         }
     }
-
 
 }
