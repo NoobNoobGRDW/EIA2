@@ -12,12 +12,14 @@ var Aufgabe_9;
     document.addEventListener("keydown", handleKeyDown);
     var buchStaben;
     let zielBuchstabe;
+    //Schleife f�r Auswahl
     function init() {
         for (let i = 65; i <= 90; i++) {
             buchstabenReihe(String.fromCharCode(i));
         }
         createPaper();
     }
+    //Auswahlreihe generieren
     function buchstabenReihe(buchStaben) {
         let div = document.createElement("div");
         div.innerText = buchStaben;
@@ -35,6 +37,7 @@ var Aufgabe_9;
         div.addEventListener("click", mausClick);
         document.body.appendChild(div);
     }
+    //Papier generieren
     function createPaper() {
         let papier = document.createElement("div");
         papier.style.width = "96%";
@@ -44,6 +47,7 @@ var Aufgabe_9;
         papier.addEventListener("click", platzieren);
         document.body.appendChild(papier);
     }
+    //Buchstaben mit Maus selektieren
     function mausClick(_event) {
         let click = _event.target;
         click.style.color = "lightgrey";
@@ -55,6 +59,7 @@ var Aufgabe_9;
             }
         }
     }
+    //Buchstaben auf Papier setzen
     function platzieren(_event) {
         let box = document.createElement("div");
         box.innerText = zielBuchstabe;
@@ -67,11 +72,13 @@ var Aufgabe_9;
         document.body.appendChild(box);
         let clicking = _event.target;
     }
+    //Buchstben per Tastatur
     function handleKeyDown(_event) {
         if (_event.keyCode > 64 && _event.keyCode < 91) {
             zielBuchstabe = String.fromCharCode(_event.keyCode);
         }
     }
+    //Buchstaben entfernen
     function loeschen(_event) {
         if (_event.altKey) {
             let div = _event.target;

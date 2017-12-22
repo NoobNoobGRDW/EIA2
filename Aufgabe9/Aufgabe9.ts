@@ -13,6 +13,8 @@ namespace Aufgabe_9 {
     var buchStaben: string;
     let zielBuchstabe: string;
 
+    
+    //Schleife für Auswahl
     function init(): void {
 
 
@@ -24,6 +26,7 @@ namespace Aufgabe_9 {
     }
 
 
+    //Auswahlreihe generieren
     function buchstabenReihe(buchStaben: string): void {
 
         let div: HTMLDivElement = document.createElement("div");
@@ -46,6 +49,7 @@ namespace Aufgabe_9 {
     }
 
 
+    //Papier generieren
     function createPaper(): void {
 
         let papier: HTMLDivElement = document.createElement("div");
@@ -62,6 +66,7 @@ namespace Aufgabe_9 {
     }
 
 
+    //Buchstaben mit Maus selektieren
     function mausClick(_event: MouseEvent): void {
 
         let click: HTMLDivElement = <HTMLDivElement>_event.target;
@@ -79,7 +84,7 @@ namespace Aufgabe_9 {
     }
 
 
-
+    //Buchstaben auf Papier setzen
     function platzieren(_event: MouseEvent): void {
 
         let box: HTMLDivElement = document.createElement("div");
@@ -98,6 +103,7 @@ namespace Aufgabe_9 {
     }
 
 
+    //Buchstben per Tastatur
     function handleKeyDown(_event: KeyboardEvent): void {
 
         if (_event.keyCode > 64 && _event.keyCode < 91) {
@@ -105,7 +111,7 @@ namespace Aufgabe_9 {
         }
     }
 
-
+    //Buchstaben entfernen
     function loeschen(_event: MouseEvent): void {
         if (_event.altKey) {
             let div: HTMLDivElement = <HTMLDivElement>_event.target;
