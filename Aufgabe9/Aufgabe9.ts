@@ -9,7 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 namespace Aufgabe_9 {
 
     window.addEventListener("load", init);
-    /* document.addEventListener("keydown", handleKeyDown);*/
+    document.addEventListener("keydown", handleKeyDown);
     var buchStaben: string;
     let zielBuchstabe: string;
 
@@ -20,14 +20,16 @@ namespace Aufgabe_9 {
             buchstabenReihe(String.fromCharCode(i));
         }
 
-        schreibeBrief();
+        createPaper();
     }
+
+
     function buchstabenReihe(buchStaben: string): void {
 
         let div: HTMLDivElement = document.createElement("div");
 
         div.innerText = buchStaben;
-        div.style.backgroundColor = "black";
+        div.style.backgroundColor = "white";
         div.style.fontSize = "30px";
         div.style.width = "25px";
         div.style.height = "1px";
@@ -44,14 +46,14 @@ namespace Aufgabe_9 {
     }
 
 
-    function schreibeBrief(): void {
+    function createPaper(): void {
 
         let papier: HTMLDivElement = document.createElement("div");
 
         papier.style.backgroundColor = "#d9d9d9";
         papier.style.width = "96%";
         papier.style.height = "800px";
-        papier.style.margin = "20px";
+        papier.style.margin = "2%";
 
 
         papier.addEventListener("click", platzieren);
@@ -75,6 +77,15 @@ namespace Aufgabe_9 {
             }
         }
     }
+
+
+    function handleKeyDown(_event: KeyboardEvent): void {
+
+        if (_event.keyCode > 64 && _event.keyCode < 91 || _event.keyCode == 16 || _event.keyCode == 20) {
+            zielBuchstabe = String.fromCharCode(_event.keyCode);
+        }
+    }
+
 
     function platzieren(_event: MouseEvent): void {
 

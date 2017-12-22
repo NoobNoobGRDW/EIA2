@@ -9,19 +9,19 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 var Aufgabe_9;
 (function (Aufgabe_9) {
     window.addEventListener("load", init);
-    /* document.addEventListener("keydown", handleKeyDown);*/
+    document.addEventListener("keydown", handleKeyDown);
     var buchStaben;
     let zielBuchstabe;
     function init() {
         for (let i = 65; i <= 90; i++) {
             buchstabenReihe(String.fromCharCode(i));
         }
-        schreibeBrief();
+        createPaper();
     }
     function buchstabenReihe(buchStaben) {
         let div = document.createElement("div");
         div.innerText = buchStaben;
-        div.style.backgroundColor = "black";
+        div.style.backgroundColor = "white";
         div.style.fontSize = "30px";
         div.style.width = "25px";
         div.style.height = "1px";
@@ -35,12 +35,12 @@ var Aufgabe_9;
         div.addEventListener("click", mausClick);
         document.body.appendChild(div);
     }
-    function schreibeBrief() {
+    function createPaper() {
         let papier = document.createElement("div");
         papier.style.backgroundColor = "#d9d9d9";
         papier.style.width = "96%";
         papier.style.height = "800px";
-        papier.style.margin = "20px";
+        papier.style.margin = "2%";
         papier.addEventListener("click", platzieren);
         document.body.appendChild(papier);
     }
@@ -53,6 +53,11 @@ var Aufgabe_9;
             if (zielBuchstabe != divs[i].id) {
                 divs[i].style.color = "black";
             }
+        }
+    }
+    function handleKeyDown(_event) {
+        if (_event.keyCode > 64 && _event.keyCode < 91 || _event.keyCode == 16 || _event.keyCode == 20) {
+            zielBuchstabe = String.fromCharCode(_event.keyCode);
         }
     }
     function platzieren(_event) {
