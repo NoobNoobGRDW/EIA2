@@ -1,0 +1,27 @@
+/*
+Aufgabe: 10
+Name: Kuenz,Linus
+Matrikel: 256331
+Datum: 03.01.2018
+	
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
+*/
+
+
+
+fieldset {
+	width: 500px;
+	height: 200px;
+}
+
+input:invalid {
+	background: #5c9965;
+}
+input:valid {
+	background: white;
+}
+
+input[type="radio"], input[type="checkbox"],input[type="text"] {
+	display: block;
+
+}
