@@ -24,6 +24,7 @@ div {
 	height: 200px;
 	border: 4px solid #1c7816;
 	border-radius: 20px;
+	marin: 2px;
 }
 
 input:invalid {
