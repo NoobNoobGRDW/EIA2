@@ -178,8 +178,8 @@ namespace Aufgabe10 {
         strasseNr = document.createElement("input");
         strasseNr.type = "text";
         strasseNr.name = "AdresseStrasse";
-        strasseNr.placeholder = "Straﬂe, Hausnummer";
-        strasseNr.pattern = "[a-zA-Z]{1,}";
+        strasseNr.placeholder = "Strasse, Hausnummer";
+        strasseNr.pattern = "[0-9, a-zA-Z]{1,}";
         strasseNr.required = true;
         adress.appendChild(strasseNr);
 
@@ -187,7 +187,7 @@ namespace Aufgabe10 {
         plzOrt.type = "text";
         plzOrt.name = "PostleitzahlOrt";
         plzOrt.placeholder = "Postleitzahl, Ort";
-        plzOrt.pattern = "[0-9]{1,}";
+        plzOrt.pattern = "[0-9, a-zA-Z]{1,}";
         plzOrt.required = true;
         adress.appendChild(plzOrt);
 
