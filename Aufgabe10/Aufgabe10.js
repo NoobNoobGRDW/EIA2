@@ -20,11 +20,11 @@ var Aufgabe10;
         price: 25,
     };
     let weisstanne = {
-        name: "Wei�tanne",
+        name: "Weisstanne",
         price: 30,
     };
     let gruentanne = {
-        name: "Gr�ntanne",
+        name: "Gruentanne",
         price: 20,
     };
     let nordmann = {
@@ -37,7 +37,7 @@ var Aufgabe10;
         price: 3,
     };
     let kugelWeiss = {
-        name: "Wei�e Kugeln",
+        name: "Weisse Kugeln",
         price: 4,
     };
     let stern = {
@@ -49,14 +49,28 @@ var Aufgabe10;
         price: 2,
     };
     let kerzeWeiss = {
-        name: "Wei�e Kerzen",
+        name: "Weisse Kerzen",
         price: 1,
     };
     let kerzeBlau = {
         name: "Blaue Kerzen",
         price: 3,
     };
+    //F��e
+    let fussGross = {
+        name: "Gro�er Fu�",
+        price: 30,
+    };
+    let fussMittel = {
+        name: "Mittlerer Fu�",
+        price: 25,
+    };
+    let fussKlein = {
+        name: "Kleiner Fu�",
+        price: 20,
+    };
     function init(_event) {
+        //Baum
         let tree = [fichte, weisstanne, gruentanne, nordmann];
         for (let i = 0; i < tree.length; i++) {
             let baumFieldS = document.getElementById("baum");
@@ -70,6 +84,43 @@ var Aufgabe10;
             label.innerText = " " + tree[i].name + " " + tree[i].price + " Euro";
             baumFieldS.appendChild(radioButton);
             baumFieldS.appendChild(label);
+        }
+        // Schmuck
+        let decoration = [kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau];
+        for (let i = 0; i < decoration.length; i++) {
+            let decorationFieldS = document.getElementById("schmuck");
+            let checkBox = document.createElement("input");
+            checkBox.type = "checkbox";
+            checkBox.value = decoration[i].name;
+            checkBox.id = decoration[i].name;
+            let label01 = document.createElement("label01");
+            label01.htmlFor = decoration[i].name;
+            label01.innerText = " " + decoration[i].name + " " + decoration[i].price + " Euro";
+            let anzahl = document.createElement("input");
+            anzahl.type = "number";
+            anzahl.name = "Stepper";
+            anzahl.step = "1";
+            anzahl.min = "0";
+            anzahl.max = "20";
+            anzahl.value = "0";
+            decorationFieldS.appendChild(checkBox);
+            decorationFieldS.appendChild(label01);
+            decorationFieldS.appendChild(anzahl);
+        }
+        //Standf��e
+        let fuss = [fussGross, fussMittel, fussKlein];
+        for (let i = 0; i < fuss.length; i++) {
+            let fussFieldS = document.getElementById("fu�");
+            let radioButton2 = document.createElement("input");
+            radioButton2.type = "radio";
+            radioButton2.name = "Fuesse";
+            radioButton2.value = fuss[i].name;
+            radioButton2.id = fuss[i].name;
+            let label2 = document.createElement("label2");
+            label2.htmlFor = fuss[i].name;
+            label2.innerText = " " + fuss[i].name + " " + fuss[i].price + "�";
+            fussFieldS.appendChild(radioButton2);
+            fussFieldS.appendChild(label2);
         }
     }
 })(Aufgabe10 || (Aufgabe10 = {}));
