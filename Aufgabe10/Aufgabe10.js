@@ -58,15 +58,15 @@ var Aufgabe10;
     };
     //F��e
     let fussGross = {
-        name: "Gro�er Fu�",
+        name: "50cm Fuss",
         price: 30,
     };
     let fussMittel = {
-        name: "Mittlerer Fu�",
+        name: "40cm Fuss",
         price: 25,
     };
     let fussKlein = {
-        name: "Kleiner Fu�",
+        name: "30cm Fuss",
         price: 20,
     };
     function init(_event) {

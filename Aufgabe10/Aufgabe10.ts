@@ -71,15 +71,15 @@ namespace Aufgabe10 {
     
     //F¸ﬂe
     let fussGross: Products = {
-        name: "Groﬂer Fuﬂ",
+        name: "50cm Fuss",
         price: 30,
     };   
     let fussMittel: Products = {
-        name: "Mittlerer Fuﬂ",
+        name: "40cm Fuss",
         price: 25,
     };
         let fussKlein: Products = {
-        name: "Kleiner Fuﬂ",
+        name: "30cm Fuss",
         price: 20,
     };
 
