@@ -13,7 +13,7 @@ var Aufgabe10;
     var vorname;
     var strasseNr;
     var plzOrt;
-    var stadt;
+    var land;
     //Baumarten
     let fichte = {
         name: "Fichte",
@@ -69,6 +69,10 @@ var Aufgabe10;
         name: "30cm Fuss",
         price: 20,
     };
+    let fussWinzig = {
+        name: "20cm Fuss",
+        price: 15,
+    };
     function init(_event) {
         //Baum
         let tree = [fichte, weisstanne, gruentanne, nordmann];
@@ -108,7 +112,7 @@ var Aufgabe10;
             decorationFieldS.appendChild(anzahl);
         }
         //Standf��e
-        let feet = [fussGross, fussMittel, fussKlein];
+        let feet = [fussGross, fussMittel, fussKlein, fussWinzig];
         for (let i = 0; i < feet.length; i++) {
             let feetFieldS = document.getElementById("fuss");
             let radioButton = document.createElement("input");
@@ -122,5 +126,42 @@ var Aufgabe10;
             feetFieldS.appendChild(radioButton);
             feetFieldS.appendChild(label02);
         }
+        //Lieferadresse
+        let adress = document.getElementById("adress");
+        name = document.createElement("input");
+        name.type = "text";
+        name.name = "AdresseNachname";
+        name.placeholder = "Name";
+        name.pattern = "[a-zA-Z]{1,}";
+        name.required = true;
+        adress.appendChild(name);
+        vorname = document.createElement("input");
+        vorname.type = "text";
+        vorname.name = "AdresseVorname";
+        vorname.placeholder = "Vorname";
+        vorname.pattern = "[a-zA-Z]{1,}";
+        vorname.required = true;
+        adress.appendChild(vorname);
+        strasseNr = document.createElement("input");
+        strasseNr.type = "text";
+        strasseNr.name = "AdresseStrasse";
+        strasseNr.placeholder = "Stra�e, Hausnummer";
+        strasseNr.pattern = "[a-zA-Z]{1,}";
+        strasseNr.required = true;
+        adress.appendChild(strasseNr);
+        plzOrt = document.createElement("input");
+        plzOrt.type = "text";
+        plzOrt.name = "PostleitzahlOrt";
+        plzOrt.placeholder = "Postleitzahl, Ort";
+        plzOrt.pattern = "[0-9]{1,}";
+        plzOrt.required = true;
+        adress.appendChild(plzOrt);
+        land = document.createElement("input");
+        land.type = "text";
+        land.name = "Land";
+        land.placeholder = "Land";
+        land.pattern = "[a-zA-Z]{1,}";
+        land.required = true;
+        adress.appendChild(land);
     }
 })(Aufgabe10 || (Aufgabe10 = {}));
