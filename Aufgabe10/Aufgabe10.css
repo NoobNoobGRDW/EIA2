@@ -14,15 +14,12 @@ body {
 }
 
 header {
-	top: 0em;
-	left: 0em;
+	margin-top: 0em;
+	margin-left: 0em;
 	background-color: #135810;
 	border-bottom: 4px solid black;
 	margin-bottom: 1em;
-}
-
-h1 {
-	position: center;
+	text-align: center;
 }
 
 h2 {
