@@ -12,6 +12,11 @@ body {
 	font-weight: bold;
 }
 
+h1 {
+	font-weight: bold;
+	
+}
+
 fieldset {
 	width: 50%;
 	height: 200px;
