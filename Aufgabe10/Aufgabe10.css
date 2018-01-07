@@ -52,6 +52,7 @@ div {
 	float: right;
 	position: fixed;
 	width: 20%;
+	margin-top: 10em;
 }
 
 input {
