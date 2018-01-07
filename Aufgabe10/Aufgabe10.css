@@ -21,11 +21,12 @@ header {
 	margin-bottom: 1em;
 	text-align: center;
 	height: 8em;
+	width: 105%;
 }
 
 h1 {
 	font-size: 3em;
-	padding-top: 1em;
+	padding-top: 0.8em;
 	
 }
 
