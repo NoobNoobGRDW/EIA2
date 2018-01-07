@@ -13,8 +13,13 @@ body {
 	background-color: #303030;
 }
 
+header {
+	background-color: #135810;
+	border-bottom: 4px solid black;
+}
+
 h1 {
-	
+	position: center;
 }
 
 h2 {
