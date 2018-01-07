@@ -110,7 +110,7 @@ var Aufgabe10;
         //Standf��e
         let feet = [fussGross, fussMittel, fussKlein];
         for (let i = 0; i < feet.length; i++) {
-            let feetFieldS = document.getElementById("fu�");
+            let feetFieldS = document.getElementById("fuss");
             let radioButton = document.createElement("input");
             radioButton.type = "radio";
             radioButton.name = "Radiogroup";

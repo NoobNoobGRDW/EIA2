@@ -136,7 +136,7 @@ namespace Aufgabe10 {
         //Standfüße
         let feet: Products[] = [fussGross, fussMittel, fussKlein];
         for (let i: number = 0; i < feet.length; i++) {
-            let feetFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("fuß");
+            let feetFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("fuss");
 
             let radioButton: HTMLInputElement = <HTMLInputElement>document.createElement("input");
             radioButton.type = "radio";
