@@ -7,11 +7,14 @@ Datum: 03.01.2018
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
 
-
+body {
+	font-family: Arial;
+}
 
 fieldset {
-	width: 500px;
+	width: 50%;
 	height: 200px;
+	border: 2px solid #1c7816;
 }
 
 input:invalid {
