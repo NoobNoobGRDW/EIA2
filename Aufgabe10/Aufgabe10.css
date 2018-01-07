@@ -22,6 +22,7 @@ header {
 	text-align: center;
 	height: 8em;
 	width: 105%;
+	position: fixed;
 }
 
 h1 {
