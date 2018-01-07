@@ -53,10 +53,6 @@ input {
 	border-radius: 10px;
 }
 
-anzahl {
-	color: red;
-}
-
 input:invalid {
 	background: darkred;
 }
