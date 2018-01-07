@@ -53,6 +53,7 @@ div {
 	float: right;
 	width: 20%;
 	border: 4px solid black;
+	margin-right: 2em;
 }
 
 input {
