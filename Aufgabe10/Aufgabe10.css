@@ -50,7 +50,7 @@ div {
 
 #korb {
 	float: right;
-	position: absolute;
+	position: relative;
 	width: 20%;
 }
 
