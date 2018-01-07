@@ -134,23 +134,22 @@ namespace Aufgabe10 {
         }
 
         //Standf¸ﬂe
-        let fuss: Products[] = [fussGross, fussMittel, fussKlein];
+        let feet: Products[] = [fussGross, fussMittel, fussKlein];
+        for (let i: number = 0; i < feet.length; i++) {
+            let feetFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("fuﬂ");
 
-        for (let i: number = 0; i < fuss.length; i++) {
-            let fussFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("fuﬂ");
-
-            let radioButton2: HTMLInputElement = <HTMLInputElement>document.createElement("input");
-            radioButton2.type = "radio";
-            radioButton2.name = "Fuesse";
-            radioButton2.value = fuss[i].name;
-            radioButton2.id = fuss[i].name;
+            let radioButton: HTMLInputElement = <HTMLInputElement>document.createElement("input");
+            radioButton.type = "radio";
+            radioButton.name = "Radiogroup";
+            radioButton.value = feet[i].name;
+            radioButton.id = feet[i].name;
 
             let label02: HTMLLabelElement = <HTMLLabelElement>document.createElement("label02");
-            label02.htmlFor = fuss[i].name;
-            label02.innerText = " " + fuss[i].name + " " + fuss[i].price + "Euro";
+            label02.htmlFor = feet[i].name;
+            label02.innerText = " " + feet[i].name + " " + feet[i].price + " Euro";
 
-            fussFieldS.appendChild(radioButton2);
-            fussFieldS.appendChild(label02);
+            feetFieldS.appendChild(radioButton);
+            feetFieldS.appendChild(label02);
         }
 
 

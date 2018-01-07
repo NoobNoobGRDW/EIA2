@@ -108,19 +108,19 @@ var Aufgabe10;
             decorationFieldS.appendChild(anzahl);
         }
         //Standf��e
-        let fuss = [fussGross, fussMittel, fussKlein];
-        for (let i = 0; i < fuss.length; i++) {
-            let fussFieldS = document.getElementById("fu�");
-            let radioButton2 = document.createElement("input");
-            radioButton2.type = "radio";
-            radioButton2.name = "Fuesse";
-            radioButton2.value = fuss[i].name;
-            radioButton2.id = fuss[i].name;
+        let feet = [fussGross, fussMittel, fussKlein];
+        for (let i = 0; i < feet.length; i++) {
+            let feetFieldS = document.getElementById("fu�");
+            let radioButton = document.createElement("input");
+            radioButton.type = "radio";
+            radioButton.name = "Radiogroup";
+            radioButton.value = feet[i].name;
+            radioButton.id = feet[i].name;
             let label02 = document.createElement("label02");
-            label02.htmlFor = fuss[i].name;
-            label02.innerText = " " + fuss[i].name + " " + fuss[i].price + "Euro";
-            fussFieldS.appendChild(radioButton2);
-            fussFieldS.appendChild(label02);
+            label02.htmlFor = feet[i].name;
+            label02.innerText = " " + feet[i].name + " " + feet[i].price + " Euro";
+            feetFieldS.appendChild(radioButton);
+            feetFieldS.appendChild(label02);
         }
     }
 })(Aufgabe10 || (Aufgabe10 = {}));
