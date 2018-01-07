@@ -7,6 +7,7 @@ Datum: 03.01.2018
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
 
+
 namespace Aufgabe10 {
     window.addEventListener("load", init);
 
@@ -69,6 +70,8 @@ namespace Aufgabe10 {
 
 
     function init(_event: Event): void {
+        
+        //Baum
         let tree: Products[] = [fichte, weisstanne, gruentanne, nordmann];
          for (let i: number=0; i<tree.length;i++) {
             let baumFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("baum");
@@ -81,10 +84,38 @@ namespace Aufgabe10 {
             
             let label: HTMLLabelElement= <HTMLLabelElement>document.createElement("label");
             label.htmlFor = tree[i].name;
-            label.innerText=" " + tree[i].name+ " " + tree[i].price + "€";
+            label.innerText=" " + tree[i].name+ " " + tree[i].price + " Euro";
             
             baumFieldS.appendChild(radioButton);
             baumFieldS.appendChild(label);
+            }
+        
+        // Schmuck
+        let decoration: Products []= [];
+        
+        for (let i: number=0; i< decoration.length; i++) {
+            let schmuckFieldS: HTMLFieldSetElement = <HTMLFieldSetElement> document.getElementById("schmuck");
+            
+            let checkBox: HTMLInputElement= <HTMLInputElement> document.createElement ("input");
+            checkBox.type="checkbox";
+            checkBox.value= decoration[i].name;
+            checkBox.id= decoration[i].name;
+            
+            let label3: HTMLLabelElement= <HTMLLabelElement> document.createElement("label3");
+            label3.htmlFor= decoration[i].name;
+            label3.innerText=" " + decoration[i].name + " " + decoration[i].price + " Euro";
+            
+            let anzahl: HTMLInputElement= <HTMLInputElement> document.createElement("input");
+            anzahl.type="number";
+            anzahl.name="Stepper";
+            anzahl.step="1";
+            anzahl.min="0";
+            anzahl.max="5";
+            anzahl.value="0";
+            
+            decorationFieldS.appendChild(checkBox);
+            decorationFieldS.appendChild(label3);
+            decorationFieldS.appendChild(anzahl);
             }
     }
 

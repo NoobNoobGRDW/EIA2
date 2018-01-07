@@ -67,7 +67,7 @@ var Aufgabe10;
             radioButton.id = tree[i].name;
             let label = document.createElement("label");
             label.htmlFor = tree[i].name;
-            label.innerText = " " + tree[i].name + " " + tree[i].price + "�";
+            label.innerText = " " + tree[i].name + " " + tree[i].price + " Euro";
             baumFieldS.appendChild(radioButton);
             baumFieldS.appendChild(label);
         }
