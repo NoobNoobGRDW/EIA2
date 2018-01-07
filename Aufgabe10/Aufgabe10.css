@@ -52,3 +52,7 @@ input[type="radio"], input[type="checkbox"],input[type="text"] {
 	display: block;
 
 }
+
+label {
+	margin-left: 1em;
+}
