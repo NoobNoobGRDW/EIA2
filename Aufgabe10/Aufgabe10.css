@@ -50,9 +50,8 @@ div {
 
 #korb {
 	float: right;
-	position: fixed;
 	width: 20%;
-	margin-top: 10em;
+	border: 4px solid black;
 }
 
 input {
