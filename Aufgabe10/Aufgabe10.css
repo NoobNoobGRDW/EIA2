@@ -14,8 +14,11 @@ body {
 }
 
 header {
+	top: 0em;
+	left: 0em;
 	background-color: #135810;
 	border-bottom: 4px solid black;
+	margin-bottom: 1em;
 }
 
 h1 {
