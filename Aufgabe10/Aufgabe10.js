@@ -116,11 +116,11 @@ var Aufgabe10;
             radioButton2.name = "Fuesse";
             radioButton2.value = fuss[i].name;
             radioButton2.id = fuss[i].name;
-            let label2 = document.createElement("label2");
-            label2.htmlFor = fuss[i].name;
-            label2.innerText = " " + fuss[i].name + " " + fuss[i].price + "�";
+            let label02 = document.createElement("label02");
+            label02.htmlFor = fuss[i].name;
+            label02.innerText = " " + fuss[i].name + " " + fuss[i].price + "Euro";
             fussFieldS.appendChild(radioButton2);
-            fussFieldS.appendChild(label2);
+            fussFieldS.appendChild(label02);
         }
     }
 })(Aufgabe10 || (Aufgabe10 = {}));
