@@ -59,7 +59,7 @@ var Aufgabe10;
     function init(_event) {
         let tree = [fichte, weisstanne, gruentanne, nordmann];
         for (let i = 0; i < tree.length; i++) {
-            let baumFieldS = document.getElementById("bau");
+            let baumFieldS = document.getElementById("baum");
             let radioButton = document.createElement("input");
             radioButton.type = "radio";
             radioButton.name = "Radiogroup";
