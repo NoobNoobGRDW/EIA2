@@ -10,13 +10,13 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 body {
 	font-family: Arial;
 	font-weight: bold;
-	background-color: black;
+	background-color: #303030;
 }
 
 h1 {
 	font-weight: bold;
 	font-size: 1.5em;
-	color: #1c7816;
+	color: #135810;
 	text-decoration: underline;
 	margin: 0.5em;
 }
@@ -24,7 +24,7 @@ h1 {
 div {
 	width: 50%;
 	height: 300px;
-	border: 4px solid #1c7816;
+	border: 4px solid #135810;
 	border-radius: 20px;
 	margin: 2px;
 }
