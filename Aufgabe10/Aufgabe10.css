@@ -63,7 +63,7 @@ input {
 	border-radius: 10px;
 	margin-left: 1em;
 	margin-bottom: 0.5em;
-	background: #5b0909;
+	background-color: #5b0909;
 }
 
 input:invalid {
