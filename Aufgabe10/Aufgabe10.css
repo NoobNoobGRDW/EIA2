@@ -9,7 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 body {
 	font-family: 'Roboto Slab', serif;
 	font-weight: bold;
-	background-color: #cfcfcf;
+	background-color: #8d8d8d;
 }
 
 header {
@@ -45,7 +45,7 @@ div {
 	margin: 4px;
 	margin-bottom: 0.5em;
 	box-shadow: 0px 0px 5px 0px #000000;
-	background-color: #8d8d8d;
+	background-color: #a0d79d;
 }
 
 #korb {
