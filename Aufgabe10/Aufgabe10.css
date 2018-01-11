@@ -85,7 +85,6 @@ label {
 label01 {
 	margin-left: 1em;
 	margin-bottom: 1em;
-	background: #5b0909;
 }
 
 label02 {
@@ -102,6 +101,10 @@ select {
 	border: 2px solid black;
 	margin-left: 1em;
 	margin-bottom: 0.5em;
+}
+
+checkbox {
+	background: #5b0909;
 }
 
 p {
