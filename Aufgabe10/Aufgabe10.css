@@ -70,10 +70,6 @@ input:invalid {
 	background: #440606;
 }
 
-input:valid {
-	/*background: #135810;*/
-}
-
 input[type="radio"], input[type="checkbox"], input[type="text"] {
 	display: block;
 }
