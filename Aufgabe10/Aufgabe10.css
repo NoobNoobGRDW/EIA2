@@ -69,10 +69,12 @@ input {
 
 input:invalid {
 	background: #5b0909;
+	background: #5b0909;
 }
 
 input:valid {
 	background: #135810;
+	background: #5b0909;
 }
 
 input[type="radio"], input[type="checkbox"], input[type="text"] {
