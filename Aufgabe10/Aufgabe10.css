@@ -63,6 +63,7 @@ input {
 	border-radius: 10px;
 	margin-left: 1em;
 	margin-bottom: 0.5em;
+	background: #5b0909;
 }
 
 input:invalid {
@@ -101,10 +102,6 @@ select {
 	border: 2px solid black;
 	margin-left: 1em;
 	margin-bottom: 0.5em;
-}
-
-checkbox {
-	background: #5b0909;
 }
 
 p {
