@@ -73,6 +73,15 @@ var Aufgabe10;
         name: "20cm Fuss",
         price: 15,
     };
+    let standard = {
+        name: "Standardversand",
+    };
+    let express = {
+        name: "Expressversand",
+    };
+    let abhol = {
+        name: "Selbstabholung",
+    };
     function init(_event) {
         //Baum
         let tree = [fichte, weisstanne, gruentanne, nordmann];
@@ -163,5 +172,14 @@ var Aufgabe10;
         land.pattern = "[a-zA-Z]{1,}";
         land.required = true;
         adress.appendChild(land);
+    }
+    //Lieferoptionen
+    let lieferung = [standard, express, abhol];
+    for (let i = 0; i < lieferung.length; i++) {
+        let lieferSelect = document.getElementById("lieferung");
+        let liefer = document.createElement("option");
+        liefer.value = lieferung[i].name;
+        liefer.innerText = lieferung[i].name;
+        lieferSelect.appendChild(liefer);
     }
 })(Aufgabe10 || (Aufgabe10 = {}));

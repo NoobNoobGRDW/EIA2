@@ -22,6 +22,10 @@ namespace Aufgabe10 {
         price: number;
     }
 
+    interface Shipping {
+        name: string;
+    }
+
 
     //Baumarten
     let fichte: Products = {
@@ -87,6 +91,17 @@ namespace Aufgabe10 {
         price: 15,
     };
 
+    let standard: Shipping = {
+        name: "Standardversand",
+    }
+
+    let express: Shipping = {
+        name: "Expressversand",
+    }
+
+    let abhol: Shipping = {
+        name: "Selbstabholung",
+    }
 
 
     function init(_event: Event): void {
@@ -199,8 +214,19 @@ namespace Aufgabe10 {
         land.required = true;
         adress.appendChild(land);
 
+    }
 
+    //Lieferoptionen
+    let lieferung: Shipping[] = [standard, express, abhol];
 
+    for (let i: number = 0; i < lieferung.length; i++) {
+        let lieferSelect: HTMLSelectElement = <HTMLSelectElement>document.getElementById("lieferung");
+
+        let liefer: HTMLOptionElement = <HTMLOptionElement>document.createElement("option");
+        liefer.value = lieferung[i].name;
+        liefer.innerText = lieferung[i].name;
+
+        lieferSelect.appendChild(liefer);
     }
 
 
