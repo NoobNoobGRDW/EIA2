@@ -73,6 +73,7 @@ var Aufgabe10;
         name: "20cm Fuss",
         price: 15,
     };
+    //Lieferung
     let standard = {
         name: "Standardversand",
     };
@@ -174,12 +175,12 @@ var Aufgabe10;
         adress.appendChild(land);
     }
     //Lieferoptionen
-    let lieferung = [standard, express, abhol];
-    for (let i = 0; i < lieferung.length; i++) {
-        let lieferSelect = document.getElementById("lieferung");
-        let liefer = document.createElement("option");
-        liefer.value = lieferung[i].name;
-        liefer.innerText = lieferung[i].name;
-        lieferSelect.appendChild(liefer);
+    let shipping = [standard, express, abhol];
+    for (let i = 0; i < shipping.length; i++) {
+        let shipSelect = document.getElementById("lieferung");
+        let ship = document.createElement("option");
+        ship.value = shipping[i].name;
+        ship.innerText = shipping[i].name;
+        shipSelect.appendChild(ship);
     }
 })(Aufgabe10 || (Aufgabe10 = {}));
