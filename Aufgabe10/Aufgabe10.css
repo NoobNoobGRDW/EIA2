@@ -32,7 +32,7 @@ h1 {
 h2 {
 	font-weight: bold;
 	font-size: 1.8em;
-	color: #135810;
+	color: #5b0909;
 	text-decoration: underline;
 	margin: 0.5em;
 	margin-top: 0em;
@@ -40,7 +40,7 @@ h2 {
 
 div {
 	width: 50%;
-	border: 4px solid #135810;
+	border: 4px solid #5b0909;
 	border-radius: 20px;
 	margin: 4px;
 	margin-bottom: 0.5em;
@@ -65,7 +65,7 @@ input {
 }
 
 input:invalid {
-	background: #7c1d1d;
+	background: #5b0909;
 }
 
 input:valid {
