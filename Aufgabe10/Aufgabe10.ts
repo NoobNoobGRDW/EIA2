@@ -90,7 +90,7 @@ namespace Aufgabe10 {
         name: "20cm Fuss",
         price: 15,
     };
-    
+
     //Lieferung
     let standard: Shipping = {
         name: "Standardversand",
@@ -215,19 +215,24 @@ namespace Aufgabe10 {
         land.required = true;
         adress.appendChild(land);
 
-    }
 
-    //Lieferoptionen
-    let shipping: Shipping[] = [standard, express, abhol];
+        //Lieferoptionen
+        let shipping: Shipping[] = [standard, express, abhol];
 
-    for (let i: number = 0; i < shipping.length; i++) {
-        let shipSelect: HTMLSelectElement = <HTMLSelectElement>document.getElementById("lieferung");
+        for (let i: number = 0; i < shipping.length; i++) {
+            let shipSelect: HTMLSelectElement = <HTMLSelectElement>document.getElementById("lieferung");
 
-        let ship: HTMLOptionElement = <HTMLOptionElement>document.createElement("option");
-        ship.value = shipping[i].name;
-        ship.innerText = shipping[i].name;
+            let ship: HTMLOptionElement = <HTMLOptionElement>document.createElement("option");
+            ship.value = shipping[i].name;
+            ship.innerText = shipping[i].name;
 
-        shipSelect.appendChild(ship);
+            shipSelect.appendChild(ship);
+        }
+
+
+
+
+
     }
 
 

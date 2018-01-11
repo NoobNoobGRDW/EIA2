@@ -173,14 +173,14 @@ var Aufgabe10;
         land.pattern = "[a-zA-Z]{1,}";
         land.required = true;
         adress.appendChild(land);
-    }
-    //Lieferoptionen
-    let shipping = [standard, express, abhol];
-    for (let i = 0; i < shipping.length; i++) {
-        let shipSelect = document.getElementById("lieferung");
-        let ship = document.createElement("option");
-        ship.value = shipping[i].name;
-        ship.innerText = shipping[i].name;
-        shipSelect.appendChild(ship);
+        //Lieferoptionen
+        let shipping = [standard, express, abhol];
+        for (let i = 0; i < shipping.length; i++) {
+            let shipSelect = document.getElementById("lieferung");
+            let ship = document.createElement("option");
+            ship.value = shipping[i].name;
+            ship.innerText = shipping[i].name;
+            shipSelect.appendChild(ship);
+        }
     }
 })(Aufgabe10 || (Aufgabe10 = {}));

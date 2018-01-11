@@ -67,7 +67,7 @@ input {
 }
 
 input:invalid {
-	background: #5b0909;
+	background: #440606;
 }
 
 input:valid {
