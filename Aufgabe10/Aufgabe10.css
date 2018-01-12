@@ -106,6 +106,7 @@ p {
 }
 
 button {
+	font-size: 1em;
 	margin-left: 1em;
 	margin-bottom: 1em;
 	background: #5b0909;
