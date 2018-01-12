@@ -13,6 +13,7 @@ body {
 }
 
 header {
+	font-family:'Lobster', cursive;
 	margin-top: -10em;
 	margin-left: -1em;
 	background-color: #5b0909;
