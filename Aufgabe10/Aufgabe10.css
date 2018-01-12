@@ -9,7 +9,8 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 body {
 	font-family: 'Source Sans Pro', serif;
 	font-weight: bold;
-	background-color: #d9d9d9;
+	/*background-color: #d9d9d9;*/
+	background-color: #008040;
 }
 
 header {
