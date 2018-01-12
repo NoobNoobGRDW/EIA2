@@ -104,3 +104,8 @@ select {
 p {
 	margin-left: 1em;
 }
+
+button {
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
