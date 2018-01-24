@@ -34,8 +34,8 @@ namespace Aufgabe10_Neu {
         
         let baumart: HTMLDivElement = <HTMLDivElement>document.getElementById("baum");
         for (let i: number = 0; i < article.length; i++) {
-            if (article[i].art == "tree") {
-                //radiobutton erzeugen
+            if (article[i].typ == "tree") {
+                // Radiobutton
                 var radioB3: HTMLInputElement = document.createElement("input");
                 radioB3.type = "radio";
                 radioB3.name = "radioGroupBaumart";
@@ -43,7 +43,7 @@ namespace Aufgabe10_Neu {
                 radioB3.id = "radio3." + i;
                 baumart.appendChild(radioB3);
 
-                //Text Auswahlmöglichkeit
+                // Text/Label
                 var label4 = document.createElement("label");
                 label4.id = "label" + i;
                 label4.htmlFor = radioB3.id;
@@ -53,11 +53,11 @@ namespace Aufgabe10_Neu {
             }
         }
 
-        //Halterung:
-        let halterung: HTMLDivElement = <HTMLDivElement>document.getElementById("halterung");
+        //Standfuß:
+        let halterung: HTMLDivElement = <HTMLDivElement>document.getElementById("fuss");
         for (let i: number = 0; i < article.length; i++) {
-            if (article[i].art == "Halter") {
-                //Radiobutton erzeugen
+            if (article[i].typ == "feet") {
+                // Radiobutton
                 var radioB: HTMLInputElement = document.createElement("input");
                 radioB.type = "radio";
                 radioB.name = "radioGroupHalterung";
@@ -65,7 +65,7 @@ namespace Aufgabe10_Neu {
                 radioB.id = "radio" + i;
                 halterung.appendChild(radioB);
 
-                //Text auswahlmöglichkeiten erzeugen
+                // Text/Label
                 label = document.createElement("label");
                 label.id = "label" + i;
                 label.htmlFor = radioB.id;
@@ -79,7 +79,7 @@ namespace Aufgabe10_Neu {
         }
 
         //Beleuchtung:
-        let beleuchtung: HTMLDivElement = <HTMLDivElement>document.getElementById("beleuchtung");
+        let beleuchtung: HTMLDivElement = <HTMLDivElement>document.getElementById("lieferOption");
         
         //Selectbox erzeugen und Eigenschaften festlegen
         let selectBox2: HTMLSelectElement = document.createElement("select");
@@ -89,7 +89,7 @@ namespace Aufgabe10_Neu {
         
         //Auswahlmöglichkeiten erzeugen
         for (let i: number = 0; i < article.length; i++) {
-            if (article[i].art == "Beleuchtung") {
+            if (article[i].typ == "Beleuchtung") {
                 var opt2: HTMLElement = document.createElement("option");
                 opt2.innerText = article[i].name;
                 opt2.id = "option2." + i;
@@ -102,7 +102,7 @@ namespace Aufgabe10_Neu {
         
         //Liste durch for Schleife erzeugen....für jedes Element:
         for (let i: number = 0; i < article.length; i++) {
-            if (article[i].art == "Deko") {
+            if (article[i].typ == "Deko") {
                 
                 //....eine Checkbox,...
                 var checkB: HTMLInputElement = document.createElement("input");
@@ -189,7 +189,7 @@ namespace Aufgabe10_Neu {
         //Lieferoptionen:
         let lieferopt: HTMLDivElement = <HTMLDivElement>document.getElementById("lieferoptionen");
         for (let i: number = 0; i < article.length; i++) {
-            if (article[i].art == "Lieferung") {
+            if (article[i].typ == "Lieferung") {
                 //Radiobutton erstellen
                 var radioB2: HTMLInputElement = document.createElement("input");
                 radioB2.type = "radio";
@@ -234,7 +234,7 @@ namespace Aufgabe10_Neu {
         for (let i: number = 0; i < article.length; i++) {
             
             //Schmuck Warenkorb
-            if (article[i].art == "Deko") {
+            if (article[i].typ == "Deko") {
                 stepper[i] = <HTMLInputElement>document.getElementById("stepper" + i);
                 checkBoxes[i] = <HTMLInputElement>document.getElementById("check" + i);
             }

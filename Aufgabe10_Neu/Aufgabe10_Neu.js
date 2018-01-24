@@ -27,15 +27,15 @@ var Aufgabe10_Neu;
     function createElements() {
         let baumart = document.getElementById("baum");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].art == "tree") {
-                //radiobutton erzeugen
+            if (Aufgabe10_Neu.article[i].typ == "tree") {
+                // Radiobutton
                 var radioB3 = document.createElement("input");
                 radioB3.type = "radio";
                 radioB3.name = "radioGroupBaumart";
                 radioB3.value = "radio3." + i;
                 radioB3.id = "radio3." + i;
                 baumart.appendChild(radioB3);
-                //Text Auswahlm�glichkeit
+                // Text/Label
                 var label4 = document.createElement("label");
                 label4.id = "label" + i;
                 label4.htmlFor = radioB3.id;
@@ -43,18 +43,18 @@ var Aufgabe10_Neu;
                 baumart.appendChild(label4);
             }
         }
-        //Halterung:
-        let halterung = document.getElementById("halterung");
+        //Standfu�:
+        let halterung = document.getElementById("fuss");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].art == "Halter") {
-                //Radiobutton erzeugen
+            if (Aufgabe10_Neu.article[i].typ == "feet") {
+                // Radiobutton
                 var radioB = document.createElement("input");
                 radioB.type = "radio";
                 radioB.name = "radioGroupHalterung";
                 radioB.value = "radio" + i;
                 radioB.id = "radio" + i;
                 halterung.appendChild(radioB);
-                //Text auswahlm�glichkeiten erzeugen
+                // Text/Label
                 label = document.createElement("label");
                 label.id = "label" + i;
                 label.htmlFor = radioB.id;
@@ -65,7 +65,7 @@ var Aufgabe10_Neu;
             }
         }
         //Beleuchtung:
-        let beleuchtung = document.getElementById("beleuchtung");
+        let beleuchtung = document.getElementById("lieferOption");
         //Selectbox erzeugen und Eigenschaften festlegen
         let selectBox2 = document.createElement("select");
         selectBox2.name = "SelectBeleuchtung";
@@ -73,7 +73,7 @@ var Aufgabe10_Neu;
         beleuchtung.appendChild(selectBox2);
         //Auswahlm�glichkeiten erzeugen
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].art == "Beleuchtung") {
+            if (Aufgabe10_Neu.article[i].typ == "Beleuchtung") {
                 var opt2 = document.createElement("option");
                 opt2.innerText = Aufgabe10_Neu.article[i].name;
                 opt2.id = "option2." + i;
@@ -84,7 +84,7 @@ var Aufgabe10_Neu;
         let schmuckartikel = document.getElementById("schmuckartikel");
         //Liste durch for Schleife erzeugen....f�r jedes Element:
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].art == "Deko") {
+            if (Aufgabe10_Neu.article[i].typ == "Deko") {
                 //....eine Checkbox,...
                 var checkB = document.createElement("input");
                 checkB.type = "checkbox";
@@ -157,7 +157,7 @@ var Aufgabe10_Neu;
         //Lieferoptionen:
         let lieferopt = document.getElementById("lieferoptionen");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].art == "Lieferung") {
+            if (Aufgabe10_Neu.article[i].typ == "Lieferung") {
                 //Radiobutton erstellen
                 var radioB2 = document.createElement("input");
                 radioB2.type = "radio";
@@ -197,7 +197,7 @@ var Aufgabe10_Neu;
         let gesamtpreis = 0;
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
             //Schmuck Warenkorb
-            if (Aufgabe10_Neu.article[i].art == "Deko") {
+            if (Aufgabe10_Neu.article[i].typ == "Deko") {
                 stepper[i] = document.getElementById("stepper" + i);
                 checkBoxes[i] = document.getElementById("check" + i);
             }
