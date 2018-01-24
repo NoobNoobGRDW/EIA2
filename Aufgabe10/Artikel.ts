@@ -88,7 +88,7 @@ namespace Aufgabe10 {
         price: 20,
         typ: "feet",
     };
-    export let fig: Products = {
+    export let fussWinzig: Products = {
         name: "20cm Fuss",
         price: 15,
         typ: "feet",
@@ -113,6 +113,6 @@ namespace Aufgabe10 {
         price: 0,
     };
 
-export var arrayArtikel = [fichte, weisstanne, gruentanne, nordmann, kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau];
+export var arrayArtikel = [fichte, weisstanne, gruentanne, nordmann, kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau, fussGross, fussMittel, fussKlein, fussWinzig, standard, premium, abhol];
 
 }
