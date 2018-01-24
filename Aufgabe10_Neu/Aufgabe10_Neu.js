@@ -17,10 +17,10 @@ var Aufgabe10_Neu;
     var plz;
     var land;
     var label;
-    var korbBaum = ["kein Baum", "0 "];
-    var korbFuss = ["kein Fuss", "0 "];
+    var korbBaum = ["kein Baum", "- "];
+    var korbFuss = ["kein Fuss", "- "];
     var korbSchmuck = [];
-    var korbLiefer = ["keine Lieferoption", "0 "];
+    var korbLiefer = ["keine Lieferoption", "- "];
     function createElements() {
         let baumart = document.getElementById("baum");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {

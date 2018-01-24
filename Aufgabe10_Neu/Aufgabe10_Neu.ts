@@ -21,10 +21,10 @@ namespace Aufgabe10_Neu {
     var label: HTMLLabelElement;
 
     
-    var korbBaum: string[] = ["kein Baum", "0 "];
-    var korbFuss: string[] = ["kein Fuss", "0 "];
+    var korbBaum: string[] = ["kein Baum", "- "];
+    var korbFuss: string[] = ["kein Fuss", "- "];
     var korbSchmuck: string[][] = [];
-    var korbLiefer: string[] = ["keine Lieferoption", "0 "];
+    var korbLiefer: string[] = ["keine Lieferoption", "- "];
 
     function createElements(): void {
 
