@@ -30,9 +30,9 @@ var Aufgabe10_Neu;
     ];
     Aufgabe10_Neu.b = [];
     for (var i = 0; i < Aufgabe10_Neu.article.length; i++) {
-        if (Aufgabe10_Neu.article[i].typ == "Beleuchtung") {
-            var temp = [Aufgabe10_Neu.article[i].name, Aufgabe10_Neu.article[i].preis];
-            Aufgabe10_Neu.b.push(temp);
+        if (Aufgabe10_Neu.article[i].typ == "shipping") {
+            var preisName = [Aufgabe10_Neu.article[i].name, Aufgabe10_Neu.article[i].preis];
+            Aufgabe10_Neu.b.push(preisName);
         }
     }
 })(Aufgabe10_Neu || (Aufgabe10_Neu = {}));

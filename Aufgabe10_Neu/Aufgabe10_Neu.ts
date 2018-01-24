@@ -8,7 +8,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 */
 
 namespace Aufgabe10_Neu {
-    
+
     window.addEventListener("load", createElements);
     window.addEventListener("change", warenkorb);
 
@@ -20,89 +20,88 @@ namespace Aufgabe10_Neu {
     var land: HTMLInputElement;
     var label: HTMLLabelElement;
 
-    //var basketBaumart: string[] = [bA[0][0], "" + bA[0][1]];
-    var basketBaumart: string[]= ["keine Baumart ausgewählt", "0"];
-    var basketHalter: string[] = ["keiner ausgewählt", "0"];
-    var basketBeleuchtung: string[] = [b[0][0], "" + b[0][1]];
-    var basketSchmuck: string[][] = [];
-    var basketLieferopt: string[] = ["keine Lieferoption ausgewählt", "0"];
+    
+    var korbBaum: string[] = ["kein Baum", "0 "];
+    var korbFuss: string[] = ["kein Fuss", "0 "];
+    var korbSchmuck: string[][] = [];
+    var korbLiefer: string[] = ["keine Lieferoption", "0 "];
 
     function createElements(): void {
-       
-        
-        
+
+
+
         let baumart: HTMLDivElement = <HTMLDivElement>document.getElementById("baum");
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "tree") {
                 // Radiobutton
-                var radioB3: HTMLInputElement = document.createElement("input");
-                radioB3.type = "radio";
-                radioB3.name = "radioGroupBaumart";
-                radioB3.value = "radio3." + i;
-                radioB3.id = "radio3." + i;
-                baumart.appendChild(radioB3);
+                var radioBaum: HTMLInputElement = document.createElement("input");
+                radioBaum.type = "radio";
+                radioBaum.name = "radioGroupBaumart";
+                radioBaum.value = "radio01" + i;
+                radioBaum.id = "radio01" + i;
+                baumart.appendChild(radioBaum);
 
                 // Text/Label
                 var label4 = document.createElement("label");
                 label4.id = "label" + i;
-                label4.htmlFor = radioB3.id;
+                label4.htmlFor = radioBaum.id;
                 label4.innerText = article[i].name;
                 baumart.appendChild(label4);
-                
+
             }
         }
 
         //Standfuß:
-        let halterung: HTMLDivElement = <HTMLDivElement>document.getElementById("fuss");
+        let fuss: HTMLDivElement = <HTMLDivElement>document.getElementById("fuss");
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "feet") {
                 // Radiobutton
-                var radioB: HTMLInputElement = document.createElement("input");
-                radioB.type = "radio";
-                radioB.name = "radioGroupHalterung";
-                radioB.value = "radio" + i;
-                radioB.id = "radio" + i;
-                halterung.appendChild(radioB);
+                var radioFuss: HTMLInputElement = document.createElement("input");
+                radioFuss.type = "radio";
+                radioFuss.name = "radioGroupHalterung";
+                radioFuss.value = "radio02" + i;
+                radioFuss.id = "radio02" + i;
+                fuss.appendChild(radioFuss);
 
                 // Text/Label
                 label = document.createElement("label");
                 label.id = "label" + i;
-                label.htmlFor = radioB.id;
+                label.htmlFor = radioFuss.id;
                 label.innerText = article[i].name;
-                halterung.appendChild(label);
+                fuss.appendChild(label);
                 var br: HTMLElement = document.createElement("br");
-                halterung.appendChild(br);
-                
-                
+                fuss.appendChild(br);
+
+
             }
         }
 
         //Lieferoptionen:
-        let beleuchtung: HTMLDivElement = <HTMLDivElement>document.getElementById("lieferOpt");
-        
+        let lieferoption: HTMLDivElement = <HTMLDivElement>document.getElementById("lieferOpt");
+
         //Selectbox erzeugen und Eigenschaften festlegen
-        let selectBox2: HTMLSelectElement = document.createElement("select");
-        selectBox2.name = "SelectBeleuchtung";
-        selectBox2.id = "selectBeleuchtung";
-        beleuchtung.appendChild(selectBox2);
-        
+        let selectBox: HTMLSelectElement = document.createElement("select");
+        selectBox.name = "BoxLieferung";
+        selectBox.id = "boxLieferung";
+        lieferoption.appendChild(selectBox);
+
         //Auswahlmöglichkeiten erzeugen
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "shipping") {
-                var opt2: HTMLElement = document.createElement("option");
-                opt2.innerText = article[i].name;
-                opt2.id = "option2." + i;
-                selectBox2.appendChild(opt2);
+                var ship: HTMLElement = document.createElement("option");
+                ship.innerText = article[i].name;
+                ship.id = "checkLiefer" + i;
+                selectBox.appendChild(ship);
             }
         }
 
         //Dekoartikel:
         let schmuckartikel: HTMLDivElement = <HTMLDivElement>document.getElementById("schmuck");
-        
+
         //Liste durch for Schleife erzeugen....für jedes Element:
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "decoration") {
-                
+
                 //....eine Checkbox,...
                 var checkB: HTMLInputElement = document.createElement("input");
                 checkB.type = "checkbox";
@@ -175,115 +174,111 @@ namespace Aufgabe10_Neu {
         land.required = true;
         adress.appendChild(land);
 
-        
+
 
 
         //Button:
-        
+
         //Submit button zur Überprüfung erstellen
-        let button: HTMLDivElement = <HTMLDivElement>document.getElementById("button");
+        let button: HTMLDivElement = <HTMLDivElement>document.getElementById("pruefe");
         let submit: HTMLButtonElement = document.createElement("button");
         submit.name = "Button";
         submit.type = "button";
         submit.style.padding = "0.75em 2em 0.75em 2em";
-        submit.style.borderRadius ="0.5em";
+        submit.style.borderRadius = "0.5em";
         submit.style.border = "none";
-        submit.innerText = "Zur Kasse gehen";
-        submit.addEventListener("mousedown", handleMouseDown);
+        submit.innerText = "Los!";
+        submit.addEventListener("mousedown", pruefe);
         button.appendChild(submit);
     }
 
     function warenkorb(_event: Event): void {
+        
         let target: HTMLInputElement = <HTMLInputElement>_event.target;
         let stepper: HTMLInputElement[] = [];
-        let stepper2: HTMLInputElement[] = [];
         let checkBoxes: HTMLInputElement[] = [];
-        let checkBoxes2: HTMLInputElement[] = [];
+        let radioBoxes: HTMLInputElement[] = [];
         let gesamtpreis: number = 0;
 
         for (let i: number = 0; i < article.length; i++) {
-            
+
+
+
+            //Baumart Warenkorb
+            if (target.id == "radio01" + i) {
+                radioBoxes[i] = <HTMLInputElement>document.getElementById("check" + i);
+                korbBaum[0] = article[i].name;
+                korbBaum[1] = "" + article[i].preis;
+            }
+
             //Schmuck Warenkorb
-            if (article[i].typ == "Deko") {
+            if (article[i].typ == "decoration") {
                 stepper[i] = <HTMLInputElement>document.getElementById("stepper" + i);
                 checkBoxes[i] = <HTMLInputElement>document.getElementById("check" + i);
             }
-            
-            //Baumart Warenkorb
-             if (target.id == "radio3."+i || target.id == "stepper2." + i) {
-                stepper2[i] = <HTMLInputElement>document.getElementById("stepper2." + i);
-                checkBoxes2[i] = <HTMLInputElement>document.getElementById("check" + i);
-                basketBaumart[0] = article[i].name;
-                basketBaumart[1] =  "" + (article[i].preis * parseInt(stepper2[i].value));
+
+            //Fuß Warenkorb
+            if (target.id == "radio02" + i) {
+                korbFuss[0] = article[i].name;
+                korbFuss[1] = "" + article[i].preis;
             }
-            
-            //Halter Warenkorb
-            if (target.id == "radio" + i) {
-                basketHalter[0] = article[i].name;
-                basketHalter[1] = "" + article[i].preis;
+  
+            //Lieferoption Warenkorb
+            if (target.value == article[i].name && target.id == "boxLieferung") {
+                korbLiefer[0] = article[i].name;
+                korbLiefer[1] = "" + article[i].preis;
             }
-            
-            //Lieferoptionen Warenkorb
-            if (target.id == "radio2." + i) {
-                basketLieferopt[0] = article[i].name;
-                basketLieferopt[1] = "" + article[i].preis;
-            }
-            
-            //Beleuchtung Warenkorb
-            if (target.value == article[i].name && target.id == "selectBeleuchtung") {
-                basketBeleuchtung[0] = article[i].name;
-                basketBeleuchtung[1] = "" + article[i].preis;
-            }
-            
+
             //Schmuck Warenkorb
             if (target.id == "check" + i || target.id == "stepper" + i) {
-                basketSchmuck[i] = [article[i].name, "" + Math.round((article[i].preis * parseInt(stepper[i].value)*100))/100];
+                korbSchmuck[i] = [article[i].name, "" + Math.round((article[i].preis * parseInt(stepper[i].value) * 100)) / 100];
             }
-           
-        }
-        
-        let korb: HTMLDivElement = <HTMLDivElement>document.getElementById("zusammenfassung");
-        korb.style.width = "30%";
-        korb.style.height = "auto";
-        korb.style.backgroundColor = "#5A9D67";
-        korb.style.opacity = "0.95";
-        korb.innerHTML = "<span class='wk'>Warenkorb</span> <img src='warenkorb.png' id='warenkorb'><hr>";
-        korb.innerHTML += "" + basketBaumart[0] + " " + basketBaumart[1] + "€ <br>";
-        korb.innerHTML += basketHalter[0] + ": " + basketHalter[1] + "€ <br>";
-        korb.innerHTML += "" + basketBeleuchtung[0] + ": " + basketBeleuchtung[1] + "€ <br>";
-        korb.innerHTML += " " + basketLieferopt[0] + ": " + basketLieferopt[1] + "€ <br>";
 
-        gesamtpreis = parseFloat(basketBaumart[1]) + parseFloat(basketBeleuchtung[1]) + parseFloat(basketHalter[1]) + parseFloat(basketLieferopt[1]);
+        }
+
+        let korb: HTMLDivElement = <HTMLDivElement>document.getElementById("korbUnter");
+
+        korb.style.height = "auto";
+        korb.innerHTML += "" + korbBaum[0] + " " + korbBaum[1] + " Euro <br>";
+        korb.innerHTML += korbFuss[0] + ": " + korbFuss[1] + " Euro <br>";
+        korb.innerHTML += " " + korbLiefer[0] + ": " + korbLiefer[1] + " Euro <br>";
+
+        gesamtpreis = parseFloat(korbBaum[1]) + parseFloat(korbFuss[1]) + parseFloat(korbLiefer[1]);
         for (let i: number = 0; i < stepper.length; i++) {
             //Wenn anzahl nicht gleich 0 und die checkbox ausgewählt ist, dann......
             if (checkBoxes[i] != null && checkBoxes[i].checked == true) {
-                gesamtpreis += parseFloat(basketSchmuck[i][1]);//preis dazurechnen
-                korb.innerHTML += "" + basketSchmuck[i][0] + " " + basketSchmuck[i][1] + "€ <br>";
+                gesamtpreis += parseFloat(korbSchmuck[i][1]);//preis dazurechnen
+                korb.innerHTML += "" + korbSchmuck[i][0] + " " + korbSchmuck[i][1] + " Euro <br>";
             }
         }
-        
-        korb.innerHTML += "<hr> Gesamtpreis: " + Math.round(gesamtpreis * 100) / 100 + "€";
-        
-        let price : HTMLElement = <HTMLElement>document.getElementById("price");
+
+        korb.innerHTML += "<hr> Gesamtpreis: " + Math.round(gesamtpreis * 100) / 100 + " Euro";
+
+        let price: HTMLElement = <HTMLElement>document.getElementById("price");
         price.innerHTML = "";
         price.innerHTML += "Gesamtpreis: ";
-        price.innerHTML += Math.round(gesamtpreis * 100) / 100 + "€";
-        
+        price.innerHTML += Math.round(gesamtpreis * 100) / 100 + " Euro";
+
     }
 
 
-    function handleMouseDown(_event: MouseEvent): void {
-        let feedback: HTMLDivElement = document.createElement("div");
-        feedback.style.paddingBottom = "1em";
+    //Bestellung prüfen-Funktion
+    function pruefe(_event: MouseEvent): void {
+        let ausgabe: HTMLParagraphElement = document.createElement("p");
+        ausgabe.style.paddingBottom = "1em";
         if (name.checkValidity() == false || vorname.checkValidity() == false || name.checkValidity() == false || vorname.checkValidity() == false || strasseNr.checkValidity() == false || plzOrt.checkValidity() == false || land.checkValidity() == false) {
-            feedback.innerText = "Du hast deine Daten nicht richtig angegeben. Bitte überprüfe sie nocheinmal.";
-            feedback.style.color = "red";
-            document.body.appendChild(feedback);
+            ausgabe.innerText = "Deine Eingabe war nicht korrekt. Versuchs nochmal! ";
+            ausgabe.style.color = "darkred";
+
+            document.getElementById("pruefe").appendChild(ausgabe);
+
+
         }
         else {
-            feedback.innerText = "Deine Daten wurden korrekt angegeben, vielen Dan für deine Bestellung.";
-            feedback.style.color = "green";
-            document.body.appendChild(feedback);
+            ausgabe.innerText = "Deine Daten sind korrekt, die Bestellung wird nun verarbeitet";
+            ausgabe.style.color = "green";
+            document.getElementById("pruefe").appendChild(ausgabe);
         }
+
     }
 }
