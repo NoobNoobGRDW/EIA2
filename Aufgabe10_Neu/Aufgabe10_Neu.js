@@ -36,7 +36,7 @@ var Aufgabe10_Neu;
                 var label4 = document.createElement("label");
                 label4.id = "label" + i;
                 label4.htmlFor = radioBaum.id;
-                label4.innerText = Aufgabe10_Neu.article[i].name;
+                label4.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
                 baumart.appendChild(label4);
             }
         }
@@ -55,7 +55,7 @@ var Aufgabe10_Neu;
                 label = document.createElement("label");
                 label.id = "label" + i;
                 label.htmlFor = radioFuss.id;
-                label.innerText = Aufgabe10_Neu.article[i].name;
+                label.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
                 fuss.appendChild(label);
                 var br = document.createElement("br");
                 fuss.appendChild(br);
@@ -93,7 +93,7 @@ var Aufgabe10_Neu;
                 var label2 = document.createElement("label");
                 label2.id = "label2." + i;
                 label2.htmlFor = checkB.id;
-                label2.innerText = Aufgabe10_Neu.article[i].name;
+                label2.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
                 schmuckartikel.appendChild(label2);
                 //..und den Stepper erzeugen.
                 let stepper = document.createElement("input");

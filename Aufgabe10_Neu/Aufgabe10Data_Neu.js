@@ -24,9 +24,9 @@ var Aufgabe10_Neu;
         { typ: "feet", name: "40cm Fuss", preis: 25 },
         { typ: "feet", name: "30cm Fuss", preis: 20 },
         { typ: "feet", name: "20cm Fuss", preis: 15 },
+        { typ: "shipping", name: "Selbstabholer", preis: 0 },
         { typ: "shipping", name: "Standardversand", preis: 10 },
         { typ: "shipping", name: "Premiumversand", preis: 15 },
-        { typ: "shipping", name: "Selbstabholer", preis: 0 },
     ];
     Aufgabe10_Neu.b = [];
     for (var i = 0; i < Aufgabe10_Neu.article.length; i++) {

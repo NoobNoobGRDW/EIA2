@@ -45,7 +45,7 @@ namespace Aufgabe10_Neu {
                 var label4 = document.createElement("label");
                 label4.id = "label" + i;
                 label4.htmlFor = radioBaum.id;
-                label4.innerText = article[i].name;
+                label4.innerText = article[i].name + " " + article[i].preis + " Euro";
                 baumart.appendChild(label4);
 
             }
@@ -67,7 +67,7 @@ namespace Aufgabe10_Neu {
                 label = document.createElement("label");
                 label.id = "label" + i;
                 label.htmlFor = radioFuss.id;
-                label.innerText = article[i].name;
+                label.innerText = article[i].name + " " + article[i].preis + " Euro";
                 fuss.appendChild(label);
                 var br: HTMLElement = document.createElement("br");
                 fuss.appendChild(br);
@@ -114,7 +114,7 @@ namespace Aufgabe10_Neu {
                 var label2: HTMLLabelElement = document.createElement("label");
                 label2.id = "label2." + i;
                 label2.htmlFor = checkB.id;
-                label2.innerText = article[i].name;
+                label2.innerText = article[i].name+ " " + article[i].preis + " Euro";
                 schmuckartikel.appendChild(label2);
 
                 //..und den Stepper erzeugen.
