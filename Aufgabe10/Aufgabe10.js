@@ -77,8 +77,8 @@ var Aufgabe10;
     let standard = {
         name: "Standardversand",
     };
-    let express = {
-        name: "Expressversand",
+    let premium = {
+        name: "Premiumversand",
     };
     let abhol = {
         name: "Selbstabholung",
@@ -174,13 +174,36 @@ var Aufgabe10;
         land.required = true;
         adress.appendChild(land);
         //Lieferoptionen
-        let shipping = [standard, express, abhol];
+        let shipping = [standard, premium, abhol];
         for (let i = 0; i < shipping.length; i++) {
             let shipSelect = document.getElementById("lieferung");
             let ship = document.createElement("option");
             ship.value = shipping[i].name;
             ship.innerText = shipping[i].name;
             shipSelect.appendChild(ship);
+        }
+        //Bestellung pr�fen-Button
+        let button = document.getElementById("pruefe"); //Button Check
+        let check = document.createElement("button");
+        check.name = "Button";
+        check.type = "button";
+        check.innerText = "Los!";
+        check.addEventListener("mousedown", pruefe);
+        button.appendChild(check);
+        //Bestellung pr�fen-Funktion
+        function pruefe(_event) {
+            let ausgabe = document.createElement("p");
+            ausgabe.style.paddingBottom = "1em";
+            if (name.checkValidity() == false || vorname.checkValidity() == false || name.checkValidity() == false || vorname.checkValidity() == false || strasseNr.checkValidity() == false || plzOrt.checkValidity() == false || land.checkValidity() == false) {
+                ausgabe.innerText = "Deine Eingabe war nicht korrekt. Versuchs nochmal! ";
+                ausgabe.style.color = "darkred";
+                document.getElementById("pruefe").appendChild(ausgabe);
+            }
+            else {
+                ausgabe.innerText = "Deine Daten sind korrekt, die Bestellung wird nun verarbeitet";
+                ausgabe.style.color = "green";
+                document.getElementById("pruefe").appendChild(ausgabe);
+            }
         }
     }
 })(Aufgabe10 || (Aufgabe10 = {}));

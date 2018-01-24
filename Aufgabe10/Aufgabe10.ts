@@ -20,29 +20,35 @@ namespace Aufgabe10 {
     interface Products {
         name: string;
         price: number;
+        typ: string;
     }
 
-    interface Shipping {
-        name: string;
-    }
+    var korbBaum: string[] = ["keine Baumart ausgewählt", "0"];
+    var korbFuss: string[] = ["keiner ausgewählt", "0"];
+    var korbSchmuck: string[] = [b[0][0], "" + b[0][1]];
+    var korbLieferung: string[] = ["keine Lieferoption ausgewählt", "0"];
 
 
     //Baumarten
     let fichte: Products = {
         name: "Fichte",
         price: 25,
+        typ: "tree",
     };
     let weisstanne: Products = {
         name: "Weisstanne",
         price: 30,
+        typ: "tree",
     };
     let gruentanne: Products = {
         name: "Gruentanne",
         price: 20,
+        typ: "tree",
     };
     let nordmann: Products = {
         name: "Nordmanntanne",
         price: 35,
+        typ: "tree",
     };
 
 
@@ -50,26 +56,32 @@ namespace Aufgabe10 {
     let kugelRot: Products = {
         name: "Rote Kugeln",
         price: 3,
+        typ: "deko",
     };
     let kugelWeiss: Products = {
         name: "Weisse Kugeln",
         price: 4,
+        typ: "deko",
     };
     let stern: Products = {
         name: "Weihnachtsstern",
         price: 15,
+        typ: "deko",
     };
     let kerzeRot: Products = {
         name: "Rote Kerzen",
         price: 2,
+        typ: "deko",
     };
     let kerzeWeiss: Products = {
         name: "Weisse Kerzen",
         price: 1,
+        typ: "deko",
     };
     let kerzeBlau: Products = {
         name: "Blaue Kerzen",
         price: 3,
+        typ: "deko",
     };
 
 
@@ -77,31 +89,38 @@ namespace Aufgabe10 {
     let fussGross: Products = {
         name: "50cm Fuss",
         price: 30,
+        typ: "feet",
     };
     let fussMittel: Products = {
         name: "40cm Fuss",
         price: 25,
+        typ: "feet",
     };
     let fussKlein: Products = {
         name: "30cm Fuss",
         price: 20,
+        typ: "feet",
     };
     let fussWinzig: Products = {
         name: "20cm Fuss",
         price: 15,
+        typ: "feet",
     };
 
     //Lieferung
-    let standard: Shipping = {
+    let standard: Products = {
         name: "Standardversand",
+        typ: "shipping",
     }
 
-    let express: Shipping = {
-        name: "Expressversand",
+    let premium: Products = {
+        name: "Premiumversand",
+        typ: "shipping",
     }
 
-    let abhol: Shipping = {
+    let abhol: Products = {
         name: "Selbstabholung",
+        typ: "shipping",
     }
 
 
@@ -217,7 +236,7 @@ namespace Aufgabe10 {
 
 
         //Lieferoptionen
-        let shipping: Shipping[] = [standard, express, abhol];
+        let shipping: Shipping[] = [standard, premium, abhol];
 
         for (let i: number = 0; i < shipping.length; i++) {
             let shipSelect: HTMLSelectElement = <HTMLSelectElement>document.getElementById("lieferung");
@@ -229,16 +248,54 @@ namespace Aufgabe10 {
             shipSelect.appendChild(ship);
         }
 
+        //Bestellung prüfen-Button
+        let button: HTMLDivElement = <HTMLDivElement>document.getElementById("pruefe");                    //Button Check
+        let check: HTMLButtonElement = document.createElement("button");
+        check.name = "Button";
+        check.type = "button";
+        check.innerText = "Los!";
+        check.addEventListener("mousedown", pruefe);
+        button.appendChild(check);
+
+        //Bestellung prüfen-Funktion
+        function pruefe(_event: MouseEvent): void {
+            let ausgabe: HTMLParagraphElement = document.createElement("p");
+            ausgabe.style.paddingBottom = "1em";
+            if (name.checkValidity() == false || vorname.checkValidity() == false || name.checkValidity() == false || vorname.checkValidity() == false || strasseNr.checkValidity() == false || plzOrt.checkValidity() == false || land.checkValidity() == false) {
+                ausgabe.innerText = "Deine Eingabe war nicht korrekt. Versuchs nochmal! ";
+                ausgabe.style.color = "darkred";
+
+                document.getElementById("pruefe").appendChild(ausgabe);
+
+
+            }
+            else {
+                ausgabe.innerText = "Deine Daten sind korrekt, die Bestellung wird nun verarbeitet";
+                ausgabe.style.color = "green";
+                document.getElementById("pruefe").appendChild(ausgabe);
+            }
+        }
+
+        //Warenkorb
+        function warenkorb(_event: Event): void {
+            let target: HTMLInputElement = <HTMLInputElement>_event.target;
+            let stepper: HTMLInputElement[] = [];
+            let stepper2: HTMLInputElement[] = [];
+            let checkBoxes: HTMLInputElement[] = [];
+            let checkBoxes2: HTMLInputElement[] = [];
+            let gesamtpreis: number = 0;
+
+            for (let i: number = 0; i < Products.length; i++) {
+
+                //Baumart
+                if (target.id == tree[i].name) {
+                    checkBoxes2[i] = <HTMLInputElement>document.getElementById("check" + i);
+
+                }
 
 
 
-
-    }
-
+            }
 
 
-
-
-
-
-}
+        }
