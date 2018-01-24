@@ -9,7 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 var Aufgabe10;
 (function (Aufgabe10) {
     //Baumarten
-    Aufgabe10.Artikel = [
+    Aufgabe10.Products = [
         {
             name: "Fichte",
             price: 25,
