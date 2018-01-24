@@ -114,4 +114,5 @@ namespace Aufgabe10 {
     };
 
 export var arrayArtikel = [fichte, weisstanne, gruentanne, nordmann, kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau];
+
 }
