@@ -9,7 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 var Aufgabe10;
 (function (Aufgabe10) {
     //Baumarten
-    Aufgabe10.fichte = {
+    let fichte = {
         name: "Fichte",
         price: 25,
         typ: "tree",
@@ -97,5 +97,5 @@ var Aufgabe10;
         typ: "shipping",
         price: 0,
     };
-    Aufgabe10.arrayArtikel = [Aufgabe10.fichte, Aufgabe10.weisstanne, Aufgabe10.gruentanne, Aufgabe10.nordmann, Aufgabe10.kugelRot, Aufgabe10.kugelWeiss, Aufgabe10.stern, Aufgabe10.kerzeRot, Aufgabe10.kerzeWeiss, Aufgabe10.kerzeBlau, Aufgabe10.fussGross, Aufgabe10.fussMittel, Aufgabe10.fussKlein, Aufgabe10.fussWinzig, Aufgabe10.standard, Aufgabe10.premium, Aufgabe10.abhol];
+    Aufgabe10.arrayArtikel = [fichte, Aufgabe10.weisstanne, Aufgabe10.gruentanne, Aufgabe10.nordmann, Aufgabe10.kugelRot, Aufgabe10.kugelWeiss, Aufgabe10.stern, Aufgabe10.kerzeRot, Aufgabe10.kerzeWeiss, Aufgabe10.kerzeBlau, Aufgabe10.fussGross, Aufgabe10.fussMittel, Aufgabe10.fussKlein, Aufgabe10.fussWinzig, Aufgabe10.standard, Aufgabe10.premium, Aufgabe10.abhol];
 })(Aufgabe10 || (Aufgabe10 = {}));
