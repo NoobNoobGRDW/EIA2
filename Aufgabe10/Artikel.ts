@@ -17,7 +17,7 @@ namespace Aufgabe10 {
     }
 
     //Baumarten
-let fichte: Products = {
+export let fichte: Products = {
         name: "Fichte",
         price: 25,
         typ: "tree",
