@@ -25,7 +25,7 @@ namespace Aufgabe10 {
 
     var korbBaum: string[] = ["keine Baumart ausgewählt", "0"];
     var korbFuss: string[] = ["keiner ausgewählt", "0"];
-    var korbSchmuck: string[] = [b[0][0], "" + b[0][1]];
+   /* var korbSchmuck: string[] = [b[0][0], "" + b[0][1]];*/
     var korbLieferung: string[] = ["keine Lieferoption ausgewählt", "0"];
 
 
@@ -111,17 +111,20 @@ namespace Aufgabe10 {
     let standard: Products = {
         name: "Standardversand",
         typ: "shipping",
-    }
+        price: 5,
+    };
 
     let premium: Products = {
         name: "Premiumversand",
         typ: "shipping",
-    }
+        price: 10,
+    };
 
     let abhol: Products = {
         name: "Selbstabholung",
         typ: "shipping",
-    }
+        price: 0,
+    };
 
 
     function init(_event: Event): void {
@@ -236,7 +239,7 @@ namespace Aufgabe10 {
 
 
         //Lieferoptionen
-        let shipping: Shipping[] = [standard, premium, abhol];
+        let shipping: Products[] = [standard, premium, abhol];
 
         for (let i: number = 0; i < shipping.length; i++) {
             let shipSelect: HTMLSelectElement = <HTMLSelectElement>document.getElementById("lieferung");
@@ -274,8 +277,9 @@ namespace Aufgabe10 {
                 ausgabe.style.color = "green";
                 document.getElementById("pruefe").appendChild(ausgabe);
             }
-        }
-
+        
+}
+        
         //Warenkorb
         function warenkorb(_event: Event): void {
             let target: HTMLInputElement = <HTMLInputElement>_event.target;
@@ -288,14 +292,21 @@ namespace Aufgabe10 {
             for (let i: number = 0; i < Products.length; i++) {
 
                 //Baumart
-                if (target.id == tree[i].name) {
-                    checkBoxes2[i] = <HTMLInputElement>document.getElementById("check" + i);
+                if (Products[i].typ == "tree") {
+                    checkBoxes[i] = <HTMLInputElement>document.getElementById(tree[i].name);
+                    korbBaum[0] = tree[i].name;
+                    korbBaum[1] = "" + (tree[i].price);
 
                 }
 
-
+                let korb: HTMLDivElement = <HTMLDivElement>document.getElementById("korb");
+                korb.innerHTML += "" + korbBaum[0] + " " + korbBaum[1] + "€ <br>";
 
             }
-
-
         }
+
+
+
+
+}    
+}
