@@ -17,7 +17,7 @@ namespace Aufgabe10 {
     }
 
     //Baumarten
-    export let Products: Artikel[] = [
+    export let products: Artikel[] = [
         {
             name: "Fichte",
             price: 25,
