@@ -30,7 +30,7 @@ namespace Aufgabe10 {
 
     function init(_event: Event): void {
     //Baum
-        let tree: arrayArtikel = [fichte, weisstanne, gruentanne, nordmann];
+        let tree: arrayProd[] = [fichte, weisstanne, gruentanne, nordmann];
         for (let i: number = 0; i < tree.length; i++) {
             let baumFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("baum");
 
@@ -195,7 +195,7 @@ namespace Aufgabe10 {
                 if (arrayArtikel[i].typ == "tree") {
                     checkBoxes[i] = <HTMLInputElement>document.getElementById("radio" + i);
                     korbBaum[0] = tree[i].name;
-                    korbBaum[1] = "" + (tree[i].price);
+                    korbBaum[1] = "" + tree[i].price;
 
                 }
 
