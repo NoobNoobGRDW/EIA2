@@ -1,4 +1,5 @@
 namespace Aufgabe10_Neu {
+    
     window.addEventListener("load", createElements);
     window.addEventListener("change", warenkorb);
 
@@ -22,7 +23,7 @@ namespace Aufgabe10_Neu {
        
         
         
-        let baumart: HTMLDivElement = <HTMLDivElement>document.getElementById("baumart");
+        let baumart: HTMLDivElement = <HTMLDivElement>document.getElementById("baum");
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].art == "Baumart") {
                 //radiobutton erzeugen

@@ -17,7 +17,7 @@ var Aufgabe10_Neu;
     var basketSchmuck = [];
     var basketLieferopt = ["keine Lieferoption ausgew�hlt", "0"];
     function createElements() {
-        let baumart = document.getElementById("baumart");
+        let baumart = document.getElementById("baum");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
             if (Aufgabe10_Neu.article[i].art == "Baumart") {
                 //radiobutton erzeugen
