@@ -11,12 +11,11 @@ var Aufgabe10_Neu;
     window.addEventListener("load", createElements);
     window.addEventListener("change", warenkorb);
     var name;
-    var strasse;
-    var hausnummer;
-    var ort;
+    var vorname;
+    var strasseNr;
+    var plzOrt;
     var plz;
-    var mail;
-    var zusatz;
+    var land;
     var label;
     //var basketBaumart: string[] = [bA[0][0], "" + bA[0][1]];
     var basketBaumart = ["keine Baumart ausgew�hlt", "0"];
@@ -64,8 +63,8 @@ var Aufgabe10_Neu;
                 halterung.appendChild(br);
             }
         }
-        //Beleuchtung:
-        let beleuchtung = document.getElementById("lieferOption");
+        //Lieferoptionen:
+        let beleuchtung = document.getElementById("lieferOpt");
         //Selectbox erzeugen und Eigenschaften festlegen
         let selectBox2 = document.createElement("select");
         selectBox2.name = "SelectBeleuchtung";
@@ -73,7 +72,7 @@ var Aufgabe10_Neu;
         beleuchtung.appendChild(selectBox2);
         //Auswahlm�glichkeiten erzeugen
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].typ == "Beleuchtung") {
+            if (Aufgabe10_Neu.article[i].typ == "shipping") {
                 var opt2 = document.createElement("option");
                 opt2.innerText = Aufgabe10_Neu.article[i].name;
                 opt2.id = "option2." + i;
@@ -81,10 +80,10 @@ var Aufgabe10_Neu;
             }
         }
         //Dekoartikel:
-        let schmuckartikel = document.getElementById("schmuckartikel");
+        let schmuckartikel = document.getElementById("schmuck");
         //Liste durch for Schleife erzeugen....f�r jedes Element:
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].typ == "Deko") {
+            if (Aufgabe10_Neu.article[i].typ == "decoration") {
                 //....eine Checkbox,...
                 var checkB = document.createElement("input");
                 checkB.type = "checkbox";
@@ -112,69 +111,43 @@ var Aufgabe10_Neu;
                 schmuckartikel.appendChild(br);
             }
         }
-        //Deine Daten:
-        let daten = document.getElementById("daten");
-        //daten let f�r zugriff auf id in html
-        //Daten anh�ngen f�r einzelne eingabefelder
+        //Lieferadresse
+        let adress = document.getElementById("adress");
         name = document.createElement("input");
         name.type = "text";
-        name.name = "DatenName";
-        name.placeholder = "Vorname, Nachname";
+        name.name = "AdresseNachname";
+        name.placeholder = "Name";
+        name.pattern = "[a-zA-Z]{1,}";
         name.required = true;
-        daten.appendChild(name);
-        strasse = document.createElement("input");
-        strasse.type = "text";
-        strasse.name = "DatenStrasse";
-        strasse.placeholder = "Stra�e";
-        strasse.required = true;
-        daten.appendChild(strasse);
-        hausnummer = document.createElement("input");
-        hausnummer.type = "number";
-        hausnummer.name = "DatenHausnummer";
-        hausnummer.placeholder = "Hausnummer";
-        hausnummer.pattern = "[0-9]{3}";
-        hausnummer.required = true;
-        daten.appendChild(hausnummer);
-        plz = document.createElement("input");
-        plz.type = "text";
-        plz.name = "DatenPLZ";
-        plz.placeholder = "Postleitzahl";
-        plz.pattern = "[0-9]{5}";
-        plz.required = true;
-        daten.appendChild(plz);
-        ort = document.createElement("input");
-        ort.type = "text";
-        ort.name = "DatenOrt";
-        ort.placeholder = "Ort";
-        ort.required = true;
-        daten.appendChild(ort);
-        mail = document.createElement("input");
-        mail.type = "email";
-        mail.name = "DatenMail";
-        mail.placeholder = "E-Mail";
-        mail.required = true;
-        daten.appendChild(mail);
-        //Lieferoptionen:
-        let lieferopt = document.getElementById("lieferoptionen");
-        for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].typ == "Lieferung") {
-                //Radiobutton erstellen
-                var radioB2 = document.createElement("input");
-                radioB2.type = "radio";
-                radioB2.name = "radioGroupLieferoptionen";
-                radioB2.value = "radio2." + i;
-                radioB2.id = "radio2." + i;
-                lieferopt.appendChild(radioB2);
-                //Text zur Auswahlm�glichkeit erstellen
-                var label3 = document.createElement("label");
-                label3.id = "label3." + i;
-                label3.htmlFor = radioB2.id;
-                label3.innerText = Aufgabe10_Neu.article[i].name;
-                lieferopt.appendChild(label3);
-                var br = document.createElement("br");
-                lieferopt.appendChild(br);
-            }
-        }
+        adress.appendChild(name);
+        vorname = document.createElement("input");
+        vorname.type = "text";
+        vorname.name = "AdresseVorname";
+        vorname.placeholder = "Vorname";
+        vorname.pattern = "[a-zA-Z]{1,}";
+        vorname.required = true;
+        adress.appendChild(vorname);
+        strasseNr = document.createElement("input");
+        strasseNr.type = "text";
+        strasseNr.name = "AdresseStrasse";
+        strasseNr.placeholder = "Strasse, Hausnummer";
+        strasseNr.pattern = "[0-9, a-zA-Z]{1,}";
+        strasseNr.required = true;
+        adress.appendChild(strasseNr);
+        plzOrt = document.createElement("input");
+        plzOrt.type = "text";
+        plzOrt.name = "PostleitzahlOrt";
+        plzOrt.placeholder = "Postleitzahl, Ort";
+        plzOrt.pattern = "[0-9, a-zA-Z]{1,}";
+        plzOrt.required = true;
+        adress.appendChild(plzOrt);
+        land = document.createElement("input");
+        land.type = "text";
+        land.name = "Land";
+        land.placeholder = "Land";
+        land.pattern = "[a-zA-Z]{1,}";
+        land.required = true;
+        adress.appendChild(land);
         //Button:
         //Submit button zur �berpr�fung erstellen
         let button = document.getElementById("button");
@@ -255,7 +228,7 @@ var Aufgabe10_Neu;
     function handleMouseDown(_event) {
         let feedback = document.createElement("div");
         feedback.style.paddingBottom = "1em";
-        if (name.checkValidity() == false || strasse.checkValidity() == false || hausnummer.checkValidity() == false || ort.checkValidity() == false || plz.checkValidity() == false || mail.checkValidity() == false) {
+        if (name.checkValidity() == false || vorname.checkValidity() == false || name.checkValidity() == false || vorname.checkValidity() == false || strasseNr.checkValidity() == false || plzOrt.checkValidity() == false || land.checkValidity() == false) {
             feedback.innerText = "Du hast deine Daten nicht richtig angegeben. Bitte �berpr�fe sie nocheinmal.";
             feedback.style.color = "red";
             document.body.appendChild(feedback);
