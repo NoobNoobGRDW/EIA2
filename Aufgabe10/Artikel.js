@@ -9,92 +9,94 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 var Aufgabe10;
 (function (Aufgabe10) {
     //Baumarten
-    Aufgabe10.fichte = {
-        name: "Fichte",
-        price: 25,
-        typ: "tree",
-    };
-    Aufgabe10.weisstanne = {
-        name: "Weisstanne",
-        price: 30,
-        typ: "tree",
-    };
-    Aufgabe10.gruentanne = {
-        name: "Gruentanne",
-        price: 20,
-        typ: "tree",
-    };
-    Aufgabe10.nordmann = {
-        name: "Nordmanntanne",
-        price: 35,
-        typ: "tree",
-    };
-    //Schmuckarten
-    Aufgabe10.kugelRot = {
-        name: "Rote Kugeln",
-        price: 3,
-        typ: "deko",
-    };
-    Aufgabe10.kugelWeiss = {
-        name: "Weisse Kugeln",
-        price: 4,
-        typ: "deko",
-    };
-    Aufgabe10.stern = {
-        name: "Weihnachtsstern",
-        price: 15,
-        typ: "deko",
-    };
-    Aufgabe10.kerzeRot = {
-        name: "Rote Kerzen",
-        price: 2,
-        typ: "deko",
-    };
-    Aufgabe10.kerzeWeiss = {
-        name: "Weisse Kerzen",
-        price: 1,
-        typ: "deko",
-    };
-    Aufgabe10.kerzeBlau = {
-        name: "Blaue Kerzen",
-        price: 3,
-        typ: "deko",
-    };
-    //F��e
-    Aufgabe10.fussGross = {
-        name: "50cm Fuss",
-        price: 30,
-        typ: "feet",
-    };
-    Aufgabe10.fussMittel = {
-        name: "40cm Fuss",
-        price: 25,
-        typ: "feet",
-    };
-    Aufgabe10.fussKlein = {
-        name: "30cm Fuss",
-        price: 20,
-        typ: "feet",
-    };
-    Aufgabe10.fussWinzig = {
-        name: "20cm Fuss",
-        price: 15,
-        typ: "feet",
-    };
-    //Lieferung
-    Aufgabe10.standard = {
-        name: "Standardversand",
-        typ: "shipping",
-        price: 5,
-    };
-    Aufgabe10.premium = {
-        name: "Premiumversand",
-        typ: "shipping",
-        price: 10,
-    };
-    Aufgabe10.abhol = {
-        name: "Selbstabholung",
-        typ: "shipping",
-        price: 0,
-    };
+    Aufgabe10.Artikel = [
+        {
+            name: "Fichte",
+            price: 25,
+            typ: "tree",
+        },
+        {
+            name: "Weisstanne",
+            price: 30,
+            typ: "tree",
+        },
+        {
+            name: "Gruentanne",
+            price: 20,
+            typ: "tree",
+        },
+        {
+            name: "Nordmanntanne",
+            price: 35,
+            typ: "tree",
+        },
+        //Schmuckarten
+        {
+            name: "Rote Kugeln",
+            price: 3,
+            typ: "deko",
+        },
+        {
+            name: "Weisse Kugeln",
+            price: 4,
+            typ: "deko",
+        },
+        {
+            name: "Weihnachtsstern",
+            price: 15,
+            typ: "deko",
+        },
+        {
+            name: "Rote Kerzen",
+            price: 2,
+            typ: "deko",
+        },
+        {
+            name: "Weisse Kerzen",
+            price: 1,
+            typ: "deko",
+        },
+        {
+            name: "Blaue Kerzen",
+            price: 3,
+            typ: "deko",
+        },
+        //F��e
+        {
+            name: "50cm Fuss",
+            price: 30,
+            typ: "feet",
+        },
+        {
+            name: "40cm Fuss",
+            price: 25,
+            typ: "feet",
+        },
+        {
+            name: "30cm Fuss",
+            price: 20,
+            typ: "feet",
+        },
+        {
+            name: "20cm Fuss",
+            price: 15,
+            typ: "feet",
+        },
+        //Lieferung
+        {
+            name: "Standardversand",
+            typ: "shipping",
+            price: 5,
+        },
+        {
+            name: "Premiumversand",
+            typ: "shipping",
+            price: 10,
+        },
+        {
+            name: "Selbstabholung",
+            typ: "shipping",
+            price: 0,
+        },
+    ];
 })(Aufgabe10 || (Aufgabe10 = {}));
