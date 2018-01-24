@@ -113,6 +113,6 @@ namespace Aufgabe10 {
         price: 0,
     };
 
-export let arrayArtikel = [fichte, weisstanne, gruentanne, nordmann, kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau, fussGross, fussMittel, fussKlein, fussWinzig, standard, premium, abhol];
+export let arrayArtikel= [fichte, weisstanne, gruentanne, nordmann, kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau, fussGross, fussMittel, fussKlein, fussWinzig, standard, premium, abhol];
 
 }

@@ -49,7 +49,7 @@ namespace Aufgabe10 {
         }
 
         // Schmuck
-        let decoration: arrayArtikel[] = [kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau];
+        let decoration: arrayArtikel = [kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau];
 
         for (let i: number = 0; i < decoration.length; i++) {
             let decorationFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("schmuck");
@@ -77,7 +77,7 @@ namespace Aufgabe10 {
         }
 
         //Standfüße
-        let feet: arrayArtikel[] = [fussGross, fussMittel, fussKlein, fussWinzig];
+        let feet: arrayArtikel = [fussGross, fussMittel, fussKlein, fussWinzig];
         for (let i: number = 0; i < feet.length; i++) {
             let feetFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("fuss");
 
@@ -139,7 +139,7 @@ namespace Aufgabe10 {
 
 
         //Lieferoptionen
-        let shipping: arrayArtikel[] = [standard, premium, abhol];
+        let shipping: arrayArtikel = [standard, premium, abhol];
 
         for (let i: number = 0; i < shipping.length; i++) {
             let shipSelect: HTMLSelectElement = <HTMLSelectElement>document.getElementById("lieferung");
@@ -189,10 +189,10 @@ namespace Aufgabe10 {
             let checkBoxes2: HTMLInputElement[] = [];
             let gesamtpreis: number = 0;
 
-            for (let i: number = 0; i < tree.length; i++) {
+            for (let i: number = 0; i < arrayArtikel.length; i++) {
 
                 //Baumart
-                if (tree[i].typ == "tree") {
+                if (arrayArtikel[i].typ == "tree") {
                     checkBoxes[i] = <HTMLInputElement>document.getElementById(tree[i].name);
                     korbBaum[0] = tree[i].name;
                     korbBaum[1] = "" + (tree[i].price);
