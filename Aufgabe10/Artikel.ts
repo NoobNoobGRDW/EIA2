@@ -17,7 +17,7 @@ namespace Aufgabe10 {
     }
 
     //Baumarten
-export let fichte: Products = {
+    export let fichte: Products = {
         name: "Fichte",
         price: 25,
         typ: "tree",
@@ -113,6 +113,6 @@ export let fichte: Products = {
         price: 0,
     };
 
-export let arrayArtikel= [fichte, weisstanne, gruentanne, nordmann, kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau, fussGross, fussMittel, fussKlein, fussWinzig, standard, premium, abhol];
+    export let arrayProd = [fichte, weisstanne, gruentanne, nordmann, kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau, fussGross, fussMittel, fussKlein, fussWinzig, standard, premium, abhol];
 
 }
