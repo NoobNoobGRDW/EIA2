@@ -289,10 +289,10 @@ namespace Aufgabe10 {
             let checkBoxes2: HTMLInputElement[] = [];
             let gesamtpreis: number = 0;
 
-            for (let i: number = 0; i < Products.length; i++) {
+            for (let i: number = 0; i < tree.length; i++) {
 
                 //Baumart
-                if (Products[i].typ == "tree") {
+                if (tree[i].typ == "tree") {
                     checkBoxes[i] = <HTMLInputElement>document.getElementById(tree[i].name);
                     korbBaum[0] = tree[i].name;
                     korbBaum[1] = "" + (tree[i].price);
