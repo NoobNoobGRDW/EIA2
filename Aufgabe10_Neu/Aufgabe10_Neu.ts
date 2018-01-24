@@ -1,3 +1,12 @@
+/*
+Aufgabe: 10
+Name: Kuenz,Linus
+Matrikel: 256331
+Datum: 03.01.2018
+    
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
+*/
+
 namespace Aufgabe10_Neu {
     
     window.addEventListener("load", createElements);
@@ -41,18 +50,6 @@ namespace Aufgabe10_Neu {
                 label4.innerText = article[i].name;
                 baumart.appendChild(label4);
                 
-                //Stepper erzeugen
-                let stepper2: HTMLInputElement = document.createElement("input");
-                stepper2.type = "number";
-                stepper2.name = "StepperBaumart" + i;
-                stepper2.value = "1";
-                stepper2.id = "stepper2." + i;
-                stepper2.min = "1";
-                stepper2.max = "5";
-                stepper2.step = "1";
-                baumart.appendChild(stepper2);
-                var br: HTMLElement = document.createElement("br");
-                baumart.appendChild(br);
             }
         }
 
