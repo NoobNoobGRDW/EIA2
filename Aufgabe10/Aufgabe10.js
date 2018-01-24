@@ -18,98 +18,9 @@ var Aufgabe10;
     var korbFuss = ["keiner ausgew�hlt", "0"];
     /* var korbSchmuck: string[] = [b[0][0], "" + b[0][1]];*/
     var korbLieferung = ["keine Lieferoption ausgew�hlt", "0"];
-    //Baumarten
-    let fichte = {
-        name: "Fichte",
-        price: 25,
-        typ: "tree",
-    };
-    let weisstanne = {
-        name: "Weisstanne",
-        price: 30,
-        typ: "tree",
-    };
-    let gruentanne = {
-        name: "Gruentanne",
-        price: 20,
-        typ: "tree",
-    };
-    let nordmann = {
-        name: "Nordmanntanne",
-        price: 35,
-        typ: "tree",
-    };
-    //Schmuckarten
-    let kugelRot = {
-        name: "Rote Kugeln",
-        price: 3,
-        typ: "deko",
-    };
-    let kugelWeiss = {
-        name: "Weisse Kugeln",
-        price: 4,
-        typ: "deko",
-    };
-    let stern = {
-        name: "Weihnachtsstern",
-        price: 15,
-        typ: "deko",
-    };
-    let kerzeRot = {
-        name: "Rote Kerzen",
-        price: 2,
-        typ: "deko",
-    };
-    let kerzeWeiss = {
-        name: "Weisse Kerzen",
-        price: 1,
-        typ: "deko",
-    };
-    let kerzeBlau = {
-        name: "Blaue Kerzen",
-        price: 3,
-        typ: "deko",
-    };
-    //F��e
-    let fussGross = {
-        name: "50cm Fuss",
-        price: 30,
-        typ: "feet",
-    };
-    let fussMittel = {
-        name: "40cm Fuss",
-        price: 25,
-        typ: "feet",
-    };
-    let fussKlein = {
-        name: "30cm Fuss",
-        price: 20,
-        typ: "feet",
-    };
-    let fussWinzig = {
-        name: "20cm Fuss",
-        price: 15,
-        typ: "feet",
-    };
-    //Lieferung
-    let standard = {
-        name: "Standardversand",
-        typ: "shipping",
-        price: 5,
-    };
-    let premium = {
-        name: "Premiumversand",
-        typ: "shipping",
-        price: 10,
-    };
-    let abhol = {
-        name: "Selbstabholung",
-        typ: "shipping",
-        price: 0,
-    };
     function init(_event) {
         //Baum
-        let tree = [fichte, weisstanne, gruentanne, nordmann];
+        let tree = [Aufgabe10.fichte, Aufgabe10.weisstanne, Aufgabe10.gruentanne, Aufgabe10.nordmann];
         for (let i = 0; i < tree.length; i++) {
             let baumFieldS = document.getElementById("baum");
             let radioButton = document.createElement("input");
@@ -124,7 +35,7 @@ var Aufgabe10;
             baumFieldS.appendChild(label);
         }
         // Schmuck
-        let decoration = [kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau];
+        let decoration = [Aufgabe10.kugelRot, Aufgabe10.kugelWeiss, Aufgabe10.stern, Aufgabe10.kerzeRot, Aufgabe10.kerzeWeiss, Aufgabe10.kerzeBlau];
         for (let i = 0; i < decoration.length; i++) {
             let decorationFieldS = document.getElementById("schmuck");
             let checkBox = document.createElement("input");
@@ -146,7 +57,7 @@ var Aufgabe10;
             decorationFieldS.appendChild(anzahl);
         }
         //Standf��e
-        let feet = [fussGross, fussMittel, fussKlein, fussWinzig];
+        let feet = [Aufgabe10.fussGross, Aufgabe10.fussMittel, Aufgabe10.fussKlein, Aufgabe10.fussWinzig];
         for (let i = 0; i < feet.length; i++) {
             let feetFieldS = document.getElementById("fuss");
             let radioButton = document.createElement("input");
@@ -198,7 +109,7 @@ var Aufgabe10;
         land.required = true;
         adress.appendChild(land);
         //Lieferoptionen
-        let shipping = [standard, premium, abhol];
+        let shipping = [Aufgabe10.standard, Aufgabe10.premium, Aufgabe10.abhol];
         for (let i = 0; i < shipping.length; i++) {
             let shipSelect = document.getElementById("lieferung");
             let ship = document.createElement("option");

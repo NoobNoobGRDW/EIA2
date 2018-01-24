@@ -17,11 +17,7 @@ namespace Aufgabe10 {
     var plzOrt: HTMLInputElement;
     var land: HTMLInputElement;
 
-    interface Products {
-        name: string;
-        price: number;
-        typ: string;
-    }
+    
 
     var korbBaum: string[] = ["keine Baumart ausgewählt", "0"];
     var korbFuss: string[] = ["keiner ausgewählt", "0"];
@@ -29,102 +25,7 @@ namespace Aufgabe10 {
     var korbLieferung: string[] = ["keine Lieferoption ausgewählt", "0"];
 
 
-    //Baumarten
-    let fichte: Products = {
-        name: "Fichte",
-        price: 25,
-        typ: "tree",
-    };
-    let weisstanne: Products = {
-        name: "Weisstanne",
-        price: 30,
-        typ: "tree",
-    };
-    let gruentanne: Products = {
-        name: "Gruentanne",
-        price: 20,
-        typ: "tree",
-    };
-    let nordmann: Products = {
-        name: "Nordmanntanne",
-        price: 35,
-        typ: "tree",
-    };
 
-
-    //Schmuckarten
-    let kugelRot: Products = {
-        name: "Rote Kugeln",
-        price: 3,
-        typ: "deko",
-    };
-    let kugelWeiss: Products = {
-        name: "Weisse Kugeln",
-        price: 4,
-        typ: "deko",
-    };
-    let stern: Products = {
-        name: "Weihnachtsstern",
-        price: 15,
-        typ: "deko",
-    };
-    let kerzeRot: Products = {
-        name: "Rote Kerzen",
-        price: 2,
-        typ: "deko",
-    };
-    let kerzeWeiss: Products = {
-        name: "Weisse Kerzen",
-        price: 1,
-        typ: "deko",
-    };
-    let kerzeBlau: Products = {
-        name: "Blaue Kerzen",
-        price: 3,
-        typ: "deko",
-    };
-
-
-    //Füße
-    let fussGross: Products = {
-        name: "50cm Fuss",
-        price: 30,
-        typ: "feet",
-    };
-    let fussMittel: Products = {
-        name: "40cm Fuss",
-        price: 25,
-        typ: "feet",
-    };
-    let fussKlein: Products = {
-        name: "30cm Fuss",
-        price: 20,
-        typ: "feet",
-    };
-    let fussWinzig: Products = {
-        name: "20cm Fuss",
-        price: 15,
-        typ: "feet",
-    };
-
-    //Lieferung
-    let standard: Products = {
-        name: "Standardversand",
-        typ: "shipping",
-        price: 5,
-    };
-
-    let premium: Products = {
-        name: "Premiumversand",
-        typ: "shipping",
-        price: 10,
-    };
-
-    let abhol: Products = {
-        name: "Selbstabholung",
-        typ: "shipping",
-        price: 0,
-    };
 
 
     function init(_event: Event): void {
