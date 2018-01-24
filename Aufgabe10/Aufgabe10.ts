@@ -29,8 +29,8 @@ namespace Aufgabe10 {
 
 
     function init(_event: Event): void {
-.    //Baum
-        let tree: Products[] = [fichte, weisstanne, gruentanne, nordmann];
+    //Baum
+        let tree: arrayArtikel = [fichte, weisstanne, gruentanne, nordmann];
         for (let i: number = 0; i < tree.length; i++) {
             let baumFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("baum");
 
@@ -49,7 +49,7 @@ namespace Aufgabe10 {
         }
 
         // Schmuck
-        let decoration: Products[] = [kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau];
+        let decoration: arrayArtikel[] = [kugelRot, kugelWeiss, stern, kerzeRot, kerzeWeiss, kerzeBlau];
 
         for (let i: number = 0; i < decoration.length; i++) {
             let decorationFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("schmuck");
@@ -77,7 +77,7 @@ namespace Aufgabe10 {
         }
 
         //Standfüße
-        let feet: Products[] = [fussGross, fussMittel, fussKlein, fussWinzig];
+        let feet: arrayArtikel[] = [fussGross, fussMittel, fussKlein, fussWinzig];
         for (let i: number = 0; i < feet.length; i++) {
             let feetFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("fuss");
 
@@ -139,7 +139,7 @@ namespace Aufgabe10 {
 
 
         //Lieferoptionen
-        let shipping: Products[] = [standard, premium, abhol];
+        let shipping: arrayArtikel[] = [standard, premium, abhol];
 
         for (let i: number = 0; i < shipping.length; i++) {
             let shipSelect: HTMLSelectElement = <HTMLSelectElement>document.getElementById("lieferung");
