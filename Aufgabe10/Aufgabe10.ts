@@ -38,7 +38,7 @@ namespace Aufgabe10 {
             radioButton.type = "radio";
             radioButton.name = "Radiogroup";
             radioButton.value = tree[i].name;
-            radioButton.id = tree[i].name;
+            radioButton.id = "radio" + i;
 
             let label: HTMLLabelElement = <HTMLLabelElement>document.createElement("label");
             label.htmlFor = tree[i].name;
@@ -193,7 +193,7 @@ namespace Aufgabe10 {
 
                 //Baumart
                 if (arrayArtikel[i].typ == "tree") {
-                    checkBoxes[i] = <HTMLInputElement>document.getElementById(tree[i].name);
+                    checkBoxes[i] = <HTMLInputElement>document.getElementById("radio" + i);
                     korbBaum[0] = tree[i].name;
                     korbBaum[1] = "" + (tree[i].price);
 
