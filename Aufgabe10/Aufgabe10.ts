@@ -29,8 +29,7 @@ namespace Aufgabe10 {
 
 
     function init(_event: Event): void {
-
-        //Baum
+.    //Baum
         let tree: Products[] = [fichte, weisstanne, gruentanne, nordmann];
         for (let i: number = 0; i < tree.length; i++) {
             let baumFieldS: HTMLFieldSetElement = <HTMLFieldSetElement>document.getElementById("baum");
