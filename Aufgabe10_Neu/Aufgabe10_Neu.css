@@ -125,5 +125,5 @@ button {
 	border: none;
 	font-family: 'Source Sans Pro', serif;
 	box-shadow: none;
-	text-align: center;
+	align: center;
 }
