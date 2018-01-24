@@ -27,7 +27,7 @@ var Aufgabe10_Neu;
     function createElements() {
         let baumart = document.getElementById("baum");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].art == "Baumart") {
+            if (Aufgabe10_Neu.article[i].art == "tree") {
                 //radiobutton erzeugen
                 var radioB3 = document.createElement("input");
                 radioB3.type = "radio";

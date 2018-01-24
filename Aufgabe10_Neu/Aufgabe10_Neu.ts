@@ -34,7 +34,7 @@ namespace Aufgabe10_Neu {
         
         let baumart: HTMLDivElement = <HTMLDivElement>document.getElementById("baum");
         for (let i: number = 0; i < article.length; i++) {
-            if (article[i].art == "Baumart") {
+            if (article[i].art == "tree") {
                 //radiobutton erzeugen
                 var radioB3: HTMLInputElement = document.createElement("input");
                 radioB3.type = "radio";
