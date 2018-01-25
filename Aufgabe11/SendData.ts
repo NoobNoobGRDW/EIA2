@@ -35,7 +35,7 @@ namespace SendData {
 
     function handleStateChange(_event: ProgressEvent): void {
         var xhr: XMLHttpRequest = (<XMLHttpRequest>_event.target);
-        if (xhr.readyState == XMLHttpRequest.DONE) {
+        if (xhr.readyState == XMLHttpRequest.DONE) {   //= XHR
             console.log("ready: " + xhr.readyState, " | type: " + xhr.responseType, " | status:" + xhr.status, " | text:" + xhr.statusText);
             console.log("response: " + xhr.response);
             alert(xhr.response);
