@@ -39,12 +39,4 @@ namespace Aufgabe10_Neu {
 
     export let b: string[][] = [];
 
-    for (var i: number = 0; i < article.length; i++) {
-
-
-        if (article[i].typ == "shipping") {
-            var preisName: any = [article[i].name, article[i].preis];
-            b.push(preisName);
-        }
-    }
 }
