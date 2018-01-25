@@ -46,7 +46,7 @@ var Aufgabe11;
                 // Radiobutton
                 var radioFuss = document.createElement("input");
                 radioFuss.type = "radio";
-                radioFuss.name = "radioGroupHalterung";
+                radioFuss.name = "radioGroupFuss";
                 radioFuss.value = "radio02" + i;
                 radioFuss.id = "radio02" + i;
                 fuss.appendChild(radioFuss);
