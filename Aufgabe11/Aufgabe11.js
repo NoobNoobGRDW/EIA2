@@ -77,7 +77,7 @@ var Aufgabe11;
                 selectBox.appendChild(ship);
             }
         }
-        //Dekoartikel
+        //Schmuck
         let schmuck = document.getElementById("schmuck");
         //Liste
         for (let i = 0; i < Aufgabe11.article.length; i++) {

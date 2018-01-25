@@ -100,7 +100,7 @@ namespace Aufgabe11 {
             }
         }
 
-        //Dekoartikel
+        //Schmuck
         
         let schmuck: HTMLDivElement = <HTMLDivElement>document.getElementById("schmuck");
 
