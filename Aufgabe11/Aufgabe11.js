@@ -16,10 +16,9 @@ var Aufgabe11;
     var plzOrt;
     var plz;
     var land;
-    var label;
     var korbBaum = ["kein Baum", "0 "];
     var korbFuss = ["kein Fuss", "0 "];
-    var korbSchmuck = [];
+    var korbSchmuck = []; //multi
     var korbLiefer = ["keine Lieferoption", "0 "];
     function createElements() {
         let baumart = document.getElementById("baum");
@@ -33,11 +32,11 @@ var Aufgabe11;
                 radioBaum.id = "radio01" + i;
                 baumart.appendChild(radioBaum);
                 // Text/Label
-                var label4 = document.createElement("label");
-                label4.id = "label" + i;
-                label4.htmlFor = radioBaum.id;
-                label4.innerText = Aufgabe11.article[i].name + " " + Aufgabe11.article[i].preis + " Euro";
-                baumart.appendChild(label4);
+                var label01 = document.createElement("label");
+                label01.id = "label" + i;
+                label01.htmlFor = radioBaum.id;
+                label01.innerText = Aufgabe11.article[i].name + " " + Aufgabe11.article[i].preis + " Euro";
+                baumart.appendChild(label01);
             }
         }
         //Standfu�
@@ -52,11 +51,12 @@ var Aufgabe11;
                 radioFuss.id = "radio02" + i;
                 fuss.appendChild(radioFuss);
                 // Text/Label
-                label = document.createElement("label");
-                label.id = "label" + i;
-                label.htmlFor = radioFuss.id;
-                label.innerText = Aufgabe11.article[i].name + " " + Aufgabe11.article[i].preis + " Euro";
-                fuss.appendChild(label);
+                var label02;
+                label02 = document.createElement("label");
+                label02.id = "label" + i;
+                label02.htmlFor = radioFuss.id;
+                label02.innerText = Aufgabe11.article[i].name + " " + Aufgabe11.article[i].preis + " Euro";
+                fuss.appendChild(label02);
                 var br = document.createElement("br");
                 fuss.appendChild(br);
             }

@@ -35,7 +35,4 @@ namespace Aufgabe10_Neu {
         { typ: "shipping", name: "Premiumversand", preis: 15 },
 
     ];
-
-
-
 }

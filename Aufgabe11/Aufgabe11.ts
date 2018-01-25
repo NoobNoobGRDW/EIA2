@@ -18,12 +18,12 @@ namespace Aufgabe11 {
     var plzOrt: HTMLInputElement;
     var plz: HTMLInputElement;
     var land: HTMLInputElement;
-    var label: HTMLLabelElement;
+
 
 
     var korbBaum: string[] = ["kein Baum", "0 "];
     var korbFuss: string[] = ["kein Fuss", "0 "];
-    var korbSchmuck: string[][] = [];
+    var korbSchmuck: string[][] = []; //multi
     var korbLiefer: string[] = ["keine Lieferoption", "0 "];
 
     function createElements(): void {
@@ -43,11 +43,11 @@ namespace Aufgabe11 {
                 baumart.appendChild(radioBaum);
 
                 // Text/Label
-                var label4 = document.createElement("label");
-                label4.id = "label" + i;
-                label4.htmlFor = radioBaum.id;
-                label4.innerText = article[i].name + " " + article[i].preis + " Euro";
-                baumart.appendChild(label4);
+                var label01 = document.createElement("label");
+                label01.id = "label" + i;
+                label01.htmlFor = radioBaum.id;
+                label01.innerText = article[i].name + " " + article[i].preis + " Euro";
+                baumart.appendChild(label01);
 
             }
         }
@@ -66,11 +66,12 @@ namespace Aufgabe11 {
                 fuss.appendChild(radioFuss);
 
                 // Text/Label
-                label = document.createElement("label");
-                label.id = "label" + i;
-                label.htmlFor = radioFuss.id;
-                label.innerText = article[i].name + " " + article[i].preis + " Euro";
-                fuss.appendChild(label);
+                var label02: HTMLLabelElement;
+                label02 = document.createElement("label");
+                label02.id = "label" + i;
+                label02.htmlFor = radioFuss.id;
+                label02.innerText = article[i].name + " " + article[i].preis + " Euro";
+                fuss.appendChild(label02);
                 var br: HTMLElement = document.createElement("br");
                 fuss.appendChild(br);
 

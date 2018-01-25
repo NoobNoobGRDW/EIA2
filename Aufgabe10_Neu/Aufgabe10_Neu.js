@@ -16,10 +16,9 @@ var Aufgabe10_Neu;
     var plzOrt;
     var plz;
     var land;
-    var label;
     var korbBaum = ["kein Baum", "0 "];
     var korbFuss = ["kein Fuss", "0 "];
-    var korbSchmuck = [];
+    var korbSchmuck = []; //multi
     var korbLiefer = ["keine Lieferoption", "0 "];
     function createElements() {
         let baumart = document.getElementById("baum");
@@ -33,14 +32,14 @@ var Aufgabe10_Neu;
                 radioBaum.id = "radio01" + i;
                 baumart.appendChild(radioBaum);
                 // Text/Label
-                var label4 = document.createElement("label");
-                label4.id = "label" + i;
-                label4.htmlFor = radioBaum.id;
-                label4.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
-                baumart.appendChild(label4);
+                var label01 = document.createElement("label");
+                label01.id = "label" + i;
+                label01.htmlFor = radioBaum.id;
+                label01.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
+                baumart.appendChild(label01);
             }
         }
-        //Standfu�:
+        //Standfu�
         let fuss = document.getElementById("fuss");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
             if (Aufgabe10_Neu.article[i].typ == "feet") {
@@ -52,23 +51,24 @@ var Aufgabe10_Neu;
                 radioFuss.id = "radio02" + i;
                 fuss.appendChild(radioFuss);
                 // Text/Label
-                label = document.createElement("label");
-                label.id = "label" + i;
-                label.htmlFor = radioFuss.id;
-                label.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
-                fuss.appendChild(label);
+                var label02;
+                label02 = document.createElement("label");
+                label02.id = "label" + i;
+                label02.htmlFor = radioFuss.id;
+                label02.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
+                fuss.appendChild(label02);
                 var br = document.createElement("br");
                 fuss.appendChild(br);
             }
         }
-        //Lieferoptionen:
+        //Lieferoptionen
         let lieferoption = document.getElementById("lieferOpt");
-        //Selectbox erzeugen und Eigenschaften festlegen
+        //Selectbox erzeugen
         let selectBox = document.createElement("select");
         selectBox.name = "BoxLieferung";
         selectBox.id = "boxLieferung";
         lieferoption.appendChild(selectBox);
-        //Auswahlm�glichkeiten erzeugen
+        //Auswahlm�glichkeiten
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
             if (Aufgabe10_Neu.article[i].typ == "shipping") {
                 var ship = document.createElement("option");
@@ -77,36 +77,36 @@ var Aufgabe10_Neu;
                 selectBox.appendChild(ship);
             }
         }
-        //Dekoartikel:
-        let schmuckartikel = document.getElementById("schmuck");
-        //Liste durch for Schleife erzeugen....f�r jedes Element:
+        //Schmuck
+        let schmuck = document.getElementById("schmuck");
+        //Liste
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
             if (Aufgabe10_Neu.article[i].typ == "decoration") {
-                //....eine Checkbox,...
-                var checkB = document.createElement("input");
-                checkB.type = "checkbox";
-                checkB.name = "CheckboxDekoartikel";
-                checkB.value = "check";
-                checkB.id = "check" + i;
-                schmuckartikel.appendChild(checkB);
-                //...den Text zur Auswahlm�glichkeit,...
+                //Checkbox
+                var checkBox = document.createElement("input");
+                checkBox.type = "checkbox";
+                checkBox.name = "CheckboxDekoartikel";
+                checkBox.value = "check";
+                checkBox.id = "check" + i;
+                schmuck.appendChild(checkBox);
+                //Text ausw�hlbar
                 var label2 = document.createElement("label");
                 label2.id = "label2." + i;
-                label2.htmlFor = checkB.id;
+                label2.htmlFor = checkBox.id;
                 label2.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
-                schmuckartikel.appendChild(label2);
-                //..und den Stepper erzeugen.
+                schmuck.appendChild(label2);
+                //Stepper
                 let stepper = document.createElement("input");
                 stepper.type = "number";
                 stepper.name = "StepperDekoartikel" + i;
-                stepper.value = "1";
+                stepper.value = "0";
                 stepper.id = "stepper" + i;
                 stepper.min = "0";
                 stepper.max = "20";
                 stepper.step = "1";
-                schmuckartikel.appendChild(stepper);
+                schmuck.appendChild(stepper);
                 var br = document.createElement("br");
-                schmuckartikel.appendChild(br);
+                schmuck.appendChild(br);
             }
         }
         //Lieferadresse
@@ -146,19 +146,19 @@ var Aufgabe10_Neu;
         land.pattern = "[a-zA-Z]{1,}";
         land.required = true;
         adress.appendChild(land);
-        //Button:
         //Submit button zur �berpr�fung erstellen
         let button = document.getElementById("pruefe");
-        let submit = document.createElement("button");
-        submit.name = "Button";
-        submit.type = "button";
-        submit.style.padding = "0.75em 2em 0.75em 2em";
-        submit.style.borderRadius = "0.5em";
-        submit.style.border = "none";
-        submit.innerText = "Los!";
-        submit.addEventListener("mousedown", pruefe);
+        let submit = document.createElement("input");
+        submit.type = "submit";
         button.appendChild(submit);
+        let checkout = document.createElement("button");
+        checkout.name = "Button";
+        checkout.type = "button";
+        checkout.innerText = "Bestellung �berpr�fen";
+        checkout.addEventListener("mousedown", pruefe);
+        submit.appendChild(checkout);
     }
+    //Warenkorb erzeugen
     function warenkorb(_event) {
         let target = _event.target;
         let stepper = [];
@@ -199,7 +199,7 @@ var Aufgabe10_Neu;
         korb.innerHTML += " " + korbLiefer[0] + ": " + korbLiefer[1] + " Euro <br>";
         gesamtpreis = parseFloat(korbBaum[1]) + parseFloat(korbFuss[1]) + parseFloat(korbLiefer[1]);
         for (let i = 0; i < stepper.length; i++) {
-            //Wenn anzahl nicht gleich 0 und die checkbox ausgew�hlt ist, dann......
+            //Wenn anzahl nicht gleich 0 und die checkbox ausgew�hlt
             if (checkBoxes[i] != null && checkBoxes[i].checked == true) {
                 gesamtpreis += parseFloat(korbSchmuck[i][1]); //preis dazurechnen
                 korb.innerHTML += "" + korbSchmuck[i][0] + " " + korbSchmuck[i][1] + " Euro <br>";
@@ -209,7 +209,7 @@ var Aufgabe10_Neu;
         let price = document.getElementById("price");
         price.innerHTML = "";
         price.innerHTML += "Gesamtpreis: ";
-        price.innerHTML += Math.round(gesamtpreis * 100) / 100 + " Euro";
+        price.innerHTML += gesamtpreis + " Euro";
     }
     //Bestellung pr�fen-Funktion
     function pruefe(_event) {
