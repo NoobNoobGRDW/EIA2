@@ -149,15 +149,15 @@ var Aufgabe11;
         //Button:
         //Submit button zur �berpr�fung erstellen
         let button = document.getElementById("pruefe");
-        let submit = document.createElement("button");
-        submit.name = "Button";
-        submit.type = "button";
-        submit.style.padding = "0.75em 2em 0.75em 2em";
-        submit.style.borderRadius = "0.5em";
-        submit.style.border = "none";
-        submit.innerText = "Los!";
-        submit.addEventListener("mousedown", pruefe);
+        let submit = document.createElement("input");
+        submit.type = "submit";
         button.appendChild(submit);
+        let checkout = document.createElement("button");
+        checkout.name = "Button";
+        checkout.type = "button";
+        checkout.innerText = "Bestellung �berpr�fen";
+        checkout.addEventListener("mousedown", pruefe);
+        submit.appendChild(checkout);
     }
     function warenkorb(_event) {
         let target = _event.target;

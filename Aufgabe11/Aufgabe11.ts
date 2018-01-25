@@ -20,7 +20,7 @@ namespace Aufgabe11 {
     var land: HTMLInputElement;
     var label: HTMLLabelElement;
 
-    
+
     var korbBaum: string[] = ["kein Baum", "0 "];
     var korbFuss: string[] = ["kein Fuss", "0 "];
     var korbSchmuck: string[][] = [];
@@ -114,7 +114,7 @@ namespace Aufgabe11 {
                 var label2: HTMLLabelElement = document.createElement("label");
                 label2.id = "label2." + i;
                 label2.htmlFor = checkB.id;
-                label2.innerText = article[i].name+ " " + article[i].preis + " Euro";
+                label2.innerText = article[i].name + " " + article[i].preis + " Euro";
                 schmuckartikel.appendChild(label2);
 
                 //..und den Stepper erzeugen.
@@ -181,19 +181,19 @@ namespace Aufgabe11 {
 
         //Submit button zur Überprüfung erstellen
         let button: HTMLDivElement = <HTMLDivElement>document.getElementById("pruefe");
-        let submit: HTMLButtonElement = document.createElement("button");
-        submit.name = "Button";
-        submit.type = "button";
-        submit.style.padding = "0.75em 2em 0.75em 2em";
-        submit.style.borderRadius = "0.5em";
-        submit.style.border = "none";
-        submit.innerText = "Los!";
-        submit.addEventListener("mousedown", pruefe);
+        let submit: HTMLInputElement = document.createElement("input");
+        submit.type = "submit";
         button.appendChild(submit);
+        let checkout: HTMLButtonElement = document.createElement("button");
+        checkout.name = "Button";
+        checkout.type = "button";
+        checkout.innerText = "Bestellung überprüfen";
+        checkout.addEventListener("mousedown", pruefe);
+        submit.appendChild(checkout);
     }
 
     function warenkorb(_event: Event): void {
-        
+
         let target: HTMLInputElement = <HTMLInputElement>_event.target;
         let stepper: HTMLInputElement[] = [];
         let checkBoxes: HTMLInputElement[] = [];
@@ -222,7 +222,7 @@ namespace Aufgabe11 {
                 korbFuss[0] = article[i].name;
                 korbFuss[1] = "" + article[i].preis;
             }
-  
+
             //Lieferoption Warenkorb
             if (target.value == article[i].name && target.id == "boxLieferung") {
                 korbLiefer[0] = article[i].name;
