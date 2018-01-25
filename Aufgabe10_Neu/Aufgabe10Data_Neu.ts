@@ -37,6 +37,5 @@ namespace Aufgabe10_Neu {
     ];
 
 
-    export let b: string[][] = [];
 
 }

@@ -28,5 +28,4 @@ var Aufgabe10_Neu;
         { typ: "shipping", name: "Standardversand", preis: 10 },
         { typ: "shipping", name: "Premiumversand", preis: 15 },
     ];
-    Aufgabe10_Neu.b = [];
 })(Aufgabe10_Neu || (Aufgabe10_Neu = {}));
