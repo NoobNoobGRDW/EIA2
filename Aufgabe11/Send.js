@@ -11,6 +11,18 @@ var SendData;
     window.addEventListener("load", init);
     function init(_event) {
         console.log("Init");
+        setupColorDivs();
+    }
+    function setupColorDivs() {
+        console.log("Hallo");
+        let colors = ["red", "green", "blue"];
+        let divs = document.getElementsByTagName("div");
+        console.log(divs);
+        for (let i = 0; i < divs.length; i++) {
+            console.log(i);
+            divs[i].style.backgroundColor = colors[i];
+            divs[i].addEventListener("click", handleClickOnDiv);
+        }
     }
     function handleClickOnDiv(_event) {
         let style = _event.target.style;

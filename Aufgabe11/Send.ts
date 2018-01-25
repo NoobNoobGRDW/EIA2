@@ -8,12 +8,25 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 */
 
 namespace SendData {
+
     window.addEventListener("load", init);
 
     function init(_event: Event): void {
         console.log("Init");
+        setupColorDivs();
     }
 
+    function setupColorDivs(): void {
+        console.log("Hallo");
+        let colors: string[] = ["red", "green", "blue"];
+        let divs: NodeListOf<HTMLDivElement> = document.getElementsByTagName("div");
+        console.log(divs);
+        for (let i: number = 0; i < divs.length; i++) {
+            console.log(i);
+            divs[i].style.backgroundColor = colors[i];
+            divs[i].addEventListener("click", handleClickOnDiv);
+        }
+    }
 
     function handleClickOnDiv(_event: Event): void {
         let style: CSSStyleDeclaration = (<HTMLElement>_event.target).style;
