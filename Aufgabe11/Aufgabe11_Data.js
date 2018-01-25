@@ -28,11 +28,4 @@ var Aufgabe11;
         { typ: "shipping", name: "Standardversand", preis: 10 },
         { typ: "shipping", name: "Premiumversand", preis: 15 },
     ];
-    Aufgabe11.b = [];
-    for (var i = 0; i < Aufgabe11.article.length; i++) {
-        if (Aufgabe11.article[i].typ == "shipping") {
-            var preisName = [Aufgabe11.article[i].name, Aufgabe11.article[i].preis];
-            Aufgabe11.b.push(preisName);
-        }
-    }
 })(Aufgabe11 || (Aufgabe11 = {}));

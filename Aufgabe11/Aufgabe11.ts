@@ -33,6 +33,7 @@ namespace Aufgabe11 {
         let baumart: HTMLDivElement = <HTMLDivElement>document.getElementById("baum");
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "tree") {
+                
                 // Radiobutton
                 var radioBaum: HTMLInputElement = document.createElement("input");
                 radioBaum.type = "radio";
@@ -51,10 +52,11 @@ namespace Aufgabe11 {
             }
         }
 
-        //Standfuß:
+        //Standfuß
         let fuss: HTMLDivElement = <HTMLDivElement>document.getElementById("fuss");
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "feet") {
+                
                 // Radiobutton
                 var radioFuss: HTMLInputElement = document.createElement("input");
                 radioFuss.type = "radio";
@@ -76,16 +78,19 @@ namespace Aufgabe11 {
             }
         }
 
-        //Lieferoptionen:
+        //Lieferoptionen
+        
         let lieferoption: HTMLDivElement = <HTMLDivElement>document.getElementById("lieferOpt");
 
-        //Selectbox erzeugen und Eigenschaften festlegen
+        //Selectbox erzeugen
+        
         let selectBox: HTMLSelectElement = document.createElement("select");
         selectBox.name = "BoxLieferung";
         selectBox.id = "boxLieferung";
         lieferoption.appendChild(selectBox);
 
-        //Auswahlmöglichkeiten erzeugen
+        //Auswahlmöglichkeiten
+        
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "shipping") {
                 var ship: HTMLElement = document.createElement("option");
@@ -95,40 +100,41 @@ namespace Aufgabe11 {
             }
         }
 
-        //Dekoartikel:
-        let schmuckartikel: HTMLDivElement = <HTMLDivElement>document.getElementById("schmuck");
+        //Dekoartikel
+        
+        let schmuck: HTMLDivElement = <HTMLDivElement>document.getElementById("schmuck");
 
-        //Liste durch for Schleife erzeugen....für jedes Element:
+        //Liste
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "decoration") {
 
-                //....eine Checkbox,...
-                var checkB: HTMLInputElement = document.createElement("input");
-                checkB.type = "checkbox";
-                checkB.name = "CheckboxDekoartikel";
-                checkB.value = "check";
-                checkB.id = "check" + i;
-                schmuckartikel.appendChild(checkB);
+                //Checkbox
+                var checkBox: HTMLInputElement = document.createElement("input");
+                checkBox.type = "checkbox";
+                checkBox.name = "CheckboxDekoartikel";
+                checkBox.value = "check";
+                checkBox.id = "check" + i;
+                schmuck.appendChild(checkBox);
 
-                //...den Text zur Auswahlmöglichkeit,...
+                //Text auswählbar
                 var label2: HTMLLabelElement = document.createElement("label");
                 label2.id = "label2." + i;
-                label2.htmlFor = checkB.id;
+                label2.htmlFor = checkBox.id;
                 label2.innerText = article[i].name + " " + article[i].preis + " Euro";
-                schmuckartikel.appendChild(label2);
+                schmuck.appendChild(label2);
 
-                //..und den Stepper erzeugen.
+                //Stepper
                 let stepper: HTMLInputElement = document.createElement("input");
                 stepper.type = "number";
                 stepper.name = "StepperDekoartikel" + i;
-                stepper.value = "1";
+                stepper.value = "0";
                 stepper.id = "stepper" + i;
                 stepper.min = "0";
                 stepper.max = "20";
                 stepper.step = "1";
-                schmuckartikel.appendChild(stepper);
+                schmuck.appendChild(stepper);
                 var br: HTMLElement = document.createElement("br");
-                schmuckartikel.appendChild(br);
+                schmuck.appendChild(br);
             }
         }
 
@@ -177,9 +183,10 @@ namespace Aufgabe11 {
 
 
 
-        //Button:
+
 
         //Submit button zur Überprüfung erstellen
+        
         let button: HTMLDivElement = <HTMLDivElement>document.getElementById("pruefe");
         let submit: HTMLInputElement = document.createElement("input");
         submit.type = "submit";
@@ -192,6 +199,8 @@ namespace Aufgabe11 {
         submit.appendChild(checkout);
     }
 
+    //Warenkorb erzeugen
+    
     function warenkorb(_event: Event): void {
 
         let target: HTMLInputElement = <HTMLInputElement>_event.target;
@@ -245,7 +254,9 @@ namespace Aufgabe11 {
 
         gesamtpreis = parseFloat(korbBaum[1]) + parseFloat(korbFuss[1]) + parseFloat(korbLiefer[1]);
         for (let i: number = 0; i < stepper.length; i++) {
-            //Wenn anzahl nicht gleich 0 und die checkbox ausgewählt ist, dann......
+            
+            //Wenn anzahl nicht gleich 0 und die checkbox ausgewählt
+            
             if (checkBoxes[i] != null && checkBoxes[i].checked == true) {
                 gesamtpreis += parseFloat(korbSchmuck[i][1]);//preis dazurechnen
                 korb.innerHTML += "" + korbSchmuck[i][0] + " " + korbSchmuck[i][1] + " Euro <br>";
@@ -257,7 +268,7 @@ namespace Aufgabe11 {
         let price: HTMLElement = <HTMLElement>document.getElementById("price");
         price.innerHTML = "";
         price.innerHTML += "Gesamtpreis: ";
-        price.innerHTML += Math.round(gesamtpreis * 100) / 100 + " Euro";
+        price.innerHTML += gesamtpreis + " Euro";
 
     }
 
