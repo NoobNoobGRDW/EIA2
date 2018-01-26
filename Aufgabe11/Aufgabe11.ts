@@ -253,7 +253,7 @@ namespace Aufgabe11 {
         korb.innerHTML += korbFuss[0] + ": " + korbFuss[1] + " Euro <br>";
         korb.innerHTML += " " + korbLiefer[0] + ": " + korbLiefer[1] + " Euro <br>";
 
-        gesamtpreis = parseFloat(korbBaum[1]) + parseFloat(korbFuss[1]) + parseFloat(korbLiefer[1]);
+        gesamtpreis = parseFloat(korbBaum[1]) + parseFloat(korbFuss[1]) + parseFloat(korbLiefer[1]); //float= Zahl mit Kommastelle
         for (let i: number = 0; i < stepper.length; i++) {
 
             //Wenn anzahl nicht gleich 0 und die checkbox ausgewählt
@@ -269,7 +269,7 @@ namespace Aufgabe11 {
         let price: HTMLElement = <HTMLElement>document.getElementById("price");
         price.innerHTML = "";
         price.innerHTML += "Gesamtpreis: ";
-        price.innerHTML += gesamtpreis + " Euro";
+        price.innerHTML += gesamtpreis + " Euro <br>";
 
     }
 

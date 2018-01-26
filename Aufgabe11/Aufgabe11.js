@@ -195,7 +195,7 @@ var Aufgabe11;
         korb.innerHTML += "" + korbBaum[0] + " " + korbBaum[1] + " Euro <br>";
         korb.innerHTML += korbFuss[0] + ": " + korbFuss[1] + " Euro <br>";
         korb.innerHTML += " " + korbLiefer[0] + ": " + korbLiefer[1] + " Euro <br>";
-        gesamtpreis = parseFloat(korbBaum[1]) + parseFloat(korbFuss[1]) + parseFloat(korbLiefer[1]);
+        gesamtpreis = parseFloat(korbBaum[1]) + parseFloat(korbFuss[1]) + parseFloat(korbLiefer[1]); //float= Zahl mit Kommastelle
         for (let i = 0; i < stepper.length; i++) {
             //Wenn anzahl nicht gleich 0 und die checkbox ausgew�hlt
             if (checkBoxes[i] != null && checkBoxes[i].checked == true) {
@@ -207,7 +207,7 @@ var Aufgabe11;
         let price = document.getElementById("price");
         price.innerHTML = "";
         price.innerHTML += "Gesamtpreis: ";
-        price.innerHTML += gesamtpreis + " Euro";
+        price.innerHTML += gesamtpreis + " Euro <br>";
     }
     //Bestellung pr�fen-Funktion
     function pruefe(_event) {
