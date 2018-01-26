@@ -78,7 +78,7 @@ namespace Aufgabe11 {
                 //Stepper
                 let stepper: HTMLInputElement = document.createElement("input");
                 stepper.type = "number";
-                stepper.name = "StepperDekoartikel" + i;
+                stepper.name = "StepperSchmuck" + i;
                 stepper.value = "0";
                 stepper.id = "stepper" + i;
                 stepper.min = "0";
@@ -221,11 +221,7 @@ namespace Aufgabe11 {
                 korbBaum[1] = "" + article[i].preis;
             }
 
-            //Schmuck Warenkorb
-            if (article[i].typ == "decoration") {
-                stepper[i] = <HTMLInputElement>document.getElementById("stepper" + i);
-                checkBoxes[i] = <HTMLInputElement>document.getElementById("check" + i);
-            }
+
 
             //Fuﬂ Warenkorb
             if (target.id == "radio02" + i) {
@@ -240,7 +236,10 @@ namespace Aufgabe11 {
             }
 
             //Schmuck Warenkorb
-            if (target.id == "check" + i || target.id == "stepper" + i) {
+            if (article[i].typ == "decoration") {
+                stepper[i] = <HTMLInputElement>document.getElementById("stepper" + i);
+                checkBoxes[i] = <HTMLInputElement>document.getElementById("check" + i);
+
                 korbSchmuck[i] = [article[i].name, "" + Math.round((article[i].preis * parseInt(stepper[i].value) * 100)) / 100];
             }
 

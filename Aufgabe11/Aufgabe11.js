@@ -60,7 +60,7 @@ var Aufgabe11;
                 //Stepper
                 let stepper = document.createElement("input");
                 stepper.type = "number";
-                stepper.name = "StepperDekoartikel" + i;
+                stepper.name = "StepperSchmuck" + i;
                 stepper.value = "0";
                 stepper.id = "stepper" + i;
                 stepper.min = "0";
@@ -170,11 +170,6 @@ var Aufgabe11;
                 korbBaum[0] = Aufgabe11.article[i].name;
                 korbBaum[1] = "" + Aufgabe11.article[i].preis;
             }
-            //Schmuck Warenkorb
-            if (Aufgabe11.article[i].typ == "decoration") {
-                stepper[i] = document.getElementById("stepper" + i);
-                checkBoxes[i] = document.getElementById("check" + i);
-            }
             //Fu� Warenkorb
             if (target.id == "radio02" + i) {
                 korbFuss[0] = Aufgabe11.article[i].name;
@@ -186,7 +181,9 @@ var Aufgabe11;
                 korbLiefer[1] = "" + Aufgabe11.article[i].preis;
             }
             //Schmuck Warenkorb
-            if (target.id == "check" + i || target.id == "stepper" + i) {
+            if (Aufgabe11.article[i].typ == "decoration") {
+                stepper[i] = document.getElementById("stepper" + i);
+                checkBoxes[i] = document.getElementById("check" + i);
                 korbSchmuck[i] = [Aufgabe11.article[i].name, "" + Math.round((Aufgabe11.article[i].preis * parseInt(stepper[i].value) * 100)) / 100];
             }
         }
