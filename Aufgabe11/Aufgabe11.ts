@@ -240,7 +240,7 @@ namespace Aufgabe11 {
                 stepper[i] = <HTMLInputElement>document.getElementById("stepper" + i);
                 checkBoxes[i] = <HTMLInputElement>document.getElementById("check" + i);
 
-                korbSchmuck[i] = [article[i].name, "" + Math.round((article[i].preis * parseInt(stepper[i].value) * 100)) / 100];
+                korbSchmuck[i] = [article[i].name, "" + Math.round((article[i].preis * parseFloat(stepper[i].value) * 100)) / 100];
             }
 
         }

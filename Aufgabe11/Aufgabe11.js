@@ -184,7 +184,7 @@ var Aufgabe11;
             if (Aufgabe11.article[i].typ == "decoration") {
                 stepper[i] = document.getElementById("stepper" + i);
                 checkBoxes[i] = document.getElementById("check" + i);
-                korbSchmuck[i] = [Aufgabe11.article[i].name, "" + Math.round((Aufgabe11.article[i].preis * parseInt(stepper[i].value) * 100)) / 100];
+                korbSchmuck[i] = [Aufgabe11.article[i].name, "" + Math.round((Aufgabe11.article[i].preis * parseFloat(stepper[i].value) * 100)) / 100];
             }
         }
         let korb = document.getElementById("korbUnter");
