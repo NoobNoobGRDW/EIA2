@@ -14,13 +14,13 @@ var Aufgabe11;
     var vorname;
     var strasseNr;
     var plzOrt;
-    var plz;
     var land;
     var korbBaum = ["kein Baum", "0 "];
     var korbFuss = ["kein Fuss", "0 "];
     var korbSchmuck = []; //multi
     var korbLiefer = ["keine Lieferoption", "0 "];
     function createElements() {
+        //Baum
         let baumart = document.getElementById("baum");
         for (let i = 0; i < Aufgabe11.article.length; i++) {
             if (Aufgabe11.article[i].typ == "tree") {
@@ -37,6 +37,38 @@ var Aufgabe11;
                 label01.htmlFor = radioBaum.id;
                 label01.innerText = Aufgabe11.article[i].name + " " + Aufgabe11.article[i].preis + " Euro";
                 baumart.appendChild(label01);
+            }
+        }
+        //Schmuck
+        let schmuck = document.getElementById("schmuck");
+        //Liste
+        for (let i = 0; i < Aufgabe11.article.length; i++) {
+            if (Aufgabe11.article[i].typ == "decoration") {
+                //Checkbox
+                var checkBox = document.createElement("input");
+                checkBox.type = "checkbox";
+                checkBox.name = "CheckboxSchmuck";
+                checkBox.value = "check";
+                checkBox.id = "check" + i;
+                schmuck.appendChild(checkBox);
+                //Text ausw�hlbar
+                var label03 = document.createElement("label");
+                label03.id = "label2." + i;
+                label03.htmlFor = checkBox.id;
+                label03.innerText = Aufgabe11.article[i].name + " " + Aufgabe11.article[i].preis + " Euro";
+                schmuck.appendChild(label03);
+                //Stepper
+                let stepper = document.createElement("input");
+                stepper.type = "number";
+                stepper.name = "StepperDekoartikel" + i;
+                stepper.value = "0";
+                stepper.id = "stepper" + i;
+                stepper.min = "0";
+                stepper.max = "20";
+                stepper.step = "1";
+                schmuck.appendChild(stepper);
+                var br = document.createElement("br");
+                schmuck.appendChild(br);
             }
         }
         //Standfu�
@@ -57,8 +89,6 @@ var Aufgabe11;
                 label02.htmlFor = radioFuss.id;
                 label02.innerText = Aufgabe11.article[i].name + " " + Aufgabe11.article[i].preis + " Euro";
                 fuss.appendChild(label02);
-                var br = document.createElement("br");
-                fuss.appendChild(br);
             }
         }
         //Lieferoptionen
@@ -75,38 +105,6 @@ var Aufgabe11;
                 ship.innerText = Aufgabe11.article[i].name;
                 ship.id = "checkLiefer" + i;
                 selectBox.appendChild(ship);
-            }
-        }
-        //Schmuck
-        let schmuck = document.getElementById("schmuck");
-        //Liste
-        for (let i = 0; i < Aufgabe11.article.length; i++) {
-            if (Aufgabe11.article[i].typ == "decoration") {
-                //Checkbox
-                var checkBox = document.createElement("input");
-                checkBox.type = "checkbox";
-                checkBox.name = "CheckboxDekoartikel";
-                checkBox.value = "check";
-                checkBox.id = "check" + i;
-                schmuck.appendChild(checkBox);
-                //Text ausw�hlbar
-                var label2 = document.createElement("label");
-                label2.id = "label2." + i;
-                label2.htmlFor = checkBox.id;
-                label2.innerText = Aufgabe11.article[i].name + " " + Aufgabe11.article[i].preis + " Euro";
-                schmuck.appendChild(label2);
-                //Stepper
-                let stepper = document.createElement("input");
-                stepper.type = "number";
-                stepper.name = "StepperDekoartikel" + i;
-                stepper.value = "0";
-                stepper.id = "stepper" + i;
-                stepper.min = "0";
-                stepper.max = "20";
-                stepper.step = "1";
-                schmuck.appendChild(stepper);
-                var br = document.createElement("br");
-                schmuck.appendChild(br);
             }
         }
         //Lieferadresse

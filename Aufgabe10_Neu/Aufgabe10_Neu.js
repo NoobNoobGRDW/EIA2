@@ -14,13 +14,13 @@ var Aufgabe10_Neu;
     var vorname;
     var strasseNr;
     var plzOrt;
-    var plz;
     var land;
     var korbBaum = ["kein Baum", "0 "];
     var korbFuss = ["kein Fuss", "0 "];
     var korbSchmuck = []; //multi
     var korbLiefer = ["keine Lieferoption", "0 "];
     function createElements() {
+        //Baum
         let baumart = document.getElementById("baum");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
             if (Aufgabe10_Neu.article[i].typ == "tree") {
@@ -39,6 +39,38 @@ var Aufgabe10_Neu;
                 baumart.appendChild(label01);
             }
         }
+        //Schmuck
+        let schmuck = document.getElementById("schmuck");
+        //Liste
+        for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
+            if (Aufgabe10_Neu.article[i].typ == "decoration") {
+                //Checkbox
+                var checkBox = document.createElement("input");
+                checkBox.type = "checkbox";
+                checkBox.name = "CheckboxSchmuck";
+                checkBox.value = "check";
+                checkBox.id = "check" + i;
+                schmuck.appendChild(checkBox);
+                //Text ausw�hlbar
+                var label03 = document.createElement("label");
+                label03.id = "label2." + i;
+                label03.htmlFor = checkBox.id;
+                label03.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
+                schmuck.appendChild(label03);
+                //Stepper
+                let stepper = document.createElement("input");
+                stepper.type = "number";
+                stepper.name = "StepperDekoartikel" + i;
+                stepper.value = "0";
+                stepper.id = "stepper" + i;
+                stepper.min = "0";
+                stepper.max = "20";
+                stepper.step = "1";
+                schmuck.appendChild(stepper);
+                var br = document.createElement("br");
+                schmuck.appendChild(br);
+            }
+        }
         //Standfu�
         let fuss = document.getElementById("fuss");
         for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
@@ -46,7 +78,7 @@ var Aufgabe10_Neu;
                 // Radiobutton
                 var radioFuss = document.createElement("input");
                 radioFuss.type = "radio";
-                radioFuss.name = "radioGroupHalterung";
+                radioFuss.name = "radioGroupFuss";
                 radioFuss.value = "radio02" + i;
                 radioFuss.id = "radio02" + i;
                 fuss.appendChild(radioFuss);
@@ -57,8 +89,6 @@ var Aufgabe10_Neu;
                 label02.htmlFor = radioFuss.id;
                 label02.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
                 fuss.appendChild(label02);
-                var br = document.createElement("br");
-                fuss.appendChild(br);
             }
         }
         //Lieferoptionen
@@ -75,38 +105,6 @@ var Aufgabe10_Neu;
                 ship.innerText = Aufgabe10_Neu.article[i].name;
                 ship.id = "checkLiefer" + i;
                 selectBox.appendChild(ship);
-            }
-        }
-        //Schmuck
-        let schmuck = document.getElementById("schmuck");
-        //Liste
-        for (let i = 0; i < Aufgabe10_Neu.article.length; i++) {
-            if (Aufgabe10_Neu.article[i].typ == "decoration") {
-                //Checkbox
-                var checkBox = document.createElement("input");
-                checkBox.type = "checkbox";
-                checkBox.name = "CheckboxDekoartikel";
-                checkBox.value = "check";
-                checkBox.id = "check" + i;
-                schmuck.appendChild(checkBox);
-                //Text ausw�hlbar
-                var label2 = document.createElement("label");
-                label2.id = "label2." + i;
-                label2.htmlFor = checkBox.id;
-                label2.innerText = Aufgabe10_Neu.article[i].name + " " + Aufgabe10_Neu.article[i].preis + " Euro";
-                schmuck.appendChild(label2);
-                //Stepper
-                let stepper = document.createElement("input");
-                stepper.type = "number";
-                stepper.name = "StepperDekoartikel" + i;
-                stepper.value = "0";
-                stepper.id = "stepper" + i;
-                stepper.min = "0";
-                stepper.max = "20";
-                stepper.step = "1";
-                schmuck.appendChild(stepper);
-                var br = document.createElement("br");
-                schmuck.appendChild(br);
             }
         }
         //Lieferadresse

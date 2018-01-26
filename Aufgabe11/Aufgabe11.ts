@@ -16,7 +16,6 @@ namespace Aufgabe11 {
     var vorname: HTMLInputElement;
     var strasseNr: HTMLInputElement;
     var plzOrt: HTMLInputElement;
-    var plz: HTMLInputElement;
     var land: HTMLInputElement;
 
 
@@ -28,12 +27,12 @@ namespace Aufgabe11 {
 
     function createElements(): void {
 
-
+        //Baum
 
         let baumart: HTMLDivElement = <HTMLDivElement>document.getElementById("baum");
         for (let i: number = 0; i < article.length; i++) {
             if (article[i].typ == "tree") {
-                
+
                 // Radiobutton
                 var radioBaum: HTMLInputElement = document.createElement("input");
                 radioBaum.type = "radio";
@@ -52,57 +51,9 @@ namespace Aufgabe11 {
             }
         }
 
-        //Standfuß
-        let fuss: HTMLDivElement = <HTMLDivElement>document.getElementById("fuss");
-        for (let i: number = 0; i < article.length; i++) {
-            if (article[i].typ == "feet") {
-                
-                // Radiobutton
-                var radioFuss: HTMLInputElement = document.createElement("input");
-                radioFuss.type = "radio";
-                radioFuss.name = "radioGroupFuss";
-                radioFuss.value = "radio02" + i;
-                radioFuss.id = "radio02" + i;
-                fuss.appendChild(radioFuss);
-
-                // Text/Label
-                var label02: HTMLLabelElement;
-                label02 = document.createElement("label");
-                label02.id = "label" + i;
-                label02.htmlFor = radioFuss.id;
-                label02.innerText = article[i].name + " " + article[i].preis + " Euro";
-                fuss.appendChild(label02);
-                var br: HTMLElement = document.createElement("br");
-                fuss.appendChild(br);
-
-
-            }
-        }
-
-        //Lieferoptionen
-        
-        let lieferoption: HTMLDivElement = <HTMLDivElement>document.getElementById("lieferOpt");
-
-        //Selectbox erzeugen
-        
-        let selectBox: HTMLSelectElement = document.createElement("select");
-        selectBox.name = "BoxLieferung";
-        selectBox.id = "boxLieferung";
-        lieferoption.appendChild(selectBox);
-
-        //Auswahlmöglichkeiten
-        
-        for (let i: number = 0; i < article.length; i++) {
-            if (article[i].typ == "shipping") {
-                var ship: HTMLElement = document.createElement("option");
-                ship.innerText = article[i].name;
-                ship.id = "checkLiefer" + i;
-                selectBox.appendChild(ship);
-            }
-        }
 
         //Schmuck
-        
+
         let schmuck: HTMLDivElement = <HTMLDivElement>document.getElementById("schmuck");
 
         //Liste
@@ -112,17 +63,17 @@ namespace Aufgabe11 {
                 //Checkbox
                 var checkBox: HTMLInputElement = document.createElement("input");
                 checkBox.type = "checkbox";
-                checkBox.name = "CheckboxDekoartikel";
+                checkBox.name = "CheckboxSchmuck";
                 checkBox.value = "check";
                 checkBox.id = "check" + i;
                 schmuck.appendChild(checkBox);
 
                 //Text auswählbar
-                var label2: HTMLLabelElement = document.createElement("label");
-                label2.id = "label2." + i;
-                label2.htmlFor = checkBox.id;
-                label2.innerText = article[i].name + " " + article[i].preis + " Euro";
-                schmuck.appendChild(label2);
+                var label03: HTMLLabelElement = document.createElement("label");
+                label03.id = "label2." + i;
+                label03.htmlFor = checkBox.id;
+                label03.innerText = article[i].name + " " + article[i].preis + " Euro";
+                schmuck.appendChild(label03);
 
                 //Stepper
                 let stepper: HTMLInputElement = document.createElement("input");
@@ -138,6 +89,55 @@ namespace Aufgabe11 {
                 schmuck.appendChild(br);
             }
         }
+
+        //Standfuß
+        let fuss: HTMLDivElement = <HTMLDivElement>document.getElementById("fuss");
+        for (let i: number = 0; i < article.length; i++) {
+            if (article[i].typ == "feet") {
+
+                // Radiobutton
+                var radioFuss: HTMLInputElement = document.createElement("input");
+                radioFuss.type = "radio";
+                radioFuss.name = "radioGroupFuss";
+                radioFuss.value = "radio02" + i;
+                radioFuss.id = "radio02" + i;
+                fuss.appendChild(radioFuss);
+
+                // Text/Label
+                var label02: HTMLLabelElement;
+                label02 = document.createElement("label");
+                label02.id = "label" + i;
+                label02.htmlFor = radioFuss.id;
+                label02.innerText = article[i].name + " " + article[i].preis + " Euro";
+                fuss.appendChild(label02);
+
+
+            }
+        }
+
+        //Lieferoptionen
+
+        let lieferoption: HTMLDivElement = <HTMLDivElement>document.getElementById("lieferOpt");
+
+        //Selectbox erzeugen
+
+        let selectBox: HTMLSelectElement = document.createElement("select");
+        selectBox.name = "BoxLieferung";
+        selectBox.id = "boxLieferung";
+        lieferoption.appendChild(selectBox);
+
+        //Auswahlmöglichkeiten
+
+        for (let i: number = 0; i < article.length; i++) {
+            if (article[i].typ == "shipping") {
+                var ship: HTMLElement = document.createElement("option");
+                ship.innerText = article[i].name;
+                ship.id = "checkLiefer" + i;
+                selectBox.appendChild(ship);
+            }
+        }
+
+
 
         //Lieferadresse
         let adress: HTMLDivElement = <HTMLDivElement>document.getElementById("adress");
@@ -187,7 +187,7 @@ namespace Aufgabe11 {
 
 
         //Submit button zur Überprüfung erstellen
-        
+
         let button: HTMLDivElement = <HTMLDivElement>document.getElementById("pruefe");
         let submit: HTMLInputElement = document.createElement("input");
         submit.type = "submit";
@@ -201,7 +201,7 @@ namespace Aufgabe11 {
     }
 
     //Warenkorb erzeugen
-    
+
     function warenkorb(_event: Event): void {
 
         let target: HTMLInputElement = <HTMLInputElement>_event.target;
@@ -255,9 +255,9 @@ namespace Aufgabe11 {
 
         gesamtpreis = parseFloat(korbBaum[1]) + parseFloat(korbFuss[1]) + parseFloat(korbLiefer[1]);
         for (let i: number = 0; i < stepper.length; i++) {
-            
+
             //Wenn anzahl nicht gleich 0 und die checkbox ausgewählt
-            
+
             if (checkBoxes[i] != null && checkBoxes[i].checked == true) {
                 gesamtpreis += parseFloat(korbSchmuck[i][1]);//preis dazurechnen
                 korb.innerHTML += "" + korbSchmuck[i][0] + " " + korbSchmuck[i][1] + " Euro <br>";
