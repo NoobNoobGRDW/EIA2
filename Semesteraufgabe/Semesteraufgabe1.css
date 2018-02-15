@@ -6,7 +6,6 @@ Datum: 14.02.18
 	
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
-
 body {
 	text-align: center;
 	background-color: #909090;
@@ -18,4 +17,11 @@ h1 {
 	font-size: 3em;
 	margin: -0.1em;
 	padding: 0.0em;
+}
+
+h2 {
+	font-family: 'Monoton', cursive;
+	color: #B91A1A;
+	background-color: #909090;
+	opacity: 0.7;
 }
