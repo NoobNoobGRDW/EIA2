@@ -137,7 +137,7 @@ namespace Semesteraufgabe1 {
         //Bein rechts
         crc2.fillStyle = "#945415";
         crc2.fillRect(240, 520, 8, 200);
-        
+
         //Stuhl mitte
         crc2.fillStyle = "#945415";
         crc2.fillRect(310, 520, 8, 200);
@@ -146,8 +146,8 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(310, 520, 100, 8);
         //Bein rechts
         crc2.fillStyle = "#945415";
-        crc2.fillRect(410, 410, 8, 200);        
-        
+        crc2.fillRect(410, 410, 8, 200);
+
         //Stuhl rechts
         crc2.fillStyle = "#945415";
         crc2.fillRect(805, 520, 8, 200);
@@ -157,23 +157,23 @@ namespace Semesteraufgabe1 {
         //Bein rechts
         crc2.fillStyle = "#945415";
         crc2.fillRect(905, 410, 8, 200);
-        
+
         //Flügel
         //linkes Bein
         crc2.fillStyle = "#0F0F0F";
-        crc2.fillRect(450, 300, 15, 100); 
+        crc2.fillRect(450, 300, 15, 100);
         crc2.fillStyle = "#ADACAB";
-        crc2.fillRect(450, 300, 2, 100);        
+        crc2.fillRect(450, 300, 2, 100);
         //rechtes Bein
         crc2.fillStyle = "#0F0F0F";
-        crc2.fillRect(650, 300, 15, 100); 
+        crc2.fillRect(650, 300, 15, 100);
         crc2.fillStyle = "#ADACAB";
-        crc2.fillRect(650, 300, 2, 100); 
+        crc2.fillRect(650, 300, 2, 100);
         //Rumpf
         crc2.fillStyle = "#ADACAB";
         crc2.fillRect(400, 270, 302, 52);
         crc2.fillStyle = "#0F0F0F";
-        crc2.fillRect(402, 272, 300, 50);  
+        crc2.fillRect(402, 272, 300, 50);
         //Deckel
         crc2.beginPath();
         crc2.moveTo(430, 270); //links
@@ -183,8 +183,13 @@ namespace Semesteraufgabe1 {
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
         crc2.fillStyle = "#0F0F0F";
-        crc2.fill();        
-                
+        crc2.fill();
+        //Tasten
+        crc2.fillStyle = "#ADACAB";
+        crc2.fillRect(380, 280, 302, 52);
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fillRect(382, 282, 300, 50);
+
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
 

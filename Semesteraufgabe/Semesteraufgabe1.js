@@ -165,6 +165,11 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.stroke();
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fill();
+        //Tasten
+        Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
+        Semesteraufgabe1.crc2.fillRect(380, 280, 302, 52);
+        Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
+        Semesteraufgabe1.crc2.fillRect(382, 282, 300, 50);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
