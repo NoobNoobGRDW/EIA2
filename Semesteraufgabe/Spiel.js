@@ -155,5 +155,12 @@ var Spiel;
         Spiel.crc2.lineTo(462, 480);
         Spiel.crc2.strokeStyle = "#585858";
         Spiel.crc2.stroke();
+        //Mitte
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(530, 420);
+        Spiel.crc2.lineTo(548, 480);
+        Spiel.crc2.lineTo(548, 480);
+        Spiel.crc2.strokeStyle = "#585858";
+        Spiel.crc2.stroke();
     }
 })(Spiel || (Spiel = {}));
