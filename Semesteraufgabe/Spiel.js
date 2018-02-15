@@ -39,10 +39,10 @@ var Spiel;
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(100, 400); //links 
         Spiel.crc2.lineTo(900, 400); //rechts
-        Spiel.crc2.lineTo(800, 300); //oben rechts
-        Spiel.crc2.lineTo(200, 300); //oben links   
+        Spiel.crc2.lineTo(800, 100); //oben rechts
+        Spiel.crc2.lineTo(200, 100); //oben links   
         Spiel.crc2.closePath();
-        Spiel.crc2.strokeStyle = "#545453";
+        Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
         Spiel.crc2.fillStyle = "#171512";
         Spiel.crc2.fill();

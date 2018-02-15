@@ -49,10 +49,10 @@ namespace Spiel {
         crc2.beginPath();
         crc2.moveTo(100, 400);//links 
         crc2.lineTo(900, 400);//rechts
-        crc2.lineTo(800, 300);//oben rechts
-        crc2.lineTo(200, 300);//oben links   
+        crc2.lineTo(800, 100);//oben rechts
+        crc2.lineTo(200, 100);//oben links   
         crc2.closePath();
-        crc2.strokeStyle = "#545453";
+        crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
         crc2.fillStyle = "#171512";
         crc2.fill();
