@@ -29,9 +29,7 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#ADE0F3";
         crc2.fillRect(0, 0, 1000, 800);
 
-        //Boden
-        crc2.fillStyle = "#F1F7FA";
-        crc2.fillRect(0, 0, 1000, 800);
+
 
 
         canImg = crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
