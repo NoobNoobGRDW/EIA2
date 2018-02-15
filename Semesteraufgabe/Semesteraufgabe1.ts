@@ -32,14 +32,18 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#D16B6B";
         crc2.fillRect(500,0, 5, 600);
         crc2.fillStyle = "#7B2222";
-        crc2.fillRect(505,0, 10, 600);
+        crc2.fillRect(505,0, 20, 600);
         //Falte2
         crc2.fillStyle = "#D16B6B";
-        crc2.fillRect(700,0, 5, 600);        
+        crc2.fillRect(700,0, 5, 600); 
+        crc2.fillStyle = "#7B2222";
+        crc2.fillRect(705,0, 20, 600);               
         //Falte3
         crc2.fillStyle = "#D16B6B";
-        crc2.fillRect(700,0, 5, 600); 
-        
+        crc2.fillRect(750,0, 5, 600); 
+        crc2.fillStyle = "#7B2222";
+        crc2.fillRect(755,0, 20, 600);
+                
         //Boden
         crc2.fillStyle = "#B26C2F";
         crc2.fillRect(0, 500, 1000, 600);        

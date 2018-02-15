@@ -23,13 +23,17 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
         Semesteraufgabe1.crc2.fillRect(500, 0, 5, 600);
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
-        Semesteraufgabe1.crc2.fillRect(505, 0, 10, 600);
+        Semesteraufgabe1.crc2.fillRect(505, 0, 20, 600);
         //Falte2
         Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
         Semesteraufgabe1.crc2.fillRect(700, 0, 5, 600);
+        Semesteraufgabe1.crc2.fillStyle = "#7B2222";
+        Semesteraufgabe1.crc2.fillRect(705, 0, 20, 600);
         //Falte3
         Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
-        Semesteraufgabe1.crc2.fillRect(700, 0, 5, 600);
+        Semesteraufgabe1.crc2.fillRect(750, 0, 5, 600);
+        Semesteraufgabe1.crc2.fillStyle = "#7B2222";
+        Semesteraufgabe1.crc2.fillRect(755, 0, 20, 600);
         //Boden
         Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
         Semesteraufgabe1.crc2.fillRect(0, 500, 1000, 600);
