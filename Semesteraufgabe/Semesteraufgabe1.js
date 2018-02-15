@@ -92,7 +92,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fill();
         //Platte
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
-        Semesteraufgabe1.crc2.fillRect(700, 450, 150, 30);
+        Semesteraufgabe1.crc2.fillRect(690, 450, 180, 30);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
