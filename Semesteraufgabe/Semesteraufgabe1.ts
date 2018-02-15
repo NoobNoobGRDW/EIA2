@@ -194,12 +194,13 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(320, 350, 15, 50);
         crc2.fillStyle = "#ADACAB";
         crc2.fillRect(320, 350, 2, 50);        
-        crc2.fillStyle = "#0F0F0F";
-        crc2.fillRect(300, 340, 60, 15);  //Platte
+        crc2.fillStyle = "#0F0F0F";   //Platte
+        crc2.fillRect(300, 340, 60, 15);  
         crc2.fillStyle = "#ADACAB";    
         crc2.fillRect(300, 340, 2, 15);  
         //Piano Man
-         
+        crc2.fillStyle = "#ADACAB";    //Rumpf
+        crc2.fillRect(300, 300, 2, 15);          
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
