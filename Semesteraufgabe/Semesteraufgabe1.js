@@ -121,6 +121,15 @@ var Semesteraufgabe1;
         //Bein rechts
         Semesteraufgabe1.crc2.fillStyle = "#945415";
         Semesteraufgabe1.crc2.fillRect(240, 520, 8, 200);
+        //Stuhl mitte
+        Semesteraufgabe1.crc2.fillStyle = "#945415";
+        Semesteraufgabe1.crc2.fillRect(205, 520, 8, 200);
+        //Platte
+        Semesteraufgabe1.crc2.fillStyle = "#945415";
+        Semesteraufgabe1.crc2.fillRect(205, 520, 100, 8);
+        //Bein rechts
+        Semesteraufgabe1.crc2.fillStyle = "#945415";
+        Semesteraufgabe1.crc2.fillRect(305, 410, 8, 200);
         //Stuhl rechts
         Semesteraufgabe1.crc2.fillStyle = "#945415";
         Semesteraufgabe1.crc2.fillRect(805, 520, 8, 200);
