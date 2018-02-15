@@ -26,7 +26,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(25, 105, 190, 600);
         //Knauf
         Semesteraufgabe1.crc2.beginPath();
-        Semesteraufgabe1.crc2.arc(40, 200, 10, 0, 2 * Math.PI);
+        Semesteraufgabe1.crc2.arc(40, 300, 10, 0, 2 * Math.PI);
         Semesteraufgabe1.crc2.fillStyle = "#2E2E2E";
         Semesteraufgabe1.crc2.fill();
         //Vorhang

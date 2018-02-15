@@ -36,7 +36,7 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(25, 105, 190, 600);
         //Knauf
         crc2.beginPath();
-        crc2.arc(40, 200, 10, 0, 2 * Math.PI);
+        crc2.arc(40, 300, 10, 0, 2 * Math.PI);
         crc2.fillStyle = "#2E2E2E";
         crc2.fill();
         
