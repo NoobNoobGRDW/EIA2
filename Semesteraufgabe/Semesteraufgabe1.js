@@ -18,7 +18,7 @@ var Semesteraufgabe1;
         console.log("setTimeout");
         //Hintergrund
         Semesteraufgabe1.crc2.fillStyle = "#ADE0F3";
-        Semesteraufgabe1.crc2.fillRect(0, 0, 1000, 800);
+        Semesteraufgabe1.crc2.fillRect(0, 100, 1000, 800);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }

@@ -27,7 +27,7 @@ namespace Semesteraufgabe1 {
 
         //Hintergrund
         crc2.fillStyle = "#ADE0F3";
-        crc2.fillRect(0, 0, 1000, 800);
+        crc2.fillRect(0,100, 1000, 800);
 
 
 
