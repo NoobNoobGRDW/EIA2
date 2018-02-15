@@ -152,14 +152,14 @@ var Spiel;
         //Mitte
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(480, 420);
-        Spiel.crc2.lineTo(480, 530);
-        Spiel.crc2.lineTo(480, 530);
+        Spiel.crc2.lineTo(475, 530);
+        Spiel.crc2.lineTo(475, 530);
         Spiel.crc2.strokeStyle = "#585858";
         Spiel.crc2.stroke();
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(530, 420);
-        Spiel.crc2.lineTo(530, 530);
-        Spiel.crc2.lineTo(530, 530);
+        Spiel.crc2.lineTo(535, 530);
+        Spiel.crc2.lineTo(535, 530);
         Spiel.crc2.strokeStyle = "#585858";
         Spiel.crc2.stroke();
         Spiel.crc2.beginPath();
