@@ -139,6 +139,9 @@ var Semesteraufgabe1;
         //Bein rechts
         Semesteraufgabe1.crc2.fillStyle = "#945415";
         Semesteraufgabe1.crc2.fillRect(905, 410, 8, 200);
+        //Fl�gel
+        Semesteraufgabe1.crc2.fillStyle = "#945415";
+        Semesteraufgabe1.crc2.fillRect(500, 300, 10, 100);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
