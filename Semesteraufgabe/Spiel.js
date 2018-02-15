@@ -114,10 +114,10 @@ var Spiel;
         Spiel.crc2.fillStyle = "#FBFBFB";
         Spiel.crc2.fill();
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(320, 460); //links 
-        Spiel.crc2.lineTo(360, 460); //rechts
-        Spiel.crc2.lineTo(348, 410); //oben rechts
-        Spiel.crc2.lineTo(332, 410); //oben links   
+        Spiel.crc2.moveTo(270, 460); //links 
+        Spiel.crc2.lineTo(310, 460); //rechts
+        Spiel.crc2.lineTo(298, 410); //oben rechts
+        Spiel.crc2.lineTo(282, 410); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#868585";
         Spiel.crc2.stroke();
