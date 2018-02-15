@@ -51,13 +51,13 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(0, 400, 1000, 5); 
         //Verziehrung 
         crc2.fillStyle = "#6A3F16";
-        crc2.fillRect(100, 400, 50, 5); 
+        crc2.fillRect(100, 400, 50, 500); 
         crc2.fillStyle = "#6A3F16";
-        crc2.fillRect(200, 400, 50, 5); 
+        crc2.fillRect(200, 400, 50, 500); 
         crc2.fillStyle = "#6A3F16";
-        crc2.fillRect(300, 400, 50, 5);   
+        crc2.fillRect(300, 400, 50, 500);   
         crc2.fillStyle = "#6A3F16";
-        crc2.fillRect(400, 400, 50, 5);
+        crc2.fillRect(400, 400, 50, 500);
                             
         //Boden
         crc2.fillStyle = "#B26C2F";
