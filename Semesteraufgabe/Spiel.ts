@@ -156,5 +156,16 @@ namespace Spiel {
         crc2.stroke();
         crc2.fillStyle = "#FBFBFB";
         crc2.fill();
+        
+        crc2.beginPath();
+        crc2.moveTo(440, 480);//links 
+        crc2.lineTo(520, 480);//rechts
+        crc2.lineTo(488, 420);//oben rechts
+        crc2.lineTo(472, 420);//oben links   
+        crc2.closePath();
+        crc2.strokeStyle = "#868585";
+        crc2.stroke();
+        crc2.fillStyle = "#FBFBFB";
+        crc2.fill();
     }
 }

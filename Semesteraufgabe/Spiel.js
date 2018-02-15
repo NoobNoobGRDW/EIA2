@@ -143,5 +143,15 @@ var Spiel;
         Spiel.crc2.stroke();
         Spiel.crc2.fillStyle = "#FBFBFB";
         Spiel.crc2.fill();
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(440, 480); //links 
+        Spiel.crc2.lineTo(520, 480); //rechts
+        Spiel.crc2.lineTo(488, 420); //oben rechts
+        Spiel.crc2.lineTo(472, 420); //oben links   
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#868585";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#FBFBFB";
+        Spiel.crc2.fill();
     }
 })(Spiel || (Spiel = {}));
