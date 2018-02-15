@@ -180,10 +180,16 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
         Semesteraufgabe1.crc2.fillRect(300, 340, 2, 15);
         //Piano Man
-        Semesteraufgabe1.crc2.fillStyle = "#ADACAB"; //Rumpf
-        Semesteraufgabe1.crc2.fillRect(310, 250, 50, 80);
+        //Rumpf
+        Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
+        Semesteraufgabe1.crc2.fillRect(310, 240, 50, 80);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
-        Semesteraufgabe1.crc2.fillRect(311, 251, 50, 80);
+        Semesteraufgabe1.crc2.fillRect(311, 241, 50, 80);
+        //Kopf                 
+        Semesteraufgabe1.crc2.beginPath();
+        Semesteraufgabe1.crc2.arc(310, 220, 20, 0, 2 * Math.PI);
+        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fill();
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
     }
 })(Semesteraufgabe1 || (Semesteraufgabe1 = {}));
