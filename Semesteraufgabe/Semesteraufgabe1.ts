@@ -91,7 +91,7 @@ namespace Semesteraufgabe1 {
         //Tisch links
         //Bein
         crc2.fillStyle = "#2E2E2E";
-        crc2.fillRect(800,500, 5, 200);         
+        crc2.fillRect(790,450, 10, 200);         
         
  
 
