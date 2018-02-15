@@ -201,7 +201,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fill();
         Semesteraufgabe1.crc2.beginPath(); //Augen rechts
-        Semesteraufgabe1.crc2.arc(352, 211, 4, 0, 2 * Math.PI);
+        Semesteraufgabe1.crc2.arc(358, 211, 4, 0, 2 * Math.PI);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fill();
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image

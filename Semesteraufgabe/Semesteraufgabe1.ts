@@ -221,7 +221,7 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
         crc2.beginPath();   //Augen rechts
-        crc2.arc(352, 211, 4, 0, 2 * Math.PI);
+        crc2.arc(358, 211, 4, 0, 2 * Math.PI);
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();        
         
