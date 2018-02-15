@@ -92,8 +92,8 @@ namespace Spiel {
         crc2.fill();
         //Rand links
         crc2.beginPath();
-        crc2.moveTo(65, 470);//links 
-        crc2.lineTo(70, 470);//rechts
+        crc2.moveTo(65, 500);//links 
+        crc2.lineTo(70, 500);//rechts
         crc2.lineTo(90, 320);//oben rechts
         crc2.lineTo(65, 320);//oben links   
         crc2.closePath();
@@ -103,8 +103,8 @@ namespace Spiel {
         crc2.fill();
         //Rand rechts
         crc2.beginPath();
-        crc2.moveTo(930, 470);//links 
-        crc2.lineTo(935, 470);//rechts
+        crc2.moveTo(930, 500);//links 
+        crc2.lineTo(935, 500);//rechts
         crc2.lineTo(935, 320);//oben rechts
         crc2.lineTo(910, 320);//oben links   
         crc2.closePath();

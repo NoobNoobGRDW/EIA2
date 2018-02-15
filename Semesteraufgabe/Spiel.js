@@ -82,8 +82,8 @@ var Spiel;
         Spiel.crc2.fill();
         //Rand links
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(65, 470); //links 
-        Spiel.crc2.lineTo(70, 470); //rechts
+        Spiel.crc2.moveTo(65, 500); //links 
+        Spiel.crc2.lineTo(70, 500); //rechts
         Spiel.crc2.lineTo(90, 320); //oben rechts
         Spiel.crc2.lineTo(65, 320); //oben links   
         Spiel.crc2.closePath();
@@ -93,8 +93,8 @@ var Spiel;
         Spiel.crc2.fill();
         //Rand rechts
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(930, 470); //links 
-        Spiel.crc2.lineTo(935, 470); //rechts
+        Spiel.crc2.moveTo(930, 500); //links 
+        Spiel.crc2.lineTo(935, 500); //rechts
         Spiel.crc2.lineTo(935, 320); //oben rechts
         Spiel.crc2.lineTo(910, 320); //oben links   
         Spiel.crc2.closePath();
