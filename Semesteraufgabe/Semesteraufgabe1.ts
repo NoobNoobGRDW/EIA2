@@ -32,8 +32,13 @@ namespace Semesteraufgabe1 {
         //Tür
         crc2.fillStyle = "#2E2E2E";
         crc2.fillRect(20, 100, 200, 600);
-        crc2.fillStyle = "#50504F";
+        crc2.fillStyle = "#545453";
         crc2.fillRect(25, 105, 190, 600);
+        //Knauf
+        crc2.beginPath();
+        crc2.arc(40, 200, 10, 0, 2 * Math.PI);
+        crc2.fillStyle = "#2E2E2E";
+        crc2.fill();
         
         //Vorhang
         crc2.fillStyle = "#B91A1A";
