@@ -114,10 +114,10 @@ namespace Spiel {
         crc2.fill();
         //Tasten von links
         crc2.beginPath();
-        crc2.moveTo(220, 460);//links 
-        crc2.lineTo(260, 460);//rechts
-        crc2.lineTo(248, 410);//oben rechts
-        crc2.lineTo(232, 410);//oben links   
+        crc2.moveTo(220, 490);//links 
+        crc2.lineTo(260, 490);//rechts
+        crc2.lineTo(248, 450);//oben rechts
+        crc2.lineTo(232, 450);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#868585";
         crc2.stroke();
@@ -125,10 +125,10 @@ namespace Spiel {
         crc2.fill();
 
         crc2.beginPath();
-        crc2.moveTo(270, 460);//links 
-        crc2.lineTo(310, 460);//rechts
-        crc2.lineTo(298, 410);//oben rechts
-        crc2.lineTo(282, 410);//oben links   
+        crc2.moveTo(270, 490);//links 
+        crc2.lineTo(310, 490);//rechts
+        crc2.lineTo(298, 450);//oben rechts
+        crc2.lineTo(282, 450);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#868585";
         crc2.stroke();
