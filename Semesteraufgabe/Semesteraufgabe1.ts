@@ -7,6 +7,7 @@ Datum: 14.02.18
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
 
+
 namespace Semesteraufgabe1 {
 
 
