@@ -52,6 +52,8 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(650, 400, 50, 500);
         Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
         Semesteraufgabe1.crc2.fillRect(800, 400, 50, 500);
+        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
+        Semesteraufgabe1.crc2.fillRect(950, 400, 50, 500);
         //Boden
         Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
         Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 600);
