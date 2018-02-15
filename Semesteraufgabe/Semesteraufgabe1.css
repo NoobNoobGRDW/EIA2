@@ -23,9 +23,14 @@ h2 {
 	font-family: 'Monoton', cursive;
 	color: #B91A1A;
 	background-color: #909090;
-	opacity: 0.7;
+	opacity: 0.6;
 	position: absolute;
 	font-size: 3em;
 	width: 100%;
-	margin-top: 10em;
+	margin-top: 8em;
+}
+
+h2.hover {
+	color: #8a1313;
+	opacity: 0.9;
 }
