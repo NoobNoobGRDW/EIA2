@@ -247,8 +247,8 @@ namespace Spiel {
         crc2.fill();
 
         crc2.beginPath();
-        crc2.moveTo(780, 480);//links 
-        crc2.lineTo(810, 480);//rechts
+        crc2.moveTo(800, 480);//links 
+        crc2.lineTo(840, 480);//rechts
         crc2.lineTo(800, 420);//oben rechts
         crc2.lineTo(790, 420);//oben links   
         crc2.closePath();
