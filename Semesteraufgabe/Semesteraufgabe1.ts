@@ -11,14 +11,14 @@ namespace Semesteraufgabe1 {
 
 
     export let crc2: CanvasRenderingContext2D;
-    window.addEventListener("load", skiPiste);
+    window.addEventListener("load", bar);
 
     let objects: MovingObjects[] = [];
 
 
     var canImg: any; //initialisiert das Canvas Image
 
-    function skiPiste() {
+    function bar() {
 
         let canvas: HTMLCanvasElement = document.getElementsByTagName("canvas")[0];
         crc2 = canvas.getContext("2d");
