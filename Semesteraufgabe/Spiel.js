@@ -36,6 +36,7 @@ var Spiel;
         Spiel.crc2.fillStyle = "#6A3F16";
         Spiel.crc2.fillRect(0, 580, 1000, 2);
         //Klavier
+        //Rumpf
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(100, 400); //links 
         Spiel.crc2.lineTo(900, 400); //rechts
@@ -45,6 +46,16 @@ var Spiel;
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
         Spiel.crc2.fillStyle = "#171512";
+        Spiel.crc2.fill();
+        //Deckel
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(430, 270); //links
+        Spiel.crc2.lineTo(700, 270); //rechts
+        Spiel.crc2.lineTo(600, 180); //oben
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#ADACAB";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#0F0F0F";
         Spiel.crc2.fill();
     }
 })(Spiel || (Spiel = {}));

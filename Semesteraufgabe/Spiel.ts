@@ -46,6 +46,7 @@ namespace Spiel {
         crc2.fillRect(0, 580, 1000, 2);
 
         //Klavier
+        //Rumpf
         crc2.beginPath();
         crc2.moveTo(100, 400);//links 
         crc2.lineTo(900, 400);//rechts
@@ -56,6 +57,15 @@ namespace Spiel {
         crc2.stroke();
         crc2.fillStyle = "#171512";
         crc2.fill();
-
+        //Deckel
+        crc2.beginPath();
+        crc2.moveTo(430, 270); //links
+        crc2.lineTo(700, 270); //rechts
+        crc2.lineTo(600, 180); //oben
+        crc2.closePath();
+        crc2.strokeStyle = "#ADACAB";
+        crc2.stroke();
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fill();
     }
 }
