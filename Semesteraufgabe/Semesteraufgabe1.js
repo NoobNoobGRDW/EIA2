@@ -196,8 +196,12 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fill();
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F"; //Mund
         Semesteraufgabe1.crc2.fillRect(350, 220, 10, 2);
-        Semesteraufgabe1.crc2.beginPath(); //Augen
-        Semesteraufgabe1.crc2.arc(345, 215, 5, 0, 2 * Math.PI);
+        Semesteraufgabe1.crc2.beginPath(); //Augen links
+        Semesteraufgabe1.crc2.arc(344, 211, 4, 0, 2 * Math.PI);
+        Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
+        Semesteraufgabe1.crc2.fill();
+        Semesteraufgabe1.crc2.beginPath(); //Augen rechts
+        Semesteraufgabe1.crc2.arc(347, 211, 4, 0, 2 * Math.PI);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fill();
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
