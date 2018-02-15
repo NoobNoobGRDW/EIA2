@@ -219,6 +219,16 @@ var Spiel;
         Spiel.crc2.stroke();
         Spiel.crc2.fillStyle = "#0F0F0F";
         Spiel.crc2.fill();
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(780, 480); //links 
+        Spiel.crc2.lineTo(810, 480); //rechts
+        Spiel.crc2.lineTo(800, 420); //oben rechts
+        Spiel.crc2.lineTo(790, 420); //oben links   
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#ADACAB";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#0F0F0F";
+        Spiel.crc2.fill();
         //Fuss links
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(150, 600); //links 
