@@ -145,6 +145,11 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(450, 300, 15, 100);
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
         Semesteraufgabe1.crc2.fillRect(450, 300, 2, 100);
+        //rechtes Bein
+        Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
+        Semesteraufgabe1.crc2.fillRect(650, 300, 15, 100);
+        Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
+        Semesteraufgabe1.crc2.fillRect(650, 300, 2, 100);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
