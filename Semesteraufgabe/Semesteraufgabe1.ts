@@ -130,7 +130,7 @@ namespace Semesteraufgabe1 {
 
         //Stuhl links
         crc2.fillStyle = "#945415";
-        crc2.fillRect(160, 410, 5, 200);
+        crc2.fillRect(140, 410, 8, 200);
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
