@@ -200,7 +200,7 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(300, 340, 2, 15);  
         //Piano Man
         crc2.fillStyle = "#ADACAB";    //Rumpf
-        crc2.fillRect(300, 300, 2, 15);          
+        crc2.fillRect(300, 250, 50, 80);          
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
