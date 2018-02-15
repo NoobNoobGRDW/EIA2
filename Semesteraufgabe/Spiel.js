@@ -49,9 +49,9 @@ var Spiel;
         Spiel.crc2.fill();
         //Deckel
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(150, 250); //links
-        Spiel.crc2.lineTo(700, 270); //rechts
-        Spiel.crc2.lineTo(600, 100); //oben
+        Spiel.crc2.moveTo(100, 350); //links
+        Spiel.crc2.lineTo(200, 170); //rechts
+        Spiel.crc2.lineTo(150, 100); //oben
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
