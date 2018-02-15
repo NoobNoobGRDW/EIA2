@@ -222,7 +222,7 @@ namespace Spiel {
         crc2.lineTo(860, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
-        
+
         //schwarze Tasten
         crc2.beginPath();
         crc2.moveTo(490, 480);//links 
@@ -233,7 +233,18 @@ namespace Spiel {
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
         crc2.fillStyle = "#0F0F0F";
-        crc2.fill();        
+        crc2.fill();
+
+        crc2.beginPath();
+        crc2.moveTo(635, 480);//links 
+        crc2.lineTo(655, 480);//rechts
+        crc2.lineTo(655, 420);//oben rechts
+        crc2.lineTo(640, 420);//oben links   
+        crc2.closePath();
+        crc2.strokeStyle = "#ADACAB";
+        crc2.stroke();
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fill();
 
         //Fuss links
         crc2.beginPath();
