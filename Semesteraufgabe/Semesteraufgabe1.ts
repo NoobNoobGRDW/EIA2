@@ -207,7 +207,7 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(311, 241, 50, 80); 
         //Kopf                 
         crc2.beginPath();
-        crc2.arc(310, 220, 20, 0, 2 * Math.PI);
+        crc2.arc(330, 220, 30, 0, 2 * Math.PI);
         crc2.fillStyle = "#683B13";
         crc2.fill();
         

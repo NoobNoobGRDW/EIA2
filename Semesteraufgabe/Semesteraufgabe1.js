@@ -187,7 +187,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(311, 241, 50, 80);
         //Kopf                 
         Semesteraufgabe1.crc2.beginPath();
-        Semesteraufgabe1.crc2.arc(310, 220, 20, 0, 2 * Math.PI);
+        Semesteraufgabe1.crc2.arc(330, 220, 30, 0, 2 * Math.PI);
         Semesteraufgabe1.crc2.fillStyle = "#683B13";
         Semesteraufgabe1.crc2.fill();
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
