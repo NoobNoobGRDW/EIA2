@@ -162,8 +162,8 @@ namespace Semesteraufgabe1 {
         //linkes Bein
         crc2.fillStyle = "#0F0F0F";
         crc2.fillRect(450, 300, 15, 100); 
-        crc2.fillStyle = "#E3E3E3";
-        crc2.fillRect(450, 300, 5, 100);        
+        crc2.fillStyle = "#ADACAB";
+        crc2.fillRect(450, 300, 2, 100);        
         
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
