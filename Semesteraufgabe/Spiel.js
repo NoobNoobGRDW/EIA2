@@ -114,12 +114,10 @@ var Spiel;
         Spiel.crc2.fillStyle = "#FBFBFB";
         Spiel.crc2.fill();
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(200, 420); //oben1
-        Spiel.crc2.lineTo(200, 420); //oben2
-        Spiel.crc2.lineTo(190, 480); //unten1
-        Spiel.crc2.lineTo(190, 480); //unten2 
-        Spiel.crc2.closePath();
-        Spiel.crc2.fillStyle = "#0F0F0F";
-        Spiel.crc2.fill();
+        Spiel.crc2.moveTo(200, 420);
+        Spiel.crc2.lineTo(190, 480);
+        Spiel.crc2.lineTo(190, 480);
+        Spiel.crc2.strokeStyle = "#585858";
+        Spiel.crc2.stroke();
     }
 })(Spiel || (Spiel = {}));
