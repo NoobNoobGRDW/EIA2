@@ -35,10 +35,19 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
         Semesteraufgabe1.crc2.fillRect(755, 0, 20, 600);
         //B�hne
-        Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
+        Semesteraufgabe1.crc2.fillStyle = "#966534";
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 600);
         Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 5);
+        //Verziehrung 
+        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
+        Semesteraufgabe1.crc2.fillRect(100, 400, 50, 5);
+        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
+        Semesteraufgabe1.crc2.fillRect(200, 400, 50, 5);
+        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
+        Semesteraufgabe1.crc2.fillRect(300, 400, 50, 5);
+        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
+        Semesteraufgabe1.crc2.fillRect(400, 400, 50, 5);
         //Boden
         Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
         Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 600);

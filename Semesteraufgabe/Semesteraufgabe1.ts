@@ -45,11 +45,20 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(755,0, 20, 600);
         
         //Bühne
-        crc2.fillStyle = "#B26C2F";
+        crc2.fillStyle = "#966534";
         crc2.fillRect(0, 400, 1000, 600); 
         crc2.fillStyle = "#6A3F16";
-        crc2.fillRect(0, 400, 1000, 5);  
-                
+        crc2.fillRect(0, 400, 1000, 5); 
+        //Verziehrung 
+        crc2.fillStyle = "#6A3F16";
+        crc2.fillRect(100, 400, 50, 5); 
+        crc2.fillStyle = "#6A3F16";
+        crc2.fillRect(200, 400, 50, 5); 
+        crc2.fillStyle = "#6A3F16";
+        crc2.fillRect(300, 400, 50, 5);   
+        crc2.fillStyle = "#6A3F16";
+        crc2.fillRect(400, 400, 50, 5);
+                            
         //Boden
         crc2.fillStyle = "#B26C2F";
         crc2.fillRect(0, 550, 1000, 600);     
