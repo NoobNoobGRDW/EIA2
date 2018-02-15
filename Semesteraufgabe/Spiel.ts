@@ -121,7 +121,7 @@ namespace Spiel {
         crc2.closePath();
         crc2.strokeStyle = "#868585";
         crc2.stroke();
-        crc2.fillStyle = "#ADACAB";
+        crc2.fillStyle = "#FBFBFB";
         crc2.fill();
     }
 }

@@ -111,7 +111,7 @@ var Spiel;
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#868585";
         Spiel.crc2.stroke();
-        Spiel.crc2.fillStyle = "#ADACAB";
+        Spiel.crc2.fillStyle = "#FBFBFB";
         Spiel.crc2.fill();
     }
 })(Spiel || (Spiel = {}));
