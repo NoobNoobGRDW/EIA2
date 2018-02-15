@@ -116,8 +116,8 @@ var Spiel;
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(280, 490); //links 
         Spiel.crc2.lineTo(360, 490); //rechts
-        Spiel.crc2.lineTo(298, 440); //oben rechts
-        Spiel.crc2.lineTo(282, 440); //oben links   
+        Spiel.crc2.lineTo(328, 440); //oben rechts
+        Spiel.crc2.lineTo(312, 440); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#868585";
         Spiel.crc2.stroke();

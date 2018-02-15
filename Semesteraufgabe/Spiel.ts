@@ -127,8 +127,8 @@ namespace Spiel {
         crc2.beginPath();
         crc2.moveTo(280, 490);//links 
         crc2.lineTo(360, 490);//rechts
-        crc2.lineTo(298, 440);//oben rechts
-        crc2.lineTo(282, 440);//oben links   
+        crc2.lineTo(328, 440);//oben rechts
+        crc2.lineTo(312, 440);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#868585";
         crc2.stroke();
