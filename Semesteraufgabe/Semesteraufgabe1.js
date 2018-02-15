@@ -34,16 +34,16 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(750, 0, 5, 600);
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
         Semesteraufgabe1.crc2.fillRect(755, 0, 20, 600);
-        //Boden
-        Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
-        Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 600);
-        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
-        Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 5);
         //B�hne
         Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 600);
         Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 5);
+        //Boden
+        Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
+        Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 600);
+        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
+        Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 5);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
