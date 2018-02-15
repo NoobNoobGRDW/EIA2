@@ -106,7 +106,7 @@ namespace Semesteraufgabe1 {
         crc2.fill();
         //Platte
         crc2.fillStyle = "#7B2222";
-        crc2.fillRect(690, 450, 180, 30);
+        crc2.fillRect(680, 450, 190, 30);
 
 
 
