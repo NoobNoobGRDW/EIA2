@@ -47,19 +47,19 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(300,0, 20, 600);
         //Falte1
         crc2.fillStyle = "#D16B6B";
-        crc2.fillRect(600,0, 5, 600);
+        crc2.fillRect(700,0, 5, 600);
         crc2.fillStyle = "#7B2222";
-        crc2.fillRect(605,0, 20, 600);
+        crc2.fillRect(705,0, 20, 600);
         //Falte2
         crc2.fillStyle = "#D16B6B";
-        crc2.fillRect(750,0, 5, 600); 
+        crc2.fillRect(850,0, 5, 600); 
         crc2.fillStyle = "#7B2222";
-        crc2.fillRect(755,0, 20, 600);               
+        crc2.fillRect(855,0, 20, 600);               
         //Falte3
         crc2.fillStyle = "#D16B6B";
-        crc2.fillRect(800,0, 5, 600); 
+        crc2.fillRect(900,0, 5, 600); 
         crc2.fillStyle = "#7B2222";
-        crc2.fillRect(805,0, 20, 600);
+        crc2.fillRect(905,0, 20, 600);
         
         //Bühne
         crc2.fillStyle = "#966534";
