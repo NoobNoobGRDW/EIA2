@@ -44,6 +44,18 @@ namespace Spiel {
         crc2.fillRect(0, 470, 1000, 2);
         crc2.fillStyle = "#6A3F16";
         crc2.fillRect(0, 580, 1000, 2);
-        
+
+        //Klavier
+        crc2.beginPath();
+        crc2.moveTo(200, 400);//links
+        crc2.lineTo(300, 400);//rechts
+        crc2.lineTo(300, 300);//oben rechts
+        crc2.lineTo(200, 300);//oben links      
+        crc2.closePath();
+        crc2.strokeStyle = "#545453";
+        crc2.stroke();
+        crc2.fillStyle = "#545453";
+        crc2.fill();
+
     }
 }

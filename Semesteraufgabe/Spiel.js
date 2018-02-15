@@ -35,5 +35,16 @@ var Spiel;
         Spiel.crc2.fillRect(0, 470, 1000, 2);
         Spiel.crc2.fillStyle = "#6A3F16";
         Spiel.crc2.fillRect(0, 580, 1000, 2);
+        //Klavier
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(200, 400); //links
+        Spiel.crc2.lineTo(300, 400); //rechts
+        Spiel.crc2.lineTo(300, 300); //oben rechts
+        Spiel.crc2.lineTo(200, 300); //oben links      
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#545453";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#545453";
+        Spiel.crc2.fill();
     }
 })(Spiel || (Spiel = {}));
