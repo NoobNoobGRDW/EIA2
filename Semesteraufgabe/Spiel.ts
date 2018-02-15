@@ -47,10 +47,10 @@ namespace Spiel {
 
         //Klavier
         crc2.beginPath();
-        crc2.moveTo(100, 400);//links
-        crc2.lineTo(200, 300);//oben links    
+        crc2.moveTo(100, 400);//links 
         crc2.lineTo(900, 400);//rechts
         crc2.lineTo(800, 300);//oben rechts
+        crc2.lineTo(200, 300);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#545453";
         crc2.stroke();
