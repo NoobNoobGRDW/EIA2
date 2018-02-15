@@ -31,7 +31,9 @@ namespace Semesteraufgabe1 {
         
         //Tür
         crc2.fillStyle = "#2E2E2E";
-        crc2.fillRect(20,50, 100, 600);
+        crc2.fillRect(20, 100, 200, 600);
+        crc2.fillStyle = "#50504F";
+        crc2.fillRect(25, 105, 190, 600);
         
         //Vorhang
         crc2.fillStyle = "#B91A1A";
