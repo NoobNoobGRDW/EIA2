@@ -187,11 +187,11 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(311, 241, 50, 80);
         //Kopf  
         Semesteraufgabe1.crc2.beginPath(); //Haare
-        Semesteraufgabe1.crc2.arc(330, 211, 30, 0, 2 * Math.PI);
+        Semesteraufgabe1.crc2.arc(330, 208, 30, 0, 2 * Math.PI);
         Semesteraufgabe1.crc2.fillStyle = "#171512";
         Semesteraufgabe1.crc2.fill();
         Semesteraufgabe1.crc2.beginPath();
-        Semesteraufgabe1.crc2.arc(335, 215, 30, 0, 2 * Math.PI);
+        Semesteraufgabe1.crc2.arc(335, 212, 30, 0, 2 * Math.PI);
         Semesteraufgabe1.crc2.fillStyle = "#683B13";
         Semesteraufgabe1.crc2.fill();
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
