@@ -37,6 +37,8 @@ var Semesteraufgabe1;
         //Boden
         Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
         Semesteraufgabe1.crc2.fillRect(0, 500, 1000, 600);
+        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
+        Semesteraufgabe1.crc2.fillRect(0, 500, 1000, 5);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
