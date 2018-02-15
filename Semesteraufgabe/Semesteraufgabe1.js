@@ -176,9 +176,9 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
         Semesteraufgabe1.crc2.fillRect(320, 350, 2, 50);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
-        Semesteraufgabe1.crc2.fillRect(300, 340, 50, 10); //Platte
+        Semesteraufgabe1.crc2.fillRect(300, 340, 60, 15); //Platte
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
-        Semesteraufgabe1.crc2.fillRect(300, 340, 2, 10);
+        Semesteraufgabe1.crc2.fillRect(300, 340, 2, 15);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
