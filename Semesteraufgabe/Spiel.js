@@ -211,10 +211,10 @@ var Spiel;
         Spiel.crc2.fill();
         //Fuss rechts
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(850, 600); //links 
-        Spiel.crc2.lineTo(890, 600); //rechts
-        Spiel.crc2.lineTo(890, 500); //oben rechts
-        Spiel.crc2.lineTo(850, 500); //oben links   
+        Spiel.crc2.moveTo(810, 600); //links 
+        Spiel.crc2.lineTo(850, 600); //rechts
+        Spiel.crc2.lineTo(850, 500); //oben rechts
+        Spiel.crc2.lineTo(810, 500); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
