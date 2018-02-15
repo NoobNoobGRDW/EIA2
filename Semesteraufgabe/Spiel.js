@@ -212,8 +212,8 @@ var Spiel;
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(328, 480); //links 
         Spiel.crc2.lineTo(358, 480); //rechts
-        Spiel.crc2.lineTo(368, 420); //oben rechts
-        Spiel.crc2.lineTo(345, 420); //oben links   
+        Spiel.crc2.lineTo(365, 420); //oben rechts
+        Spiel.crc2.lineTo(348, 420); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
