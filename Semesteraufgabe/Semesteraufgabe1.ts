@@ -210,11 +210,12 @@ namespace Semesteraufgabe1 {
         crc2.arc(330, 208, 30, 0, 2 * Math.PI);
         crc2.fillStyle = "#171512";
         crc2.fill();                       
-        crc2.beginPath();
-        crc2.arc(335, 212, 30, 0, 2 * Math.PI);
+        crc2.beginPath();   //Kopf
+        crc2.arc(338, 212, 30, 0, 2 * Math.PI);
         crc2.fillStyle = "#683B13";
         crc2.fill();
-        
+        crc2.fillStyle = "#0F0F0F";    //Mund
+        crc2.fillRect(350, 220, 5, 2);         
         
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
