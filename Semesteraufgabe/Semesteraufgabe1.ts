@@ -28,13 +28,18 @@ namespace Semesteraufgabe1 {
         //Vorhang
         crc2.fillStyle = "#B91A1A";
         crc2.fillRect(0,0, 1000, 600);
-        
+        //Falte1
         crc2.fillStyle = "#D16B6B";
         crc2.fillRect(500,0, 5, 600);
-        
+        crc2.fillStyle = "#7B2222";
+        crc2.fillRect(505,0, 10, 600);
+        //Falte2
         crc2.fillStyle = "#D16B6B";
         crc2.fillRect(700,0, 5, 600);        
-
+        //Falte3
+        crc2.fillStyle = "#D16B6B";
+        crc2.fillRect(700,0, 5, 600); 
+        
         //Boden
         crc2.fillStyle = "#B26C2F";
         crc2.fillRect(0, 500, 1000, 600);        

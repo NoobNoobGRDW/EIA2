@@ -19,8 +19,15 @@ var Semesteraufgabe1;
         //Vorhang
         Semesteraufgabe1.crc2.fillStyle = "#B91A1A";
         Semesteraufgabe1.crc2.fillRect(0, 0, 1000, 600);
+        //Falte1
         Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
         Semesteraufgabe1.crc2.fillRect(500, 0, 5, 600);
+        Semesteraufgabe1.crc2.fillStyle = "#7B2222";
+        Semesteraufgabe1.crc2.fillRect(505, 0, 10, 600);
+        //Falte2
+        Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
+        Semesteraufgabe1.crc2.fillRect(700, 0, 5, 600);
+        //Falte3
         Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
         Semesteraufgabe1.crc2.fillRect(700, 0, 5, 600);
         //Boden
