@@ -18,13 +18,13 @@ var Semesteraufgabe1;
         console.log("setTimeout");
         //Hintergrund
         Semesteraufgabe1.crc2.fillStyle = "#ADE0F3";
-        Semesteraufgabe1.crc2.fillRect(0, 0, 800, 600);
-        canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
+        Semesteraufgabe1.crc2.fillRect(0, 0, 800, 800);
+        canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 800, 800); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
     function animiere() {
         console.log("Timeout");
-        Semesteraufgabe1.crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
+        Semesteraufgabe1.crc2.clearRect(0, 0, 800, 800); // loescht Hintergrund
         Semesteraufgabe1.crc2.putImageData(canImg, 0, 0); //f�gt Bild ein
         //for-Schleife Objects
         for (let i = 0; i < objects.length; i++) {
