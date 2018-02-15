@@ -9,6 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 
 namespace Semesteraufgabe1 {
 
+  
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", skiPiste);
 
@@ -173,39 +174,6 @@ namespace Semesteraufgabe1 {
 
         canImg = crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
 
-
-        //Startpunkte für Schnee
-        for (let i = 0; i < 160; i++) {
-            let s: Snow = new Snow(Math.random() * 800,
-                Math.random() * 600,
-                "#ABABAB");
-            objects.push(s);
-        }
-
-        //Startpunkte für Gondeln
-        for (let i = 0; i < 1; i++) {
-            let l: Lift = new Lift(470,
-                640,
-                "#818080")
-            objects.push(l);
-        }
-
-        //Startpunkte für Wolken
-        for (let i = 0; i < 2; i++) {
-            let c: Cloud = new Cloud(
-                Math.random() * 600,
-                Math.random() * 150 + 40,
-                "#BDBDBD")
-            objects.push(c);
-        }
-
-        //Class aufruf Skifahrer
-        for (let i: number = 0; i < 2; i++) {
-            let a: skiaaa = new skiaaa(265,
-                350,
-                "hsl(" + Math.random() * 360 + ", 90%, 60%)");
-            objects.push(a);
-        }
 
 
         animiere(); //führt Funktion aus
