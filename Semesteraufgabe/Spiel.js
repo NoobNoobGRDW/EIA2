@@ -200,8 +200,8 @@ var Spiel;
         Spiel.crc2.stroke();
         //schwarze Tasten von links
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(425, 480); //links 
-        Spiel.crc2.lineTo(455, 480); //rechts
+        Spiel.crc2.moveTo(325, 480); //links 
+        Spiel.crc2.lineTo(355, 480); //rechts
         Spiel.crc2.lineTo(440, 420); //oben rechts
         Spiel.crc2.lineTo(420, 420); //oben links   
         Spiel.crc2.closePath();
