@@ -169,6 +169,9 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(650, 300, 15, 100); 
         crc2.fillStyle = "#ADACAB";
         crc2.fillRect(650, 300, 2, 100); 
+        //Rumpf
+        crc2.fillStyle = "#ADACAB";
+        crc2.fillRect(400, 250, 200, 50);         
                 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
