@@ -81,8 +81,8 @@ namespace Spiel {
         crc2.fill();
         //Tastenfeld
         crc2.beginPath();
-        crc2.moveTo(85, 470);//links 
-        crc2.lineTo(915, 470);//rechts
+        crc2.moveTo(80, 470);//links 
+        crc2.lineTo(920, 470);//rechts
         crc2.lineTo(910, 320);//oben rechts
         crc2.lineTo(90, 320);//oben links   
         crc2.closePath();

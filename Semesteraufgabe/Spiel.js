@@ -71,8 +71,8 @@ var Spiel;
         Spiel.crc2.fill();
         //Tastenfeld
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(85, 470); //links 
-        Spiel.crc2.lineTo(915, 470); //rechts
+        Spiel.crc2.moveTo(80, 470); //links 
+        Spiel.crc2.lineTo(920, 470); //rechts
         Spiel.crc2.lineTo(910, 320); //oben rechts
         Spiel.crc2.lineTo(90, 320); //oben links   
         Spiel.crc2.closePath();
