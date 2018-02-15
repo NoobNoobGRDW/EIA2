@@ -171,9 +171,19 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(650, 300, 2, 100); 
         //Rumpf
         crc2.fillStyle = "#ADACAB";
-        crc2.fillRect(400, 270, 300, 50);
+        crc2.fillRect(400, 270, 302, 52);
         crc2.fillStyle = "#0F0F0F";
-        crc2.fillRect(402, 272, 300, 50);          
+        crc2.fillRect(402, 272, 300, 50);  
+        //Deckel
+        crc2.beginPath();
+        crc2.moveTo(400, 300);
+        crc2.lineTo(800, 300);
+        crc2.lineTo(600, 250);
+        crc2.closePath();
+        crc2.strokeStyle = "#ADACAB";
+        crc2.stroke();
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fill();        
                 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 

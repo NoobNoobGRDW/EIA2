@@ -152,9 +152,19 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(650, 300, 2, 100);
         //Rumpf
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
-        Semesteraufgabe1.crc2.fillRect(400, 270, 300, 50);
+        Semesteraufgabe1.crc2.fillRect(400, 270, 302, 52);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fillRect(402, 272, 300, 50);
+        //Deckel
+        Semesteraufgabe1.crc2.beginPath();
+        Semesteraufgabe1.crc2.moveTo(400, 300);
+        Semesteraufgabe1.crc2.lineTo(800, 300);
+        Semesteraufgabe1.crc2.lineTo(600, 250);
+        Semesteraufgabe1.crc2.closePath();
+        Semesteraufgabe1.crc2.strokeStyle = "#ADACAB";
+        Semesteraufgabe1.crc2.stroke();
+        Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
+        Semesteraufgabe1.crc2.fill();
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
