@@ -82,9 +82,9 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(780, 450, 10, 200);
         //Fuss
         Semesteraufgabe1.crc2.beginPath();
-        Semesteraufgabe1.crc2.moveTo(600, 700);
-        Semesteraufgabe1.crc2.lineTo(650, 700);
-        Semesteraufgabe1.crc2.lineTo(655, 650);
+        Semesteraufgabe1.crc2.moveTo(600, 600);
+        Semesteraufgabe1.crc2.lineTo(650, 600);
+        Semesteraufgabe1.crc2.lineTo(655, 550);
         Semesteraufgabe1.crc2.closePath();
         Semesteraufgabe1.crc2.strokeStyle = "#545453";
         Semesteraufgabe1.crc2.stroke();
