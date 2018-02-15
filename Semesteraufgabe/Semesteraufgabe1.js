@@ -179,18 +179,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(300, 340, 60, 15); //Platte
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB";
         Semesteraufgabe1.crc2.fillRect(300, 340, 2, 15);
+        //Piano Man
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
-        animiere(); //f�hrt Funktion aus
-    }
-    function animiere() {
-        console.log("Timeout");
-        Semesteraufgabe1.crc2.clearRect(0, 0, 600, 1000); // loescht Hintergrund
-        Semesteraufgabe1.crc2.putImageData(canImg, 0, 0); //f�gt Bild ein
-        //for-Schleife Objects
-        for (let i = 0; i < objects.length; i++) {
-            let s = objects[i];
-            s.update();
-        }
-        window.setTimeout(animiere, 10);
     }
 })(Semesteraufgabe1 || (Semesteraufgabe1 = {}));

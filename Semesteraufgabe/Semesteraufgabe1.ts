@@ -197,29 +197,17 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#0F0F0F";
         crc2.fillRect(300, 340, 60, 15);  //Platte
         crc2.fillStyle = "#ADACAB";    
-        crc2.fillRect(300, 340, 2, 15);   
+        crc2.fillRect(300, 340, 2, 15);  
+        //Piano Man
+         
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
 
 
-        animiere(); //führt Funktion aus
+
     }
 
-    function animiere() {
-        console.log("Timeout");
-        crc2.clearRect(0, 0, 600, 1000); // loescht Hintergrund
-        crc2.putImageData(canImg, 0, 0); //fügt Bild ein
 
-
-
-        //for-Schleife Objects
-        for (let i: number = 0; i < objects.length; i++) {
-            let s: MovingObjects = objects[i];
-            s.update();
-        }
-
-        window.setTimeout(animiere, 10);
-    }
 
 }
