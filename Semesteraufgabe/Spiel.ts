@@ -60,9 +60,9 @@ namespace Spiel {
         //Deckel
         crc2.beginPath();
         crc2.moveTo(100, 250);//links 
-        crc2.lineTo(900, 250);//rechts
-        crc2.lineTo(800, 50);//oben rechts
-        crc2.lineTo(780, 10);//oben links   
+        crc2.lineTo(750, 10);//rechts
+        crc2.lineTo(800, 10);//oben rechts
+        crc2.lineTo(200, 50);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();

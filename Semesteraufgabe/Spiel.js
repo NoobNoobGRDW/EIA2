@@ -50,9 +50,9 @@ var Spiel;
         //Deckel
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(100, 250); //links 
-        Spiel.crc2.lineTo(900, 250); //rechts
-        Spiel.crc2.lineTo(800, 50); //oben rechts
-        Spiel.crc2.lineTo(780, 10); //oben links   
+        Spiel.crc2.lineTo(750, 10); //rechts
+        Spiel.crc2.lineTo(800, 10); //oben rechts
+        Spiel.crc2.lineTo(200, 50); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
