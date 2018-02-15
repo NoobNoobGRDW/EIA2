@@ -198,6 +198,17 @@ var Spiel;
         Spiel.crc2.lineTo(860, 530);
         Spiel.crc2.strokeStyle = "#585858";
         Spiel.crc2.stroke();
+        //schwarze Tasten
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(490, 510); //links 
+        Spiel.crc2.lineTo(520, 510); //rechts
+        Spiel.crc2.lineTo(500, 420); //oben rechts
+        Spiel.crc2.lineTo(510, 420); //oben links   
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#ADACAB";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#0F0F0F";
+        Spiel.crc2.fill();
         //Fuss links
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(150, 600); //links 
