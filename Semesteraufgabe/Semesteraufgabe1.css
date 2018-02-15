@@ -34,3 +34,14 @@ h2:hover {
 	color: #8a1313;
 	opacity: 0.9;
 }
+
+p {
+	font-family: 'Monoton', cursive;
+	color: #0F0F0F;
+	background-color: #909090;
+	opacity: 0.6;
+	position: absolute;
+	font-size: 2em;
+	width: 100%;
+	margin-top: 9em;
+}
