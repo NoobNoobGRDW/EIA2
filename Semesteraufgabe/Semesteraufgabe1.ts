@@ -239,7 +239,7 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#0F0F0F";    
         crc2.fillRect(312, 321, 60, 20);         
         crc2.fillStyle = "#ADACAB";    //Unterschenkel
-        crc2.fillRect(361, 320, 20, 80);
+        crc2.fillRect(361, 330, 20, 70);
         crc2.fillStyle = "#0F0F0F";    
         crc2.fillRect(362, 321, 20, 80); 
                 

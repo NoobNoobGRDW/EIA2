@@ -219,7 +219,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fillRect(312, 321, 60, 20);
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB"; //Unterschenkel
-        Semesteraufgabe1.crc2.fillRect(361, 320, 20, 80);
+        Semesteraufgabe1.crc2.fillRect(361, 330, 20, 70);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fillRect(362, 321, 20, 80);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
