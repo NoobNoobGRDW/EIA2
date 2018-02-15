@@ -92,10 +92,10 @@ namespace Spiel {
         crc2.fill();
         //Rand links
         crc2.beginPath();
-        crc2.moveTo(68, 470);//links 
+        crc2.moveTo(65, 470);//links 
         crc2.lineTo(70, 470);//rechts
         crc2.lineTo(90, 320);//oben rechts
-        crc2.lineTo(80, 320);//oben links   
+        crc2.lineTo(65, 320);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
