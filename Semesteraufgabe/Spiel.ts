@@ -227,8 +227,8 @@ namespace Spiel {
         crc2.beginPath();
         crc2.moveTo(325, 480);//links 
         crc2.lineTo(355, 480);//rechts
-        crc2.lineTo(440, 420);//oben rechts
-        crc2.lineTo(420, 420);//oben links   
+        crc2.lineTo(370, 420);//oben rechts
+        crc2.lineTo(330, 420);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
