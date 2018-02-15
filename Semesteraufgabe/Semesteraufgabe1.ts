@@ -86,7 +86,12 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#B26C2F";
         crc2.fillRect(0, 550, 1000, 600);     
         crc2.fillStyle = "#6A3F16";
-        crc2.fillRect(0, 550, 1000, 5);    
+        crc2.fillRect(0, 550, 1000, 5); 
+        
+        //Tisch links
+        //Bein
+        crc2.fillStyle = "#2E2E2E";
+        crc2.fillRect(800,500, 5, 200);         
         
  
 
