@@ -50,7 +50,7 @@ var Spiel;
         //Deckel
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(100, 250); //links 
-        Spiel.crc2.lineTo(750, 10); //rechts
+        Spiel.crc2.lineTo(750, 20); //rechts
         Spiel.crc2.lineTo(800, 10); //oben rechts
         Spiel.crc2.lineTo(200, 50); //oben links   
         Spiel.crc2.closePath();
