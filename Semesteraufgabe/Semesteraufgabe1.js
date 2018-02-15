@@ -21,7 +21,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(0, 0, 1000, 800);
         //Boden
         Semesteraufgabe1.crc2.fillStyle = "#F1F7FA";
-        Semesteraufgabe1.crc2.fillRect(100, 290, 1000, 800);
+        Semesteraufgabe1.crc2.fillRect(0, 0, 1000, 800);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
