@@ -222,5 +222,17 @@ namespace Spiel {
         crc2.lineTo(860, 480);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
+
+        //Fuss links
+        crc2.beginPath();
+        crc2.moveTo(150, 600);//links 
+        crc2.lineTo(180, 600);//rechts
+        crc2.lineTo(180, 500);//oben rechts
+        crc2.lineTo(150, 500);//oben links   
+        crc2.closePath();
+        crc2.strokeStyle = "#ADACAB";
+        crc2.stroke();
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fill();
     }
 }
