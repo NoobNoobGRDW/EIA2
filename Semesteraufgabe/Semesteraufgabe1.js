@@ -90,6 +90,9 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.stroke();
         Semesteraufgabe1.crc2.fillStyle = "#545453";
         Semesteraufgabe1.crc2.fill();
+        //Platte
+        Semesteraufgabe1.crc2.fillStyle = "#7B2222";
+        Semesteraufgabe1.crc2.fillRect(720, 450, 100, 20);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
