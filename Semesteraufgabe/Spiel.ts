@@ -28,7 +28,12 @@ namespace Spiel {
         crc2.fillStyle = "#B26C2F";
         crc2.fillRect(0, 0, 1000, 600);
 
-
+        crc2.fillStyle = "#6A3F16";
+        crc2.fillRect(0, 50, 1000, 2);
+        crc2.fillStyle = "#6A3F16";
+        crc2.fillRect(0, 10, 1000, 2);
+        crc2.fillStyle = "#6A3F16";
+        crc2.fillRect(0, 150, 1000, 2);
 
 
 

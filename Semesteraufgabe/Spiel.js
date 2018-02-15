@@ -19,5 +19,11 @@ var Spiel;
         //Hintergrund
         Spiel.crc2.fillStyle = "#B26C2F";
         Spiel.crc2.fillRect(0, 0, 1000, 600);
+        Spiel.crc2.fillStyle = "#6A3F16";
+        Spiel.crc2.fillRect(0, 50, 1000, 2);
+        Spiel.crc2.fillStyle = "#6A3F16";
+        Spiel.crc2.fillRect(0, 10, 1000, 2);
+        Spiel.crc2.fillStyle = "#6A3F16";
+        Spiel.crc2.fillRect(0, 150, 1000, 2);
     }
 })(Spiel || (Spiel = {}));
