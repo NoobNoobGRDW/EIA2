@@ -178,7 +178,7 @@ namespace Semesteraufgabe1 {
         crc2.beginPath();
         crc2.moveTo(430, 270); //links
         crc2.lineTo(700, 270); //rechts
-        crc2.lineTo(550, 200); //oben
+        crc2.lineTo(600, 180); //oben
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();

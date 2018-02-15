@@ -159,7 +159,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.beginPath();
         Semesteraufgabe1.crc2.moveTo(430, 270); //links
         Semesteraufgabe1.crc2.lineTo(700, 270); //rechts
-        Semesteraufgabe1.crc2.lineTo(550, 200); //oben
+        Semesteraufgabe1.crc2.lineTo(600, 180); //oben
         Semesteraufgabe1.crc2.closePath();
         Semesteraufgabe1.crc2.strokeStyle = "#ADACAB";
         Semesteraufgabe1.crc2.stroke();
