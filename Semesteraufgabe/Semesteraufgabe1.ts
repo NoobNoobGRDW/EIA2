@@ -133,7 +133,7 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(140, 410, 8, 200);
         //Platte
         crc2.fillStyle = "#945415";
-        crc2.fillRect(140, 460, 40, 8);
+        crc2.fillRect(140, 520, 40, 8);
         
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
