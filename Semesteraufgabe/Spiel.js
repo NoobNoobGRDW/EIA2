@@ -104,10 +104,20 @@ var Spiel;
         Spiel.crc2.fill();
         //Tasten von links
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(820, 460); //links 
-        Spiel.crc2.lineTo(860, 460); //rechts
-        Spiel.crc2.lineTo(848, 410); //oben rechts
-        Spiel.crc2.lineTo(832, 410); //oben links   
+        Spiel.crc2.moveTo(220, 460); //links 
+        Spiel.crc2.lineTo(260, 460); //rechts
+        Spiel.crc2.lineTo(248, 410); //oben rechts
+        Spiel.crc2.lineTo(232, 410); //oben links   
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#868585";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#FBFBFB";
+        Spiel.crc2.fill();
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(320, 460); //links 
+        Spiel.crc2.lineTo(360, 460); //rechts
+        Spiel.crc2.lineTo(348, 410); //oben rechts
+        Spiel.crc2.lineTo(332, 410); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#868585";
         Spiel.crc2.stroke();
