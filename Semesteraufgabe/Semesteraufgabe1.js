@@ -112,6 +112,9 @@ var Semesteraufgabe1;
         //Platte
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
         Semesteraufgabe1.crc2.fillRect(180, 450, 200, 30);
+        //Stuhl links
+        Semesteraufgabe1.crc2.fillStyle = "#945415";
+        Semesteraufgabe1.crc2.fillRect(170, 450, 50, 200);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
