@@ -12,5 +12,12 @@ var Spiel;
     let objects = [];
     var canImg; //initialisiert das Canvas Image
     function piano() {
+        let canvas = document.getElementsByTagName("canvas")[0];
+        Spiel.crc2 = canvas.getContext("2d");
+        console.log(canvas);
+        console.log("setTimeout");
+        //Hintergrund
+        Spiel.crc2.fillStyle = "#B26C2F";
+        Spiel.crc2.fillRect(0, 0, 1000, 600);
     }
 })(Spiel || (Spiel = {}));
