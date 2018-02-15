@@ -42,9 +42,9 @@ namespace Semesteraufgabe1 {
 
         //Vorhang
         crc2.fillStyle = "#B91A1A";
-        crc2.fillRect(300, 0, 1000, 600);
+        crc2.fillRect(280, 0, 1000, 600);
         crc2.fillStyle = "#7B2222";
-        crc2.fillRect(300, 0, 20, 600);
+        crc2.fillRect(280, 0, 20, 600);
         //Falte1
         crc2.fillStyle = "#D16B6B";
         crc2.fillRect(700, 0, 5, 600);
