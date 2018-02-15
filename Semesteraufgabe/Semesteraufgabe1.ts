@@ -230,7 +230,7 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#0F0F0F";    
         crc2.fillRect(331, 242, 20, 48);           
         crc2.fillStyle = "#ADACAB";    //Unterarm
-        crc2.fillRect(335, 280, 40, 15);
+        crc2.fillRect(340, 280, 40, 15);
         crc2.fillStyle = "#0F0F0F";    
         crc2.fillRect(331, 281, 50, 15);                
         //Bein
@@ -242,7 +242,11 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(361, 330, 20, 70);
         crc2.fillStyle = "#0F0F0F";    
         crc2.fillRect(362, 321, 20, 80); 
-                
+        crc2.fillStyle = "#ADACAB";    //Fuﬂ
+        crc2.fillRect(311, 320, 60, 22);
+        crc2.fillStyle = "#0F0F0F";    
+        crc2.fillRect(312, 321, 60, 20);  
+                        
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
 
