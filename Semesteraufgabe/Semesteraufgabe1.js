@@ -210,14 +210,14 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fillRect(331, 242, 20, 48);
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB"; //Unterarm
-        Semesteraufgabe1.crc2.fillRect(330, 285, 50, 10);
+        Semesteraufgabe1.crc2.fillRect(330, 285, 40, 20);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fillRect(331, 280, 50, 20);
         //Bein
         Semesteraufgabe1.crc2.fillStyle = "#ADACAB"; //Unterarm
-        Semesteraufgabe1.crc2.fillRect(330, 320, 50, 10);
+        Semesteraufgabe1.crc2.fillRect(330, 320, 50, 20);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
-        Semesteraufgabe1.crc2.fillRect(331, 321, 50, 20);
+        Semesteraufgabe1.crc2.fillRect(331, 322, 50, 20);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
     }
 })(Semesteraufgabe1 || (Semesteraufgabe1 = {}));
