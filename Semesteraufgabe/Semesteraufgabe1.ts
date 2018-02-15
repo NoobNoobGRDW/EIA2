@@ -25,9 +25,15 @@ namespace Semesteraufgabe1 {
         console.log(canvas);
         console.log("setTimeout");
 
-        //Hintergrund
-        crc2.fillStyle = "#ADE0F3";
+        //Vorhang
+        crc2.fillStyle = "#B91A1A";
         crc2.fillRect(0,0, 1000, 600);
+        
+        crc2.fillStyle = "#D16B6B";
+        crc2.fillRect(500,0, 5, 600);
+        
+        crc2.fillStyle = "#D16B6B";
+        crc2.fillRect(700,0, 5, 600);        
 
         //Boden
         crc2.fillStyle = "#B26C2F";
