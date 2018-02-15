@@ -210,10 +210,10 @@ var Spiel;
         Spiel.crc2.fillStyle = "#0F0F0F";
         Spiel.crc2.fill();
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(325, 480); //links 
-        Spiel.crc2.lineTo(355, 480); //rechts
+        Spiel.crc2.moveTo(328, 480); //links 
+        Spiel.crc2.lineTo(358, 480); //rechts
         Spiel.crc2.lineTo(370, 420); //oben rechts
-        Spiel.crc2.lineTo(340, 420); //oben links   
+        Spiel.crc2.lineTo(343, 420); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
