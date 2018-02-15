@@ -226,9 +226,9 @@ namespace Spiel {
         //schwarze Tasten von links
         crc2.beginPath();
         crc2.moveTo(180, 480);//links 
-        crc2.lineTo(210, 480);//rechts
+        crc2.lineTo(205, 480);//rechts
         crc2.lineTo(215, 420);//oben rechts
-        crc2.lineTo(190, 420);//oben links   
+        crc2.lineTo(195, 420);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
