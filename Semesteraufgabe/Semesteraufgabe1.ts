@@ -216,7 +216,19 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#683B13";
         crc2.fill();
         crc2.fillStyle = "#0F0F0F";    //Mund
-        crc2.fillRect(350, 225, 10, 2);         
+        crc2.fillRect(350, 225, 10, 2); 
+        //Mundwinkel
+        crc2.beginPath();
+        crc2.moveTo(345, 223);//links 
+        crc2.lineTo(350, 225);//rechts
+        crc2.lineTo(350, 324);//oben rechts
+        crc2.lineTo(345, 222);//oben links   
+        crc2.closePath();
+        crc2.strokeStyle = "#ADACAB";
+        crc2.stroke();
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fill();
+                       
         crc2.beginPath();   //Augen links
         crc2.arc(344, 211, 4, 0, 2 * Math.PI);
         crc2.fillStyle = "#0F0F0F";

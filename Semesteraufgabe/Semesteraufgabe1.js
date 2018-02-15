@@ -8,10 +8,10 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 */
 var Semesteraufgabe1;
 (function (Semesteraufgabe1) {
-    window.addEventListener("load", skiPiste);
+    window.addEventListener("load", bar);
     let objects = [];
     var canImg; //initialisiert das Canvas Image
-    function skiPiste() {
+    function bar() {
         let canvas = document.getElementsByTagName("canvas")[0];
         Semesteraufgabe1.crc2 = canvas.getContext("2d");
         console.log(canvas);
@@ -196,6 +196,17 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fill();
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F"; //Mund
         Semesteraufgabe1.crc2.fillRect(350, 225, 10, 2);
+        //Mundwinkel
+        Semesteraufgabe1.crc2.beginPath();
+        Semesteraufgabe1.crc2.moveTo(345, 223); //links 
+        Semesteraufgabe1.crc2.lineTo(350, 225); //rechts
+        Semesteraufgabe1.crc2.lineTo(350, 324); //oben rechts
+        Semesteraufgabe1.crc2.lineTo(345, 222); //oben links   
+        Semesteraufgabe1.crc2.closePath();
+        Semesteraufgabe1.crc2.strokeStyle = "#ADACAB";
+        Semesteraufgabe1.crc2.stroke();
+        Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
+        Semesteraufgabe1.crc2.fill();
         Semesteraufgabe1.crc2.beginPath(); //Augen links
         Semesteraufgabe1.crc2.arc(344, 211, 4, 0, 2 * Math.PI);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
