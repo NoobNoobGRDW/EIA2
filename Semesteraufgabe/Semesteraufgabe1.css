@@ -9,10 +9,11 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 
 body {
 	text-align: center;
-	background-color: #666666;
+	background-color: #909090;
 }
 
 h1 {
 	font-family: 'Monoton', cursive;
 	color: #B91A1A;
+	font-size: 2em;
 }
