@@ -27,12 +27,12 @@ namespace Semesteraufgabe1 {
 
         //Hintergrund
         crc2.fillStyle = "#ADE0F3";
-        crc2.fillRect(0,100, 1000, 800);
+        crc2.fillRect(0,0, 1000, 800);
 
 
 
 
-        canImg = crc2.getImageData(0, 0, 800, 600); //speichert das Canvas Image
+        canImg = crc2.getImageData(0, 0, 1000, 800); //speichert das Canvas Image
 
 
 
@@ -41,7 +41,7 @@ namespace Semesteraufgabe1 {
 
     function animiere() {
         console.log("Timeout");
-        crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
+        crc2.clearRect(0, 0, 800, 1000); // loescht Hintergrund
         crc2.putImageData(canImg, 0, 0); //fügt Bild ein
 
 
