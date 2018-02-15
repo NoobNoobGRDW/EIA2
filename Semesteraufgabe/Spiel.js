@@ -95,7 +95,7 @@ var Spiel;
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(930, 470); //links 
         Spiel.crc2.lineTo(935, 470); //rechts
-        Spiel.crc2.lineTo(885, 320); //oben rechts
+        Spiel.crc2.lineTo(935, 320); //oben rechts
         Spiel.crc2.lineTo(910, 320); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
