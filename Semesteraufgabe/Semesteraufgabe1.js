@@ -41,13 +41,13 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 5);
         //Verziehrung 
         Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
-        Semesteraufgabe1.crc2.fillRect(100, 400, 50, 500);
-        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
-        Semesteraufgabe1.crc2.fillRect(200, 400, 50, 500);
+        Semesteraufgabe1.crc2.fillRect(150, 400, 50, 500);
         Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
         Semesteraufgabe1.crc2.fillRect(300, 400, 50, 500);
         Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
-        Semesteraufgabe1.crc2.fillRect(400, 400, 50, 500);
+        Semesteraufgabe1.crc2.fillRect(450, 400, 50, 500);
+        Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
+        Semesteraufgabe1.crc2.fillRect(600, 400, 50, 500);
         //Boden
         Semesteraufgabe1.crc2.fillStyle = "#B26C2F";
         Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 600);
