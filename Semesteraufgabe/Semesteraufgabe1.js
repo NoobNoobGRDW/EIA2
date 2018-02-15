@@ -16,9 +16,12 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2 = canvas.getContext("2d");
         console.log(canvas);
         console.log("setTimeout");
+        //Hintergrund
+        Semesteraufgabe1.crc2.fillStyle = "#50504F";
+        Semesteraufgabe1.crc2.fillRect(0, 0, 1000, 600);
         //Vorhang
         Semesteraufgabe1.crc2.fillStyle = "#B91A1A";
-        Semesteraufgabe1.crc2.fillRect(0, 0, 1000, 600);
+        Semesteraufgabe1.crc2.fillRect(200, 0, 1000, 600);
         //Falte1
         Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
         Semesteraufgabe1.crc2.fillRect(500, 0, 5, 600);

@@ -24,10 +24,13 @@ namespace Semesteraufgabe1 {
         crc2 = canvas.getContext("2d");
         console.log(canvas);
         console.log("setTimeout");
-
+        
+        //Hintergrund
+        crc2.fillStyle = "#50504F";
+        crc2.fillRect(0,0, 1000, 600);
         //Vorhang
         crc2.fillStyle = "#B91A1A";
-        crc2.fillRect(0,0, 1000, 600);
+        crc2.fillRect(200,0, 1000, 600);
         //Falte1
         crc2.fillStyle = "#D16B6B";
         crc2.fillRect(500,0, 5, 600);
