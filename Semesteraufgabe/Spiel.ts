@@ -226,9 +226,21 @@ namespace Spiel {
         //Fuss links
         crc2.beginPath();
         crc2.moveTo(150, 600);//links 
-        crc2.lineTo(180, 600);//rechts
-        crc2.lineTo(180, 500);//oben rechts
+        crc2.lineTo(190, 600);//rechts
+        crc2.lineTo(190, 500);//oben rechts
         crc2.lineTo(150, 500);//oben links   
+        crc2.closePath();
+        crc2.strokeStyle = "#ADACAB";
+        crc2.stroke();
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fill();
+
+        //Fuss rechts
+        crc2.beginPath();
+        crc2.moveTo(850, 600);//links 
+        crc2.lineTo(890, 600);//rechts
+        crc2.lineTo(890, 500);//oben rechts
+        crc2.lineTo(850, 500);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
