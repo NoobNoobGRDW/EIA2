@@ -104,50 +104,10 @@ var Spiel;
         Spiel.crc2.fill();
         //Tasten von links
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(120, 480); //links 
-        Spiel.crc2.lineTo(200, 480); //rechts
-        Spiel.crc2.lineTo(168, 420); //oben rechts
-        Spiel.crc2.lineTo(152, 420); //oben links   
-        Spiel.crc2.closePath();
-        Spiel.crc2.strokeStyle = "#868585";
-        Spiel.crc2.stroke();
-        Spiel.crc2.fillStyle = "#FBFBFB";
-        Spiel.crc2.fill();
-        Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(200, 480); //links 
-        Spiel.crc2.lineTo(280, 480); //rechts
-        Spiel.crc2.lineTo(248, 420); //oben rechts
-        Spiel.crc2.lineTo(232, 420); //oben links   
-        Spiel.crc2.closePath();
-        Spiel.crc2.strokeStyle = "#868585";
-        Spiel.crc2.stroke();
-        Spiel.crc2.fillStyle = "#FBFBFB";
-        Spiel.crc2.fill();
-        Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(280, 480); //links 
-        Spiel.crc2.lineTo(360, 480); //rechts
-        Spiel.crc2.lineTo(328, 420); //oben rechts
-        Spiel.crc2.lineTo(312, 420); //oben links   
-        Spiel.crc2.closePath();
-        Spiel.crc2.strokeStyle = "#868585";
-        Spiel.crc2.stroke();
-        Spiel.crc2.fillStyle = "#FBFBFB";
-        Spiel.crc2.fill();
-        Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(360, 480); //links 
-        Spiel.crc2.lineTo(440, 480); //rechts
-        Spiel.crc2.lineTo(408, 420); //oben rechts
-        Spiel.crc2.lineTo(392, 420); //oben links   
-        Spiel.crc2.closePath();
-        Spiel.crc2.strokeStyle = "#868585";
-        Spiel.crc2.stroke();
-        Spiel.crc2.fillStyle = "#FBFBFB";
-        Spiel.crc2.fill();
-        Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(440, 480); //links 
-        Spiel.crc2.lineTo(520, 480); //rechts
-        Spiel.crc2.lineTo(488, 420); //oben rechts
-        Spiel.crc2.lineTo(472, 420); //oben links   
+        Spiel.crc2.moveTo(100, 480); //links 
+        Spiel.crc2.lineTo(900, 480); //rechts
+        Spiel.crc2.lineTo(870, 420); //oben rechts
+        Spiel.crc2.lineTo(130, 420); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#868585";
         Spiel.crc2.stroke();

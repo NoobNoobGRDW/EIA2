@@ -114,58 +114,16 @@ namespace Spiel {
         crc2.fill();
         //Tasten von links
         crc2.beginPath();
-        crc2.moveTo(120, 480);//links 
-        crc2.lineTo(200, 480);//rechts
-        crc2.lineTo(168, 420);//oben rechts
-        crc2.lineTo(152, 420);//oben links   
+        crc2.moveTo(100, 480);//links 
+        crc2.lineTo(900, 480);//rechts
+        crc2.lineTo(870, 420);//oben rechts
+        crc2.lineTo(130, 420);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#868585";
         crc2.stroke();
         crc2.fillStyle = "#FBFBFB";
         crc2.fill();
 
-        crc2.beginPath();
-        crc2.moveTo(200, 480);//links 
-        crc2.lineTo(280, 480);//rechts
-        crc2.lineTo(248, 420);//oben rechts
-        crc2.lineTo(232, 420);//oben links   
-        crc2.closePath();
-        crc2.strokeStyle = "#868585";
-        crc2.stroke();
-        crc2.fillStyle = "#FBFBFB";
-        crc2.fill();
 
-        crc2.beginPath();
-        crc2.moveTo(280, 480);//links 
-        crc2.lineTo(360, 480);//rechts
-        crc2.lineTo(328, 420);//oben rechts
-        crc2.lineTo(312, 420);//oben links   
-        crc2.closePath();
-        crc2.strokeStyle = "#868585";
-        crc2.stroke();
-        crc2.fillStyle = "#FBFBFB";
-        crc2.fill();
-
-        crc2.beginPath();
-        crc2.moveTo(360, 480);//links 
-        crc2.lineTo(440, 480);//rechts
-        crc2.lineTo(408, 420);//oben rechts
-        crc2.lineTo(392, 420);//oben links   
-        crc2.closePath();
-        crc2.strokeStyle = "#868585";
-        crc2.stroke();
-        crc2.fillStyle = "#FBFBFB";
-        crc2.fill();
-        
-        crc2.beginPath();
-        crc2.moveTo(440, 480);//links 
-        crc2.lineTo(520, 480);//rechts
-        crc2.lineTo(488, 420);//oben rechts
-        crc2.lineTo(472, 420);//oben links   
-        crc2.closePath();
-        crc2.strokeStyle = "#868585";
-        crc2.stroke();
-        crc2.fillStyle = "#FBFBFB";
-        crc2.fill();
     }
 }
