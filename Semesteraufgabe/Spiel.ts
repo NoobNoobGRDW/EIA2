@@ -161,15 +161,15 @@ namespace Spiel {
 
         crc2.beginPath();
         crc2.moveTo(430, 420);
-        crc2.lineTo(310, 480);
-        crc2.lineTo(310, 480);
+        crc2.lineTo(410, 480);
+        crc2.lineTo(410, 480);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(480, 420);
-        crc2.lineTo(362, 480);
-        crc2.lineTo(362, 480);
+        crc2.lineTo(462, 480);
+        crc2.lineTo(462, 480);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
     }
