@@ -48,20 +48,20 @@ namespace Spiel {
         //Klavier
         //Rumpf
         crc2.beginPath();
-        crc2.moveTo(100, 400);//links 
-        crc2.lineTo(900, 400);//rechts
+        crc2.moveTo(100, 350);//links 
+        crc2.lineTo(900, 350);//rechts
         crc2.lineTo(800, 100);//oben rechts
         crc2.lineTo(200, 100);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
-        crc2.fillStyle = "#171512";
+        crc2.fillStyle = "#0F0F0F";
         crc2.fill();
         //Deckel
         crc2.beginPath();
-        crc2.moveTo(430, 270); //links
+        crc2.moveTo(150, 250); //links
         crc2.lineTo(700, 270); //rechts
-        crc2.lineTo(600, 180); //oben
+        crc2.lineTo(600, 100); //oben
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
