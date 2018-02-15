@@ -96,8 +96,8 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(780,450, 10, 200); 
         //Fuss
         crc2.beginPath();
-        crc2.moveTo(750, 600);//links
-        crc2.lineTo(810, 600);//rechts
+        crc2.moveTo(740, 600);//links
+        crc2.lineTo(820, 600);//rechts
         crc2.lineTo(780, 570);//spitze
         crc2.closePath();
         crc2.strokeStyle = "#545453";

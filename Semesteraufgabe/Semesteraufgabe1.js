@@ -82,8 +82,8 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(780, 450, 10, 200);
         //Fuss
         Semesteraufgabe1.crc2.beginPath();
-        Semesteraufgabe1.crc2.moveTo(750, 600); //links
-        Semesteraufgabe1.crc2.lineTo(810, 600); //rechts
+        Semesteraufgabe1.crc2.moveTo(740, 600); //links
+        Semesteraufgabe1.crc2.lineTo(820, 600); //rechts
         Semesteraufgabe1.crc2.lineTo(780, 570); //spitze
         Semesteraufgabe1.crc2.closePath();
         Semesteraufgabe1.crc2.strokeStyle = "#545453";
