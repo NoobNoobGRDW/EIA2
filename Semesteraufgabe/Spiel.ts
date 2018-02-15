@@ -61,7 +61,8 @@ namespace Spiel {
         crc2.beginPath();
         crc2.moveTo(100, 250); //links
         crc2.lineTo(200, 50); //rechts
-        crc2.lineTo(600, 10); //oben
+        crc2.lineTo(600, 50); //oben rechts
+        crc2.lineTo(600, 10); //oben links
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
