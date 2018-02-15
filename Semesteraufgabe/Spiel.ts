@@ -125,8 +125,10 @@ namespace Spiel {
         crc2.fill();
 
         crc2.beginPath();
-        crc2.moveTo(200, 420);//oben
-        crc2.lineTo(190, 480);//unten
+        crc2.moveTo(200, 420);//oben1
+        crc2.lineTo(200, 420);//oben2
+        crc2.lineTo(190, 480);//unten1
+        crc2.lineTo(190, 480);//unten2 
         crc2.closePath();
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
