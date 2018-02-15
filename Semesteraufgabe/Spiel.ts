@@ -165,7 +165,7 @@ namespace Spiel {
         crc2.lineTo(410, 480);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
-        
+
         //Mitte
         crc2.beginPath();
         crc2.moveTo(480, 420);
@@ -180,11 +180,18 @@ namespace Spiel {
         crc2.lineTo(548, 480);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
-                
+
         crc2.beginPath();
         crc2.moveTo(580, 420);
         crc2.lineTo(600, 480);
         crc2.lineTo(600, 480);
+        crc2.strokeStyle = "#585858";
+        crc2.stroke();
+
+        crc2.beginPath();
+        crc2.moveTo(630, 420);
+        crc2.lineTo(652, 480);
+        crc2.lineTo(652, 480);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
     }
