@@ -102,5 +102,16 @@ var Spiel;
         Spiel.crc2.stroke();
         Spiel.crc2.fillStyle = "#0F0F0F";
         Spiel.crc2.fill();
+        //Tasten von links
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(930, 465); //links 
+        Spiel.crc2.lineTo(950, 465); //rechts
+        Spiel.crc2.lineTo(942, 420); //oben rechts
+        Spiel.crc2.lineTo(938, 420); //oben links   
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#868585";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#ADACAB";
+        Spiel.crc2.fill();
     }
 })(Spiel || (Spiel = {}));
