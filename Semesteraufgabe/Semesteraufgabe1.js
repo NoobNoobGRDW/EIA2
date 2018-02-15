@@ -74,7 +74,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 600);
         Semesteraufgabe1.crc2.fillStyle = "#6A3F16";
         Semesteraufgabe1.crc2.fillRect(0, 550, 1000, 5);
-        //Tisch links
+        //Tisch rechts
         //Bein
         Semesteraufgabe1.crc2.fillStyle = "#2E2E2E";
         Semesteraufgabe1.crc2.fillRect(770, 450, 10, 200);
@@ -93,6 +93,25 @@ var Semesteraufgabe1;
         //Platte
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
         Semesteraufgabe1.crc2.fillRect(680, 450, 190, 30);
+        //Tisch links
+        //Bein
+        Semesteraufgabe1.crc2.fillStyle = "#2E2E2E";
+        Semesteraufgabe1.crc2.fillRect(270, 450, 10, 200);
+        Semesteraufgabe1.crc2.fillStyle = "#545453";
+        Semesteraufgabe1.crc2.fillRect(280, 450, 10, 200);
+        //Fuss
+        Semesteraufgabe1.crc2.beginPath();
+        Semesteraufgabe1.crc2.moveTo(240, 600); //links
+        Semesteraufgabe1.crc2.lineTo(320, 600); //rechts
+        Semesteraufgabe1.crc2.lineTo(280, 570); //spitze
+        Semesteraufgabe1.crc2.closePath();
+        Semesteraufgabe1.crc2.strokeStyle = "#545453";
+        Semesteraufgabe1.crc2.stroke();
+        Semesteraufgabe1.crc2.fillStyle = "#545453";
+        Semesteraufgabe1.crc2.fill();
+        //Platte
+        Semesteraufgabe1.crc2.fillStyle = "#7B2222";
+        Semesteraufgabe1.crc2.fillRect(280, 450, 190, 30);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }

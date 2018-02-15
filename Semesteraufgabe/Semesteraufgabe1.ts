@@ -88,7 +88,7 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#6A3F16";
         crc2.fillRect(0, 550, 1000, 5);
 
-        //Tisch links
+        //Tisch rechts
         //Bein
         crc2.fillStyle = "#2E2E2E";
         crc2.fillRect(770, 450, 10, 200);
@@ -108,7 +108,25 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#7B2222";
         crc2.fillRect(680, 450, 190, 30);
 
-
+        //Tisch links
+        //Bein
+        crc2.fillStyle = "#2E2E2E";
+        crc2.fillRect(270, 450, 10, 200);
+        crc2.fillStyle = "#545453";
+        crc2.fillRect(280, 450, 10, 200);
+        //Fuss
+        crc2.beginPath();
+        crc2.moveTo(240, 600);//links
+        crc2.lineTo(320, 600);//rechts
+        crc2.lineTo(280, 570);//spitze
+        crc2.closePath();
+        crc2.strokeStyle = "#545453";
+        crc2.stroke();
+        crc2.fillStyle = "#545453";
+        crc2.fill();
+        //Platte
+        crc2.fillStyle = "#7B2222";
+        crc2.fillRect(280, 450, 190, 30);
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
