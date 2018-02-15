@@ -48,10 +48,10 @@ namespace Spiel {
         //Klavier
         //Rumpf
         crc2.beginPath();
-        crc2.moveTo(100, 350);//links 
-        crc2.lineTo(900, 350);//rechts
-        crc2.lineTo(800, 100);//oben rechts
-        crc2.lineTo(200, 100);//oben links   
+        crc2.moveTo(100, 250);//links 
+        crc2.lineTo(900, 250);//rechts
+        crc2.lineTo(800, 50);//oben rechts
+        crc2.lineTo(200, 50);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
@@ -59,9 +59,9 @@ namespace Spiel {
         crc2.fill();
         //Deckel
         crc2.beginPath();
-        crc2.moveTo(100, 350); //links
-        crc2.lineTo(200, 170); //rechts
-        crc2.lineTo(150, 100); //oben
+        crc2.moveTo(100, 250); //links
+        crc2.lineTo(200, 50); //rechts
+        crc2.lineTo(600, 10); //oben
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
