@@ -114,8 +114,8 @@ namespace Spiel {
         crc2.fill();
         //Tasten von links
         crc2.beginPath();
-        crc2.moveTo(820, 465);//links 
-        crc2.lineTo(860, 465);//rechts
+        crc2.moveTo(820, 460);//links 
+        crc2.lineTo(860, 460);//rechts
         crc2.lineTo(845, 410);//oben rechts
         crc2.lineTo(835, 410);//oben links   
         crc2.closePath();

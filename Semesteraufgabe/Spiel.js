@@ -104,8 +104,8 @@ var Spiel;
         Spiel.crc2.fill();
         //Tasten von links
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(820, 465); //links 
-        Spiel.crc2.lineTo(860, 465); //rechts
+        Spiel.crc2.moveTo(820, 460); //links 
+        Spiel.crc2.lineTo(860, 460); //rechts
         Spiel.crc2.lineTo(845, 410); //oben rechts
         Spiel.crc2.lineTo(835, 410); //oben links   
         Spiel.crc2.closePath();
