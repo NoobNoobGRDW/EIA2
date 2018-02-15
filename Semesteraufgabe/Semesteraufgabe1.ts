@@ -169,6 +169,11 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(650, 300, 15, 100);
         crc2.fillStyle = "#ADACAB";
         crc2.fillRect(650, 300, 2, 100);
+        //Tasten
+        crc2.fillStyle = "#ADACAB";
+        crc2.fillRect(380, 280, 302, 42);
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fillRect(382, 282, 300, 40);
         //Rumpf
         crc2.fillStyle = "#ADACAB";
         crc2.fillRect(400, 270, 302, 52);
@@ -184,11 +189,7 @@ namespace Semesteraufgabe1 {
         crc2.stroke();
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
-        //Tasten
-        crc2.fillStyle = "#ADACAB";
-        crc2.fillRect(380, 280, 302, 52);
-        crc2.fillStyle = "#0F0F0F";
-        crc2.fillRect(382, 282, 300, 50);
+
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
