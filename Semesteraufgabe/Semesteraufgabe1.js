@@ -77,7 +77,9 @@ var Semesteraufgabe1;
         //Tisch links
         //Bein
         Semesteraufgabe1.crc2.fillStyle = "#2E2E2E";
-        Semesteraufgabe1.crc2.fillRect(790, 450, 10, 200);
+        Semesteraufgabe1.crc2.fillRect(770, 450, 10, 200);
+        Semesteraufgabe1.crc2.fillStyle = "#545453";
+        Semesteraufgabe1.crc2.fillRect(780, 450, 10, 200);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }
