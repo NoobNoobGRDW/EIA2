@@ -195,7 +195,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#683B13";
         Semesteraufgabe1.crc2.fill();
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F"; //Mund
-        Semesteraufgabe1.crc2.fillRect(350, 220, 10, 2);
+        Semesteraufgabe1.crc2.fillRect(350, 225, 10, 2);
         Semesteraufgabe1.crc2.beginPath(); //Augen links
         Semesteraufgabe1.crc2.arc(344, 211, 4, 0, 2 * Math.PI);
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
