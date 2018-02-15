@@ -80,6 +80,16 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(770, 450, 10, 200);
         Semesteraufgabe1.crc2.fillStyle = "#545453";
         Semesteraufgabe1.crc2.fillRect(780, 450, 10, 200);
+        //Fuss
+        Semesteraufgabe1.crc2.beginPath();
+        Semesteraufgabe1.crc2.moveTo(700, 700);
+        Semesteraufgabe1.crc2.lineTo(750, 700);
+        Semesteraufgabe1.crc2.lineTo(755, 650);
+        Semesteraufgabe1.crc2.closePath();
+        Semesteraufgabe1.crc2.strokeStyle = "#545453";
+        Semesteraufgabe1.crc2.stroke();
+        Semesteraufgabe1.crc2.fillStyle = "#545453";
+        Semesteraufgabe1.crc2.fill();
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         animiere(); //f�hrt Funktion aus
     }

@@ -93,7 +93,17 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#2E2E2E";
         crc2.fillRect(770,450, 10, 200);
         crc2.fillStyle = "#545453";
-        crc2.fillRect(780,450, 10, 200);           
+        crc2.fillRect(780,450, 10, 200); 
+        //Fuss
+        crc2.beginPath();
+        crc2.moveTo(700, 700);
+        crc2.lineTo(750, 700);
+        crc2.lineTo(755, 650);
+        crc2.closePath();
+        crc2.strokeStyle = "#545453";
+        crc2.stroke();
+        crc2.fillStyle = "#545453";
+        crc2.fill();          
         
  
 
