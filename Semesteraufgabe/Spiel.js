@@ -200,10 +200,10 @@ var Spiel;
         Spiel.crc2.stroke();
         //schwarze Tasten
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(490, 510); //links 
-        Spiel.crc2.lineTo(520, 510); //rechts
-        Spiel.crc2.lineTo(510, 420); //oben rechts
-        Spiel.crc2.lineTo(500, 420); //oben links   
+        Spiel.crc2.moveTo(490, 500); //links 
+        Spiel.crc2.lineTo(520, 500); //rechts
+        Spiel.crc2.lineTo(515, 420); //oben rechts
+        Spiel.crc2.lineTo(595, 420); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
