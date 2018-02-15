@@ -198,10 +198,10 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(350, 225, 10, 2);
         //Mundwinkel
         Semesteraufgabe1.crc2.beginPath();
-        Semesteraufgabe1.crc2.moveTo(345, 223); //links 
-        Semesteraufgabe1.crc2.lineTo(350, 225); //rechts
-        Semesteraufgabe1.crc2.lineTo(350, 224); //oben rechts
-        Semesteraufgabe1.crc2.lineTo(345, 222); //oben links   
+        Semesteraufgabe1.crc2.moveTo(345, 224); //links 
+        Semesteraufgabe1.crc2.lineTo(350, 226); //rechts
+        Semesteraufgabe1.crc2.lineTo(350, 225); //oben rechts
+        Semesteraufgabe1.crc2.lineTo(345, 223); //oben links   
         Semesteraufgabe1.crc2.closePath();
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fill();

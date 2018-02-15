@@ -219,10 +219,10 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(350, 225, 10, 2); 
         //Mundwinkel
         crc2.beginPath();
-        crc2.moveTo(345, 223);//links 
-        crc2.lineTo(350, 225);//rechts
-        crc2.lineTo(350, 224);//oben rechts
-        crc2.lineTo(345, 222);//oben links   
+        crc2.moveTo(345, 224);//links 
+        crc2.lineTo(350, 226);//rechts
+        crc2.lineTo(350, 225);//oben rechts
+        crc2.lineTo(345, 223);//oben links   
         crc2.closePath();
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
