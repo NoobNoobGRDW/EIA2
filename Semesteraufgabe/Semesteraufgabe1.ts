@@ -140,13 +140,13 @@ namespace Semesteraufgabe1 {
         
         //Stuhl mitte
         crc2.fillStyle = "#945415";
-        crc2.fillRect(205, 520, 8, 200);
+        crc2.fillRect(310, 520, 8, 200);
         //Platte
         crc2.fillStyle = "#945415";
-        crc2.fillRect(205, 520, 100, 8);
+        crc2.fillRect(310, 520, 100, 8);
         //Bein rechts
         crc2.fillStyle = "#945415";
-        crc2.fillRect(305, 410, 8, 200);        
+        crc2.fillRect(410, 410, 8, 200);        
         
         //Stuhl rechts
         crc2.fillStyle = "#945415";
