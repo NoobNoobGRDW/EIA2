@@ -114,8 +114,8 @@ namespace Spiel {
         crc2.fill();
         //Tasten von links
         crc2.beginPath();
-        crc2.moveTo(100, 480);//links 
-        crc2.lineTo(900, 480);//rechts
+        crc2.moveTo(100, 530);//links 
+        crc2.lineTo(900, 530);//rechts
         crc2.lineTo(870, 420);//oben rechts
         crc2.lineTo(130, 420);//oben links   
         crc2.closePath();
@@ -126,100 +126,100 @@ namespace Spiel {
 
         crc2.beginPath();
         crc2.moveTo(180, 420);
-        crc2.lineTo(150, 480);
-        crc2.lineTo(150, 480);
+        crc2.lineTo(150, 530);
+        crc2.lineTo(150, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(230, 420);
-        crc2.lineTo(202, 480);
-        crc2.lineTo(202, 480);
+        crc2.lineTo(202, 530);
+        crc2.lineTo(202, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(280, 420);
-        crc2.lineTo(254, 480);
-        crc2.lineTo(254, 480);
+        crc2.lineTo(254, 530);
+        crc2.lineTo(254, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(330, 420);
-        crc2.lineTo(306, 480);
-        crc2.lineTo(306, 480);
+        crc2.lineTo(306, 530);
+        crc2.lineTo(306, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(380, 420);
-        crc2.lineTo(358, 480);
-        crc2.lineTo(358, 480);
+        crc2.lineTo(358, 530);
+        crc2.lineTo(358, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(430, 420);
-        crc2.lineTo(410, 480);
-        crc2.lineTo(410, 480);
+        crc2.lineTo(410, 530);
+        crc2.lineTo(410, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         //Mitte
         crc2.beginPath();
         crc2.moveTo(480, 420);
-        crc2.lineTo(480, 480);
-        crc2.lineTo(480, 480);
+        crc2.lineTo(480, 530);
+        crc2.lineTo(480, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(530, 420);
-        crc2.lineTo(548, 480);
-        crc2.lineTo(548, 480);
+        crc2.lineTo(548, 530);
+        crc2.lineTo(548, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(580, 420);
-        crc2.lineTo(600, 480);
-        crc2.lineTo(600, 480);
+        crc2.lineTo(600, 530);
+        crc2.lineTo(600, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(630, 420);
-        crc2.lineTo(652, 480);
-        crc2.lineTo(652, 480);
+        crc2.lineTo(652, 530);
+        crc2.lineTo(652, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(680, 420);
-        crc2.lineTo(704, 480);
-        crc2.lineTo(704, 480);
+        crc2.lineTo(704, 530);
+        crc2.lineTo(704, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(730, 420);
-        crc2.lineTo(756, 480);
-        crc2.lineTo(756, 480);
+        crc2.lineTo(756, 530);
+        crc2.lineTo(756, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(780, 420);
-        crc2.lineTo(808, 480);
-        crc2.lineTo(808, 480);
+        crc2.lineTo(808, 530);
+        crc2.lineTo(808, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
         crc2.beginPath();
         crc2.moveTo(830, 420);
-        crc2.lineTo(860, 480);
-        crc2.lineTo(860, 480);
+        crc2.lineTo(860, 530);
+        crc2.lineTo(860, 530);
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
@@ -227,8 +227,8 @@ namespace Spiel {
         crc2.beginPath();
         crc2.moveTo(150, 600);//links 
         crc2.lineTo(190, 600);//rechts
-        crc2.lineTo(190, 500);//oben rechts
-        crc2.lineTo(150, 500);//oben links   
+        crc2.lineTo(190, 550);//oben rechts
+        crc2.lineTo(150, 550);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
