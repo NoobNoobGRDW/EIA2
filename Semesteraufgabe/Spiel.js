@@ -71,10 +71,21 @@ var Spiel;
         Spiel.crc2.fill();
         //Tastenfeld
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(80, 470); //links 
-        Spiel.crc2.lineTo(920, 470); //rechts
+        Spiel.crc2.moveTo(70, 470); //links 
+        Spiel.crc2.lineTo(930, 470); //rechts
         Spiel.crc2.lineTo(910, 320); //oben rechts
         Spiel.crc2.lineTo(90, 320); //oben links   
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#ADACAB";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#0F0F0F";
+        Spiel.crc2.fill();
+        //Rand links
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(68, 470); //links 
+        Spiel.crc2.lineTo(70, 470); //rechts
+        Spiel.crc2.lineTo(90, 320); //oben rechts
+        Spiel.crc2.lineTo(80, 320); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();

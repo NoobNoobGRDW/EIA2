@@ -81,10 +81,21 @@ namespace Spiel {
         crc2.fill();
         //Tastenfeld
         crc2.beginPath();
-        crc2.moveTo(80, 470);//links 
-        crc2.lineTo(920, 470);//rechts
+        crc2.moveTo(70, 470);//links 
+        crc2.lineTo(930, 470);//rechts
         crc2.lineTo(910, 320);//oben rechts
         crc2.lineTo(90, 320);//oben links   
+        crc2.closePath();
+        crc2.strokeStyle = "#ADACAB";
+        crc2.stroke();
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fill();
+        //Rand links
+        crc2.beginPath();
+        crc2.moveTo(68, 470);//links 
+        crc2.lineTo(70, 470);//rechts
+        crc2.lineTo(90, 320);//oben rechts
+        crc2.lineTo(80, 320);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
