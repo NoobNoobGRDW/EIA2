@@ -20,10 +20,14 @@ var Spiel;
         Spiel.crc2.fillStyle = "#B26C2F";
         Spiel.crc2.fillRect(0, 0, 1000, 600);
         Spiel.crc2.fillStyle = "#6A3F16";
-        Spiel.crc2.fillRect(0, 50, 1000, 2);
+        Spiel.crc2.fillRect(0, 20, 1000, 2);
         Spiel.crc2.fillStyle = "#6A3F16";
-        Spiel.crc2.fillRect(0, 10, 1000, 2);
+        Spiel.crc2.fillRect(0, 70, 1000, 2);
         Spiel.crc2.fillStyle = "#6A3F16";
-        Spiel.crc2.fillRect(0, 150, 1000, 2);
+        Spiel.crc2.fillRect(0, 130, 1000, 2);
+        Spiel.crc2.fillStyle = "#6A3F16";
+        Spiel.crc2.fillRect(0, 200, 1000, 2);
+        Spiel.crc2.fillStyle = "#6A3F16";
+        Spiel.crc2.fillRect(0, 280, 1000, 2);
     }
 })(Spiel || (Spiel = {}));
