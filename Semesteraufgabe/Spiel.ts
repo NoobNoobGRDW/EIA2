@@ -225,8 +225,8 @@ namespace Spiel {
         
         //schwarze Tasten
         crc2.beginPath();
-        crc2.moveTo(490, 490);//links 
-        crc2.lineTo(520, 490);//rechts
+        crc2.moveTo(490, 480);//links 
+        crc2.lineTo(520, 480);//rechts
         crc2.lineTo(515, 420);//oben rechts
         crc2.lineTo(495, 420);//oben links   
         crc2.closePath();
