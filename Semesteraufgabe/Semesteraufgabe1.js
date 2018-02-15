@@ -19,24 +19,29 @@ var Semesteraufgabe1;
         //Hintergrund
         Semesteraufgabe1.crc2.fillStyle = "#50504F";
         Semesteraufgabe1.crc2.fillRect(0, 0, 1000, 600);
+        //T�r
+        Semesteraufgabe1.crc2.fillStyle = "#50504F";
+        Semesteraufgabe1.crc2.fillRect(20, 50, 100, 600);
+        Semesteraufgabe1.crc2.strokeStyle = "#2E2E2E";
+        Semesteraufgabe1.crc2.stroke();
         //Vorhang
         Semesteraufgabe1.crc2.fillStyle = "#B91A1A";
-        Semesteraufgabe1.crc2.fillRect(200, 0, 1000, 600);
+        Semesteraufgabe1.crc2.fillRect(300, 0, 1000, 600);
         //Falte1
         Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
-        Semesteraufgabe1.crc2.fillRect(500, 0, 5, 600);
+        Semesteraufgabe1.crc2.fillRect(600, 0, 5, 600);
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
-        Semesteraufgabe1.crc2.fillRect(505, 0, 20, 600);
+        Semesteraufgabe1.crc2.fillRect(605, 0, 20, 600);
         //Falte2
-        Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
-        Semesteraufgabe1.crc2.fillRect(700, 0, 5, 600);
-        Semesteraufgabe1.crc2.fillStyle = "#7B2222";
-        Semesteraufgabe1.crc2.fillRect(705, 0, 20, 600);
-        //Falte3
         Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
         Semesteraufgabe1.crc2.fillRect(750, 0, 5, 600);
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
         Semesteraufgabe1.crc2.fillRect(755, 0, 20, 600);
+        //Falte3
+        Semesteraufgabe1.crc2.fillStyle = "#D16B6B";
+        Semesteraufgabe1.crc2.fillRect(800, 0, 5, 600);
+        Semesteraufgabe1.crc2.fillStyle = "#7B2222";
+        Semesteraufgabe1.crc2.fillRect(805, 0, 20, 600);
         //B�hne
         Semesteraufgabe1.crc2.fillStyle = "#966534";
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 600);

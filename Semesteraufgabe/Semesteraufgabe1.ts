@@ -28,24 +28,31 @@ namespace Semesteraufgabe1 {
         //Hintergrund
         crc2.fillStyle = "#50504F";
         crc2.fillRect(0,0, 1000, 600);
+        
+        //Tür
+        crc2.fillStyle = "#50504F";
+        crc2.fillRect(20,50, 100, 600);
+        crc2.strokeStyle = "#2E2E2E";
+        crc2.stroke();
+        
         //Vorhang
         crc2.fillStyle = "#B91A1A";
-        crc2.fillRect(200,0, 1000, 600);
+        crc2.fillRect(300,0, 1000, 600);
         //Falte1
         crc2.fillStyle = "#D16B6B";
-        crc2.fillRect(500,0, 5, 600);
+        crc2.fillRect(600,0, 5, 600);
         crc2.fillStyle = "#7B2222";
-        crc2.fillRect(505,0, 20, 600);
+        crc2.fillRect(605,0, 20, 600);
         //Falte2
-        crc2.fillStyle = "#D16B6B";
-        crc2.fillRect(700,0, 5, 600); 
-        crc2.fillStyle = "#7B2222";
-        crc2.fillRect(705,0, 20, 600);               
-        //Falte3
         crc2.fillStyle = "#D16B6B";
         crc2.fillRect(750,0, 5, 600); 
         crc2.fillStyle = "#7B2222";
-        crc2.fillRect(755,0, 20, 600);
+        crc2.fillRect(755,0, 20, 600);               
+        //Falte3
+        crc2.fillStyle = "#D16B6B";
+        crc2.fillRect(800,0, 5, 600); 
+        crc2.fillStyle = "#7B2222";
+        crc2.fillRect(805,0, 20, 600);
         
         //Bühne
         crc2.fillStyle = "#966534";
