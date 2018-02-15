@@ -71,8 +71,8 @@ var Spiel;
         Spiel.crc2.fill();
         //Tastenfeld
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(70, 500); //links 
-        Spiel.crc2.lineTo(930, 500); //rechts
+        Spiel.crc2.moveTo(70, 550); //links 
+        Spiel.crc2.lineTo(930, 550); //rechts
         Spiel.crc2.lineTo(910, 320); //oben rechts
         Spiel.crc2.lineTo(90, 320); //oben links   
         Spiel.crc2.closePath();
@@ -82,8 +82,8 @@ var Spiel;
         Spiel.crc2.fill();
         //Rand links
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(65, 500); //links 
-        Spiel.crc2.lineTo(70, 500); //rechts
+        Spiel.crc2.moveTo(65, 550); //links 
+        Spiel.crc2.lineTo(70, 550); //rechts
         Spiel.crc2.lineTo(90, 320); //oben rechts
         Spiel.crc2.lineTo(65, 320); //oben links   
         Spiel.crc2.closePath();
@@ -93,8 +93,8 @@ var Spiel;
         Spiel.crc2.fill();
         //Rand rechts
         Spiel.crc2.beginPath();
-        Spiel.crc2.moveTo(930, 500); //links 
-        Spiel.crc2.lineTo(935, 500); //rechts
+        Spiel.crc2.moveTo(930, 550); //links 
+        Spiel.crc2.lineTo(935, 550); //rechts
         Spiel.crc2.lineTo(935, 320); //oben rechts
         Spiel.crc2.lineTo(910, 320); //oben links   
         Spiel.crc2.closePath();
@@ -213,8 +213,8 @@ var Spiel;
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(810, 600); //links 
         Spiel.crc2.lineTo(850, 600); //rechts
-        Spiel.crc2.lineTo(850, 500); //oben rechts
-        Spiel.crc2.lineTo(810, 500); //oben links   
+        Spiel.crc2.lineTo(850, 550); //oben rechts
+        Spiel.crc2.lineTo(810, 550); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();

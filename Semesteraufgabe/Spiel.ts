@@ -81,8 +81,8 @@ namespace Spiel {
         crc2.fill();
         //Tastenfeld
         crc2.beginPath();
-        crc2.moveTo(70, 500);//links 
-        crc2.lineTo(930, 500);//rechts
+        crc2.moveTo(70, 550);//links 
+        crc2.lineTo(930, 550);//rechts
         crc2.lineTo(910, 320);//oben rechts
         crc2.lineTo(90, 320);//oben links   
         crc2.closePath();
@@ -92,8 +92,8 @@ namespace Spiel {
         crc2.fill();
         //Rand links
         crc2.beginPath();
-        crc2.moveTo(65, 500);//links 
-        crc2.lineTo(70, 500);//rechts
+        crc2.moveTo(65, 550);//links 
+        crc2.lineTo(70, 550);//rechts
         crc2.lineTo(90, 320);//oben rechts
         crc2.lineTo(65, 320);//oben links   
         crc2.closePath();
@@ -103,8 +103,8 @@ namespace Spiel {
         crc2.fill();
         //Rand rechts
         crc2.beginPath();
-        crc2.moveTo(930, 500);//links 
-        crc2.lineTo(935, 500);//rechts
+        crc2.moveTo(930, 550);//links 
+        crc2.lineTo(935, 550);//rechts
         crc2.lineTo(935, 320);//oben rechts
         crc2.lineTo(910, 320);//oben links   
         crc2.closePath();
@@ -239,8 +239,8 @@ namespace Spiel {
         crc2.beginPath();
         crc2.moveTo(810, 600);//links 
         crc2.lineTo(850, 600);//rechts
-        crc2.lineTo(850, 500);//oben rechts
-        crc2.lineTo(810, 500);//oben links   
+        crc2.lineTo(850, 550);//oben rechts
+        crc2.lineTo(810, 550);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
