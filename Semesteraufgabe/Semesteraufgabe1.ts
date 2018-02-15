@@ -202,9 +202,9 @@ namespace Semesteraufgabe1 {
         //Piano Man
         //Rumpf
         crc2.fillStyle = "#ADACAB";    
-        crc2.fillRect(310, 240, 50, 80);
+        crc2.fillRect(310, 240, 50, 90);
         crc2.fillStyle = "#0F0F0F";    
-        crc2.fillRect(311, 241, 50, 80); 
+        crc2.fillRect(311, 241, 50, 90); 
         //Kopf  
         crc2.beginPath(); //Haare
         crc2.arc(330, 208, 30, 0, 2 * Math.PI);
@@ -223,7 +223,12 @@ namespace Semesteraufgabe1 {
         crc2.beginPath();   //Augen rechts
         crc2.arc(358, 211, 4, 0, 2 * Math.PI);
         crc2.fillStyle = "#0F0F0F";
-        crc2.fill();        
+        crc2.fill(); 
+        //Arm
+        crc2.fillStyle = "#ADACAB";    
+        crc2.fillRect(320, 260, 50, 20);
+        crc2.fillStyle = "#0F0F0F";    
+        crc2.fillRect(321, 261, 50, 20);                
         
         
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
