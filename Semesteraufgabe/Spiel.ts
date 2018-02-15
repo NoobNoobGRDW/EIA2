@@ -223,7 +223,19 @@ namespace Spiel {
         crc2.strokeStyle = "#585858";
         crc2.stroke();
 
-        //schwarze Tasten
+        //schwarze Tasten von links
+        crc2.beginPath();
+        crc2.moveTo(425, 480);//links 
+        crc2.lineTo(455, 480);//rechts
+        crc2.lineTo(440, 420);//oben rechts
+        crc2.lineTo(420, 420);//oben links   
+        crc2.closePath();
+        crc2.strokeStyle = "#ADACAB";
+        crc2.stroke();
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fill();
+
+        //Mitte
         crc2.beginPath();
         crc2.moveTo(490, 480);//links 
         crc2.lineTo(520, 480);//rechts
