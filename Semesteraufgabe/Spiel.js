@@ -186,5 +186,17 @@ var Spiel;
         Spiel.crc2.lineTo(756, 480);
         Spiel.crc2.strokeStyle = "#585858";
         Spiel.crc2.stroke();
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(780, 420);
+        Spiel.crc2.lineTo(808, 480);
+        Spiel.crc2.lineTo(808, 480);
+        Spiel.crc2.strokeStyle = "#585858";
+        Spiel.crc2.stroke();
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(830, 420);
+        Spiel.crc2.lineTo(860, 480);
+        Spiel.crc2.lineTo(860, 480);
+        Spiel.crc2.strokeStyle = "#585858";
+        Spiel.crc2.stroke();
     }
 })(Spiel || (Spiel = {}));
