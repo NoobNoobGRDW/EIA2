@@ -10,3 +10,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 body {
 	text-align: center;
 }
+
+h1 {
+	font-family: 'Monoton', cursive;
+}
