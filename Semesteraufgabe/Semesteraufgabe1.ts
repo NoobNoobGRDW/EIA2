@@ -118,7 +118,7 @@ namespace Semesteraufgabe1 {
         crc2.beginPath();
         crc2.moveTo(240, 600);//links
         crc2.lineTo(320, 600);//rechts
-        crc2.lineTo(280, 570);//spitze
+        crc2.lineTo(280, 570);//oben
         crc2.closePath();
         crc2.strokeStyle = "#545453";
         crc2.stroke();
@@ -176,9 +176,9 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(402, 272, 300, 50);  
         //Deckel
         crc2.beginPath();
-        crc2.moveTo(400, 300);
-        crc2.lineTo(800, 300);
-        crc2.lineTo(600, 250);
+        crc2.moveTo(430, 270); //links
+        crc2.lineTo(700, 270); //rechts
+        crc2.lineTo(550, 200); //oben
         crc2.closePath();
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();

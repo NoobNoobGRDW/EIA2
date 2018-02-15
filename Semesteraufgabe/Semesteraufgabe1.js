@@ -103,7 +103,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.beginPath();
         Semesteraufgabe1.crc2.moveTo(240, 600); //links
         Semesteraufgabe1.crc2.lineTo(320, 600); //rechts
-        Semesteraufgabe1.crc2.lineTo(280, 570); //spitze
+        Semesteraufgabe1.crc2.lineTo(280, 570); //oben
         Semesteraufgabe1.crc2.closePath();
         Semesteraufgabe1.crc2.strokeStyle = "#545453";
         Semesteraufgabe1.crc2.stroke();
@@ -157,9 +157,9 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(402, 272, 300, 50);
         //Deckel
         Semesteraufgabe1.crc2.beginPath();
-        Semesteraufgabe1.crc2.moveTo(400, 300);
-        Semesteraufgabe1.crc2.lineTo(800, 300);
-        Semesteraufgabe1.crc2.lineTo(600, 250);
+        Semesteraufgabe1.crc2.moveTo(430, 270); //links
+        Semesteraufgabe1.crc2.lineTo(700, 270); //rechts
+        Semesteraufgabe1.crc2.lineTo(550, 200); //oben
         Semesteraufgabe1.crc2.closePath();
         Semesteraufgabe1.crc2.strokeStyle = "#ADACAB";
         Semesteraufgabe1.crc2.stroke();
