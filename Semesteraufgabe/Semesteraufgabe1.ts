@@ -260,10 +260,12 @@ namespace Semesteraufgabe1 {
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
+        
+        
         //Startpunkte für Noten
         for (let i = 0; i < 2; i++) {
-            let n: Note = new Note(Math.random() * 500,
-                Math.random() * 300,
+            let n: Note = new Note(500,
+                280,
                 "#ABABAB");
             objects.push(n);
         }
