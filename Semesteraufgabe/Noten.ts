@@ -31,10 +31,10 @@ namespace Semesteraufgabe1 {
         }
 
         draw(): void {
-            //Knauf
+            //Kreis links
             crc2.beginPath();
-            crc2.arc(40, 300, 10, 0, 2 * Math.PI);
-            crc2.fillStyle = "#2E2E2E";
+            crc2.arc(this.x + 40, this.y, 50, 0, 2 * Math.PI);
+            crc2.fillStyle = "#BDBDBD";
             crc2.fill();
 
 

@@ -22,10 +22,10 @@ var Semesteraufgabe1;
             }
         }
         draw() {
-            //Knauf
+            //Kreis links
             Semesteraufgabe1.crc2.beginPath();
-            Semesteraufgabe1.crc2.arc(40, 300, 10, 0, 2 * Math.PI);
-            Semesteraufgabe1.crc2.fillStyle = "#2E2E2E";
+            Semesteraufgabe1.crc2.arc(this.x + 40, this.y, 50, 0, 2 * Math.PI);
+            Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
             Semesteraufgabe1.crc2.fill();
         }
     }
