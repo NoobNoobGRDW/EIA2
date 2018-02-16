@@ -245,7 +245,7 @@ var Semesteraufgabe1;
     }
     function animiere() {
         console.log("Timeout");
-        Semesteraufgabe1.crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
+        Semesteraufgabe1.crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
         Semesteraufgabe1.crc2.putImageData(canImg, 0, 0); //f�gt Bild ein
         //for-Schleife Objects
         for (let i = 0; i < objects.length; i++) {

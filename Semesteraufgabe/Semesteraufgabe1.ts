@@ -276,7 +276,7 @@ namespace Semesteraufgabe1 {
 
     function animiere() {
         console.log("Timeout");
-        crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
+        crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
         crc2.putImageData(canImg, 0, 0); //fügt Bild ein
 
 
