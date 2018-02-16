@@ -113,31 +113,31 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
         Semesteraufgabe1.crc2.fillRect(180, 450, 200, 30);
         //Stuhl links
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(140, 410, 8, 200);
         //Platte
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(140, 520, 100, 8);
         //Bein rechts
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(240, 520, 8, 200);
         //Stuhl mitte
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(310, 520, 8, 200);
         //Platte
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(310, 520, 100, 8);
         //Bein rechts
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(410, 410, 8, 200);
         //Stuhl rechts
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(805, 520, 8, 200);
         //Platte
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(805, 520, 100, 8);
         //Bein rechts
-        Semesteraufgabe1.crc2.fillStyle = "#683B13";
+        Semesteraufgabe1.crc2.fillStyle = "#4C1F05";
         Semesteraufgabe1.crc2.fillRect(905, 410, 8, 200);
         //Fl�gel
         //linkes Bein

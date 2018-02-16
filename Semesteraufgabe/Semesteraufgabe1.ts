@@ -130,33 +130,33 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(180, 450, 200, 30);
 
         //Stuhl links
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(140, 410, 8, 200);
         //Platte
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(140, 520, 100, 8);
         //Bein rechts
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(240, 520, 8, 200);
 
         //Stuhl mitte
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(310, 520, 8, 200);
         //Platte
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(310, 520, 100, 8);
         //Bein rechts
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(410, 410, 8, 200);
 
         //Stuhl rechts
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(805, 520, 8, 200);
         //Platte
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(805, 520, 100, 8);
         //Bein rechts
-        crc2.fillStyle = "#683B13";
+        crc2.fillStyle = "#4C1F05";
         crc2.fillRect(905, 410, 8, 200);
 
         //Flügel
