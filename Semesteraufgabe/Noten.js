@@ -16,17 +16,17 @@ var Semesteraufgabe1;
             this.x += 1;
             this.y += -2;
             this.x += Math.random();
-            if (this.x > 800) {
+            if (this.x > 700) {
                 this.x = 500;
                 this.y = 300;
             }
         }
         draw() {
-            Semesteraufgabe1.crc2.beginPath(); //Gondel
-            Semesteraufgabe1.crc2.fillStyle = "#818080";
-            Semesteraufgabe1.crc2.fillRect(this.x, this.y, 50, -40);
-            Semesteraufgabe1.crc2.strokeStyle = "#818080";
-            Semesteraufgabe1.crc2.stroke();
+            //Knauf
+            Semesteraufgabe1.crc2.beginPath();
+            Semesteraufgabe1.crc2.arc(40, 300, 10, 0, 2 * Math.PI);
+            Semesteraufgabe1.crc2.fillStyle = "#2E2E2E";
+            Semesteraufgabe1.crc2.fill();
         }
     }
     Semesteraufgabe1.Note = Note;
