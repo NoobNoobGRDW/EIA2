@@ -16,7 +16,7 @@ var Semesteraufgabe1;
             this.x += 2;
             this.y += -2;
             this.x += Math.random();
-            if (this.y > 800) {
+            if (this.x > 800) {
                 this.x = 500;
                 this.y = 500;
             }

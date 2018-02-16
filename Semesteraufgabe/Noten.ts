@@ -24,7 +24,7 @@ namespace Semesteraufgabe1 {
             this.y += -2;
             this.x += Math.random();
             
-            if (this.y > 800) { //Gondeln kommen wieder ins Bild
+            if (this.x > 800) { //Gondeln kommen wieder ins Bild
                 this.x = 500;
                 this.y = 500;
             }
