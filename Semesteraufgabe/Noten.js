@@ -24,7 +24,12 @@ var Semesteraufgabe1;
         draw() {
             //Kreis links
             Semesteraufgabe1.crc2.beginPath();
-            Semesteraufgabe1.crc2.arc(this.x + 40, this.y, 50, 0, 2 * Math.PI);
+            Semesteraufgabe1.crc2.arc(this.x + 40, this.y, 10, 0, 2 * Math.PI);
+            Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
+            Semesteraufgabe1.crc2.fill();
+            //Kreis rechts
+            Semesteraufgabe1.crc2.beginPath();
+            Semesteraufgabe1.crc2.arc(this.x + 50, this.y, 10, 0, 2 * Math.PI);
             Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
             Semesteraufgabe1.crc2.fill();
         }
