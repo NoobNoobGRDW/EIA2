@@ -16,6 +16,8 @@ namespace Spiel {
     let objects: MovingObjects[] = [];
 
 
+
+
     var canImg: any; //initialisiert das Canvas Image
 
     function piano() {
@@ -304,4 +306,5 @@ namespace Spiel {
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
     }
+    
 }

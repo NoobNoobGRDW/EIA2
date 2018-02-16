@@ -16,7 +16,13 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 <style>
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 </style>
+<script>
+var vid = document.getElementById("BACKGROUND");
 
+function audio (): void {
+    audio.volume = 0.2;
+    }
+</script>
 <script language="javascript" type="text/javascript" src="Spiel.js"></script>
 <script language="javascript" type="text/javascript" src="Superclass.js"></script>
 <script language="javascript" type="text/javascript" src="Subclass.js"></script>
@@ -25,7 +31,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 </head>
 <body>
 
-<audio controls autoplay>
+<audio id="BACKGROUND" controls autoplay>
   <source src="https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/Jazz%20Blues%20Backing%20Track%20-%20Medium%20Up%20Swing%20(Am).mp3" type="audio/mpeg">
 </audio>
 
