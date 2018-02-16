@@ -14,29 +14,31 @@ namespace Semesteraufgabe1 {
         x: number;
         y: number;
         color: string
-
+        
         constructor(_x: number, _y: number, _color: string) {
             super(_x, _y, _color);
         }
-
+        
         move(): void {
             this.x += 1;
             this.y += -2;
             this.x += Math.random();
-
+            
             if (this.x > 800) { //Gondeln kommen wieder ins Bild
                 this.x = 500;
                 this.y = 300;
             }
-        }
-
+            }
+        
         draw(): void {
-            //Kreis links
-            crc2.beginPath();
-            crc2.arc(40, 300, 5, 0, 2 * Math.PI);
-            crc2.fillStyle = "#000000";
-            crc2.fill();
-        }
+            crc2.beginPath();//Gondel
+            crc2.fillStyle = "#818080";
+            crc2.fillRect(this.x, this.y, 50, -40);
+            crc2.strokeStyle = "#818080";
+            crc2.stroke();
 
+
+            }
+        
     }
 }

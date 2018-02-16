@@ -22,11 +22,11 @@ var Semesteraufgabe1;
             }
         }
         draw() {
-            //Kreis links
-            Semesteraufgabe1.crc2.beginPath();
-            Semesteraufgabe1.crc2.arc(40, 300, 5, 0, 2 * Math.PI);
-            Semesteraufgabe1.crc2.fillStyle = "#000000";
-            Semesteraufgabe1.crc2.fill();
+            Semesteraufgabe1.crc2.beginPath(); //Gondel
+            Semesteraufgabe1.crc2.fillStyle = "#818080";
+            Semesteraufgabe1.crc2.fillRect(this.x, this.y, 50, -40);
+            Semesteraufgabe1.crc2.strokeStyle = "#818080";
+            Semesteraufgabe1.crc2.stroke();
         }
     }
     Semesteraufgabe1.Note = Note;
