@@ -268,6 +268,7 @@ namespace Semesteraufgabe1 {
             objects.push(n);
         }
     
+    
     function animiere() {
         console.log("Timeout");
         crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
