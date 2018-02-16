@@ -24,7 +24,7 @@ namespace Semesteraufgabe1 {
             this.y += -2;
             this.x += Math.random();
 
-            if (this.x > 700) { //Gondeln kommen wieder ins Bild
+            if (this.x > 720) { //Gondeln kommen wieder ins Bild
                 this.x = 500;
                 this.y = 280;
             }
@@ -47,7 +47,10 @@ namespace Semesteraufgabe1 {
             //Balken rechts
             crc2.fillStyle = "#BDBDBD";
             crc2.fillRect(this.x + 73, this.y - 40, 5, 43);
-
+            //Balken oben
+            crc2.fillStyle = "#BDBDBD";
+            crc2.fillRect(this.x + 43, this.y - 40, 30, 5);
+            
         }
 
     }

@@ -16,7 +16,7 @@ var Semesteraufgabe1;
             this.x += 1;
             this.y += -2;
             this.x += Math.random();
-            if (this.x > 700) {
+            if (this.x > 720) {
                 this.x = 500;
                 this.y = 280;
             }
@@ -38,6 +38,9 @@ var Semesteraufgabe1;
             //Balken rechts
             Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
             Semesteraufgabe1.crc2.fillRect(this.x + 73, this.y - 40, 5, 43);
+            //Balken oben
+            Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
+            Semesteraufgabe1.crc2.fillRect(this.x + 43, this.y - 40, 30, 5);
         }
     }
     Semesteraufgabe1.Note = Note;
