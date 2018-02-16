@@ -264,7 +264,7 @@ namespace Semesteraufgabe1 {
         
         //Startpunkte für Noten
         for (let i = 0; i < 2; i++) {
-            let n: Note = new Note(500,
+            let n: Note = new Note(Math.random() * 500,
                 280,
                 "#ABABAB");
             objects.push(n);
