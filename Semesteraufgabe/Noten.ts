@@ -38,7 +38,7 @@ namespace Semesteraufgabe1 {
             crc2.fill();
             //Kreis rechts
             crc2.beginPath();
-            crc2.arc(this.x + 50, this.y, 10, 0, 2 * Math.PI);
+            crc2.arc(this.x + 70, this.y, 10, 0, 2 * Math.PI);
             crc2.fillStyle = "#BDBDBD";
             crc2.fill();
 
