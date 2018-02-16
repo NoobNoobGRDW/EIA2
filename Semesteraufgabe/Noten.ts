@@ -26,7 +26,7 @@ namespace Semesteraufgabe1 {
 
             if (this.x > 700) { //Gondeln kommen wieder ins Bild
                 this.x = 500;
-                this.y = 300;
+                this.y = 280;
             }
         }
 
@@ -41,6 +41,9 @@ namespace Semesteraufgabe1 {
             crc2.arc(this.x + 70, this.y, 10, 0, 2 * Math.PI);
             crc2.fillStyle = "#BDBDBD";
             crc2.fill();
+            //Balken links
+            crc2.fillStyle = "#BDBDBD";
+            crc2.fillRect(this.x + 40, this.y, 5, 40);
 
         }
 
