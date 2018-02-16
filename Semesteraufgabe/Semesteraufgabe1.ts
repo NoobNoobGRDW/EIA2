@@ -266,7 +266,7 @@ namespace Semesteraufgabe1 {
         for (let i = 0; i < 3; i++) {
             let n: Note = new Note(Math.random() * (800 - 400) + 400,
                 260,
-                "hsl(" + Math.random() * 360 + ", 90%, 70%)");
+                "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(n);
         }
 
