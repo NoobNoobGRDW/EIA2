@@ -41,9 +41,18 @@ h3 {
 	color: #FFFFFF;
 	position: absolute;
 	opacity: 0.8;
-	font-size: 1em;
+	font-size: 1.5em;
 	width: 100%;
 	margin-top: 8em;
+}
+p {
+	font-family: 'Monoton', cursive;
+	color: #FFFFFF;
+	position: absolute;
+	opacity: 0.8;
+	font-size: 1.5em;
+	width: 100%;
+	margin-top: 9em;
 }
 audio {
 	display: none;
