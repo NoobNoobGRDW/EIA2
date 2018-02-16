@@ -38,9 +38,8 @@ h2:hover {
 p {
 	font-family: 'Monoton', cursive;
 	color: #FFFFFF;
-	opacity: 0.4;
 	position: absolute;
-	font-size: 2em;
+	font-size: 2.2em;
 	width: 100%;
 	margin-top: 8em;
 }
