@@ -43,7 +43,7 @@ namespace Semesteraufgabe1 {
             crc2.fill();
             //Balken links
             crc2.fillStyle = "#BDBDBD";
-            crc2.fillRect(this.x + 40, this.y, 5, 40);
+            crc2.fillRect(this.x + 40, this.y - 40, 5, 40);
 
         }
 
