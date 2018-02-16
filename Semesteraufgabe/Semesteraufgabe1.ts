@@ -194,29 +194,29 @@ namespace Semesteraufgabe1 {
         crc2.fillStyle = "#0F0F0F";
         crc2.fillRect(320, 350, 15, 50);
         crc2.fillStyle = "#ADACAB";
-        crc2.fillRect(320, 350, 2, 50);        
+        crc2.fillRect(320, 350, 2, 50);
         crc2.fillStyle = "#0F0F0F";   //Platte
-        crc2.fillRect(300, 340, 60, 15);  
-        crc2.fillStyle = "#ADACAB";    
-        crc2.fillRect(300, 340, 2, 15); 
-         
+        crc2.fillRect(300, 340, 60, 15);
+        crc2.fillStyle = "#ADACAB";
+        crc2.fillRect(300, 340, 2, 15);
+
         //Piano Man
         //Rumpf
-        crc2.fillStyle = "#ADACAB";    
+        crc2.fillStyle = "#ADACAB";
         crc2.fillRect(310, 240, 50, 90);
-        crc2.fillStyle = "#0F0F0F";    
-        crc2.fillRect(311, 241, 50, 90); 
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fillRect(311, 241, 50, 90);
         //Kopf  
         crc2.beginPath(); //Haare
         crc2.arc(330, 208, 30, 0, 2 * Math.PI);
         crc2.fillStyle = "#171512";
-        crc2.fill();                       
+        crc2.fill();
         crc2.beginPath();   //Kopf
         crc2.arc(338, 212, 30, 0, 2 * Math.PI);
         crc2.fillStyle = "#683B13";
         crc2.fill();
         crc2.fillStyle = "#0F0F0F";    //Mund
-        crc2.fillRect(350, 225, 10, 2); 
+        crc2.fillRect(350, 225, 10, 2);
         //Mundwinkel
         crc2.beginPath();
         crc2.moveTo(345, 225);//links 
@@ -226,7 +226,7 @@ namespace Semesteraufgabe1 {
         crc2.closePath();
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
-                       
+
         crc2.beginPath();   //Augen links
         crc2.arc(344, 211, 4, 0, 2 * Math.PI);
         crc2.fillStyle = "#0F0F0F";
@@ -234,30 +234,30 @@ namespace Semesteraufgabe1 {
         crc2.beginPath();   //Augen rechts
         crc2.arc(358, 211, 4, 0, 2 * Math.PI);
         crc2.fillStyle = "#0F0F0F";
-        crc2.fill(); 
+        crc2.fill();
         //Arm
         crc2.fillStyle = "#ADACAB";    //Oberarm
         crc2.fillRect(330, 242, 20, 48);
-        crc2.fillStyle = "#0F0F0F";    
-        crc2.fillRect(331, 242, 20, 48);           
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fillRect(331, 242, 20, 48);
         crc2.fillStyle = "#ADACAB";    //Unterarm
         crc2.fillRect(340, 280, 40, 15);
-        crc2.fillStyle = "#0F0F0F";    
-        crc2.fillRect(331, 281, 50, 15);                
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fillRect(331, 281, 50, 15);
         //Bein
         crc2.fillStyle = "#ADACAB";    //Oberschenkel
         crc2.fillRect(311, 320, 60, 22);
-        crc2.fillStyle = "#0F0F0F";    
-        crc2.fillRect(312, 321, 60, 20);         
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fillRect(312, 321, 60, 20);
         crc2.fillStyle = "#ADACAB";    //Unterschenkel
         crc2.fillRect(361, 330, 20, 70);
-        crc2.fillStyle = "#0F0F0F";    
-        crc2.fillRect(362, 321, 20, 80); 
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fillRect(362, 321, 20, 80);
         crc2.fillStyle = "#ADACAB";    //Fuß
         crc2.fillRect(361, 385, 40, 15);
-        crc2.fillStyle = "#0F0F0F";    
-        crc2.fillRect(362, 386, 40, 15);  
-       }                 
+        crc2.fillStyle = "#0F0F0F";
+        crc2.fillRect(362, 386, 40, 15);
+
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
         //Startpunkte für Noten
@@ -267,8 +267,13 @@ namespace Semesteraufgabe1 {
                 "#ABABAB");
             objects.push(n);
         }
-    
-    
+
+        animiere(); //führt Funktion aus
+        
+    }
+
+
+
     function animiere() {
         console.log("Timeout");
         crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund

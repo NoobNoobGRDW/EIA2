@@ -236,5 +236,22 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillStyle = "#0F0F0F";
         Semesteraufgabe1.crc2.fillRect(362, 386, 40, 15);
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
+        //Startpunkte f�r Noten
+        for (let i = 0; i < 2; i++) {
+            let n = new Semesteraufgabe1.Note(Math.random() * 800, Math.random() * 600, "#ABABAB");
+            objects.push(n);
+        }
+        animiere(); //f�hrt Funktion aus
+    }
+    function animiere() {
+        console.log("Timeout");
+        Semesteraufgabe1.crc2.clearRect(0, 0, 600, 800); // loescht Hintergrund
+        Semesteraufgabe1.crc2.putImageData(canImg, 0, 0); //f�gt Bild ein
+        //for-Schleife Objects
+        for (let i = 0; i < objects.length; i++) {
+            let s = objects[i];
+            s.update();
+        }
+        window.setTimeout(animiere, 10);
     }
 })(Semesteraufgabe1 || (Semesteraufgabe1 = {}));
