@@ -17,10 +17,11 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 </style>
 <script>
+document.addEventListener("DOMContentLoaded", setVolume);
 var audio = document.getElementById("background");
-
+function setVolume() {
 audio.volume = 0.1;
-
+}
 </script>
 <script language="javascript" type="text/javascript" src="Spiel.js"></script>
 <script language="javascript" type="text/javascript" src="Superclass.js"></script>
