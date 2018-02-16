@@ -34,7 +34,10 @@ var Semesteraufgabe1;
             Semesteraufgabe1.crc2.fill();
             //Balken links
             Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
-            Semesteraufgabe1.crc2.fillRect(this.x + 40, this.y - 40, 5, 40);
+            Semesteraufgabe1.crc2.fillRect(this.x + 43, this.y - 40, 5, 43);
+            //Balken rechts
+            Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
+            Semesteraufgabe1.crc2.fillRect(this.x + 73, this.y - 40, 5, 43);
         }
     }
     Semesteraufgabe1.Note = Note;
