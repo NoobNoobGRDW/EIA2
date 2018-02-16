@@ -37,13 +37,12 @@ h2:hover {
 
 p {
 	font-family: 'Monoton', cursive;
-	color: #0F0F0F;
-	background-color: #909090;
+	color: #FFFFFF;
 	opacity: 0.4;
 	position: absolute;
 	font-size: 2em;
 	width: 100%;
-	margin-top: 6em;
+	margin-top: 8em;
 }
 audio {
 	display: none;
