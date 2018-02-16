@@ -20,7 +20,7 @@ namespace Semesteraufgabe1 {
         }
 
         move(): void {
-            this.x += 1;
+            this.x += Math.random() * 1 + 1;
             this.y += -2;
 
 
