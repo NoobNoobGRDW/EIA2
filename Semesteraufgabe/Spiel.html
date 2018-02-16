@@ -17,12 +17,8 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 </style>
 <script>
-window.addEventListener("load", setVolume);
-var audio = document.getElementById("backGround");
-
-function setVolume () {
-    audio.volume = 0.1;
-    }
+  var audio = document.getElementById("background");
+  audio.volume = 0.1;
 </script>
 <script language="javascript" type="text/javascript" src="Spiel.js"></script>
 <script language="javascript" type="text/javascript" src="Superclass.js"></script>
@@ -32,7 +28,7 @@ function setVolume () {
 </head>
 <body>
 
-<audio id="backGround" controls autoplay>
+<audio  controls autoplay id="background">
   <source src="https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/Jazz%20Blues%20Backing%20Track%20-%20Medium%20Up%20Swing%20(Am).mp3" type="audio/mpeg">
 </audio>
 
