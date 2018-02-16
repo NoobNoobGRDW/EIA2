@@ -20,8 +20,8 @@ namespace Semesteraufgabe1 {
         }
         
         move(): void {
-            this.x += -2;
-            this.y += 3;
+            this.x += 2;
+            this.y += -2;
             this.x += Math.random();
             
             if (this.x < 0) { //Gondeln kommen wieder ins Bild

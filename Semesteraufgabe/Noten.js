@@ -13,8 +13,8 @@ var Semesteraufgabe1;
             super(_x, _y, _color);
         }
         move() {
-            this.x += -2;
-            this.y += 3;
+            this.x += 2;
+            this.y += -2;
             this.x += Math.random();
             if (this.x < 0) {
                 this.x = 500;
