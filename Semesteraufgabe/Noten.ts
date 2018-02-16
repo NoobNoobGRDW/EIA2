@@ -20,13 +20,13 @@ namespace Semesteraufgabe1 {
         }
         
         move(): void {
-            this.x += -2;
-            this.y += -3;
+            this.x += 2;
+            this.y += 3;
             this.x += Math.random();
             
-            if (this.y < 330) { //Gondeln kommen wieder ins Bild
-                this.x = 470;
-                this.y = 640;
+            if (this.x < 0) { //Gondeln kommen wieder ins Bild
+                this.x = 500;
+                this.y = 500;
             }
             }
         
