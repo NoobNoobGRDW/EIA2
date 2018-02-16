@@ -16,7 +16,7 @@ h1 {
 	color: #8a1313;
 	font-size: 3em;
 	margin: -0.1em;
-	margin-top: -0.5em;
+	margin-top: -0.4em;
 	padding: 0.0em;
 }
 
@@ -36,12 +36,12 @@ h2:hover {
 	opacity: 0.9;
 }
 
-p {
+h3 {
 	font-family: 'Monoton', cursive;
 	color: #FFFFFF;
 	position: absolute;
 	opacity: 0.8;
-	font-size: 2em;
+	font-size: 1em;
 	width: 100%;
 	margin-top: 8em;
 }
