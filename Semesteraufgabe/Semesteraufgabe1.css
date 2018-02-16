@@ -45,6 +45,7 @@ h3 {
 	width: 100%;
 	margin-top: 9em;
 }
+
 p {
 	font-family: 'Noto Sans', cursive;
 	color: #0F0F0F;
@@ -53,6 +54,16 @@ p {
 	width: 100%;
 	margin-top: 15em;
 }
+
+#WHITE {
+	font-family: 'Noto Sans', cursive;
+	color: #FFFFFF;
+	position: absolute;
+	font-size: 2em;
+	width: 100%;
+	margin-top: 13em;
+}
+
 audio {
 	display: none;
 }
