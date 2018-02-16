@@ -26,7 +26,7 @@ namespace Semesteraufgabe1 {
 
             if (this.x > 720) { //Gondeln kommen wieder ins Bild
                 this.x = 500;
-                this.y = 270;
+                this.y = 260;
             }
         }
 
