@@ -13,6 +13,8 @@ namespace Spiel {
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", piano);
 
+
+
     let objects: MovingObjects[] = [];
 
 
