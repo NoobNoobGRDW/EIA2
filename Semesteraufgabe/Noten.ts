@@ -48,7 +48,7 @@ namespace Semesteraufgabe1 {
             crc2.fillStyle = "#BDBDBD";
             crc2.fillRect(this.x + 73, this.y - 40, 5, 43);
             //Balken oben
-            crc2.fillStyle = "#BDBDBD";
+            crc2.fillStyle = this.color;
             crc2.fillRect(this.x + 43, this.y - 40, 32, 5);
             
         }
