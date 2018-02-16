@@ -25,18 +25,18 @@ var Semesteraufgabe1;
             //Kreis links
             Semesteraufgabe1.crc2.beginPath();
             Semesteraufgabe1.crc2.arc(this.x + 40, this.y, 8, 0, 2 * Math.PI);
-            Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
+            Semesteraufgabe1.crc2.fillStyle = this.color;
             Semesteraufgabe1.crc2.fill();
             //Kreis rechts
             Semesteraufgabe1.crc2.beginPath();
             Semesteraufgabe1.crc2.arc(this.x + 70, this.y, 8, 0, 2 * Math.PI);
-            Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
+            Semesteraufgabe1.crc2.fillStyle = this.color;
             Semesteraufgabe1.crc2.fill();
             //Balken links
-            Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
+            Semesteraufgabe1.crc2.fillStyle = this.color;
             Semesteraufgabe1.crc2.fillRect(this.x + 43, this.y - 40, 5, 43);
             //Balken rechts
-            Semesteraufgabe1.crc2.fillStyle = "#BDBDBD";
+            Semesteraufgabe1.crc2.fillStyle = this.color;
             Semesteraufgabe1.crc2.fillRect(this.x + 73, this.y - 40, 5, 43);
             //Balken oben
             Semesteraufgabe1.crc2.fillStyle = this.color;
