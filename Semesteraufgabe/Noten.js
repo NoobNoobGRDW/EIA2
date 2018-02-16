@@ -18,7 +18,7 @@ var Semesteraufgabe1;
             this.x += Math.random();
             if (this.x > 720) {
                 this.x = 500;
-                this.y = 280;
+                this.y = 270;
             }
         }
         draw() {
