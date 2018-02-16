@@ -47,12 +47,11 @@ h3 {
 }
 p {
 	font-family: 'Noto Sans', cursive;
-	color: #FFFFFF;
+	color: #0F0F0F;
 	position: absolute;
-	opacity: 0.8;
 	font-size: 2em;
 	width: 100%;
-	margin-top: 11em;
+	margin-top: 13em;
 }
 audio {
 	display: none;
