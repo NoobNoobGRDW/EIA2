@@ -11,7 +11,7 @@ var Spiel;
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
     let objects = [];
-    var canvasImg; //initialisiert das Canvas Image
+    var image; //initialisiert das Canvas Image
     function piano() {
         let canvas = document.getElementsByTagName("canvas")[0];
         Spiel.crc2 = canvas.getContext("2d");
@@ -143,7 +143,7 @@ var Spiel;
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
     }
-    canvasImg = Spiel.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
+    image = Spiel.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
     //Buchstben per Tastatur
     function handleKeyDown(_event) {
         //von links
@@ -210,7 +210,7 @@ var Spiel;
         else if (_event.keyCode == 74) {
             console.log("J");
             Spiel.crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
-            Spiel.crc2.putImageData(canvasImg, 0, 0); //f�gt Bild ein
+            Spiel.crc2.putImageData(image, 0, 0); //f�gt Bild ein
         }
         else if (_event.keyCode == 75) {
             console.log("K");
