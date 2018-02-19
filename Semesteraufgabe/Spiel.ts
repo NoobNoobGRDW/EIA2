@@ -179,7 +179,7 @@ namespace Spiel {
             crc2.lineTo(355, 350);//oben rechts
             crc2.lineTo(305, 350);//oben links   
             crc2.closePath();
-            crc2.globalAlpha = 0.3;
+            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
@@ -193,7 +193,7 @@ namespace Spiel {
             crc2.lineTo(410, 350);//oben rechts
             crc2.lineTo(362, 350);//oben links   
             crc2.closePath();
-            crc2.globalAlpha = 0.3;
+            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
@@ -207,7 +207,7 @@ namespace Spiel {
             crc2.lineTo(465, 350);//oben rechts
             crc2.lineTo(420, 350);//oben links   
             crc2.closePath();
-            crc2.globalAlpha = 0.3;
+            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#2EFE2E";
             crc2.fill();
         }
@@ -220,7 +220,7 @@ namespace Spiel {
             crc2.lineTo(522, 350);//oben rechts
             crc2.lineTo(475, 350);//oben links   
             crc2.closePath();
-            crc2.globalAlpha = 0.3;
+            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#2EFE2E";
             crc2.fill();
         }
@@ -234,7 +234,7 @@ namespace Spiel {
             crc2.lineTo(580, 350);//oben rechts
             crc2.lineTo(534, 350);//oben links   
             crc2.closePath();
-            crc2.globalAlpha = 0.3;
+            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#2EFE2E";
             crc2.fill();
         }
@@ -248,7 +248,7 @@ namespace Spiel {
             crc2.lineTo(637, 350);//oben rechts
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
-            crc2.globalAlpha = 0.3;
+            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#2EFE2E";
             crc2.fill();
         }
@@ -262,7 +262,7 @@ namespace Spiel {
             crc2.lineTo(690, 350);//oben rechts
             crc2.lineTo(645, 350);//oben links   
             crc2.closePath();
-            crc2.globalAlpha = 0.3;
+            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#2EFE2E";
             crc2.fill();
         }
