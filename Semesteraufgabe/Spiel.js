@@ -149,16 +149,24 @@ var Spiel;
         if (_event.keyCode == 83) {
             console.log("S");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(310, 530); //links 
-            Spiel.crc2.lineTo(350, 530); //rechts
-            Spiel.crc2.lineTo(350, 350); //oben rechts
-            Spiel.crc2.lineTo(310, 350); //oben links   
+            Spiel.crc2.moveTo(305, 530); //links 
+            Spiel.crc2.lineTo(355, 530); //rechts
+            Spiel.crc2.lineTo(355, 350); //oben rechts
+            Spiel.crc2.lineTo(305, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
         }
         else if (_event.keyCode == 68) {
             console.log("D");
+            Spiel.crc2.beginPath();
+            Spiel.crc2.moveTo(360, 530); //links 
+            Spiel.crc2.lineTo(410, 530); //rechts
+            Spiel.crc2.lineTo(410, 350); //oben rechts
+            Spiel.crc2.lineTo(360, 350); //oben links   
+            Spiel.crc2.closePath();
+            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.fill();
         }
         else if (_event.keyCode == 70) {
             console.log("F");
