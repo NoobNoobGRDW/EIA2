@@ -198,18 +198,27 @@ namespace Spiel {
 
         else if (_event.keyCode == 70) {
             console.log("F");
-            
+
             crc2.beginPath();
-            crc2.moveTo(415, 530);//links 
+            crc2.moveTo(417, 530);//links 
             crc2.lineTo(465, 530);//rechts
             crc2.lineTo(465, 350);//oben rechts
-            crc2.lineTo(415, 350);//oben links   
+            crc2.lineTo(417, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
-            crc2.fill();            
+            crc2.fill();
         }
         else if (_event.keyCode == 71) {
             console.log("G");
+
+            crc2.beginPath();
+            crc2.moveTo(470, 530);//links 
+            crc2.lineTo(520, 530);//rechts
+            crc2.lineTo(520, 350);//oben rechts
+            crc2.lineTo(470, 350);//oben links   
+            crc2.closePath();
+            crc2.fillStyle = "#A9F5A9";
+            crc2.fill();
         }
 
         else if (_event.keyCode == 72) {
