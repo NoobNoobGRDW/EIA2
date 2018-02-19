@@ -212,10 +212,10 @@ namespace Spiel {
             console.log("G");
 
             crc2.beginPath();
-            crc2.moveTo(470, 530);//links 
-            crc2.lineTo(520, 530);//rechts
-            crc2.lineTo(520, 350);//oben rechts
-            crc2.lineTo(470, 350);//oben links   
+            crc2.moveTo(472, 530);//links 
+            crc2.lineTo(522, 530);//rechts
+            crc2.lineTo(522, 350);//oben rechts
+            crc2.lineTo(472, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
@@ -223,6 +223,15 @@ namespace Spiel {
 
         else if (_event.keyCode == 72) {
             console.log("H");
+
+            crc2.beginPath();
+            crc2.moveTo(525, 530);//links 
+            crc2.lineTo(575, 530);//rechts
+            crc2.lineTo(575, 350);//oben rechts
+            crc2.lineTo(525, 350);//oben links   
+            crc2.closePath();
+            crc2.fillStyle = "#A9F5A9";
+            crc2.fill();
         }
 
         else if (_event.keyCode == 74) {

@@ -182,16 +182,24 @@ var Spiel;
         else if (_event.keyCode == 71) {
             console.log("G");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(470, 530); //links 
-            Spiel.crc2.lineTo(520, 530); //rechts
-            Spiel.crc2.lineTo(520, 350); //oben rechts
-            Spiel.crc2.lineTo(470, 350); //oben links   
+            Spiel.crc2.moveTo(472, 530); //links 
+            Spiel.crc2.lineTo(522, 530); //rechts
+            Spiel.crc2.lineTo(522, 350); //oben rechts
+            Spiel.crc2.lineTo(472, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
         }
         else if (_event.keyCode == 72) {
             console.log("H");
+            Spiel.crc2.beginPath();
+            Spiel.crc2.moveTo(525, 530); //links 
+            Spiel.crc2.lineTo(575, 530); //rechts
+            Spiel.crc2.lineTo(575, 350); //oben rechts
+            Spiel.crc2.lineTo(525, 350); //oben links   
+            Spiel.crc2.closePath();
+            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.fill();
         }
         else if (_event.keyCode == 74) {
             console.log("J");
