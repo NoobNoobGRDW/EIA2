@@ -10,7 +10,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 namespace Spiel {
 
 
-    export let crc2: CanvasRenderingContext2D;
+    let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
 
@@ -153,7 +153,7 @@ namespace Spiel {
         crc2.stroke();
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
-/*
+
         var context = canvas.getContext('2d');
         var imageObj = new Image();
 
@@ -161,7 +161,7 @@ namespace Spiel {
             context.drawImage(imageObj, 300, 350, 400, 180);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
-*/
+
 
     }
 
