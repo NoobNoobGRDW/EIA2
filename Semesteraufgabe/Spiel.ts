@@ -163,12 +163,13 @@ namespace Spiel {
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
 
 
+        image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image 
     }
 
-/*    image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image */
 
-    
-    
+
+
+
     //Buchstben per Tastatur
     function handleKeyDown(_event: KeyboardEvent): void {
 
@@ -248,9 +249,9 @@ namespace Spiel {
             console.log("J");
 
 
-     /*       crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
-            
-            crc2.putImageData(image, 0, 0); //fügt Bild ein */
+                   crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+                   
+                   crc2.putImageData(image, 0, 0); //fügt Bild ein 
 
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 
@@ -259,7 +260,7 @@ namespace Spiel {
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
-            crc2.fill(); 
+            crc2.fill();
         }
 
         else if (_event.keyCode == 75) {

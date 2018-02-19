@@ -143,8 +143,8 @@ var Spiel;
             context.drawImage(imageObj, 300, 350, 400, 180);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
+        image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image 
     }
-    /*    image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image */
     //Buchstben per Tastatur
     function handleKeyDown(_event) {
         //von links
@@ -210,9 +210,8 @@ var Spiel;
         }
         else if (_event.keyCode == 74) {
             console.log("J");
-            /*       crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
-                   
-                   crc2.putImageData(image, 0, 0); //f�gt Bild ein */
+            crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+            crc2.putImageData(image, 0, 0); //f�gt Bild ein 
             crc2.beginPath();
             crc2.moveTo(590, 530); //links 
             crc2.lineTo(637, 530); //rechts
