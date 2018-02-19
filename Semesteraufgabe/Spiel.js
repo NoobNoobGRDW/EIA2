@@ -9,6 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 var Spiel;
 (function (Spiel) {
     window.addEventListener("load", piano);
+    document.addEventListener("keydown", handleKeyDown);
     let objects = [];
     var canImg; //initialisiert das Canvas Image
     function piano() {
@@ -141,5 +142,24 @@ var Spiel;
             context.drawImage(imageObj, 300, 350, 400, 180);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
+    }
+    //Buchstben per Tastatur
+    function handleKeyDown(_event) {
+        //von links
+        if (_event.keyCode == 83) {
+            console.log("LOOL");
+        }
+        else if (_event.keyCode == 68) {
+        }
+        else if (_event.keyCode == 70) {
+        }
+        else if (_event.keyCode == 71) {
+        }
+        else if (_event.keyCode == 72) {
+        }
+        else if (_event.keyCode == 74) {
+        }
+        else if (_event.keyCode == 75) {
+        }
     }
 })(Spiel || (Spiel = {}));

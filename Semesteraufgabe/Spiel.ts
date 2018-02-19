@@ -12,7 +12,7 @@ namespace Spiel {
 
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", piano);
-
+    document.addEventListener("keydown", handleKeyDown);
 
 
     let objects: MovingObjects[] = [];
@@ -163,6 +163,36 @@ namespace Spiel {
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
 
 
+    }
+
+    //Buchstben per Tastatur
+    function handleKeyDown(_event: KeyboardEvent): void {
+       
+        
+        //von links
+        if (_event.keyCode == 83) {
+        console.log("LOOL");
+        }
+        else if (_event.keyCode == 68) {
+
+        }
+        else if (_event.keyCode == 70) {
+
+        }
+        else if (_event.keyCode == 71) {
+            
+        }
+        else if (_event.keyCode == 72) {
+            
+        }
+        else if (_event.keyCode == 74) {
+            
+        }
+        else if (_event.keyCode == 75) {
+            
+        } 
+        
+        
     }
 
 }
