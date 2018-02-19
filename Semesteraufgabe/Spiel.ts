@@ -250,14 +250,14 @@ namespace Spiel {
             
             crc2.putImageData(canvasImg, 0, 0); //fügt Bild ein
 
-            crc2.beginPath();
+/*          crc2.beginPath();
             crc2.moveTo(590, 530);//links 
             crc2.lineTo(637, 530);//rechts
             crc2.lineTo(637, 350);//oben rechts
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
-            crc2.fill();
+            crc2.fill(); */
         }
 
         else if (_event.keyCode == 75) {
