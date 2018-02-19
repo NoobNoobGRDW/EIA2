@@ -206,7 +206,7 @@ var Spiel;
         crc2.moveTo(405, 450); //links 
         crc2.lineTo(425, 450); //rechts
         crc2.lineTo(425, 350); //oben rechts
-        crc2.lineTo(405, 350); //oben links  
+        crc2.lineTo(405, 351); //oben links  
         crc2.closePath();
         crc2.fillStyle = "#000000";
         crc2.fill();
