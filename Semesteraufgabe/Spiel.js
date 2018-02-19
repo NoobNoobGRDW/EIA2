@@ -215,7 +215,7 @@ var Spiel;
         else if (_event.keyCode == 75) {
             console.log("K");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(645, 530); //links 
+            Spiel.crc2.moveTo(648, 530); //links 
             Spiel.crc2.lineTo(692, 530); //rechts
             Spiel.crc2.lineTo(690, 350); //oben rechts
             Spiel.crc2.lineTo(645, 350); //oben links   

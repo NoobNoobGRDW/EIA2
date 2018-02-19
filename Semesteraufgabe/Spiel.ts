@@ -251,7 +251,7 @@ namespace Spiel {
             console.log("K");
 
             crc2.beginPath();
-            crc2.moveTo(645, 530);//links 
+            crc2.moveTo(648, 530);//links 
             crc2.lineTo(692, 530);//rechts
             crc2.lineTo(690, 350);//oben rechts
             crc2.lineTo(645, 350);//oben links   
