@@ -239,8 +239,8 @@ namespace Spiel {
 
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 
-            crc2.lineTo(635, 530);//rechts
-            crc2.lineTo(635, 350);//oben rechts
+            crc2.lineTo(637, 530);//rechts
+            crc2.lineTo(637, 350);//oben rechts
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
@@ -251,10 +251,10 @@ namespace Spiel {
             console.log("K");
 
             crc2.beginPath();
-            crc2.moveTo(640, 530);//links 
-            crc2.lineTo(690, 530);//rechts
-            crc2.lineTo(690, 350);//oben rechts
-            crc2.lineTo(640, 350);//oben links   
+            crc2.moveTo(643, 530);//links 
+            crc2.lineTo(692, 530);//rechts
+            crc2.lineTo(692, 350);//oben rechts
+            crc2.lineTo(643, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();

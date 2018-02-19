@@ -205,8 +205,8 @@ var Spiel;
             console.log("J");
             Spiel.crc2.beginPath();
             Spiel.crc2.moveTo(590, 530); //links 
-            Spiel.crc2.lineTo(635, 530); //rechts
-            Spiel.crc2.lineTo(635, 350); //oben rechts
+            Spiel.crc2.lineTo(637, 530); //rechts
+            Spiel.crc2.lineTo(637, 350); //oben rechts
             Spiel.crc2.lineTo(590, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
@@ -215,10 +215,10 @@ var Spiel;
         else if (_event.keyCode == 75) {
             console.log("K");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(640, 530); //links 
-            Spiel.crc2.lineTo(690, 530); //rechts
-            Spiel.crc2.lineTo(690, 350); //oben rechts
-            Spiel.crc2.lineTo(640, 350); //oben links   
+            Spiel.crc2.moveTo(643, 530); //links 
+            Spiel.crc2.lineTo(692, 530); //rechts
+            Spiel.crc2.lineTo(692, 350); //oben rechts
+            Spiel.crc2.lineTo(643, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
