@@ -149,10 +149,10 @@ var Spiel;
         if (_event.keyCode == 83) {
             console.log("S");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(260, 530); //links 
-            Spiel.crc2.lineTo(270, 530); //rechts
-            Spiel.crc2.lineTo(266, 350); //oben rechts
-            Spiel.crc2.lineTo(265, 350); //oben links   
+            Spiel.crc2.moveTo(300, 530); //links 
+            Spiel.crc2.lineTo(320, 530); //rechts
+            Spiel.crc2.lineTo(320, 350); //oben rechts
+            Spiel.crc2.lineTo(300, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
