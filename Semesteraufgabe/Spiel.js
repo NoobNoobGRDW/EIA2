@@ -115,6 +115,18 @@ var Spiel;
         crc2.stroke();
         crc2.fillStyle = "#FBFBFB";
         crc2.fill();
+        //R�nder
+        //S
+        crc2.beginPath();
+        crc2.moveTo(305, 530); //links 
+        crc2.lineTo(355, 530); //rechts
+        crc2.lineTo(355, 350); //oben rechts
+        crc2.lineTo(305, 350); //oben links  
+        crc2.closePath();
+        crc2.strokeStyle = "#000000";
+        crc2.stroke();
+        crc2.fillStyle = "#FBFBFB";
+        crc2.fill();
         //Fuss links
         crc2.beginPath();
         crc2.moveTo(150, 600); //links 
