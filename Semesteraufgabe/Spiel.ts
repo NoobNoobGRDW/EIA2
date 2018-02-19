@@ -218,12 +218,30 @@ namespace Spiel {
         crc2.closePath();
         crc2.fillStyle = "#000000";
         crc2.fill();
-        
+
         crc2.beginPath();
         crc2.moveTo(405, 450);//links 
         crc2.lineTo(425, 450);//rechts
         crc2.lineTo(425, 350);//oben rechts
         crc2.lineTo(405, 350);//oben links  
+        crc2.closePath();
+        crc2.fillStyle = "#000000";
+        crc2.fill();
+
+        crc2.beginPath();
+        crc2.moveTo(520, 450);//links 
+        crc2.lineTo(540, 450);//rechts
+        crc2.lineTo(540, 350);//oben rechts
+        crc2.lineTo(520, 350);//oben links  
+        crc2.closePath();
+        crc2.fillStyle = "#000000";
+        crc2.fill();
+
+        crc2.beginPath();
+        crc2.moveTo(575, 450);//links 
+        crc2.lineTo(595, 450);//rechts
+        crc2.lineTo(595, 350);//oben rechts
+        crc2.lineTo(575, 350);//oben links  
         crc2.closePath();
         crc2.fillStyle = "#000000";
         crc2.fill();
