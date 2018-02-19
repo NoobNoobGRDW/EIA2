@@ -154,6 +154,7 @@ var Spiel;
             Spiel.crc2.lineTo(355, 350); //oben rechts
             Spiel.crc2.lineTo(305, 350); //oben links   
             Spiel.crc2.closePath();
+            Spiel.crc2.globalAlpha = 0.3;
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
         }
@@ -165,6 +166,7 @@ var Spiel;
             Spiel.crc2.lineTo(410, 350); //oben rechts
             Spiel.crc2.lineTo(362, 350); //oben links   
             Spiel.crc2.closePath();
+            Spiel.crc2.globalAlpha = 0.3;
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
         }
@@ -176,7 +178,8 @@ var Spiel;
             Spiel.crc2.lineTo(465, 350); //oben rechts
             Spiel.crc2.lineTo(420, 350); //oben links   
             Spiel.crc2.closePath();
-            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.globalAlpha = 0.3;
+            Spiel.crc2.fillStyle = "#2EFE2E";
             Spiel.crc2.fill();
         }
         else if (_event.keyCode == 71) {
@@ -187,7 +190,8 @@ var Spiel;
             Spiel.crc2.lineTo(522, 350); //oben rechts
             Spiel.crc2.lineTo(475, 350); //oben links   
             Spiel.crc2.closePath();
-            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.globalAlpha = 0.3;
+            Spiel.crc2.fillStyle = "#2EFE2E";
             Spiel.crc2.fill();
         }
         else if (_event.keyCode == 72) {
@@ -198,7 +202,8 @@ var Spiel;
             Spiel.crc2.lineTo(580, 350); //oben rechts
             Spiel.crc2.lineTo(534, 350); //oben links   
             Spiel.crc2.closePath();
-            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.globalAlpha = 0.3;
+            Spiel.crc2.fillStyle = "#2EFE2E";
             Spiel.crc2.fill();
         }
         else if (_event.keyCode == 74) {
@@ -209,7 +214,8 @@ var Spiel;
             Spiel.crc2.lineTo(637, 350); //oben rechts
             Spiel.crc2.lineTo(590, 350); //oben links   
             Spiel.crc2.closePath();
-            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.globalAlpha = 0.3;
+            Spiel.crc2.fillStyle = "#2EFE2E";
             Spiel.crc2.fill();
         }
         else if (_event.keyCode == 75) {
@@ -220,8 +226,8 @@ var Spiel;
             Spiel.crc2.lineTo(690, 350); //oben rechts
             Spiel.crc2.lineTo(645, 350); //oben links   
             Spiel.crc2.closePath();
-            Spiel.crc2.globalAlpha = 0.2;
-            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.globalAlpha = 0.3;
+            Spiel.crc2.fillStyle = "#2EFE2E";
             Spiel.crc2.fill();
         }
     }
