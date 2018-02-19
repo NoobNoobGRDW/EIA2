@@ -242,7 +242,6 @@ namespace Spiel {
         else if (_event.keyCode == 74) {
             console.log("J");
 
-            crc2.clearRect(250, 530, 400, 180);
 
             //Tastenfeld weiss
             crc2.beginPath();
