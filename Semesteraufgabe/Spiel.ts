@@ -171,25 +171,25 @@ namespace Spiel {
         
         //von links
         if (_event.keyCode == 83) {
-        console.log("LOOL");
+        console.log("S");
         }
         else if (_event.keyCode == 68) {
-
+        console.log("D");
         }
         else if (_event.keyCode == 70) {
-
+        console.log("F");
         }
         else if (_event.keyCode == 71) {
-            
+        console.log("G");            
         }
         else if (_event.keyCode == 72) {
-            
+        console.log("H");            
         }
         else if (_event.keyCode == 74) {
-            
+        console.log("J");            
         }
         else if (_event.keyCode == 75) {
-            
+        console.log("K");            
         } 
         
         
