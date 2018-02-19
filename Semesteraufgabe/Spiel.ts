@@ -121,8 +121,8 @@ namespace Spiel {
         crc2.beginPath();
         crc2.moveTo(100, 530);//links 
         crc2.lineTo(900, 530);//rechts
-        crc2.lineTo(890, 420);//oben rechts
-        crc2.lineTo(110, 420);//oben links   
+        crc2.lineTo(890, 400);//oben rechts
+        crc2.lineTo(110, 400);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#868585";
         crc2.stroke();
@@ -158,7 +158,7 @@ namespace Spiel {
         var imageObj = new Image();
 
         imageObj.onload = function() {
-            context.drawImage(imageObj, 90, 400, 100, 100);
+            context.drawImage(imageObj, 450, 400, 300, 100);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
 
