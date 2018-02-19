@@ -249,6 +249,15 @@ namespace Spiel {
 
         else if (_event.keyCode == 75) {
             console.log("K");
+
+            crc2.beginPath();
+            crc2.moveTo(640, 530);//links 
+            crc2.lineTo(690, 530);//rechts
+            crc2.lineTo(690, 350);//oben rechts
+            crc2.lineTo(640, 350);//oben links   
+            crc2.closePath();
+            crc2.fillStyle = "#A9F5A9";
+            crc2.fill();
         }
 
 
