@@ -27,7 +27,7 @@ namespace Spiel {
         let canvas: HTMLCanvasElement = document.getElementsByTagName("canvas")[0];
         crc2 = canvas.getContext("2d");
         console.log(canvas);
-        console.log("setTimeout");
+        console.log("setPiano");
 
         //Hintergrund
         crc2.fillStyle = "#B26C2F";
@@ -153,7 +153,7 @@ namespace Spiel {
         crc2.stroke();
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
-
+/*
         var context = canvas.getContext('2d');
         var imageObj = new Image();
 
@@ -161,12 +161,14 @@ namespace Spiel {
             context.drawImage(imageObj, 300, 350, 400, 180);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
-
+*/
 
     }
 
     image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
+    
+    
     //Buchstben per Tastatur
     function handleKeyDown(_event: KeyboardEvent): void {
 
@@ -250,14 +252,14 @@ namespace Spiel {
             
             crc2.putImageData(image, 0, 0); //fügt Bild ein
 
-/*          crc2.beginPath();
+            crc2.beginPath();
             crc2.moveTo(590, 530);//links 
             crc2.lineTo(637, 530);//rechts
             crc2.lineTo(637, 350);//oben rechts
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
-            crc2.fill(); */
+            crc2.fill(); 
         }
 
         else if (_event.keyCode == 75) {

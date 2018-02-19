@@ -16,7 +16,7 @@ var Spiel;
         let canvas = document.getElementsByTagName("canvas")[0];
         Spiel.crc2 = canvas.getContext("2d");
         console.log(canvas);
-        console.log("setTimeout");
+        console.log("setPiano");
         //Hintergrund
         Spiel.crc2.fillStyle = "#B26C2F";
         Spiel.crc2.fillRect(0, 0, 1000, 600);
@@ -136,12 +136,15 @@ var Spiel;
         Spiel.crc2.stroke();
         Spiel.crc2.fillStyle = "#0F0F0F";
         Spiel.crc2.fill();
-        var context = canvas.getContext('2d');
-        var imageObj = new Image();
-        imageObj.onload = function () {
-            context.drawImage(imageObj, 300, 350, 400, 180);
-        };
-        imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
+        /*
+                var context = canvas.getContext('2d');
+                var imageObj = new Image();
+        
+                imageObj.onload = function() {
+                    context.drawImage(imageObj, 300, 350, 400, 180);
+                };
+                imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
+        */
     }
     image = Spiel.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
     //Buchstben per Tastatur
@@ -211,6 +214,14 @@ var Spiel;
             console.log("J");
             Spiel.crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
             Spiel.crc2.putImageData(image, 0, 0); //f�gt Bild ein
+            Spiel.crc2.beginPath();
+            Spiel.crc2.moveTo(590, 530); //links 
+            Spiel.crc2.lineTo(637, 530); //rechts
+            Spiel.crc2.lineTo(637, 350); //oben rechts
+            Spiel.crc2.lineTo(590, 350); //oben links   
+            Spiel.crc2.closePath();
+            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.fill();
         }
         else if (_event.keyCode == 75) {
             console.log("K");
