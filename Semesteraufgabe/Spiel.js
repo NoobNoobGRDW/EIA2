@@ -275,7 +275,7 @@ var Spiel;
         var context = canvas.getContext('2d');
         var imageObj = new Image();
         imageObj.onload = function () {
-            context.drawImage(imageObj, 69, 50);
+            context.drawImage(imageObj, 90, 400);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
     }
