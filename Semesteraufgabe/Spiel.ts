@@ -208,7 +208,7 @@ namespace Spiel {
             crc2.lineTo(420, 350);//oben links   
             crc2.closePath();
             crc2.globalAlpha = 0.5;
-            crc2.fillStyle = "#2EFE2E";
+            crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
         else if (_event.keyCode == 71) {
@@ -221,7 +221,7 @@ namespace Spiel {
             crc2.lineTo(475, 350);//oben links   
             crc2.closePath();
             crc2.globalAlpha = 0.5;
-            crc2.fillStyle = "#2EFE2E";
+            crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
 
@@ -235,7 +235,7 @@ namespace Spiel {
             crc2.lineTo(534, 350);//oben links   
             crc2.closePath();
             crc2.globalAlpha = 0.5;
-            crc2.fillStyle = "#2EFE2E";
+            crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
 
@@ -249,7 +249,7 @@ namespace Spiel {
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
             crc2.globalAlpha = 0.5;
-            crc2.fillStyle = "#2EFE2E";
+            crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
 
@@ -263,7 +263,7 @@ namespace Spiel {
             crc2.lineTo(645, 350);//oben links   
             crc2.closePath();
             crc2.globalAlpha = 0.5;
-            crc2.fillStyle = "#2EFE2E";
+            crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
 
