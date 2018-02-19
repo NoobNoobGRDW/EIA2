@@ -20,7 +20,7 @@ namespace Spiel {
 
 
 
-    var canImg: any; //initialisiert das Canvas Image
+    var canvasImg: any; //initialisiert das Canvas Image
 
 
     function piano() {
@@ -165,7 +165,7 @@ namespace Spiel {
 
     }
 
-    canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
+    canvasImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
     //Buchstben per Tastatur
     function handleKeyDown(_event: KeyboardEvent): void {
@@ -247,7 +247,8 @@ namespace Spiel {
 
 
             crc2.clearRect(0, 0, 500, 300); // loescht Hintergrund
-            crc2.putImageData(canImg, 10, 10); //fügt Bild ein
+            
+            crc2.putImageData(canvasImg, 10, 10); //fügt Bild ein
 
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 
