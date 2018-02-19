@@ -73,8 +73,8 @@ var Spiel;
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(70, 550); //links 
         Spiel.crc2.lineTo(930, 550); //rechts
-        Spiel.crc2.lineTo(925, 320); //oben rechts
-        Spiel.crc2.lineTo(75, 320); //oben links   
+        Spiel.crc2.lineTo(910, 320); //oben rechts
+        Spiel.crc2.lineTo(90, 320); //oben links   
         Spiel.crc2.closePath();
         Spiel.crc2.strokeStyle = "#ADACAB";
         Spiel.crc2.stroke();
@@ -102,6 +102,17 @@ var Spiel;
         Spiel.crc2.stroke();
         Spiel.crc2.fillStyle = "#0F0F0F";
         Spiel.crc2.fill();
+        //Tasten von links
+        Spiel.crc2.beginPath();
+        Spiel.crc2.moveTo(100, 530); //links 
+        Spiel.crc2.lineTo(900, 530); //rechts
+        Spiel.crc2.lineTo(870, 420); //oben rechts
+        Spiel.crc2.lineTo(130, 420); //oben links   
+        Spiel.crc2.closePath();
+        Spiel.crc2.strokeStyle = "#868585";
+        Spiel.crc2.stroke();
+        Spiel.crc2.fillStyle = "#FBFBFB";
+        Spiel.crc2.fill();
         //Fuss links
         Spiel.crc2.beginPath();
         Spiel.crc2.moveTo(150, 600); //links 
@@ -127,7 +138,7 @@ var Spiel;
         var context = canvas.getContext('2d');
         var imageObj = new Image();
         imageObj.onload = function () {
-            context.drawImage(imageObj, 90, 400, 100, 100);
+            context.drawImage(imageObj, 90, 400);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
     }
