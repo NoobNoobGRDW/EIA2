@@ -184,10 +184,10 @@ var Spiel;
         crc2.fill();
         //K
         crc2.beginPath();
-        crc2.moveTo(645, 530); //links 
+        crc2.moveTo(647, 530); //links 
         crc2.lineTo(695, 530); //rechts
         crc2.lineTo(695, 350); //oben rechts
-        crc2.lineTo(645, 350); //oben links 
+        crc2.lineTo(647, 350); //oben links 
         crc2.closePath();
         crc2.strokeStyle = "#000000";
         crc2.stroke();
@@ -317,10 +317,10 @@ var Spiel;
             crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
             crc2.putImageData(image, 0, 0); //f�gt Bild ein 
             crc2.beginPath();
-            crc2.moveTo(645, 530); //links 
+            crc2.moveTo(647, 530); //links 
             crc2.lineTo(695, 530); //rechts
             crc2.lineTo(695, 350); //oben rechts
-            crc2.lineTo(645, 350); //oben links   
+            crc2.lineTo(647, 350); //oben links   
             crc2.closePath();
             crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#A9F5A9";
