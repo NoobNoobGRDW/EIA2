@@ -309,7 +309,6 @@ namespace Spiel {
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
 
-        var canvasPic: HTMLCanvasElement = document.getElementsByTagName("canvas")[0];
         var context = canvas.getContext('2d');
         var imageObj = new Image();
 
