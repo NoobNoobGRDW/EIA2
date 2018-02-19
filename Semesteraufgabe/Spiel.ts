@@ -117,12 +117,12 @@ namespace Spiel {
         crc2.stroke();
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
-        //Tasten von links
+        //Tastenfeld weiss
         crc2.beginPath();
         crc2.moveTo(100, 530);//links 
         crc2.lineTo(900, 530);//rechts
-        crc2.lineTo(870, 420);//oben rechts
-        crc2.lineTo(130, 420);//oben links   
+        crc2.lineTo(890, 420);//oben rechts
+        crc2.lineTo(110, 420);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#868585";
         crc2.stroke();
