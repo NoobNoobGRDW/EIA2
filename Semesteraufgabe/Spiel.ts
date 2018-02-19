@@ -167,32 +167,41 @@ namespace Spiel {
 
     //Buchstben per Tastatur
     function handleKeyDown(_event: KeyboardEvent): void {
-       
-        
+
+
         //von links
         if (_event.keyCode == 83) {
-        console.log("S");
+            console.log("S");
+            
+            crc2.beginPath();
+            crc2.moveTo(260, 530);//links 
+            crc2.lineTo(270, 530);//rechts
+            crc2.lineTo(266, 350);//oben rechts
+            crc2.lineTo(265, 350);//oben links   
+            crc2.closePath();
+            crc2.fillStyle = "#A9F5A9";
+            crc2.fill();
         }
         else if (_event.keyCode == 68) {
-        console.log("D");
+            console.log("D");
         }
         else if (_event.keyCode == 70) {
-        console.log("F");
+            console.log("F");
         }
         else if (_event.keyCode == 71) {
-        console.log("G");            
+            console.log("G");
         }
         else if (_event.keyCode == 72) {
-        console.log("H");            
+            console.log("H");
         }
         else if (_event.keyCode == 74) {
-        console.log("J");            
+            console.log("J");
         }
         else if (_event.keyCode == 75) {
-        console.log("K");            
-        } 
-        
-        
+            console.log("K");
+        }
+
+
     }
 
 }
