@@ -165,7 +165,7 @@ namespace Spiel {
 
     }
 
-    image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
+/*    image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image */
 
     
     

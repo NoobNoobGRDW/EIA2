@@ -144,7 +144,7 @@ var Spiel;
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
     }
-    image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
+    /*    image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image */
     //Buchstben per Tastatur
     function handleKeyDown(_event) {
         //von links
