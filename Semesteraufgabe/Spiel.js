@@ -160,16 +160,24 @@ var Spiel;
         else if (_event.keyCode == 68) {
             console.log("D");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(360, 530); //links 
+            Spiel.crc2.moveTo(362, 530); //links 
             Spiel.crc2.lineTo(410, 530); //rechts
             Spiel.crc2.lineTo(410, 350); //oben rechts
-            Spiel.crc2.lineTo(360, 350); //oben links   
+            Spiel.crc2.lineTo(362, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
         }
         else if (_event.keyCode == 70) {
             console.log("F");
+            Spiel.crc2.beginPath();
+            Spiel.crc2.moveTo(415, 530); //links 
+            Spiel.crc2.lineTo(465, 530); //rechts
+            Spiel.crc2.lineTo(465, 350); //oben rechts
+            Spiel.crc2.lineTo(415, 350); //oben links   
+            Spiel.crc2.closePath();
+            Spiel.crc2.fillStyle = "#A9F5A9";
+            Spiel.crc2.fill();
         }
         else if (_event.keyCode == 71) {
             console.log("G");
