@@ -247,7 +247,7 @@ namespace Spiel {
 
 
             crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
-            crc2.putImageData(canImg, 0, 0); //fügt Bild ein
+            crc2.putImageData(canImg, 10, 10); //fügt Bild ein
 
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 

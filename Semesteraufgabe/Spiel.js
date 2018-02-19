@@ -210,7 +210,7 @@ var Spiel;
         else if (_event.keyCode == 74) {
             console.log("J");
             Spiel.crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
-            Spiel.crc2.putImageData(canImg, 0, 0); //f�gt Bild ein
+            Spiel.crc2.putImageData(canImg, 10, 10); //f�gt Bild ein
             Spiel.crc2.beginPath();
             Spiel.crc2.moveTo(590, 530); //links 
             Spiel.crc2.lineTo(637, 530); //rechts
