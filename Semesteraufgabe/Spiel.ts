@@ -200,8 +200,8 @@ namespace Spiel {
         //K
         crc2.beginPath();
         crc2.moveTo(647, 530);//links 
-        crc2.lineTo(695, 530);//rechts
-        crc2.lineTo(695, 350);//oben rechts
+        crc2.lineTo(697, 530);//rechts
+        crc2.lineTo(697, 350);//oben rechts
         crc2.lineTo(647, 350);//oben links 
         crc2.closePath();
         crc2.strokeStyle = "#000000";
@@ -364,8 +364,8 @@ namespace Spiel {
 
             crc2.beginPath();
             crc2.moveTo(647, 530);//links 
-            crc2.lineTo(695, 530);//rechts
-            crc2.lineTo(695, 350);//oben rechts
+            crc2.lineTo(697, 530);//rechts
+            crc2.lineTo(697, 350);//oben rechts
             crc2.lineTo(647, 350);//oben links   
             crc2.closePath();
             crc2.globalAlpha = 0.5;
