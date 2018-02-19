@@ -142,7 +142,39 @@ namespace Spiel {
         crc2.stroke();
         crc2.fillStyle = "#FBFBFB";
         crc2.fill();
-
+        //D
+        crc2.beginPath();
+        crc2.moveTo(362, 530);//links 
+        crc2.lineTo(410, 530);//rechts
+        crc2.lineTo(410, 350);//oben rechts
+        crc2.lineTo(362, 350);//oben links  
+        crc2.closePath();
+        crc2.strokeStyle = "#000000";
+        crc2.stroke();
+        crc2.fillStyle = "#FBFBFB";
+        crc2.fill();
+        //F
+        crc2.beginPath();
+        crc2.moveTo(420, 530);//links 
+        crc2.lineTo(465, 530);//rechts
+        crc2.lineTo(465, 350);//oben rechts
+        crc2.lineTo(420, 350);//oben links  
+        crc2.closePath();
+        crc2.strokeStyle = "#000000";
+        crc2.stroke();
+        crc2.fillStyle = "#FBFBFB";
+        crc2.fill();
+        //G
+        crc2.beginPath();
+        crc2.moveTo(475, 530);//links 
+        crc2.lineTo(522, 530);//rechts
+        crc2.lineTo(522, 350);//oben rechts
+        crc2.lineTo(475, 350);//oben links
+        crc2.closePath();
+        crc2.strokeStyle = "#000000";
+        crc2.stroke();
+        crc2.fillStyle = "#FBFBFB";
+        crc2.fill();
 
         //Fuss links
         crc2.beginPath();
@@ -168,14 +200,14 @@ namespace Spiel {
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
 
-/*        var context = canvas.getContext('2d');
-        var imageObj = new Image();
-
-        imageObj.onload = function() {
-            context.drawImage(imageObj, 300, 350, 400, 180);
-        };
-        imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
-*/
+        /*        var context = canvas.getContext('2d');
+                var imageObj = new Image();
+        
+                imageObj.onload = function() {
+                    context.drawImage(imageObj, 300, 350, 400, 180);
+                };
+                imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
+        */
 
         image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image 
     }

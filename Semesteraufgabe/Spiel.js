@@ -127,6 +127,39 @@ var Spiel;
         crc2.stroke();
         crc2.fillStyle = "#FBFBFB";
         crc2.fill();
+        //D
+        crc2.beginPath();
+        crc2.moveTo(362, 530); //links 
+        crc2.lineTo(410, 530); //rechts
+        crc2.lineTo(410, 350); //oben rechts
+        crc2.lineTo(362, 350); //oben links  
+        crc2.closePath();
+        crc2.strokeStyle = "#000000";
+        crc2.stroke();
+        crc2.fillStyle = "#FBFBFB";
+        crc2.fill();
+        //F
+        crc2.beginPath();
+        crc2.moveTo(420, 530); //links 
+        crc2.lineTo(465, 530); //rechts
+        crc2.lineTo(465, 350); //oben rechts
+        crc2.lineTo(420, 350); //oben links  
+        crc2.closePath();
+        crc2.strokeStyle = "#000000";
+        crc2.stroke();
+        crc2.fillStyle = "#FBFBFB";
+        crc2.fill();
+        //G
+        crc2.beginPath();
+        crc2.moveTo(475, 530); //links 
+        crc2.lineTo(522, 530); //rechts
+        crc2.lineTo(522, 350); //oben rechts
+        crc2.lineTo(475, 350); //oben links
+        crc2.closePath();
+        crc2.strokeStyle = "#000000";
+        crc2.stroke();
+        crc2.fillStyle = "#FBFBFB";
+        crc2.fill();
         //Fuss links
         crc2.beginPath();
         crc2.moveTo(150, 600); //links 
