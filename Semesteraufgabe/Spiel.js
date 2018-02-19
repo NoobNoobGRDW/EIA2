@@ -193,10 +193,10 @@ var Spiel;
         else if (_event.keyCode == 72) {
             console.log("H");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(530, 530); //links 
-            Spiel.crc2.lineTo(577, 530); //rechts
-            Spiel.crc2.lineTo(577, 350); //oben rechts
-            Spiel.crc2.lineTo(530, 350); //oben links   
+            Spiel.crc2.moveTo(534, 530); //links 
+            Spiel.crc2.lineTo(580, 530); //rechts
+            Spiel.crc2.lineTo(580, 350); //oben rechts
+            Spiel.crc2.lineTo(534, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
