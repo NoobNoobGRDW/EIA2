@@ -174,10 +174,10 @@ namespace Spiel {
             console.log("S");
             
             crc2.beginPath();
-            crc2.moveTo(300, 530);//links 
-            crc2.lineTo(320, 530);//rechts
-            crc2.lineTo(320, 350);//oben rechts
-            crc2.lineTo(300, 350);//oben links   
+            crc2.moveTo(310, 530);//links 
+            crc2.lineTo(350, 530);//rechts
+            crc2.lineTo(350, 350);//oben rechts
+            crc2.lineTo(310, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
