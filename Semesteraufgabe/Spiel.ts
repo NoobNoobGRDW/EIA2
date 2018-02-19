@@ -179,6 +179,9 @@ namespace Spiel {
         if (_event.keyCode == 83) {
             console.log("S");
 
+            crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+            crc2.putImageData(image, 0, 0); //fügt Bild ein 
+
             crc2.beginPath();
             crc2.moveTo(305, 530);//links 
             crc2.lineTo(355, 530);//rechts
@@ -192,6 +195,9 @@ namespace Spiel {
 
         else if (_event.keyCode == 68) {
             console.log("D");
+
+            crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+            crc2.putImageData(image, 0, 0); //fügt Bild ein 
 
             crc2.beginPath();
             crc2.moveTo(362, 530);//links 
@@ -207,6 +213,9 @@ namespace Spiel {
         else if (_event.keyCode == 70) {
             console.log("F");
 
+            crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+            crc2.putImageData(image, 0, 0); //fügt Bild ein 
+
             crc2.beginPath();
             crc2.moveTo(420, 530);//links 
             crc2.lineTo(465, 530);//rechts
@@ -219,6 +228,9 @@ namespace Spiel {
         }
         else if (_event.keyCode == 71) {
             console.log("G");
+
+            crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+            crc2.putImageData(image, 0, 0); //fügt Bild ein 
 
             crc2.beginPath();
             crc2.moveTo(475, 530);//links 
@@ -233,6 +245,9 @@ namespace Spiel {
 
         else if (_event.keyCode == 72) {
             console.log("H");
+
+            crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+            crc2.putImageData(image, 0, 0); //fügt Bild ein 
 
             crc2.beginPath();
             crc2.moveTo(534, 530);//links 
@@ -257,6 +272,7 @@ namespace Spiel {
             crc2.lineTo(637, 350);//oben rechts
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
+            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
