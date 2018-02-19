@@ -246,9 +246,9 @@ namespace Spiel {
             console.log("J");
 
 
-            crc2.clearRect(0, 0, 500, 300); // loescht Hintergrund
+            crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
             
-            crc2.putImageData(canvasImg, 10, 10); //fügt Bild ein
+            crc2.putImageData(canvasImg, 0, 0); //fügt Bild ein
 
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 
