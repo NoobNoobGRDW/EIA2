@@ -242,6 +242,8 @@ namespace Spiel {
         else if (_event.keyCode == 74) {
             console.log("J");
 
+            crc2.clearRect(200, 400, 100, 100);
+            
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 
             crc2.lineTo(637, 530);//rechts

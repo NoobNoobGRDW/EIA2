@@ -208,6 +208,7 @@ var Spiel;
         }
         else if (_event.keyCode == 74) {
             console.log("J");
+            Spiel.crc2.clearRect(200, 400, 100, 100);
             Spiel.crc2.beginPath();
             Spiel.crc2.moveTo(590, 530); //links 
             Spiel.crc2.lineTo(637, 530); //rechts
