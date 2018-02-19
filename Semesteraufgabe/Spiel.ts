@@ -22,6 +22,7 @@ namespace Spiel {
 
     var canImg: any; //initialisiert das Canvas Image
 
+
     function piano() {
         let canvas: HTMLCanvasElement = document.getElementsByTagName("canvas")[0];
         crc2 = canvas.getContext("2d");
@@ -237,8 +238,8 @@ namespace Spiel {
         crc2.strokeStyle = "#ADACAB";
         crc2.stroke();
         crc2.fillStyle = "#0F0F0F";
-        crc2.fill();        
-        
+        crc2.fill();
+
         crc2.beginPath();
         crc2.moveTo(328, 480);//links 
         crc2.lineTo(358, 480);//rechts
@@ -307,6 +308,17 @@ namespace Spiel {
         crc2.stroke();
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
+
+        var canvasPic: HTMLCanvasElement = document.getElementsByTagName("canvas")[0];
+        var context = canvas.getContext('2d');
+        var imageObj = new Image();
+
+        imageObj.onload = function() {
+            context.drawImage(imageObj, 69, 50);
+        };
+        imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
+
+
     }
-    
+
 }
