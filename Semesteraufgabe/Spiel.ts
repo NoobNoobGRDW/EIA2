@@ -168,14 +168,14 @@ namespace Spiel {
         crc2.fillStyle = "#0F0F0F";
         crc2.fill();
 
-        var context = canvas.getContext('2d');
+/*        var context = canvas.getContext('2d');
         var imageObj = new Image();
 
         imageObj.onload = function() {
             context.drawImage(imageObj, 300, 350, 400, 180);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
-
+*/
 
         image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image 
     }
