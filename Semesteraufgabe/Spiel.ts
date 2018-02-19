@@ -165,8 +165,11 @@ namespace Spiel {
 
     }
 
+    canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
+
     //Buchstben per Tastatur
     function handleKeyDown(_event: KeyboardEvent): void {
+
 
 
         //von links
@@ -243,17 +246,8 @@ namespace Spiel {
             console.log("J");
 
 
-            //Tastenfeld weiss
-            crc2.beginPath();
-            crc2.moveTo(250, 530);//links 
-            crc2.lineTo(750, 530);//rechts
-            crc2.lineTo(740, 350);//oben rechts
-            crc2.lineTo(260, 350);//oben links   
-            crc2.closePath();
-            crc2.strokeStyle = "#868585";
-            crc2.stroke();
-            crc2.fillStyle = "#FBFBFB";
-            crc2.fill();
+            crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+            crc2.putImageData(canImg, 0, 0); //fügt Bild ein
 
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 
