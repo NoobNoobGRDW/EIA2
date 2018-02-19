@@ -193,6 +193,15 @@ var Spiel;
         crc2.stroke();
         crc2.fillStyle = "#FBFBFB";
         crc2.fill();
+        //Schwarze Tasten
+        crc2.beginPath();
+        crc2.moveTo(350, 450); //links 
+        crc2.lineTo(370, 450); //rechts
+        crc2.lineTo(370, 350); //oben rechts
+        crc2.lineTo(350, 350); //oben links  
+        crc2.closePath();
+        crc2.fillStyle = "#000000";
+        crc2.fill();
         //Fuss links
         crc2.beginPath();
         crc2.moveTo(150, 600); //links 
