@@ -119,10 +119,10 @@ namespace Spiel {
         crc2.fill();
         //Tastenfeld weiss
         crc2.beginPath();
-        crc2.moveTo(230, 530);//links 
-        crc2.lineTo(770, 530);//rechts
-        crc2.lineTo(760, 350);//oben rechts
-        crc2.lineTo(240, 350);//oben links   
+        crc2.moveTo(250, 530);//links 
+        crc2.lineTo(750, 530);//rechts
+        crc2.lineTo(740, 350);//oben rechts
+        crc2.lineTo(260, 350);//oben links   
         crc2.closePath();
         crc2.strokeStyle = "#868585";
         crc2.stroke();
@@ -158,7 +158,7 @@ namespace Spiel {
         var imageObj = new Image();
 
         imageObj.onload = function() {
-            context.drawImage(imageObj, 300, 350, 400, 178);
+            context.drawImage(imageObj, 300, 350, 400, 179);
         };
         imageObj.src = 'https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/SemesteraufgabeBilder/piano-keys.png';
 
