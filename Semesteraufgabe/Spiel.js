@@ -226,7 +226,6 @@ var Spiel;
             Spiel.crc2.lineTo(637, 350); //oben rechts
             Spiel.crc2.lineTo(590, 350); //oben links   
             Spiel.crc2.closePath();
-            Spiel.crc2.globalAlpha = 0.5;
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
         }

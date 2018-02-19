@@ -262,7 +262,6 @@ namespace Spiel {
             crc2.lineTo(637, 350);//oben rechts
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
-            crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
         }
