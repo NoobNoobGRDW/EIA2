@@ -208,7 +208,17 @@ var Spiel;
         }
         else if (_event.keyCode == 74) {
             console.log("J");
-            Spiel.crc2.clearRect(200, 400, 100, 100);
+            //Tastenfeld weiss
+            Spiel.crc2.beginPath();
+            Spiel.crc2.moveTo(250, 530); //links 
+            Spiel.crc2.lineTo(750, 530); //rechts
+            Spiel.crc2.lineTo(740, 350); //oben rechts
+            Spiel.crc2.lineTo(260, 350); //oben links   
+            Spiel.crc2.closePath();
+            Spiel.crc2.strokeStyle = "#868585";
+            Spiel.crc2.stroke();
+            Spiel.crc2.fillStyle = "#FBFBFB";
+            Spiel.crc2.fill();
             Spiel.crc2.beginPath();
             Spiel.crc2.moveTo(590, 530); //links 
             Spiel.crc2.lineTo(637, 530); //rechts

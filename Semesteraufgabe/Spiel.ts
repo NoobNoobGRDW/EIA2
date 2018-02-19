@@ -242,8 +242,19 @@ namespace Spiel {
         else if (_event.keyCode == 74) {
             console.log("J");
 
-            crc2.clearRect(200, 400, 100, 100);
-            
+
+            //Tastenfeld weiss
+            crc2.beginPath();
+            crc2.moveTo(250, 530);//links 
+            crc2.lineTo(750, 530);//rechts
+            crc2.lineTo(740, 350);//oben rechts
+            crc2.lineTo(260, 350);//oben links   
+            crc2.closePath();
+            crc2.strokeStyle = "#868585";
+            crc2.stroke();
+            crc2.fillStyle = "#FBFBFB";
+            crc2.fill();
+
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 
             crc2.lineTo(637, 530);//rechts
