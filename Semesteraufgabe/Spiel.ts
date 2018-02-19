@@ -239,8 +239,8 @@ namespace Spiel {
 
             crc2.beginPath();
             crc2.moveTo(590, 530);//links 
-            crc2.lineTo(640, 530);//rechts
-            crc2.lineTo(640, 350);//oben rechts
+            crc2.lineTo(635, 530);//rechts
+            crc2.lineTo(635, 350);//oben rechts
             crc2.lineTo(590, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";

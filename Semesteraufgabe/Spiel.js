@@ -205,8 +205,8 @@ var Spiel;
             console.log("J");
             Spiel.crc2.beginPath();
             Spiel.crc2.moveTo(590, 530); //links 
-            Spiel.crc2.lineTo(640, 530); //rechts
-            Spiel.crc2.lineTo(640, 350); //oben rechts
+            Spiel.crc2.lineTo(635, 530); //rechts
+            Spiel.crc2.lineTo(635, 350); //oben rechts
             Spiel.crc2.lineTo(590, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
