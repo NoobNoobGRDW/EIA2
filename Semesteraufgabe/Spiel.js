@@ -208,6 +208,7 @@ var Spiel;
         }
         else if (_event.keyCode == 74) {
             console.log("J");
+            Spiel.crc2.clearRect(250, 530, 400, 180);
             //Tastenfeld weiss
             Spiel.crc2.beginPath();
             Spiel.crc2.moveTo(250, 530); //links 
