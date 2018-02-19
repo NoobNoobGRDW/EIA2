@@ -200,10 +200,10 @@ namespace Spiel {
             console.log("F");
 
             crc2.beginPath();
-            crc2.moveTo(417, 530);//links 
+            crc2.moveTo(420, 530);//links 
             crc2.lineTo(465, 530);//rechts
             crc2.lineTo(465, 350);//oben rechts
-            crc2.lineTo(417, 350);//oben links   
+            crc2.lineTo(420, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
@@ -212,10 +212,10 @@ namespace Spiel {
             console.log("G");
 
             crc2.beginPath();
-            crc2.moveTo(472, 530);//links 
+            crc2.moveTo(475, 530);//links 
             crc2.lineTo(522, 530);//rechts
             crc2.lineTo(522, 350);//oben rechts
-            crc2.lineTo(472, 350);//oben links   
+            crc2.lineTo(475, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
@@ -225,10 +225,10 @@ namespace Spiel {
             console.log("H");
 
             crc2.beginPath();
-            crc2.moveTo(525, 530);//links 
-            crc2.lineTo(575, 530);//rechts
-            crc2.lineTo(575, 350);//oben rechts
-            crc2.lineTo(525, 350);//oben links   
+            crc2.moveTo(530, 530);//links 
+            crc2.lineTo(577, 530);//rechts
+            crc2.lineTo(577, 350);//oben rechts
+            crc2.lineTo(530, 350);//oben links   
             crc2.closePath();
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();

@@ -171,10 +171,10 @@ var Spiel;
         else if (_event.keyCode == 70) {
             console.log("F");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(417, 530); //links 
+            Spiel.crc2.moveTo(420, 530); //links 
             Spiel.crc2.lineTo(465, 530); //rechts
             Spiel.crc2.lineTo(465, 350); //oben rechts
-            Spiel.crc2.lineTo(417, 350); //oben links   
+            Spiel.crc2.lineTo(420, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
@@ -182,10 +182,10 @@ var Spiel;
         else if (_event.keyCode == 71) {
             console.log("G");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(472, 530); //links 
+            Spiel.crc2.moveTo(475, 530); //links 
             Spiel.crc2.lineTo(522, 530); //rechts
             Spiel.crc2.lineTo(522, 350); //oben rechts
-            Spiel.crc2.lineTo(472, 350); //oben links   
+            Spiel.crc2.lineTo(475, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
@@ -193,10 +193,10 @@ var Spiel;
         else if (_event.keyCode == 72) {
             console.log("H");
             Spiel.crc2.beginPath();
-            Spiel.crc2.moveTo(525, 530); //links 
-            Spiel.crc2.lineTo(575, 530); //rechts
-            Spiel.crc2.lineTo(575, 350); //oben rechts
-            Spiel.crc2.lineTo(525, 350); //oben links   
+            Spiel.crc2.moveTo(530, 530); //links 
+            Spiel.crc2.lineTo(577, 530); //rechts
+            Spiel.crc2.lineTo(577, 350); //oben rechts
+            Spiel.crc2.lineTo(530, 350); //oben links   
             Spiel.crc2.closePath();
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
