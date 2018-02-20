@@ -293,8 +293,6 @@ namespace Spiel {
 
 
 
-
-
     //Buchstben per Tastatur
     function handleKeyDown(_event: KeyboardEvent): void {
 
@@ -316,7 +314,6 @@ namespace Spiel {
             crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
-            
         }
 
         else if (_event.keyCode == 68) {
