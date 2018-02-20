@@ -23,22 +23,39 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 <script language="javascript" type="text/javascript" src="Superclass.js"></script>
 <script language="javascript" type="text/javascript" src="Subclass.js"></script>
 
+<script>
+
+var x = document.getElementById("C"); 
+
+function playAudio(_event: KeyboardEvent) { 
+	
+	if (_event.keyCode == 83) {
+	
+    x.play(); 
+}
+}
+</script>
 
 </head>
 <body>
 
-<audio  controls autoplay>
-  <source src="https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/Jazz%20Blues%20Backing%20Track%20-%20Medium%20Up%20Swing%20(Am).mp3" type="audio/mpeg">
-</audio>
+	<audio controls autoplay>
+		<source
+			src="https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/Jazz%20Blues%20Backing%20Track%20-%20Medium%20Up%20Swing%20(Am).mp3"
+			type="audio/mpeg">
+	</audio>
 
-<audio  id="C" controls >
-  <source src="https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/C.wav" type="audio/mpeg">
-</audio>
+	<audio id="C" controls>
+		<source
+			src="https://sftp.hs-furtwangen.de/~kuenzlin/EIA1/Semesteraufgabe/C.wav"
+			type="audio/mpeg">
+	</audio>
 
-<h1>Piano  Man</h1>
-<h3>Play The Piano With Your Keyboard</h3>
-<p>S___D___F___G___H___J___K</p>
-<canvas id="myCanvas" width="1000" height="600">
+	<h1>Piano Man</h1>
+	<h3>Play The Piano With Your Keyboard</h3>
+	<p>S___D___F___G___H___J___K</p>
+	<canvas id="myCanvas" width="1000" height="600">
+
 
 </body>
 </html>
