@@ -241,6 +241,7 @@ var Semesteraufgabe1;
             let n = new Semesteraufgabe1.Note(Math.random() * (800 - 400) + 400, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(n);
         }
+        animiere(); //f�hrt Funktion aus
     }
     function animiere() {
         console.log("Timeout");
