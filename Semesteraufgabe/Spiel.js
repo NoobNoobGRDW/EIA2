@@ -10,7 +10,19 @@ var Spiel;
 (function (Spiel) {
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
+    /*    document.addEventListener("keydown", soundPlay); */
     let objects = [];
+    /*    let soundPlay1: Play;
+    
+        soundPlay1 = new Play(document.getElementById("C"));
+    
+        function soundPlay(_event: KeyboardEvent): void {
+            if (_event.keyCode == 83) {
+            soundPlay1.playSound();
+            }
+            
+        }
+    */
     var image; //initialisiert das Canvas Image
     function piano() {
         let canvas = document.getElementsByTagName("canvas")[0];
@@ -281,12 +293,6 @@ var Spiel;
             Spiel.crc2.globalAlpha = 0.5;
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
-            for (let i = 0; i < 1; i++) {
-                let n = new Spiel.SpielNoten(Math.random() * (800 - 400) + 400, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
-                objects.push(n);
-                let s = objects[i];
-                s.update();
-            }
         }
         else if (_event.keyCode == 68) {
             console.log("D");

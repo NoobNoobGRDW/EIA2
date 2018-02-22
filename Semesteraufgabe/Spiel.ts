@@ -13,10 +13,24 @@ namespace Spiel {
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
+/*    document.addEventListener("keydown", soundPlay); */
 
 
     let objects: AnimatedObjects[] = [];
 
+
+    
+/*    let soundPlay1: Play;       
+
+    soundPlay1 = new Play(document.getElementById("C"));
+
+    function soundPlay(_event: KeyboardEvent): void {
+        if (_event.keyCode == 83) {
+        soundPlay1.playSound();
+        }       
+        
+    }
+*/
 
 
     var image: any; //initialisiert das Canvas Image
@@ -316,17 +330,6 @@ namespace Spiel {
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
 
-
-            for (let i = 0; i < 1; i++) {
-                let n: SpielNoten = new SpielNoten(Math.random() * (800 - 400) + 400,
-                    260,
-                    "hsl(" + Math.random() * 360 + ", 100%, 50%)");
-                objects.push(n);
-
-
-                let s: AnimatedObjects = objects[i];
-                s.update();
-            }
         }
 
         else if (_event.keyCode == 68) {
