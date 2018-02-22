@@ -10,12 +10,12 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 namespace Spiel {
 
 
-    let crc2: CanvasRenderingContext2D;
+    export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
 
 
-    let objects: MovingObjects[] = [];
+    let objects: AnimatedObjects[] = [];
 
     
     
