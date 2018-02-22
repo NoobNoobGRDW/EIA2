@@ -238,8 +238,13 @@ var Semesteraufgabe1;
         canImg = Semesteraufgabe1.crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
         //Startpunkte f�r Noten
         for (let i = 0; i < 3; i++) {
-            let n = new Semesteraufgabe1.Note(Math.random() * (800 - 400) + 401, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+            let n = new Semesteraufgabe1.Note(Math.random() * (800 - 400) + 400, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(n);
+        }
+        //Startpunkte f�r Lampen
+        for (let i = 0; i < 2; i++) {
+            let l = new Semesteraufgabe1.Lampe(200, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+            objects.push(l);
         }
         animiere(); //f�hrt Funktion aus
     }
