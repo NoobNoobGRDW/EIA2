@@ -264,7 +264,7 @@ namespace Semesteraufgabe1 {
         
         //Startpunkte für Noten
         for (let i = 0; i < 3; i++) {
-            let n: Note = new Note(Math.random() * (800 - 400) + 400,
+            let n: Note = new Note(Math.random() * (800 - 400) + 401,
                 260,
                 "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(n);
@@ -273,8 +273,6 @@ namespace Semesteraufgabe1 {
         animiere(); //führt Funktion aus
         
     }
-
-
 
 
     function animiere() {
