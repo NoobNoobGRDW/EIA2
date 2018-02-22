@@ -282,6 +282,7 @@ namespace Semesteraufgabe1 {
         
     }
 
+    
 
     function animiere() {
         console.log("Timeout");
