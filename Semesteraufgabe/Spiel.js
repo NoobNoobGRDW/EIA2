@@ -281,6 +281,8 @@ var Spiel;
             Spiel.crc2.globalAlpha = 0.5;
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
+            let n = new Spiel.SpielNoten(Math.random() * (800 - 400) + 400, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+            objects.push(n);
         }
         else if (_event.keyCode == 68) {
             console.log("D");

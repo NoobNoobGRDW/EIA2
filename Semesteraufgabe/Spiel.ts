@@ -17,8 +17,8 @@ namespace Spiel {
 
     let objects: AnimatedObjects[] = [];
 
-    
-    
+
+
     var image: any; //initialisiert das Canvas Image
 
 
@@ -290,8 +290,8 @@ namespace Spiel {
         image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image 
     }
 
-    
-    
+
+
 
 
     //Buchstben per Tastatur
@@ -315,9 +315,12 @@ namespace Spiel {
             crc2.globalAlpha = 0.5;
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
-            
 
-            
+            let n: SpielNoten = new SpielNoten(Math.random() * (800 - 400) + 400,
+                260,
+                "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+            objects.push(n);
+
         }
 
         else if (_event.keyCode == 68) {
