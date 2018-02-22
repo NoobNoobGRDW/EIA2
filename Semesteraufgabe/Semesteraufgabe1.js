@@ -243,7 +243,7 @@ var Semesteraufgabe1;
         }
         //Startpunkte f�r Licht
         for (let i = 0; i < 1; i++) {
-            let l = new Semesteraufgabe1.Licht(50, 30, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+            let l = new Semesteraufgabe1.Licht(100, 100, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(l);
         }
         animiere(); //f�hrt Funktion aus
