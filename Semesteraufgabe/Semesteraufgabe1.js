@@ -241,11 +241,6 @@ var Semesteraufgabe1;
             let n = new Semesteraufgabe1.Note(Math.random() * (800 - 400) + 400, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(n);
         }
-        //Startpunkte f�r Lampen
-        for (let i = 0; i < 2; i++) {
-            let l = new Semesteraufgabe1.Lampe(Math.random() * (800 - 400) + 401, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
-            objects.push(l);
-        }
         animiere(); //f�hrt Funktion aus
     }
     function animiere() {
