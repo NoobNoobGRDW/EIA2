@@ -17,9 +17,8 @@ namespace Spiel {
 
     let objects: MovingObjects[] = [];
 
-
-
-
+    
+    
     var image: any; //initialisiert das Canvas Image
 
 
@@ -291,6 +290,8 @@ namespace Spiel {
         image = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image 
     }
 
+    
+    
 
 
     //Buchstben per Tastatur
@@ -315,7 +316,8 @@ namespace Spiel {
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
             
-            document.getElementById("C").play();
+
+            
         }
 
         else if (_event.keyCode == 68) {
