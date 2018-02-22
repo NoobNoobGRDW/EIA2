@@ -272,7 +272,7 @@ namespace Semesteraufgabe1 {
 
         //Startpunkte für Licht
         for (let i = 0; i < 1; i++) {
-            let l: Note = new Licht(100,
+            let l: Licht = new Licht(100,
                 100,
                 "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(l);
@@ -281,7 +281,6 @@ namespace Semesteraufgabe1 {
         animiere(); //führt Funktion aus
         
     }
-
 
 
     function animiere() {
