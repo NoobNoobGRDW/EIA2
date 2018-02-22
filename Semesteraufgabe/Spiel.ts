@@ -316,14 +316,17 @@ namespace Spiel {
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
 
-            let n: SpielNoten = new SpielNoten(Math.random() * (800 - 400) + 400,
-                260,
-                "hsl(" + Math.random() * 360 + ", 100%, 50%)");
-            objects.push(n);
 
-            let s: AnimatedObjects = objects[1];
-            s.update();
+            for (let i = 0; i < 1; i++) {
+                let n: SpielNoten = new SpielNoten(Math.random() * (800 - 400) + 400,
+                    260,
+                    "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+                objects.push(n);
 
+
+                let s: AnimatedObjects = objects[i];
+                s.update();
+            }
         }
 
         else if (_event.keyCode == 68) {
