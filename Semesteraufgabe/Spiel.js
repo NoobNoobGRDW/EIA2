@@ -10,7 +10,6 @@ var Spiel;
 (function (Spiel) {
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
-    /*    document.addEventListener("keydown", soundPlay); */
     let objects = [];
     /*    let soundPlay1: Play;
     
