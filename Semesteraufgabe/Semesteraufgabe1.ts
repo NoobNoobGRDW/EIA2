@@ -260,8 +260,8 @@ namespace Semesteraufgabe1 {
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
-        
-        
+
+
         //Startpunkte für Noten
         for (let i = 0; i < 3; i++) {
             let n: Note = new Note(Math.random() * (800 - 400) + 400,
@@ -271,26 +271,38 @@ namespace Semesteraufgabe1 {
         }
 
         animiere(); //führt Funktion aus
-        
+
     }
 
-
-
-    function animiere() {
-        console.log("Timeout");
-        crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
-        crc2.putImageData(canImg, 0, 0); //fügt Bild ein
-
-
-
-        //for-Schleife Objects
-        for (let i: number = 0; i < objects.length; i++) {
-            let s: MovingObjects = objects[i];
-            s.update();
-        }
-
-        window.setTimeout(animiere, 10);
+    //Startpunkte für Licht
+    for (let i = 0; i < 3; i++) {
+        let l: Note = new Licht(50,
+            30,
+            "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+        objects.push(l);
     }
+
+    animiere(); //führt Funktion aus
+
+
+
+
+
+function animiere() {
+    console.log("Timeout");
+    crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+    crc2.putImageData(canImg, 0, 0); //fügt Bild ein
+
+
+
+    //for-Schleife Objects
+    for (let i: number = 0; i < objects.length; i++) {
+        let s: MovingObjects = objects[i];
+        s.update();
+    }
+
+    window.setTimeout(animiere, 10);
+}
 
 
 }

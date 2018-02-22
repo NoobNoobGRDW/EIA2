@@ -243,6 +243,12 @@ var Semesteraufgabe1;
         }
         animiere(); //f�hrt Funktion aus
     }
+    //Startpunkte f�r Licht
+    for (let i = 0; i < 3; i++) {
+        let l = new Semesteraufgabe1.Licht(50, 30, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+        objects.push(l);
+    }
+    animiere(); //f�hrt Funktion aus
     function animiere() {
         console.log("Timeout");
         Semesteraufgabe1.crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
