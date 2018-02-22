@@ -260,8 +260,8 @@ namespace Semesteraufgabe1 {
 
         canImg = crc2.getImageData(0, 0, 1000, 600); //speichert das Canvas Image
 
-        
-        
+
+
         //Startpunkte für Noten
         for (let i = 0; i < 3; i++) {
             let n: Note = new Note(Math.random() * (800 - 400) + 401,
@@ -270,8 +270,16 @@ namespace Semesteraufgabe1 {
             objects.push(n);
         }
 
+        //Startpunkte für Gondeln
+        for (let i = 0; i < 1; i++) {
+            let l: Licht = new Licht(100,
+                100,
+                "#818080")
+            objects.push(l);
+        }
+
         animiere(); //führt Funktion aus
-        
+
     }
 
 
