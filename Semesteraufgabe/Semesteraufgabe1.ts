@@ -270,35 +270,28 @@ namespace Semesteraufgabe1 {
             objects.push(n);
         }
 
-        //Startpunkte für Licht
-        for (let i = 0; i < 1; i++) {
-            let l: Licht = new Licht(100,
-                100,
-                "hsl(" + Math.random() * 360 + ", 100%, 50%)");
-            objects.push(l);
-        }
 
-        animiere(); //führt Funktion aus
-        
     }
 
-    
-
-    function animiere() {
-        console.log("Timeout");
-        crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
-        crc2.putImageData(canImg, 0, 0); //fügt Bild ein
 
 
 
-        //for-Schleife Objects
-        for (let i: number = 0; i < objects.length; i++) {
-            let s: MovingObjects = objects[i];
-            s.update();
-        }
 
-        window.setTimeout(animiere, 10);
+function animiere() {
+    console.log("Timeout");
+    crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
+    crc2.putImageData(canImg, 0, 0); //fügt Bild ein
+
+
+
+    //for-Schleife Objects
+    for (let i: number = 0; i < objects.length; i++) {
+        let s: MovingObjects = objects[i];
+        s.update();
     }
+
+    window.setTimeout(animiere, 10);
+}
 
 
 }
