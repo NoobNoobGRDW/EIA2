@@ -321,6 +321,9 @@ namespace Spiel {
                 "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(n);
 
+            let s: AnimatedObjects = objects[1];
+            s.update();
+
         }
 
         else if (_event.keyCode == 68) {
