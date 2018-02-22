@@ -241,14 +241,13 @@ var Semesteraufgabe1;
             let n = new Semesteraufgabe1.Note(Math.random() * (800 - 400) + 400, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(n);
         }
+        //Startpunkte f�r Licht
+        for (let i = 0; i < 1; i++) {
+            let l = new Semesteraufgabe1.Licht(50, 30, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+            objects.push(l);
+        }
         animiere(); //f�hrt Funktion aus
     }
-    //Startpunkte f�r Licht
-    for (let i = 0; i < 3; i++) {
-        let l = new Semesteraufgabe1.Licht(50, 30, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
-        objects.push(l);
-    }
-    animiere(); //f�hrt Funktion aus
     function animiere() {
         console.log("Timeout");
         Semesteraufgabe1.crc2.clearRect(0, 0, 1000, 600); // loescht Hintergrund
