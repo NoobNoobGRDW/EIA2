@@ -9,7 +9,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 
 namespace Semesteraufgabe1 {
 
-    export class Licht extends MovingObjects {
+    export class Lampe extends MovingObjects {
 
         x: number;
         y: number;
@@ -23,22 +23,26 @@ namespace Semesteraufgabe1 {
             this.x += 1;
             this.y += 2;
 
+
+            if (this.x > 720) { 
+                this.x = 500;
+                this.y = 260;
+            }
         }
 
         draw(): void {
             //Kreis links
             crc2.beginPath();
-            crc2.arc(this.x, this.y, 20, 0, 2 * Math.PI);
+            crc2.arc(this.x , this.y, 20, 0, 2 * Math.PI);
             crc2.fillStyle = this.color;
             crc2.fill();
             //Kreis rechts
             crc2.beginPath();
-            crc2.arc(this.x + 800, this.y, 20, 0, 2 * Math.PI);
+            crc2.arc(this.x + 700, this.y, 20, 0, 2 * Math.PI);
             crc2.fillStyle = this.color;
             crc2.fill();
 
-
-
+            
         }
 
     }
