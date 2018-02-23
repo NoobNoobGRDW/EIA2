@@ -13,6 +13,7 @@ namespace Spiel {
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("keydown", soundPlay);
 
 
     let objects: AnimatedObjects[] = [];
