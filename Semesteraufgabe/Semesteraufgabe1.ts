@@ -270,7 +270,13 @@ namespace Semesteraufgabe1 {
             objects.push(n);
         }
         
-
+        //Startpunkte für Lampen
+        for (let i = 0; i < 1; i++) {
+            let l: Lampe = new Lampe(Math.random() * (800 - 400) + 400,
+                260,
+                "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+            objects.push(l);
+        }
         animiere(); //führt Funktion aus
 
     }
