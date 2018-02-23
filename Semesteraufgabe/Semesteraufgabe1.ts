@@ -66,11 +66,20 @@ namespace Semesteraufgabe1 {
         //Lampengestell
         //oben
         crc2.fillStyle = "#000000";
-        crc2.fillRect(0, 30, 1000, 8);
+        crc2.fillRect(0, 25, 1000, 8);
         //unten
         crc2.fillStyle = "#000000";
         crc2.fillRect(0, 70, 1000, 8);
+        //vertikal
+        crc2.fillStyle = "#000000";
+        crc2.fillRect(100, 25, 8, 20);
 
+        crc2.fillStyle = "#000000";
+        crc2.fillRect(100, 25, 8, 20);
+        
+        crc2.fillStyle = "#000000";
+        crc2.fillRect(300, 25, 8, 20);
+        
         //Bühne
         crc2.fillStyle = "#966534";
         crc2.fillRect(0, 400, 1000, 600);

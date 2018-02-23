@@ -52,10 +52,17 @@ var Semesteraufgabe1;
         //Lampengestell
         //oben
         Semesteraufgabe1.crc2.fillStyle = "#000000";
-        Semesteraufgabe1.crc2.fillRect(0, 30, 1000, 8);
+        Semesteraufgabe1.crc2.fillRect(0, 25, 1000, 8);
         //unten
         Semesteraufgabe1.crc2.fillStyle = "#000000";
         Semesteraufgabe1.crc2.fillRect(0, 70, 1000, 8);
+        //vertikal
+        Semesteraufgabe1.crc2.fillStyle = "#000000";
+        Semesteraufgabe1.crc2.fillRect(100, 25, 8, 20);
+        Semesteraufgabe1.crc2.fillStyle = "#000000";
+        Semesteraufgabe1.crc2.fillRect(100, 25, 8, 20);
+        Semesteraufgabe1.crc2.fillStyle = "#000000";
+        Semesteraufgabe1.crc2.fillRect(300, 25, 8, 20);
         //B�hne
         Semesteraufgabe1.crc2.fillStyle = "#966534";
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 600);
