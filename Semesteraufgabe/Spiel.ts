@@ -15,13 +15,13 @@ namespace Spiel {
     document.addEventListener("keydown", handleKeyDown);
 
       
-        let soundPlay1: Play;       
+        let soundPlay0: Play;       
     
-        soundPlay1 = new Play(document.getElementById("soundC"));
+        soundPlay0 = new Play(document.getElementById("soundC"));
     
     
     function soundPlay(_event: Event): void {
-        soundPlay1.playSound();
+        soundPlay0.playSound();
         }
 
 
@@ -312,7 +312,7 @@ namespace Spiel {
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
 
-            soundPlay1.playSound();
+            soundPlay0.playSound();
         }
 
         else if (_event.keyCode == 68) {
