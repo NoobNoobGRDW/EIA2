@@ -15,12 +15,10 @@ namespace Spiel {
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("keydown", soundPlay);
 
-
-
       
-        let soundPlay1: play;       
+        let soundPlay1: Play;       
     
-        soundPlay1 = new play(document.getElementById("C"));
+        soundPlay1 = new Play(document.getElementById("C"));
     
         function soundPlay(_event: KeyboardEvent): void {
             if (_event.keyCode == 83) {

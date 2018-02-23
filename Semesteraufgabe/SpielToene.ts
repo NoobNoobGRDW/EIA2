@@ -11,7 +11,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 
 namespace Spiel {
         
-    export class play {
+    export class Play {
         sound:HTMLAudioElement;
         
     

@@ -8,7 +8,7 @@ Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde n
 */
 var Spiel;
 (function (Spiel) {
-    class play {
+    class Play {
         constructor(_sound) {
             this.sound = _sound;
         }
@@ -16,5 +16,5 @@ var Spiel;
             this.sound.play();
         }
     }
-    Spiel.play = play;
+    Spiel.Play = Play;
 })(Spiel || (Spiel = {}));

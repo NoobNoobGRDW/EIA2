@@ -12,7 +12,7 @@ var Spiel;
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("keydown", soundPlay);
     let soundPlay1;
-    soundPlay1 = new Spiel.play(document.getElementById("C"));
+    soundPlay1 = new Spiel.Play(document.getElementById("C"));
     function soundPlay(_event) {
         if (_event.keyCode == 83) {
             soundPlay1.playSound();
