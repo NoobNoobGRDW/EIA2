@@ -13,19 +13,13 @@ namespace Spiel {
     export let crc2: CanvasRenderingContext2D;
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("keydown", soundPlay);
 
       
         let soundPlay1: Play;       
     
         soundPlay1 = new Play(document.getElementById("C"));
     
-        function soundPlay(_event: KeyboardEvent): void {
-            if (_event.keyCode == 83) {
-            soundPlay1.playSound();
-            }       
-            
-        }
+    
     
 
 
@@ -326,6 +320,7 @@ namespace Spiel {
             crc2.fillStyle = "#A9F5A9";
             crc2.fill();
 
+            soundPlay1.playSound();
         }
 
         else if (_event.keyCode == 68) {

@@ -10,14 +10,8 @@ var Spiel;
 (function (Spiel) {
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("keydown", soundPlay);
     let soundPlay1;
     soundPlay1 = new Spiel.Play(document.getElementById("C"));
-    function soundPlay(_event) {
-        if (_event.keyCode == 83) {
-            soundPlay1.playSound();
-        }
-    }
     var image; //initialisiert das Canvas Image
     function piano() {
         let canvas = document.getElementsByTagName("canvas")[0];
@@ -288,6 +282,7 @@ var Spiel;
             Spiel.crc2.globalAlpha = 0.5;
             Spiel.crc2.fillStyle = "#A9F5A9";
             Spiel.crc2.fill();
+            soundPlay1.playSound();
         }
         else if (_event.keyCode == 68) {
             console.log("D");
