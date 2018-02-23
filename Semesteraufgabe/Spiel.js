@@ -11,7 +11,7 @@ var Spiel;
     window.addEventListener("load", piano);
     document.addEventListener("keydown", handleKeyDown);
     let soundPlay1;
-    soundPlay1 = new Spiel.Play(document.getElementById("C"));
+    soundPlay1 = new Spiel.Play(document.getElementById("soundC"));
     var image; //initialisiert das Canvas Image
     function piano() {
         let canvas = document.getElementsByTagName("canvas")[0];

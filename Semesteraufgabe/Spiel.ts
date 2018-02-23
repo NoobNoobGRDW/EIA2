@@ -17,7 +17,7 @@ namespace Spiel {
       
         let soundPlay1: Play;       
     
-        soundPlay1 = new Play(document.getElementById("C"));
+        soundPlay1 = new Play(document.getElementById("soundC"));
     
     
     
