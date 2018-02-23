@@ -16,10 +16,8 @@ namespace Spiel {
     document.addEventListener("keydown", soundPlay);
 
 
-    let objects: AnimatedObjects[] = [];
-      
-    
 
+      
         let soundPlay1: play;       
     
         soundPlay1 = new play(document.getElementById("C"));
