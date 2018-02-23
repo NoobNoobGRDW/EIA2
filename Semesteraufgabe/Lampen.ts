@@ -21,7 +21,7 @@ namespace Semesteraufgabe1 {
 
         move(): void {
             this.x += 1;
-            this.y += 2;
+            this.y += 1;
 
 
             if (this.x > 720) { 

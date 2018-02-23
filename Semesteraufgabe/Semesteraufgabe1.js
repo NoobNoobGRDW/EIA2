@@ -243,7 +243,7 @@ var Semesteraufgabe1;
         }
         //Startpunkte f�r Lampen
         for (let i = 0; i < 1; i++) {
-            let l = new Semesteraufgabe1.Lampe(Math.random() * (800 - 400) + 400, 260, "hsl(" + Math.random() * 360 + ", 100%, 50%)");
+            let l = new Semesteraufgabe1.Lampe(20, 20, "#FACC2E");
             objects.push(l);
         }
         animiere(); //f�hrt Funktion aus

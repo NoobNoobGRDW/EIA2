@@ -14,7 +14,7 @@ var Semesteraufgabe1;
         }
         move() {
             this.x += 1;
-            this.y += 2;
+            this.y += 1;
             if (this.x > 720) {
                 this.x = 500;
                 this.y = 260;
