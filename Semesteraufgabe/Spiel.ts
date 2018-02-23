@@ -20,9 +20,9 @@ namespace Spiel {
       
     
 
-        let soundPlay1: Play;       
+        let soundPlay1: play;       
     
-        soundPlay1 = new Play(document.getElementById("C"));
+        soundPlay1 = new play(document.getElementById("C"));
     
         function soundPlay(_event: KeyboardEvent): void {
             if (_event.keyCode == 83) {
