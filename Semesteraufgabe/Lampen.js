@@ -28,6 +28,8 @@ var Semesteraufgabe1;
             Semesteraufgabe1.crc2.stroke();
             Semesteraufgabe1.crc2.fillStyle = this.color;
             Semesteraufgabe1.crc2.fill();
+            Semesteraufgabe1.crc2.arc(this.x + 10, this.y + 10, 10, 0, 2 * Math.PI);
+            Semesteraufgabe1.crc2.fillStyle = "#000000";
             //Kreis rechts
             Semesteraufgabe1.crc2.beginPath();
             Semesteraufgabe1.crc2.arc(this.x + 900, this.y, 35, 0, 2 * Math.PI);
@@ -35,6 +37,8 @@ var Semesteraufgabe1;
             Semesteraufgabe1.crc2.stroke();
             Semesteraufgabe1.crc2.fillStyle = this.color;
             Semesteraufgabe1.crc2.fill();
+            Semesteraufgabe1.crc2.arc(this.x + 10, this.y + 10, 10, 0, 2 * Math.PI);
+            Semesteraufgabe1.crc2.fillStyle = "#000000";
         }
     }
     Semesteraufgabe1.Lampe = Lampe;
