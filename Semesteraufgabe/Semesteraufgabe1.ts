@@ -72,13 +72,16 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(0, 70, 1000, 8);
         //vertikal
         crc2.fillStyle = "#000000";
-        crc2.fillRect(100, 25, 8, 20);
+        crc2.fillRect(200, 25, 8, 50);
 
         crc2.fillStyle = "#000000";
-        crc2.fillRect(100, 25, 8, 20);
-        
+        crc2.fillRect(400, 25, 8, 50);
+
         crc2.fillStyle = "#000000";
-        crc2.fillRect(300, 25, 8, 20);
+        crc2.fillRect(600, 25, 8, 50);
+
+        crc2.fillStyle = "#000000";
+        crc2.fillRect(800, 25, 8, 50);
         
         //Bühne
         crc2.fillStyle = "#966534";
