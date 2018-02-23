@@ -243,7 +243,7 @@ var Semesteraufgabe1;
         }
         //Startpunkte f�r Lampen
         for (let i = 0; i < 1; i++) {
-            let l = new Semesteraufgabe1.Lampe(40, 40, "#FACC2E");
+            let l = new Semesteraufgabe1.Lampe(50, 50, "#FACC2E");
             objects.push(l);
         }
         animiere(); //f�hrt Funktion aus

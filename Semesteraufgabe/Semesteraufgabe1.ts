@@ -272,8 +272,8 @@ namespace Semesteraufgabe1 {
         
         //Startpunkte für Lampen
         for (let i = 0; i < 1; i++) {
-            let l: Lampe = new Lampe(40,
-                40,
+            let l: Lampe = new Lampe(50,
+                50,
                 "#FACC2E");
             objects.push(l);
         }
