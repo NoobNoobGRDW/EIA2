@@ -26,6 +26,7 @@ namespace Semesteraufgabe1 {
         console.log(canvas);
         console.log("setTimeout");
 
+
         //Hintergrund
         crc2.fillStyle = "#50504F";
         crc2.fillRect(0, 0, 1000, 600);
@@ -61,6 +62,10 @@ namespace Semesteraufgabe1 {
         crc2.fillRect(900, 0, 5, 600);
         crc2.fillStyle = "#7B2222";
         crc2.fillRect(905, 0, 20, 600);
+
+        //Lampengestell
+        crc2.fillStyle = "#000000";
+        crc2.fillRect(0, 20, 1000, 20);
 
         //Bühne
         crc2.fillStyle = "#966534";
@@ -269,7 +274,7 @@ namespace Semesteraufgabe1 {
                 "hsl(" + Math.random() * 360 + ", 100%, 50%)");
             objects.push(n);
         }
-        
+
         //Startpunkte für Lampen
         for (let i = 0; i < 1; i++) {
             let l: Lampe = new Lampe(50,

@@ -49,6 +49,9 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(900, 0, 5, 600);
         Semesteraufgabe1.crc2.fillStyle = "#7B2222";
         Semesteraufgabe1.crc2.fillRect(905, 0, 20, 600);
+        //Lampengestell
+        Semesteraufgabe1.crc2.fillStyle = "#000000";
+        Semesteraufgabe1.crc2.fillRect(0, 20, 1000, 20);
         //B�hne
         Semesteraufgabe1.crc2.fillStyle = "#966534";
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 600);
