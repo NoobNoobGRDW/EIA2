@@ -19,7 +19,7 @@ namespace Spiel {
       
     
 
-    /*    let soundPlay1: Play;       
+        let soundPlay1: Play;       
     
         soundPlay1 = new Play(document.getElementById("C"));
     
@@ -29,7 +29,7 @@ namespace Spiel {
             }       
             
         }
-    */
+    
 
 
     var image: any; //initialisiert das Canvas Image
