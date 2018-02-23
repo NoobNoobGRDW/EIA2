@@ -15,7 +15,7 @@ var Semesteraufgabe1;
         move() {
             this.x += 1;
             this.y += 0;
-            if (this.x > 52) {
+            if (this.x > 51) {
                 this.x = 50;
                 this.y = 50;
             }
