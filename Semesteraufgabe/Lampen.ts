@@ -21,10 +21,10 @@ namespace Semesteraufgabe1 {
 
         move(): void {
             this.x += 1;
-            this.y += 1;
+            this.y += 0;
 
 
-            if (this.x > 720) { 
+            if (this.x > 100) { 
                 this.x = 500;
                 this.y = 260;
             }
@@ -33,12 +33,12 @@ namespace Semesteraufgabe1 {
         draw(): void {
             //Kreis links
             crc2.beginPath();
-            crc2.arc(this.x , this.y, 20, 0, 2 * Math.PI);
+            crc2.arc(this.x , this.y, 30, 0, 2 * Math.PI);
             crc2.fillStyle = this.color;
             crc2.fill();
             //Kreis rechts
             crc2.beginPath();
-            crc2.arc(this.x + 700, this.y, 20, 0, 2 * Math.PI);
+            crc2.arc(this.x + 920, this.y, 30, 0, 2 * Math.PI);
             crc2.fillStyle = this.color;
             crc2.fill();
 
