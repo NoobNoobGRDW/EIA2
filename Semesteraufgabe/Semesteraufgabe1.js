@@ -55,7 +55,7 @@ var Semesteraufgabe1;
         Semesteraufgabe1.crc2.fillRect(0, 20, 1000, 10);
         //unten
         Semesteraufgabe1.crc2.fillStyle = "#000000";
-        Semesteraufgabe1.crc2.fillRect(50, 20, 1000, 10);
+        Semesteraufgabe1.crc2.fillRect(0, 50, 1000, 10);
         //B�hne
         Semesteraufgabe1.crc2.fillStyle = "#966534";
         Semesteraufgabe1.crc2.fillRect(0, 400, 1000, 600);
