@@ -15,7 +15,7 @@ var Semesteraufgabe1;
         move() {
             this.x += 1;
             this.y += 0;
-            if (this.x > 70) {
+            if (this.x > 60) {
                 this.x = 40;
                 this.y = 40;
             }
@@ -23,12 +23,12 @@ var Semesteraufgabe1;
         draw() {
             //Kreis links
             Semesteraufgabe1.crc2.beginPath();
-            Semesteraufgabe1.crc2.arc(this.x, this.y, 30, 0, 2 * Math.PI);
+            Semesteraufgabe1.crc2.arc(this.x, this.y, 35, 0, 2 * Math.PI);
             Semesteraufgabe1.crc2.fillStyle = this.color;
             Semesteraufgabe1.crc2.fill();
             //Kreis rechts
             Semesteraufgabe1.crc2.beginPath();
-            Semesteraufgabe1.crc2.arc(this.x + 920, this.y, 30, 0, 2 * Math.PI);
+            Semesteraufgabe1.crc2.arc(this.x + 920, this.y, 35, 0, 2 * Math.PI);
             Semesteraufgabe1.crc2.fillStyle = this.color;
             Semesteraufgabe1.crc2.fill();
         }
