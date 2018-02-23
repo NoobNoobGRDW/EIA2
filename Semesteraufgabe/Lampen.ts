@@ -25,8 +25,8 @@ namespace Semesteraufgabe1 {
 
 
             if (this.x > 70) { 
-                this.x = 20;
-                this.y = 20;
+                this.x = 40;
+                this.y = 40;
             }
         }
 

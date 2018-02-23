@@ -16,8 +16,8 @@ var Semesteraufgabe1;
             this.x += 1;
             this.y += 0;
             if (this.x > 70) {
-                this.x = 20;
-                this.y = 20;
+                this.x = 40;
+                this.y = 40;
             }
         }
         draw() {
