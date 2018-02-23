@@ -20,7 +20,9 @@ namespace Spiel {
         soundPlay1 = new Play(document.getElementById("soundC"));
     
     
-    
+    function soundPlay(_event: Event): void {
+        soundPlay1.playSound();
+        }
 
 
     var image: any; //initialisiert das Canvas Image
